@@ -1,0 +1,59 @@
+.do-it,
+footer {
+  display: flex;
+}
+.coffee {
+  cursor: url(../svg/coffee.svg), auto;
+}
+.footer-cursor {
+  cursor: url(../svg/box-arrow-in-up.svg), auto;
+}
+.intro {
+  cursor: url(../svg/namaste-religion-svgrepo-com.svg), auto;
+  cursor: url(../svg/namaste.svg), auto;
+}
+.guide {
+  /* cursor: url(../svg/emoji-laughing.svg), auto; */
+  /* cursor: url(../svg/extra/wink.svg), auto; */
+  /* cursor: url(../svg/extra/guide.svg), auto; */
+  cursor: url(../svg/guideColor.svg), auto;
+}
+.heart-cursor {
+  cursor: url(../svg/heart.svg), auto;
+}
+.peace-cursor {
+  /* cursor: url(../svg/peace.svg), auto; */
+  cursor: url(../svg/snap.svg), auto;
+  
+}
+.contact-cursor
+{
+  cursor: url(../svg/plane.svg), auto;
+}
+.testimonial-cursor
+{
+  cursor: url(../svg/testimonials.svg), auto;
+}
+.inner-cursor {
+  position: fixed;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  mix-blend-mode: difference;
+  /* background: #000;
+  mix-blend-mode:soft-light; */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transition: width 0.5s, height 0.5s, background-color 0.2s;
+}
+.inner-cursor.grey-grey {
+  background-color: #444444aa;
+}
+.inner-cursor.grow {
+  width: 50px;
+  height: 50px;
+  transition: width 0.5s, height 0.5s;
+}
