@@ -28,6 +28,12 @@ let growElements = [
   ...Array.from(document.querySelectorAll("h1")),
   ...Array.from(document.querySelectorAll("h2")),
   ...Array.from(document.querySelectorAll("h3")),
+  ...Array.from(document.querySelectorAll("h4")),
+  ...Array.from(document.querySelectorAll("h5")),
+  ...Array.from(document.querySelectorAll("h6")),
+  ...Array.from(document.querySelectorAll("h7")),
+  ...Array.from(document.querySelectorAll("ul")),
+  ...Array.from(document.querySelectorAll("li")),
 ];
 
 console.log("links");

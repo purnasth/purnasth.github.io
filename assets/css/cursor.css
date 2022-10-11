@@ -37,8 +37,9 @@ footer {
 .inner-cursor {
   position: fixed;
   left: 10px;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
+  /* border: 0.2px solid #fff; */
   transform: translate(-50%, -50%);
   background-color: #fff;
   mix-blend-mode: difference;
@@ -53,7 +54,7 @@ footer {
   background-color: #444444aa;
 }
 .inner-cursor.grow {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   transition: width 0.5s, height 0.5s;
 }

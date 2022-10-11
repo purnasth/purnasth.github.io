@@ -7,36 +7,11 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
-/* Starts Font Link for body
-@font-face {
-  src: url(../fonts/Tangerine-Regular.ttf);
-  font-family: purna_tangerine;
-} */
 /* //? Starts Font Link for TITLE of h1 */
 @font-face {
   src: url(../fonts/TheScientist-L3EyW.ttf);
   font-family: purna;
 }
-.cursive-font {
-  font-family: purna;
-  padding: 30px;
-  margin-left: 10px;
-}
-#hero h1 {
-  /* font-size: 64px; */
-  /* font-weight: 600; */
-  /* line-height: 66px; */
-  color: #111820;
-  /* color: #45505b; */
-}
-/* #hero h1:hover {
-  font-size: 74px;
-  font-weight: 600;
-  line-height: 66px;
-  color: #45505b;
-  transition: 1.5s;
-} */
-
 /* Ends Font Link for TITLE of h1 */
 
 /* Starts Font Link for footer of h3 */
@@ -44,10 +19,6 @@ body {
   src: url(../fonts/SelfDeceptionRegular-ALLWA.ttf);
   font-family: footer;
 }
-/* #footer
-{
-  background: #b49be366!important;
-} */
 #footer .footer-heading-3 {
   font-family: footer;
   font-size: 5vh;
@@ -66,17 +37,12 @@ body {
 /* Ends Font Link for footer of h3 */
 
 /* Starts Font Link for footer copyright */
-@font-face {
-  src: url(../fonts/SelfDeceptionRegular-ALLWA.ttf);
-  font-family: footer-purna;
-}
 .copyright-purna {
-  font-family: footer-purna;
-  font-size: 25px;
+  font-family: footer;
+  font-size: 3.5vh;
 }
 .copyright-purna:hover {
-  font-family: footer-purna;
-  font-size: 25px;
+  font-family: footer;
   color: black;
   transition: 1s;
 }
@@ -85,7 +51,7 @@ body {
 .designed-purna {
   margin-left: 10px;
   font-family: purna;
-  font-size: 25px;
+  font-size: 4vh;
   font-weight: 600;
   color: #000;
 }
@@ -98,6 +64,11 @@ body {
   transition: 1s;
 } */
 /* Ends Font Link for designed span */
+/* 
+--------------------------------------------------------------
+# Download my CV button
+-------------------------------------------------------------- 
+*/
 .btn {
   position: relative;
   color: #8860d2;
@@ -133,13 +104,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
-  /* font-family: purna_tangerine; */
+  /* font-family: "Raleway", sans-serif; */
+  font-family: footer;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Back to top button
---------------------------------------------------------------*/
+--------------------------------------------------------------
+*/
 .back-to-top {
   overflow: hidden;
 }
@@ -149,7 +121,6 @@ h6 {
   justify-content: center;
   transition: 1s ease-in-out;
   overflow: hidden;
-  /* filter: blur(0.5px); */
 }
 .back-to-top {
   position: fixed;
@@ -259,7 +230,7 @@ h6 {
   bottom: 0;
   z-index: 9997;
   transition: all 0.5s;
-  padding: 15px;
+  padding: 20px;
   overflow-y: auto;
 }
 
@@ -281,9 +252,7 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+/* Desktop Navigation  */
 .nav-menu {
   padding: 0;
   display: block;
@@ -441,9 +410,7 @@ h6 {
 }
 
 #hero p span {
-  color: #8453f7;
-  /* color: #8990b7; */
-  /* color: #0563bb; */
+  color: #876eb5;
   letter-spacing: 1px;
 }
 
@@ -536,7 +503,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 4.5vh;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -562,7 +529,6 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  /* background: #0563bb; */
   background: #876eb5;
   bottom: 0;
   left: calc(50% - 20px);
@@ -577,7 +543,7 @@ section {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 4.5vh;
   color: #876eb5;
 }
 
@@ -599,7 +565,6 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  /* color: #0563bb; */
   color: #876eb5;
   line-height: 0;
 }
@@ -610,7 +575,6 @@ section {
 .img-zoom {
   /* max-width: 20%; */
   transition: all 1.5s ease-in-out;
-  /* box-shadow: 8px 8px 8px red; */
   filter: drop-shadow(8px 8px 4px #333);
 }
 .img-zoom:hover {
@@ -619,7 +583,9 @@ section {
   filter: drop-shadow(15px 11px 15px #333);
 }
 
-/* //! CSS for img-zoom responsive */
+/*--------------------------------------------------------------
+/*? CSS for img-zoom responsive
+--------------------------------------------------------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .img-zoom {
@@ -664,7 +630,6 @@ section {
   width: 100%;
   position: relative;
   text-align: center;
-  /* background: #fff; */
 }
 
 .facts .count-box i {
@@ -673,7 +638,6 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  /* background: #0563bb; */
   background: #876eb5;
   color: #fff;
   border-radius: 50px;
@@ -688,7 +652,6 @@ section {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  /* color: #011426; */
   color: #876eb5;
 }
 
@@ -700,12 +663,12 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
   display: block;
-  background: none;
+  background: transparent;
   border-radius: 0;
 }
 
@@ -732,15 +695,14 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  /* background-color: #0563bb; */
-  background-color: #8b6bc7;
+  background-color: #876eb5;
 }
 
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
-  font-size: 26px;
+  font-size: 4.5vh;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -750,25 +712,28 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  /* border-left: 2px solid #0563bb; */
   border-left: 2px solid #876eb5;
   position: relative;
 }
 
 .resume .resume-item h4 {
   line-height: 18px;
-  font-size: 18px;
+  font-size: 2.8vh;
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  /* color: #0563bb; */
-  color: #8b61d7;
+  /* color: #8b61d7; */
   margin-bottom: 10px;
+  background: #876eb5;
+  color: #333;
+  border-radius: 50%;
+  text-align: center;
 }
 
 .resume .resume-item h5 {
-  font-size: 16px;
-  background: #f7f8f9;
+  font-size: 3vh;
+  background: transparent;
+  color: #876eb5;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -796,7 +761,6 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  /* border: 2px solid #0563bb; */
   border: 2px solid #876eb5;
 }
 
@@ -808,13 +772,7 @@ section {
 }
 
 .portfolio #portfolio-flters {
-  /* padding: 0;
-  margin: 0 auto 25px auto;
-  list-style: none;
-  text-align: center;
-  background: #fff;
-  border-radius: 50px;
-  padding: 2px 15px; */
+  padding: 2px 15px;
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
@@ -822,21 +780,11 @@ section {
 }
 
 .portfolio #portfolio-flters li {
-  /* cursor: pointer;
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #272829;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out; */
   cursor: pointer;
   display: inline-block;
   padding: 8px 15px 10px 15px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
   color: #444444;
@@ -847,8 +795,8 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  /* color: #0563bb; */
   color: #7b50cb;
+  transition: 0.3s;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -856,33 +804,16 @@ section {
 }
 
 .portfolio .portfolio-wrap {
-  /* transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(69, 80, 91, 0.8); */
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 .portfolio .portfolio-wrap:hover {
-  /* box-shadow: 0px 18px 56px 16px rgba(0,0,0,0.42); */
-  /* box-shadow: 4px 4px 12px #00000088; */
   box-shadow: 0px 8px 27px -1px rgba(0, 0, 0, 1);
 }
 
 .portfolio .portfolio-wrap::before {
-  /* content: "";
-  background: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0; */
   content: "";
   background: rgba(17, 17, 17, 0.6);
   position: absolute;
@@ -915,24 +846,36 @@ section {
   align-items: flex-start;
   padding: 20px;
 }
-/* Internal Unwanted CSS */
-/* .portfolio .portfolio-wrap .portfolio-info::before {
+/* Internal line camera CSS */
+.portfolio .portfolio-wrap .portfolio-info::before {
   display: block;
   content: "";
   width: 48px;
   height: 48px;
   position: absolute;
-  top: 35px;
-  left: 35px;
+  top: 15px;
+  left: 15px;
   border-top: 3px solid #d7dce1;
   border-left: 3px solid #d7dce1;
   transition: all 0.5s ease 0s;
   z-index: 9994;
-} */
-
+}
+.portfolio .portfolio-wrap .portfolio-info::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  border-bottom: 3px solid #d7dce1;
+  border-right: 3px solid #d7dce1;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
 /* External CSS */
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+  font-size: 3.5vh;
   color: #fff;
   font-weight: 600;
 }
@@ -942,7 +885,7 @@ section {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -1067,7 +1010,6 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  /* border: 1px solid #0563bb; */
   border: 1px solid #876eb5;
 }
 
@@ -1075,7 +1017,6 @@ section {
   .portfolio-details-slider
   .swiper-pagination
   .swiper-pagination-bullet-active {
-  /* background-color: #0563bb; */
   background-color: #876eb5;
 }
 
@@ -1348,26 +1289,25 @@ section {
 .testimonials .testimonial-item .testimonial-img {
   width: 120px;
   border-radius: 50%;
-  border: 4px solid #fff;
+  /* border: 4px solid #777; */
   margin: 0 auto;
 }
 
 .testimonials .testimonial-item h3 {
-  font-size: 20px;
+  font-size: 4vh;
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #111;
 }
 
 .testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
+  font-size: 3vh;
+  color: #777;
   margin: 0 0 15px 0;
 }
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  /* color: #90c8fc; */
   color: #876eb5;
   font-size: 26px;
 }
@@ -1400,12 +1340,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  /* border: 1px solid #0563bb; */
   border: 1px solid #876eb5;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  /* background-color: #0563bb; */
   background-color: #7a4ad2;
 }
 
@@ -1425,7 +1363,6 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  /* color: #0563bb; */
   color: #876eb5;
   float: left;
   width: 44px;
@@ -1440,7 +1377,7 @@ section {
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
+  font-size: 4vh;
   font-weight: 600;
   margin-bottom: 5px;
   color: #45505b;
@@ -1449,7 +1386,7 @@ section {
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 2vh;
   color: #728394;
 }
 
@@ -1461,14 +1398,13 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  /* background: #0563bb; */
   background: #876eb5;
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
-  /* background: #fff; */
+  background: transparent;
 }
 
 .contact .php-email-form .form-group {
@@ -1542,7 +1478,6 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  /* background: linear-gradient(to top,#1FD1F9, #B621FE); */
   background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
   box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
     -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
@@ -1569,7 +1504,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Footer
+#/*? Footer
 --------------------------------------------------------------*/
 #footer {
   background: none;
@@ -1771,15 +1706,12 @@ section {
   color: #7047bb;
   transition: 0.5s;
 }
+/*--------------------------------------------------------------
+# /*? Do-it
+--------------------------------------------------------------*/
 h4 {
   font-weight: bold;
 }
-
-/* @font-face
-{
-  src: url(../fonts/SelfDeceptionRegular-ALLWA.ttf);
-  font-family: footer;
-} */
 .do-it p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 3.3vh;
@@ -1787,8 +1719,8 @@ h4 {
 .do-it {
   background: #7d56c5;
   /* border-radius: 50px 50px 0 0; */
-  border-radius: 12vh 12vh 0 0;
-  padding: 5vh;
+  border-radius: 100px 100px 0 0;
+  padding: 3vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1810,7 +1742,6 @@ h4 {
   color: #5be9b9;
   background: rgba(255, 255, 255, 0.056);
   border-radius: 50px;
-  /* box-shadow: 0 0 0 0 rgba(143, 54, 248, 0.5), 0 0 0 0 rgba(39, 200, 248, 0.5); */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: #5be9b9 2px solid;
   box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
@@ -1844,43 +1775,9 @@ h4 {
 .do-it .btn-hire-me:hover::after {
   transform: rotate(-160deg);
 }
-
-/* For NAMASTE */
-@font-face {
-  src: url(../fonts/ProcrastinatingPixie-WyVOO.ttf);
-  font-family: namaste;
-}
-.typed {
-  /* font-weight: 600; */
-  font-family: namaste;
-  font-size: 4vh;
-  text-transform: uppercase;
-}
-
-/* For Custom Curser */
-p {
-  /* position: relative;
-    display: inline-block; */
-  text-decoration: none;
-  /* color: green; */
-}
-.cursor {
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: red;
-  transition: 0.1s;
-  /* transform: translate(-50%, -50%); */
-  /* pointer-events: none; */
-  mix-blend-mode: difference;
-  z-index: 9999;
-}
-p:hover ~ .cursor {
-  transform: scale(4);
-}
-
-/* //! CSS for hire-me box responsive */
+/*--------------------------------------------------------------
+/* //! CSS for hire-me box responsive
+--------------------------------------------------------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .hire-me-btn .btn-hire-me {
@@ -1935,4 +1832,15 @@ p:hover ~ .cursor {
     width: 80%;
     padding: 16px;
   }
+}
+/* //? For NAMASTE */
+@font-face {
+  src: url(../fonts/ProcrastinatingPixie-WyVOO.ttf);
+  font-family: namaste;
+}
+.typed {
+  /* font-weight: 600; */
+  font-family: namaste;
+  font-size: 4vh;
+  text-transform: uppercase;
 }
