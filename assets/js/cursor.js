@@ -33,7 +33,8 @@ let growElements = [
   ...Array.from(document.querySelectorAll("h6")),
   ...Array.from(document.querySelectorAll("h7")),
   ...Array.from(document.querySelectorAll("ul")),
-  ...Array.from(document.querySelectorAll("li")),
+  ...Array.from(document.querySelectorAll("li"))
+  // ...Array.from(document.querySelectorAll("svg"))
 ];
 
 console.log("links");
