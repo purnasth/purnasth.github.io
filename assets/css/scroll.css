@@ -10,7 +10,7 @@
   position: fixed;
   /* top: 0;
     right: 0; */
-  width: 10px;
+  width: 0.625rem;
   height: 0;
   /* background: linear-gradient(to top, #008aff, #00ffe7); */
   background: linear-gradient(to top, #1fd1f9, #b621fe);
