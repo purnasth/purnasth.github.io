@@ -449,7 +449,7 @@ h6 {
   color: #45505b;
   line-height: 1;
   margin-right: 20px;
-  transition: 0.3s;
+  transition: transform 500ms ease;
 }
 #hero .social-links a:hover {
   transform: translate(0, -5px);
@@ -1561,7 +1561,7 @@ section {
   /* margin-inline: 12px; */
   width: 36px;
   height: 36px;
-  transition: 0.3s;
+  transition: transform 500ms ease;
 }
 #footer a:hover {
   transform: translate(0, -6px);
@@ -1768,6 +1768,7 @@ h4 {
   background: rgba(255, 255, 255, 0.056);
   border-radius: 50px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 500ms ease;
   border: #5be9b9 2px solid;
   box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
     -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
@@ -1829,6 +1830,7 @@ h4 {
     width: 110%;
     padding: 10px;
     margin-top: 10px;
+    transition: transform 500ms ease;
   }
 }
 
@@ -1842,6 +1844,7 @@ h4 {
   }
   .lets-do-it-btn .btn-hire-me {
     width: 130%;
+    transition: transform 500ms ease;
   }
 }
 
@@ -1856,6 +1859,7 @@ h4 {
   .lets-do-it-btn .btn-hire-me {
     width: 80%;
     padding: 16px;
+    transition: transform 500ms ease;
   }
 }
 /* //? For NAMASTE */
