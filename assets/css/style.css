@@ -42,7 +42,6 @@ body {
   font-size: 3.5vh;
 }
 .copyright-purna:hover {
-  font-family: footer;
   color: black;
   transition: 1s;
 }
@@ -125,32 +124,42 @@ h6 {
   border-radius: 50px;
   transition: all 0.4s;
   box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
+  overflow: hidden;
 }
-.back-to-top marquee {
+.back-to-top .arrows-holder svg {
+  /* stroke: #000; */
+  width: 100%;
+}
+.back-to-top .arrows-holder {
+  width: 100%;
+  height: 100%;
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: 1s ease-in-out;
-  overflow: hidden;
-}
-
-.back-to-top marquee {
   font-size: 28px;
   color: #fff;
   line-height: 0;
   box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
 }
-.back-to-top marquee:hover {
-  color: #000;
-  line-height: 0;
-  transition: 0.2s;
+
+.back-to-top .arrows-holder .svg-holder {
+  position: absolute;
+  top: -4px;
+  top: -100px;
+  left: 0;
+  animation: move-up 2s 1s ease-in-out infinite;
 }
 
-.back-to-top:hover {
-  background: linear-gradient(to top, #b621fe, #1fd1f9);
-  color: #fff;
-  box-shadow: 11px -7px 33px -2px rgba(0, 0, 0, 0.76);
-  transition: 1s;
+@keyframes move-up {
+  0% {
+    top: -4px;
+  }
+  50% {
+    top: -100px;
+  }
 }
 
 .back-to-top.active {
@@ -162,36 +171,6 @@ h6 {
 /*--------------------------------------------------------------
 # Version
 --------------------------------------------------------------*/
-/* footer .copyright
-{
-  position: relative;
-} */
-/* .version back-to-top
-{
-  position: absolute;
-  background:red;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  left: 0;
-  transform: translate(100%, 0);
-  background: linear-gradient(to top, #1fd1f9, #b621fe);
-}
-.version:hover
-{
-  box-shadow: 0 10px 20px #000;
-  transition: 0.3s;
-} */
-
-/* .version
-{
-  background: red!important;
-  z-index: 999999;
-  height: 50px!important;
-  width: 50px!important;
-} */
-
-
 .version {
   position: fixed;
   left: 15px;
@@ -202,20 +181,12 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  transition: all 0.4s;
-  box-shadow: 0 10px 20px #000;
   text-decoration: none;
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
+  box-shadow: 3px 2px 5px #666;
 }
-.version:hover {
-  background: linear-gradient(to top, #b621fe, #1fd1f9);
-  color: #fff;
-  box-shadow: 11px -7px 33px -2px rgba(0, 0, 0, 0.76);
-  transition: 1s;
-}
-
 
 /*--------------------------------------------------------------
 # Preloader
@@ -236,7 +207,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #7047bb;
+  border: 6px solid #876eb5;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
