@@ -3,36 +3,36 @@ footer {
   display: flex;
 }
 .coffee {
-  cursor: url(../svg/coffee.svg), auto;
+  cursor: url("../svg/coffee.svg"), auto;
 }
 .footer-cursor {
-  cursor: url(../svg/box-arrow-in-up.svg), auto;
+  cursor: url("../svg/box-arrow-in-up.svg"), auto;
 }
 .intro {
-  cursor: url(../svg/namaste-religion-svgrepo-com.svg), auto;
-  cursor: url(../svg/namaste.svg), auto;
+  cursor: url("../svg/namaste-religion-svgrepo-com.svg"), auto;
+  cursor: url("../svg/namaste.svg"), auto;
 }
 .guide {
   /* cursor: url(../svg/emoji-laughing.svg), auto; */
   /* cursor: url(../svg/extra/wink.svg), auto; */
   /* cursor: url(../svg/extra/guide.svg), auto; */
-  cursor: url(../svg/guideColor.svg), auto;
+  cursor: url("../svg/guideColor.svg"), auto;
 }
 .heart-cursor {
-  cursor: url(../svg/heart.svg), auto;
+  cursor: url("../svg/heart.svg"), auto;
 }
 .peace-cursor {
   /* cursor: url(../svg/peace.svg), auto; */
-  cursor: url(../svg/snap.svg), auto;
+  cursor: url("../svg/snap.svg"), auto;
   
 }
 .contact-cursor
 {
-  cursor: url(../svg/plane.svg), auto;
+  cursor: url("../svg/plane.svg"), auto;
 }
 .testimonial-cursor
 {
-  cursor: url(../svg/testimonials.svg), auto;
+  cursor: url("../svg/testimonials.svg"), auto;
 }
 .inner-cursor {
   position: fixed;
