@@ -60,28 +60,60 @@ body {
   color: #000;
 }
 /* Ends Font Link for designed span
+
 /* 
 --------------------------------------------------------------
 # Download my CV button
 -------------------------------------------------------------- 
 */
-.btn {
+#CV button {
+  background: transparent;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.6em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.2s;
   position: relative;
   color: var(--clr);
   border: solid 3px var(--clr);
-  overflow: hidden;
   border-radius: 0;
-  font-size: 110%;
-  font-weight: 600;
+  font-weight: 700;
 }
-#hero .btn:hover {
+#CV button:hover {
   background: #643dad;
-  color: white;
+  color: #fff;
   border: solid 3px #643dad;
   box-shadow: 0px 11px 30px -3px rgba(0, 0, 0, 0.73);
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
-#hero .btn::before {
+#CV button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+  margin-left: -10px;
+}
+#CV button i {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+  transform: translate(60px, -30px);
+}
+#CV button:hover .wrapper {
+  animation: fly 0.6s ease-in-out infinite alternate;
+}
+#CV button:hover i {
+  transform: translateX(3.85em) rotate(360deg) scale(2);
+}
+#CV button:hover span {
+  transform: translateX(10em);
+}
+#CV button:active {
+  transform: scale(0.95);
+}
+#CV button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -89,11 +121,20 @@ body {
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, transparent, #fff, transparent);
-  transition: 0.5s;
+  transition: 0.8s;
 }
-#hero .btn:hover::before {
+#CV button:hover::before {
   left: 100%;
 }
+@keyframes fly {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
 h1,
 h2,
 h3,
@@ -161,26 +202,6 @@ h6 {
   opacity: 1;
   box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
 }
-
-/*--------------------------------------------------------------
-# Version
---------------------------------------------------------------*/
-.version {
-  position: fixed;
-  left: 15px;
-  bottom: 15px;
-  transform: translate(50%);
-  z-index: 997;
-  background: linear-gradient(to top, #1fd1f9, #b621fe);
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  text-decoration: none;
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-}
-
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -437,7 +458,8 @@ h6 {
   transition: transform 500ms ease;
 }
 #hero .social-links a:hover {
-  transform: translate(0, -5px);
+  /* transform: translate(0, -5px); */
+  transform: rotate(720deg);
 }
 .bxl-twitter:hover {
   color: #1da1f2;
@@ -1068,28 +1090,22 @@ section {
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-accent-400: hsl(272, 88%, 45%);
 }
-.card-web
-{
+.card-web {
   background-image: url("../img/Services/webDeveloper.jpg");
 }
-.card-js
-{
+.card-js {
   background-image: url("../img/Services/javascript.png");
 }
-.card-photoshop
-{
+.card-photoshop {
   background-image: url("../img/Services/Photoshop.jpeg");
 }
-.card-ms
-{
+.card-ms {
   background-image: url("../img/Services/ms.jpeg");
 }
-.card-c
-{
+.card-c {
   background-image: url("https://wallpapercave.com/wp/wp3295258.png");
 }
-.card-video
-{
+.card-video {
   background-image: url("https://rare-gallery.com/uploads/posts/5420475-glasses-focus-magnify-computer-hacker-screen-lights-keyboard-program-sublime-adobe-video-editing-coding-laptop-glass-free-stock-photos.jpg");
 }
 .card {
@@ -1415,22 +1431,79 @@ section {
 .contact .php-email-form textarea {
   padding: 10px 12px;
 }
-
-.contact .php-email-form button[type="submit"] {
-  background: var(--clr);
-  border: 0;
-  padding: 10px 35px;
+/* 
+--------------------------------------------------------------
+# Send Message Button
+-------------------------------------------------------------- */
+.contact .php-email-form .send-button button[type="submit"] {
+  background: transparent;
+  font-size: 1rem;
   color: #fff;
-  transition: 0.4s;
+  padding: 0.6em 1em;
+  padding-left: 1em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.2s;
+  color: var(--clr);
+  border: solid 3px var(--clr);
+  font-weight: 700;
+  margin: 0 auto;
   border-radius: 50px;
 }
-
-.contact .php-email-form button[type="submit"]:hover {
-  background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
-  box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
-    -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
-  transform: translateY(5px);
+.contact .php-email-form .send-button button[type="submit"]:hover {
+  background: #643dad;
+  color: white;
+  border: solid 3px #643dad;
+  box-shadow: 0px 11px 30px -3px rgba(0, 0, 0, 0.73);
+  transition: 0.5s ease-in-out;
+  transform: translateX(5px);
 }
+.contact .php-email-form .send-button button[type="submit"] span {
+  display: block;
+  margin-left: 0.5em;
+  transition: all 0.3s ease-in-out;
+}
+.contact .php-email-form .send-button button[type="submit"] svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+.contact .php-email-form .send-button button[type="submit"]:hover .wrapper {
+  animation: fly 0.6s ease-in-out infinite alternate;
+}
+.contact .php-email-form .send-button button[type="submit"]:hover svg {
+  transform: translateX(3.5em) rotate(405deg) scale(1.3);
+}
+.contact .php-email-form .send-button button[type="submit"]:hover span {
+  transform: translateX(8em);
+}
+.contact .php-email-form .send-button button[type="submit"]:active {
+  transform: scale(0.95);
+}
+.contact .php-email-form .send-button button[type="submit"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  transition: 0.8s;
+}
+.contact .php-email-form .send-button button[type="submit"]:hover::before {
+  left: 100%;
+}
+@keyframes fly {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1480,6 +1553,7 @@ section {
 }
 #footer a:hover {
   transform: translate(0, -6px);
+  /* transform: rotate(360deg); */
 }
 #footer .bxl-facebook {
   background: #4267b2;
@@ -1787,5 +1861,5 @@ h4 {
   font-family: namaste;
   font-size: 2.25rem;
   text-transform: uppercase;
-  letter-spacing: 20px!important;
+  letter-spacing: 20px !important;
 }

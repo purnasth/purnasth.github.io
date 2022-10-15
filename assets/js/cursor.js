@@ -34,7 +34,8 @@ let growElements = [
   ...Array.from(document.querySelectorAll("h7")),
   ...Array.from(document.querySelectorAll("ul")),
   ...Array.from(document.querySelectorAll("li")),
-  ...Array.from(document.querySelectorAll(".swiper-slide")),
+  ...Array.from(document.querySelectorAll("button")),
+  ...Array.from(document.querySelectorAll(".swiper-slide"))
   // ...Array.from(document.querySelectorAll("svg"))
 ];
 
