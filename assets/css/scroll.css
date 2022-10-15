@@ -15,7 +15,7 @@
   /* background: linear-gradient(to top, #008aff, #00ffe7); */
   background: linear-gradient(to top, #1fd1f9, #b621fe);
   animation: animate 5s linear infinite;
-  z-index: 9999;
+  z-index: 99999999;
 }
 #progressbar:before,
 #progressbar:after {
