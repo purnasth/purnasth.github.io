@@ -38,8 +38,8 @@
   }
   .handwriting svg {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
   }
   .handwriting svg .text {
     stroke-dasharray: 9000;
@@ -68,8 +68,8 @@
   }
   .handwriting svg {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    height: 85%;
   }
   .handwriting svg .text {
     stroke-dasharray: 9000;

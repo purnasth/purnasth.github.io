@@ -66,7 +66,17 @@ body {
 # Download my CV button
 -------------------------------------------------------------- 
 */
-#CV button {
+
+@media only screen and (max-width: 992px) {
+  .myCV
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.myCV button {
   background: transparent;
   font-size: 1rem;
   color: #fff;
@@ -82,38 +92,38 @@ body {
   border-radius: 0;
   font-weight: 700;
 }
-#CV button:hover {
+.myCV button:hover {
   background: #643dad;
   color: #fff;
   border: solid 3px #643dad;
   box-shadow: 0px 11px 30px -3px rgba(0, 0, 0, 0.73);
   transition: 0.5s ease-in-out;
 }
-#CV button span {
+.myCV button span {
   display: block;
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
   margin-left: -10px;
 }
-#CV button i {
+.myCV button svg {
   display: block;
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
   transform: translate(60px, -30px);
 }
-#CV button:hover .wrapper {
+.myCV button:hover .wrapper {
   animation: fly 0.6s ease-in-out infinite alternate;
 }
-#CV button:hover i {
+.myCV button:hover svg {
   transform: translateX(3.85em) rotate(360deg) scale(2);
 }
-#CV button:hover span {
+.myCV button:hover span {
   transform: translateX(10em);
 }
-#CV button:active {
+.myCV button:active {
   transform: scale(0.95);
 }
-#CV button::before {
+.myCV button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -123,7 +133,7 @@ body {
   background: linear-gradient(90deg, transparent, #fff, transparent);
   transition: 0.8s;
 }
-#CV button:hover::before {
+.myCV button:hover::before {
   left: 100%;
 }
 @keyframes fly {
@@ -460,6 +470,7 @@ h6 {
 #hero .social-links a:hover {
   /* transform: translate(0, -5px); */
   transform: rotate(720deg);
+  transition: all 0.5s;
 }
 .bxl-twitter:hover {
   color: #1da1f2;
@@ -1551,9 +1562,8 @@ section {
   height: 36px;
   transition: transform 500ms ease;
 }
-#footer a:hover {
+#footer .social-links a:hover {
   transform: translate(0, -6px);
-  /* transform: rotate(360deg); */
 }
 #footer .bxl-facebook {
   background: #4267b2;
@@ -1861,5 +1871,18 @@ h4 {
   font-family: namaste;
   font-size: 2.25rem;
   text-transform: uppercase;
-  letter-spacing: 20px !important;
+  letter-spacing: 1.25rem !important;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .typed {
+    font-size: 1.5rem;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px)
+{
+  .typed {
+    font-size: 1.5em;
+  }
 }
