@@ -1082,11 +1082,14 @@ section {
 }
 .portfolio-details h3 {
   font-size: 2.5rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.082);
 }
 .portfolio-details .portfolio-description h2 {
   font-size: 2.75rem;
   font-weight: 700;
   margin-bottom: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.082);
+
 }
 
 .portfolio-details .portfolio-description p {
