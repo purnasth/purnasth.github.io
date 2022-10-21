@@ -69,16 +69,14 @@ body {
 */
 
 @media only screen and (max-width: 992px) {
-  .myCV
-  {
+  .myCV {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
 
-.myCV
-{
+.myCV {
   text-decoration: none;
 }
 .myCV button {
@@ -550,7 +548,7 @@ section {
   padding-bottom: 30px;
 }
 
-.section-title h2 {
+/* .section-title h2 {
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -559,9 +557,55 @@ section {
   position: relative;
   color: #45505b;
   font-family: namaste;
+} */
+
+
+.section-title h2,
+.typed {
+  /* position: relative; */
+  margin-bottom: 3.75vh;
+  font-family: namaste;
+  font-size: 2.5rem;
+  letter-spacing: 1vw;
+  text-align: center;
+  color: var(--clr);
+  text-transform: uppercase;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  line-height: 0.7em;
+  animation: glow-text 5s linear infinite;
+}
+@keyframes glow-text {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    /* color: #0e3742; */
+    color: var(--clr);
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px var(--clr), 0 0 20px var(--clr), 0 0 40px var(--clr),
+      0 0 80px var(--clr), 0 0 160px var(--clr);
+  }
 }
 
-.section-title h2::before {
+
+/* .section-title h2::before {
   content: "";
   position: absolute;
   display: block;
@@ -581,7 +625,10 @@ section {
   background: var(--clr);
   bottom: 0;
   left: calc(50% - 20px);
-}
+} */
+
+
+
 
 .section-title p {
   margin-bottom: 0;
@@ -1094,7 +1141,6 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.082);
-
 }
 
 .portfolio-details .portfolio-description p {
@@ -1888,8 +1934,7 @@ h4 {
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 768px)
-{
+@media only screen and (min-width: 600px) and (max-width: 768px) {
   .typed {
     font-size: 1.5em;
   }
