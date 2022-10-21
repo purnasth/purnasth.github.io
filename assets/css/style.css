@@ -218,7 +218,8 @@ h6 {
   background: #fff;
 }
 
-#preloader:before {
+#preloader:before,
+#preloader img {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
@@ -1593,15 +1594,10 @@ h4 {
   font-weight: bold;
   font-size: 2rem;
 }
-.do-it p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.5rem;
-}
 .do-it {
   background: var(--clr);
-  /* border-radius: 50px 50px 0 0; */
   border-radius: 100px 100px 0 0;
-  padding: 1.5rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1611,99 +1607,203 @@ h4 {
     -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
   transition: 0.5s;
 }
-.do-it .btn {
-  text-decoration: none;
-  padding: 15px 40px;
-  font-size: 1rem;
+.do-it p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2.5ch;
+  text-align: center;
+  padding: 1.5vh;
+}
+/* .lets-do-it-btn, .btn-hire-me
+{
+  display: flex;
+  justify-content: flex-end;
+} */
+
+.lets-do-it-btn svg {
+  display: inline-block;
+  transform: translate(-6px, -6px);
+  transition: transform 0.3s ease-in-out;
+}
+.btn-hire-me {
   position: relative;
-  z-index: 1;
-}
-.do-it .btn-hire-me {
-  overflow: hidden;
-  color: #5be9b9;
-  background: rgba(255, 255, 255, 0.056);
-  border-radius: 50px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transition: transform 500ms ease;
-  border: #5be9b9 2px solid;
-  box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
-    -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
-}
-.do-it .btn-hire-me::after {
-  content: "";
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: -50px;
-  left: -100px;
-  z-index: -1;
-  transition: transform 1s ease;
-  box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
-    -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
-}
-.do-it .btn-hire-me:hover {
+  text-decoration: none;
   color: #fff;
-  border: #fff 2px solid;
-  transform: translate(0, -6px);
-  box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
-    -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
-  background-image: linear-gradient(
-    225deg,
-    #27d86c 0%,
-    #26caf8 50%,
-    #c625d0 100%
-  );
+  text-transform: uppercase;
+  font-family: namaste;
+  font-size: 1.25rem;
+  letter-spacing: 3px;
+  border: none;
+  /* border-radius: 50px 50px 0 0; */
+  border-radius: 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  /* margin-block-start: 50px; */
+  margin-left: 3vw;
 }
-.do-it .btn-hire-me:hover::after {
-  transform: rotate(-160deg);
+.btn-hire-me:hover {
+  color: #fff;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 11px 30px -3px rgba(0, 0, 0, 0.5);
+}
+.btn-hire-me:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.btn-hire-me:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.btn-hire-me:hover:after {
+  left: 100%;
+}
+.btn-hire-me span {
+  position: absolute;
+  display: block;
+  transition: 0.5s ease;
+}
+.btn-hire-me span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+}
+.btn-hire-me:hover span:nth-child(1) {
+  width: 100%;
+  transform: translateX(100%);
+}
+
+.btn-hire-me span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+}
+.btn-hire-me:hover span:nth-child(3) {
+  width: 100%;
+  transform: translateX(-100%);
+}
+.btn-hire-me span:nth-child(2) {
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 0;
+  background: #fff;
+}
+.btn-hire-me:hover span:nth-child(2) {
+  height: 100%;
+  transform: translateY(100%);
+}
+.btn-hire-me span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 0;
+  background: #fff;
+}
+.btn-hire-me:hover span:nth-child(4) {
+  height: 100%;
+  transform: translateY(-100%);
+}
+
+.btn-hire-me .lets-do-it-text {
+  position: absolute;
+  display: block;
+  font-size: 1.35rem;
+  transition: all 0.3s ease-in-out;
+  margin-left: 3rem;
+}
+.btn-hire-me:hover .lets-do-it-text {
+  transform: translateX(10em);
+}
+
+.btn-hire-me:hover .wrapper {
+  animation: fly 0.6s ease-in-out infinite alternate;
+}
+.btn-hire-me:hover svg {
+  transform: translateX(90px) rotate(360deg) scale(1.5);
+}
+
+.hire-me-btn:active {
+  transform: scale(0.95);
+}
+.hire-me-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  transition: 0.8s;
+}
+.hire-me-btn:hover::before {
+  left: 100%;
+}
+@keyframes fly {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
 }
 /*--------------------------------------------------------------
 /* //! CSS for hire-me box responsive
 --------------------------------------------------------------*/
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 768px) {
-  .hire-me-btn .btn-hire-me {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .hire-me-btn .btn-hire-me {
-    display: none;
-  }
-  .do-it p {
-    margin-top: 10px;
-    margin-left: -160px;
-  }
+@media only screen and (max-width: 376px) {
   .lets-do-it-btn .btn-hire-me {
-    width: 110%;
+    width: 100%;
     padding: 10px;
-    margin-top: 10px;
-    transition: transform 500ms ease;
+    /* transform: translateX(50%); */
   }
 }
-@media only screen and ((min-width: 992px)) {
-  .hire-me-btn .btn-hire-me {
-    display: none;
-  }
-  .do-it p {
-    margin-left: -250px !important;
-  }
+@media only screen and ((min-width: 376px) and(max-width: 768px)) {
   .lets-do-it-btn .btn-hire-me {
-    width: 130%;
-    transition: transform 500ms ease;
+    width: 50%;
+    padding: 10px;
+    transform: translateX(50%);
   }
 }
-@media only screen and (min-width: 1200px) {
-  .hire-me-btn .btn-hire-me {
-    display: inline-block;
+@media only screen and ((min-width: 768px) and (max-width: 992px)) {
+  .lets-do-it-btn .btn-hire-me {
+    padding: 20px;
+    transition: transform 500ms ease;
+    transform: translate(-25%,13%);
   }
+}
+@media only screen and (min-width: 992px) {
   .do-it p {
     margin: 0 !important;
+    font-size: 2.75ch;
   }
   .lets-do-it-btn .btn-hire-me {
     width: 80%;
     padding: 16px;
-    transition: transform 500ms ease;
+    /* background-color: red; */
+    transform: translate(0,20%);
   }
 }
 
