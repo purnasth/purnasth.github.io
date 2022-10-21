@@ -4,6 +4,21 @@
   /* --clr: #643dad; */
   /* --clr: #a40000; */
 }
+/* //? Starts Font Link for TITLE of h1 */
+@font-face {
+  src: url(../fonts/TheScientist-L3EyW.ttf);
+  font-family: purna;
+}
+/* //! Starts Font Link for footer of h3 */
+@font-face {
+  src: url(../fonts/SelfDeceptionRegular-ALLWA.ttf);
+  font-family: footer;
+}
+/* * For NAMASTE and section-title h2*/
+@font-face {
+  src: url(../fonts/ProcrastinatingPixie-WyVOO.ttf);
+  font-family: namaste;
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,54 +28,36 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
-/* //? Starts Font Link for TITLE of h1 */
-@font-face {
-  src: url(../fonts/TheScientist-L3EyW.ttf);
-  font-family: purna;
-}
-/* Ends Font Link for TITLE of h1 */
 
-/* Starts Font Link for footer of h3 */
-@font-face {
-  src: url(../fonts/SelfDeceptionRegular-ALLWA.ttf);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "Raleway", sans-serif; */
   font-family: footer;
 }
-#footer .footer-heading-3 {
-  font-family: footer;
-  font-size: 2.5rem;
-  padding: 0;
-  margin: 0 0 0 0;
-  /* display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px; */
-}
-#footer .footer-heading-3:hover {
-  color: #000;
-  transition: 1s;
-}
-/* Ends Font Link for footer of h3 */
 
-/* Starts Font Link for footer copyright */
-.copyright-purna {
-  font-family: footer;
-  font-size: 1.6rem;
+/* //? for Namaste */
+.typed {
+  /* font-weight: 600; */
+  font-family: namaste;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1.25rem !important;
+  animation: glow-text 5s linear infinite;
 }
-.copyright-purna:hover {
-  color: black;
-  transition: 1s;
+@media only screen and (max-width: 600px) {
+  .typed {
+    font-size: 1.5rem;
+  }
 }
-/* Ends Font Link for footer of h3 */
-/* Starts Font Link for designed span */
-.designed-purna {
-  margin-left: 10px;
-  font-family: purna;
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #000;
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .typed {
+    font-size: 1.5em;
+  }
 }
-/* Ends Font Link for designed span
 
 /* 
 --------------------------------------------------------------
@@ -148,16 +145,6 @@ body {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* font-family: "Raleway", sans-serif; */
-  font-family: footer;
-}
-
 /* --------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------
@@ -215,9 +202,11 @@ h6 {
   opacity: 1;
   box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
 }
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
+
 #preloader {
   position: fixed;
   top: 0;
@@ -389,7 +378,7 @@ h6 {
   display: block;
 }
 
-/**
+/*
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
@@ -559,9 +548,7 @@ section {
   font-family: namaste;
 } */
 
-
-.section-title h2,
-.typed {
+.section-title h2 {
   /* position: relative; */
   margin-bottom: 3.75vh;
   font-family: namaste;
@@ -604,7 +591,6 @@ section {
   }
 }
 
-
 /* .section-title h2::before {
   content: "";
   position: absolute;
@@ -626,9 +612,6 @@ section {
   bottom: 0;
   left: calc(50% - 20px);
 } */
-
-
-
 
 .section-title p {
   margin-bottom: 0;
@@ -761,6 +744,7 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+
 .skills .progress {
   height: 8.5vh;
   display: block;
@@ -797,6 +781,7 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+
 .resume .resume-title {
   font-size: 2.25rem;
   font-weight: 700;
@@ -841,6 +826,17 @@ section {
 
 .resume .resume-item ul li {
   padding-bottom: 10px;
+  position: relative;
+}
+.resume .resume-item ul li a {
+  position: absolute;
+  color: #333;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+.resume .resume-item ul li a:hover {
+  color: var(--clr);
+  font-size: 1.25rem;
 }
 
 .resume .resume-item:last-child {
@@ -1150,6 +1146,7 @@ section {
 /*--------------------------------------------------------------
 # Services UPDATED
 --------------------------------------------------------------*/
+
 #services .card {
   --clr-neutral-900: hsl(207, 19%, 9%);
   --clr-neutral-100: hsl(0, 0%, 100%);
@@ -1590,13 +1587,166 @@ section {
 }
 
 /*--------------------------------------------------------------
-#/*? Footer
+# /*? Do-it
 --------------------------------------------------------------*/
+h4 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.do-it p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+}
+.do-it {
+  background: var(--clr);
+  /* border-radius: 50px 50px 0 0; */
+  border-radius: 100px 100px 0 0;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.do-it:hover {
+  box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
+    -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
+  transition: 0.5s;
+}
+.do-it .btn {
+  text-decoration: none;
+  padding: 15px 40px;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+}
+.do-it .btn-hire-me {
+  overflow: hidden;
+  color: #5be9b9;
+  background: rgba(255, 255, 255, 0.056);
+  border-radius: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 500ms ease;
+  border: #5be9b9 2px solid;
+  box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
+    -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
+}
+.do-it .btn-hire-me::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  z-index: -1;
+  transition: transform 1s ease;
+  box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
+    -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
+}
+.do-it .btn-hire-me:hover {
+  color: #fff;
+  border: #fff 2px solid;
+  transform: translate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
+    -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
+  background-image: linear-gradient(
+    225deg,
+    #27d86c 0%,
+    #26caf8 50%,
+    #c625d0 100%
+  );
+}
+.do-it .btn-hire-me:hover::after {
+  transform: rotate(-160deg);
+}
+/*--------------------------------------------------------------
+/* //! CSS for hire-me box responsive
+--------------------------------------------------------------*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+  .hire-me-btn .btn-hire-me {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hire-me-btn .btn-hire-me {
+    display: none;
+  }
+  .do-it p {
+    margin-top: 10px;
+    margin-left: -160px;
+  }
+  .lets-do-it-btn .btn-hire-me {
+    width: 110%;
+    padding: 10px;
+    margin-top: 10px;
+    transition: transform 500ms ease;
+  }
+}
+@media only screen and ((min-width: 992px)) {
+  .hire-me-btn .btn-hire-me {
+    display: none;
+  }
+  .do-it p {
+    margin-left: -250px !important;
+  }
+  .lets-do-it-btn .btn-hire-me {
+    width: 130%;
+    transition: transform 500ms ease;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hire-me-btn .btn-hire-me {
+    display: inline-block;
+  }
+  .do-it p {
+    margin: 0 !important;
+  }
+  .lets-do-it-btn .btn-hire-me {
+    width: 80%;
+    padding: 16px;
+    transition: transform 500ms ease;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
 #footer {
   background: none;
   color: #45505b;
   text-align: center;
   padding: 30px 0;
+}
+
+#footer .footer-heading-3 {
+  font-family: footer;
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0 0 0 0;
+  /* display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; */
+}
+#footer .footer-heading-3:hover {
+  color: #000;
+  transition: 1s;
+}
+.copyright-purna {
+  font-family: footer;
+  font-size: 1.6rem;
+}
+.copyright-purna:hover {
+  color: black;
+  transition: 1s;
+}
+.designed-purna {
+  margin-left: 10px;
+  font-family: purna;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #000;
 }
 
 #footer .social-links {
@@ -1743,199 +1893,9 @@ section {
   font-size: 30px;
   transition: 0.5s;
 }
-
 #footer .copyright {
   margin: 0 0 5px 0;
 }
-
 #footer .credits {
   font-size: 13px;
-}
-
-.resume-item ul li a {
-  color: #333;
-  text-decoration: none;
-}
-.resume-item ul li a:hover {
-  color: var(--clr);
-  transition: 0.5s;
-  font-weight: bold;
-}
-.info .phone p {
-  color: #333;
-  text-decoration: none;
-}
-.info .phone p:hover {
-  color: var(--clr);
-  transition: 0.5s;
-}
-.website-link {
-  color: #272829;
-  text-decoration: none;
-}
-.website-link:hover {
-  color: var(--clr);
-  transition: 0.5s;
-}
-.phone-number {
-  color: #272829;
-}
-.phone-number:hover {
-  color: var(--clr);
-  transition: 0.5s;
-}
-/*--------------------------------------------------------------
-# /*? Do-it
---------------------------------------------------------------*/
-h4 {
-  font-weight: bold;
-}
-.do-it p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.5rem;
-}
-.do-it {
-  background: var(--clr);
-  /* border-radius: 50px 50px 0 0; */
-  border-radius: 100px 100px 0 0;
-  padding: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.do-it:hover {
-  box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
-    -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
-  transition: 0.5s;
-}
-.do-it .btn {
-  text-decoration: none;
-  padding: 15px 40px;
-  font-size: 1rem;
-  position: relative;
-  z-index: 1;
-}
-.do-it .btn-hire-me {
-  overflow: hidden;
-  color: #5be9b9;
-  background: rgba(255, 255, 255, 0.056);
-  border-radius: 50px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transition: transform 500ms ease;
-  border: #5be9b9 2px solid;
-  box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
-    -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
-}
-.do-it .btn-hire-me::after {
-  content: "";
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: -50px;
-  left: -100px;
-  z-index: -1;
-  transition: transform 1s ease;
-  box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
-    -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
-}
-.do-it .btn-hire-me:hover {
-  color: #fff;
-  border: #fff 2px solid;
-  transform: translate(0, -6px);
-  box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
-    -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
-  background-image: linear-gradient(
-    225deg,
-    #27d86c 0%,
-    #26caf8 50%,
-    #c625d0 100%
-  );
-}
-.do-it .btn-hire-me:hover::after {
-  transform: rotate(-160deg);
-}
-/*--------------------------------------------------------------
-/* //! CSS for hire-me box responsive
---------------------------------------------------------------*/
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .hire-me-btn .btn-hire-me {
-    display: none;
-  }
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .hire-me-btn .btn-hire-me {
-    display: none;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .hire-me-btn .btn-hire-me {
-    display: none;
-  }
-  .do-it p {
-    margin-top: 10px;
-    margin-left: -160px;
-  }
-  .lets-do-it-btn .btn-hire-me {
-    width: 110%;
-    padding: 10px;
-    margin-top: 10px;
-    transition: transform 500ms ease;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and ((min-width: 992px)) {
-  .hire-me-btn .btn-hire-me {
-    display: none;
-  }
-  .do-it p {
-    margin-left: -250px !important;
-  }
-  .lets-do-it-btn .btn-hire-me {
-    width: 130%;
-    transition: transform 500ms ease;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .hire-me-btn .btn-hire-me {
-    display: inline-block;
-  }
-  .do-it p {
-    margin: 0 !important;
-  }
-  .lets-do-it-btn .btn-hire-me {
-    width: 80%;
-    padding: 16px;
-    transition: transform 500ms ease;
-  }
-}
-/* //? For NAMASTE */
-@font-face {
-  src: url(../fonts/ProcrastinatingPixie-WyVOO.ttf);
-  font-family: namaste;
-}
-.typed {
-  /* font-weight: 600; */
-  font-family: namaste;
-  font-size: 2.25rem;
-  text-transform: uppercase;
-  letter-spacing: 1.25rem !important;
-}
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .typed {
-    font-size: 1.5rem;
-  }
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-  .typed {
-    font-size: 1.5em;
-  }
 }
