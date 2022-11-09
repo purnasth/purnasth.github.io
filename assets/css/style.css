@@ -1,8 +1,8 @@
 :root {
-  --clr: #876eb5;
-  --clr: hsla(259, 36%, 47%, 1);
-  /* --clr: #643dad; */
+  /* --clr: #876eb5; */
   /* --clr: #a40000; */
+  /* --clr: #643dad; */
+  --clr: hsla(259, 36%, 47%, 1);
 }
 /* //? Starts Font Link for TITLE of h1 */
 @font-face {
@@ -23,6 +23,7 @@
   margin: 0;
   padding: 0;
   /* cursor: none; */
+  box-sizing: border-box;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -280,8 +281,11 @@ h6 {
 @media (max-width: 992px) {
   #header {
     width: 300px;
-    background: #fff;
-    border-right: 1px solid #e6e9ec;
+    /* background: #fff; */
+    background: transparent;
+    backdrop-filter: blur(5px);
+    /* border-right: 1px solid #e6e9ec; */
+    border-right: 1px dashed var(--clr);
     left: -300px;
   }
 }
@@ -470,7 +474,7 @@ h6 {
 }
 .bxl-facebook:hover {
   background: #4267b2;
-  color: white;
+  color: #fff;
   border-radius: 50%;
 }
 .bxl-linkedin:hover {
@@ -538,19 +542,8 @@ section {
   padding-bottom: 30px;
 }
 
-/* .section-title h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  color: #45505b;
-  font-family: namaste;
-} */
-
 .section-title h2 {
-  /* position: relative; */
+  position: relative;
   margin-bottom: 3.75vh;
   font-family: namaste;
   font-size: 2.5rem;
@@ -562,6 +555,33 @@ section {
   line-height: 0.7em;
   animation: glow-text 5s linear infinite;
 }
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: 7rem;
+  opacity: 0.5;
+  z-index: -1;
+  transition: all 0.7s ease-in-out;
+  color: #fff;
+}
+.section-title h2:hover::before {
+  content: attr(data-text);
+  /* color: #444a44; */
+  color: hsla(0, 100%, 0%, 0.6);
+  opacity: 0.2;
+  letter-spacing: 1.5rem;
+  line-height: 0;
+  font-size: 7rem;
+}
+
 @keyframes glow-text {
   0%,
   18%,
@@ -591,28 +611,6 @@ section {
       0 0 80px var(--clr), 0 0 160px var(--clr);
   }
 }
-
-/* .section-title h2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #bbb;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
-
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: var(--clr);
-  bottom: 0;
-  left: calc(50% - 20px);
-} */
 
 .section-title p {
   margin-bottom: 0;
@@ -745,7 +743,7 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-
+/* 
 .skills .progress {
   height: 8.5vh;
   display: block;
@@ -777,6 +775,44 @@ section {
   height: 1.4vh;
   transition: 0.9s;
   background-color: var(--clr);
+} */
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients
+{
+  margin-top: -30px;
+}
+.clients .swiper-pagination {
+  margin-top: 50px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: transparent;
+  opacity: 1;
+  border: 1px solid var(--clr);
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--clr);
+  /* background-color: #fff;
+  box-shadow: 0 0 5px 2px var(--clr); */
+}
+
+.clients .swiper-slide svg {
+  opacity: 0.35;
+  transition: 0.3s;
+  /* filter: grayscale(100); */
+}
+
+.clients .swiper-slide svg:hover {
+  opacity: 1;
+  filter: none;
+  transform: scale(1.15);
 }
 
 /*--------------------------------------------------------------
@@ -1383,7 +1419,6 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  /* background: #fff; */
 }
 
 .contact .info i {
@@ -1480,7 +1515,8 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
+/* //* Before Contact input */
+/* .contact .php-email-form input,
 .contact .php-email-form textarea {
   border-radius: 4px;
   box-shadow: none;
@@ -1493,7 +1529,62 @@ section {
 
 .contact .php-email-form textarea {
   padding: 10px 12px;
+} */
+
+/* 
+--------------------------------------------------------------
+# Input Contact Button
+-------------------------------------------------------------- */
+
+.input-group {
+  position: relative;
+  font-family: gill sans, gill sans mt, Calibri, trebuchet ms, sans-serif;
 }
+.input-group > input,
+.input-group textarea {
+  border: solid 1.5px #ccc;
+  border-radius: 1rem !important;
+  background-color: transparent !important;
+  padding: 1rem;
+  font-size: 1.25rem;
+  height: 6vh;
+  box-shadow: none !important;
+  color: var(--clr);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-group > label {
+  position: absolute;
+  left: 1rem;
+  color: #ccc;
+  pointer-events: none;
+  transform: translateY(0.75rem);
+  opacity: 0;
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-group > input:focus,
+.input-group > textarea:focus {
+  outline: none;
+  font-size: 1.25rem;
+  border: 1.5px solid var(--clr);
+}
+.input-group > input:focus ~ label {
+  opacity: 1;
+  transform: translate(10%, -50%) scale(1.25);
+  background-color: #fff;
+  padding: 0 0.2em;
+  color: var(--clr);
+  z-index: 9;
+}
+.input-group > textarea:focus ~ label {
+  opacity: 1;
+  transform: translate(10%, -100%) scale(1.25);
+  padding: 0 0.2em;
+  color: var(--clr);
+}
+.input-group > #message {
+  height: 20vh;
+}
+
 /* 
 --------------------------------------------------------------
 # Send Message Button
@@ -1501,7 +1592,6 @@ section {
 .contact .php-email-form .send-button button[type="submit"] {
   background: transparent;
   font-size: 1rem;
-  color: #fff;
   padding: 0.6em 1em;
   padding-left: 1em;
   position: relative;
@@ -1516,9 +1606,9 @@ section {
   border-radius: 50px;
 }
 .contact .php-email-form .send-button button[type="submit"]:hover {
-  background: #643dad;
+  background: var(--clr);
   color: white;
-  border: solid 3px #643dad;
+  border: solid 3px var(--clr);
   box-shadow: 0px 11px 30px -3px rgba(0, 0, 0, 0.73);
   transition: 0.5s ease-in-out;
   transform: translateX(5px);
@@ -1791,7 +1881,7 @@ h4 {
   .lets-do-it-btn .btn-hire-me {
     padding: 20px;
     transition: transform 500ms ease;
-    transform: translate(-25%,13%);
+    transform: translate(-25%, 13%);
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1803,7 +1893,7 @@ h4 {
     width: 80%;
     padding: 16px;
     /* background-color: red; */
-    transform: translate(0,20%);
+    transform: translate(0, 20%);
   }
 }
 
@@ -1964,19 +2054,6 @@ h4 {
   color: #333;
   border: solid 2px #333;
   border-radius: 4px;
-  font-size: 30px;
-  transition: 0.5s;
-}
-#footer .bxs-phone-call {
-  background: #51c20a;
-  color: #fff;
-  border-radius: 5px;
-}
-#footer .bxs-phone-call:hover {
-  background: #fff;
-  color: #51c20a;
-  border: solid 2px #51c20a;
-  border-radius: 5px;
   font-size: 30px;
   transition: 0.5s;
 }
