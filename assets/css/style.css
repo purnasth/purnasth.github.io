@@ -780,15 +780,22 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients
-{
+.clients {
   margin-top: -30px;
+  padding: 4rem;
 }
+
+/* .clients-slider
+{
+  padding: 4rem;
+} */
+
 .clients .swiper-pagination {
   margin-top: 50px;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
-
 .clients .swiper-pagination .swiper-pagination-bullet {
   width: 0.75rem;
   height: 0.75rem;
@@ -796,25 +803,31 @@ section {
   opacity: 1;
   border: 1px solid var(--clr);
 }
-
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--clr);
   /* background-color: #fff;
   box-shadow: 0 0 5px 2px var(--clr); */
 }
-
 .clients .swiper-slide svg {
   opacity: 0.35;
   transition: 0.3s;
   /* filter: grayscale(100); */
 }
-
 .clients .swiper-slide svg:hover {
   opacity: 1;
   filter: none;
   transform: scale(1.15);
 }
-
+/* @media screen (max-width: 395px)
+{
+  .clients .swiper-pagination .swiper-pagination-bullet {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: transparent;
+    opacity: 1;
+    border: 1px solid var(--clr);
+  }
+} */
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -1577,9 +1590,11 @@ section {
 }
 .input-group > textarea:focus ~ label {
   opacity: 1;
-  transform: translate(10%, -100%) scale(1.25);
+  transform: translate(10%, -50%) scale(1.25);
   padding: 0 0.2em;
   color: var(--clr);
+  background: #fff;
+  z-index: 9;
 }
 .input-group > #message {
   height: 20vh;
