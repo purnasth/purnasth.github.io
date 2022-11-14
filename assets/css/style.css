@@ -1,28 +1,35 @@
 :root {
-  /* --clr: #876eb5; */
-  /* --clr: #a40000; */
-  /* --clr: #643dad; */
+  /* //--clr: #876eb5; */
+  /* //--clr: #a40000; */
+  /* //--clr: #643dad; */
+
   --clr: hsla(259, 36%, 47%, 1);
+  --gradient: linear-gradient(to bottom, #1fd1f9, #b621fe 90%);
+  --gradient-hover: linear-gradient(to bottom, #1fd1f9, #b621fe 90%);
+  --gradient-title: linear-gradient(to left, #835dcb, #480370);
+  --gradient-title-hover: linear-gradient(to right, #835dcb, #480370);
 }
 /* //? Starts Font Link for TITLE of h1 */
 @font-face {
   src: url(../fonts/TheScientist-L3EyW.ttf);
   font-family: purna;
 }
+
 /* //! Starts Font Link for footer of h3 */
 @font-face {
   src: url(../fonts/SelfDeceptionRegular-ALLWA.ttf);
   font-family: footer;
 }
+
 /* * For NAMASTE and section-title h2*/
 @font-face {
   src: url(../fonts/ProcrastinatingPixie-WyVOO.ttf);
   font-family: namaste;
 }
+
 * {
   margin: 0;
   padding: 0;
-  /* cursor: none; */
   box-sizing: border-box;
 }
 body {
@@ -157,7 +164,8 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: linear-gradient(to top, #1fd1f9, #b621fe);
+  background: var(--gradient);
+  background: var(--gradient-title);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -362,7 +370,8 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover > a {
   color: #fff;
-  background: var(--clr);
+  /* background: var(--clr); */
+  background: var(--gradient-title);
 }
 
 .nav-menu a:hover span,
@@ -620,9 +629,17 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 2.5rem;
-  color: var(--clr);
+  background-image: var(--gradient-title);
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.5s;
+}
+.about .content h3:hover {
+  background-image: var(--gradient-title-hover);
 }
 
 .about .content ul {
@@ -717,6 +734,8 @@ section {
   transform: translateX(-50%);
   font-size: 1.5rem;
   background: var(--clr);
+  background: red;
+  background: var(--gradient-title);
   color: #fff;
   border-radius: 50%;
   display: inline-flex;
@@ -831,15 +850,20 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-
-.resume .resume-title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: var(--clr);
+.resume-title {
+  margin: 20px 0;
+  font-weight: 1000;
+  font-size: 2.5rem;
+  background-image: var(--gradient-title);
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.5s;
 }
-
+.resume-title:hover {
+  background-image: var(--gradient-title-hover);
+}
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
@@ -848,26 +872,34 @@ section {
 }
 
 .resume .resume-item h4 {
-  line-height: 18px;
+  font-family: "Poppins", sans-serif;
   font-size: 1.15rem;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 3px;
   margin-bottom: 10px;
-  background: var(--clr);
+  background: var(--gradient-title);
   color: #000;
-  border-radius: 50%;
+  border-radius: 10vw;
   text-align: center;
+  padding: 5px;
+}
+.resume .resume-item h4:hover {
+  background: var(--gradient-title-hover);
 }
 
 .resume .resume-item h5 {
   font-size: 1.25rem;
-  background: transparent;
-  color: var(--clr);
   padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-weight: 1000;
+  margin: 10px 0;
+  background-image: var(--gradient-title);
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.5s;
 }
 
 .resume .resume-item ul {
@@ -1435,12 +1467,12 @@ section {
 }
 
 .contact .info i {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   color: var(--clr);
   float: left;
   width: 3.25rem;
   height: 3.25rem;
-  background: #eef7ff;
+  background: #f7eeff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1450,10 +1482,19 @@ section {
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.15rem;
+  font-weight: 800;
   margin-bottom: 5px;
   color: #45505b;
+  background-image: var(--gradient-title);
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.5s;
+}
+.contact .info h4:hover {
+  background-image: var(--gradient-title-hover);
 }
 
 .contact p,
@@ -1462,7 +1503,7 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 0.9rem;
-  color: #728394 !important;
+  color: #728394!important;
 }
 
 .contact .info .email,
@@ -1473,7 +1514,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: var(--clr);
+  background: var(--gradient-title);
   color: #fff;
 }
 
@@ -1639,7 +1680,7 @@ section {
   transition: transform 0.3s ease-in-out;
 }
 .contact .php-email-form .send-button button[type="submit"]:hover .wrapper {
-  animation: fly 0.6s ease-in-out infinite alternate;
+  animation: move 0.4s ease-in-out infinite alternate;
 }
 .contact .php-email-form .send-button button[type="submit"]:hover svg {
   transform: translateX(3.5em) rotate(405deg) scale(1.3);
@@ -1663,12 +1704,12 @@ section {
 .contact .php-email-form .send-button button[type="submit"]:hover::before {
   left: 100%;
 }
-@keyframes fly {
+@keyframes move {
   from {
-    transform: translateY(0.1em);
+    transform: translateX(0.3em);
   }
   to {
-    transform: translateY(-0.1em);
+    transform: translateX(-0.3em);
   }
 }
 
@@ -1700,23 +1741,27 @@ h4 {
   font-size: 2rem;
 }
 .do-it {
-  background: var(--clr);
+  background: var(--gradient-title);
   border-radius: 100px 100px 0 0;
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 0;
+  /* margin-right: 80px; */
 }
 .do-it:hover {
-  box-shadow: 10px -10px 25px 0 rgba(143, 54, 248, 0.5),
-    -10px 10px 25px 0 rgba(39, 200, 248, 0.5);
-  transition: 0.5s;
+  box-shadow: 8px 8px 16px -4px rgba(0, 0, 0, 0.84);
+  -webkit-box-shadow: 8px 8px 16px -4px rgba(0, 0, 0, 0.84);
+  -moz-box-shadow: 8px 8px 16px -4px rgba(0, 0, 0, 0.84);
+  transition: all 0.1s;
 }
 .do-it p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 2.5ch;
   text-align: center;
   padding: 1.5vh;
+  color: #000;
 }
 /* .lets-do-it-btn, .btn-hire-me
 {
@@ -1926,10 +1971,9 @@ h4 {
 #footer .footer-heading-3 {
   font-family: footer;
   font-size: 2.5rem;
-  padding: 0;
-  margin: 0 0 0 0;
-  /* display: block;
-  margin-block-start: 1em;
+  margin: 0;
+  margin: -10px auto;
+  /* margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px; */

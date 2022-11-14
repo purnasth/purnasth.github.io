@@ -38,9 +38,6 @@ let growElements = [
   ...Array.from(document.querySelectorAll(".swiper-slide"))
   // ...Array.from(document.querySelectorAll("svg"))
 ];
-
-console.log("links");
-
 grayCursorElements.forEach((element) => {
   element.addEventListener("mouseover", () => {
     innerCursor.classList.add("grey-grey");

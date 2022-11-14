@@ -1,21 +1,19 @@
-/* #scrollpath {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 10px;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.05);
-  } */
+:root {
+  --gradient: linear-gradient(to top, #1fd1f9, #b621fe 90%);
+  --gradient-hover: linear-gradient(to bottom, #1fd1f9, #b621fe 90%);
+  --gradient-title: linear-gradient(to left, #835dcb, #480370);
+}
+
 #progressbar {
   position: fixed;
   /* top: 0;
     right: 0; */
-  width: 0.625rem;
+  width: 0.5rem;
   height: 0;
-  /* background: linear-gradient(to top, #008aff, #00ffe7); */
-  background: linear-gradient(to top, #1fd1f9, #b621fe);
+  background: var(--gradient);
+  background: var(--gradient-title);
   animation: animate 5s linear infinite;
-  z-index: 99999999;
+  z-index: 999999;
 }
 #progressbar:before,
 #progressbar:after {
@@ -25,8 +23,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: linear-gradient(to top, #008aff, #00ffe7); */
-  background: linear-gradient(to top, #1fd1f9, #b621fe);
+  background: var(--gradient);
+  background: var(--gradient-title);
   filter: blur(25px);
 }
 #progressbar:after {
@@ -45,7 +43,6 @@
   width: 1;
 } */
 
-
 /* ::-webkit-scrollbar{
   width: 1vw;
 }
@@ -62,13 +59,9 @@
   background-color: #555;
 } */
 
-
 ::-webkit-scrollbar {
   width: 0.75rem;
 }
-/* ::-webkit-scrollbar:hover {
-  width: 1.5em;
-} */
 
 ::-webkit-scrollbar-track {
   background: transparent;
@@ -77,22 +70,27 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to top,#1FD1F9, #B621FE 90%);
-  border: 0.15rem solid white;
+  background: var(--gradient);
+  border: 0.15rem solid #fff;
   border-radius: 100vw;
   transition: background 5s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(#1FD1F9, #B621FE 90%);
+  background: var(--gradient);
   border: none;
   transition: 1s ease-in-out;
 }
 
-@supports (scrollbar-color: #1FD1F9 #B621FE) {
+@supports (scrollbar-color: #1fd1f9 #b621fe) {
   * {
-    scrollbar-color: #1FD1F9 #B621FE;
+    scrollbar-color: #1fd1f9 #b621fe;
     scrollbar-width: auto;
   }
 }
 
+@media screen and (max-width: 575px) {
+  #progressbar {
+    width: 0.35rem;
+  }
+}
