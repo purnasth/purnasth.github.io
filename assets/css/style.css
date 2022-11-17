@@ -1503,7 +1503,7 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 0.9rem;
-  color: #728394!important;
+  color: #728394 !important;
 }
 
 .contact .info .email,
@@ -1589,56 +1589,76 @@ section {
 --------------------------------------------------------------
 # Input Contact Button
 -------------------------------------------------------------- */
-
-.input-group {
+.inputBox {
   position: relative;
   font-family: gill sans, gill sans mt, Calibri, trebuchet ms, sans-serif;
 }
-.input-group > input,
-.input-group textarea {
-  border: solid 1.5px #ccc;
-  border-radius: 1rem !important;
-  background-color: transparent !important;
+.inputBox input,
+.inputBox textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border: 1px solid #728394;
+  outline: none;
+  background: #fff;
+  color: #000 !important;
+  border-radius: 1rem;
   padding: 1rem;
   font-size: 1.25rem;
   height: 6vh;
-  box-shadow: none !important;
-  color: var(--clr);
-  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-group > label {
+
+.inputBox span {
   position: absolute;
-  left: 1rem;
-  color: #ccc;
+  left: 0.5em;
+  padding: 10px;
   pointer-events: none;
-  transform: translateY(0.75rem);
-  opacity: 0;
-  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1em;
+  color: #728394;
+  text-transform: uppercase;
+  transition: 0.5s;
 }
-.input-group > input:focus,
-.input-group > textarea:focus {
-  outline: none;
-  font-size: 1.25rem;
-  border: 1.5px solid var(--clr);
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span,
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span {
+  padding: 5px;
+  color: #fff;
+  /* color: var(--clr); */
+  font-size: 0.75em;
+  /* font-weight: 800; */
+  transform: translate(10px, -18px);
+  background: var(--gradient-title);
+  /* background: #fff; */
+  /* border-left: 2px solid var(--clr); */
+  /* border-right: 2px solid var(--clr); */
+  letter-spacing: 0.2em;
+  border-radius: 0.5em;
+  font-family: namaste;
+  /* font-family: gill sans, gill sans mt, Calibri, trebuchet ms, sans-serif; */
+
 }
-.input-group > input:focus ~ label {
-  opacity: 1;
-  transform: translate(10%, -50%) scale(1.25);
-  background-color: #fff;
-  padding: 0 0.2em;
-  color: var(--clr);
-  z-index: 9;
+/* .inputBox:nth-child(2) input:valid ~ span,
+.inputBox:nth-child(2) input:focus ~ span,
+.inputBox:nth-child(2) textarea:valid ~ span,
+.inputBox:nth-child(2) textarea:focus ~ span {
+  background-color: #00dfc4;
+  color: #1d2b3a;
+  border-radius: 2px;
+} */
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox textarea:valid,
+.inputBox textarea:focus {
+  border: 1px solid var(--clr);
 }
-.input-group > textarea:focus ~ label {
-  opacity: 1;
-  transform: translate(10%, -50%) scale(1.25);
-  padding: 0 0.2em;
-  color: var(--clr);
-  background: #fff;
-  z-index: 9;
-}
-.input-group > #message {
+
+.inputBox > #message {
   height: 20vh;
+  position: relative;
+}
+.inputBox span.message {
+  position: absolute;
+  top: 0;
 }
 
 /* 
@@ -1958,6 +1978,10 @@ h4 {
 }
 
 /*--------------------------------------------------------------
+# /*? Do-it
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
@@ -1973,6 +1997,7 @@ h4 {
   font-size: 2.5rem;
   margin: 0;
   margin: -10px auto;
+  cursor: pointer;
   /* margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -1996,6 +2021,7 @@ h4 {
   font-size: 1.75rem;
   font-weight: 600;
   color: #000;
+  cursor: pointer;
 }
 
 #footer .social-links {
@@ -2005,31 +2031,31 @@ h4 {
 #footer .social-links a {
   font-size: 1.5rem;
   display: inline-block;
-  line-height: 2;
-  padding: 6px 0;
-  margin-right: 4px;
-  border-radius: 50%;
+  line-height: 3;
   text-align: center;
-  /* margin-inline: 12px; */
+  margin-inline: 5px;
   width: 36px;
   height: 36px;
   transition: transform 500ms ease;
 }
 #footer .social-links a:hover {
-  transform: translate(0, -6px);
+  transform: translateY(-6px);
+}
+#footer .social-links a i {
+  padding: 1px;
 }
 #footer .bxl-facebook {
   background: #4267b2;
-  color: white;
+  color: #fff;
   border-radius: 50%;
 }
 #footer .bxl-facebook:hover {
   color: #4267b2;
   background: white;
-  border: solid 2px #4267b2;
+  outline: solid 2px #4267b2;
   border-radius: 50%;
-  font-size: 30px;
-  transition: 0.5s;
+  transform: scale(1.5);
+  transition: 0.3s ease-in-out;
 }
 #footer .bxl-youtube {
   background: #ff0000;
@@ -2039,10 +2065,10 @@ h4 {
 #footer .bxl-youtube:hover {
   background: #fff;
   color: #ff0000;
-  border: solid 2px #ff0000;
+  outline: solid 2px #ff0000;
   border-radius: 8px;
-  font-size: 30px;
-  transition: 0.5s;
+  transform: scale(1.5);
+  transition: 0.3s ease-in-out;
 }
 #footer .bxl-instagram {
   background: radial-gradient(
@@ -2054,41 +2080,24 @@ h4 {
     #515ecf
   );
   border-radius: 8px;
-  color: white;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 #footer .bxl-instagram:hover {
-  background: radial-gradient(
-    circle at 33% 100%,
-    #fed373 4%,
-    #f15245 30%,
-    #d92e7f 62%,
-    #9b36b7 85%,
-    #515ecf
-  );
-  font-size: 33px;
-  transition: 0.5s;
-  border: solid 2px
-    radial-gradient(
-      circle at 33% 100%,
-      #fed373 4%,
-      #f15245 30%,
-      #d92e7f 62%,
-      #9b36b7 85%,
-      #515ecf
-    );
+  transform: scale(1.5);
 }
 #footer .bxl-gmail {
   background: #b3b304;
-  color: white;
+  color: #fff;
   border-radius: 10px;
 }
 #footer .bxl-gmail:hover {
   color: #b3b304;
-  border: solid 2px #b3b304;
-  background: white;
-  border-radius: 12px;
-  font-size: 30px;
-  transition: 0.5s;
+  outline: solid 2px #b3b304;
+  background: #fff;
+  border-radius: 8px;
+  transform: scale(1.5);
+  transition: 0.3s ease-in-out;
 }
 #footer .bxl-linkedin {
   background: #0a66c2;
@@ -2098,23 +2107,21 @@ h4 {
 #footer .bxl-linkedin:hover {
   background: #fff;
   color: #0a66c2;
-  border: solid 2px #0a66c2;
-  border-radius: 6px;
-  font-size: 30px;
-  transition: 0.5s;
+  outline: solid 2px #0a66c2;
+  transform: scale(1.5);
+  transition: 0.3s ease-in-out;
 }
 #footer .bxl-github {
   background-color: #333;
   color: white;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 #footer .bxl-github:hover {
   background-color: #fff;
   color: #333;
-  border: solid 2px #333;
-  border-radius: 4px;
-  font-size: 30px;
-  transition: 0.5s;
+  outline: solid 2px #333;
+  transform: scale(1.5);
+  transition: 0.3s ease-in-out;
 }
 #footer .bxl-twitter {
   background: #1da1f2;
@@ -2125,9 +2132,9 @@ h4 {
   background: #fff;
   color: #1da1f2;
   border-radius: 50%;
-  border: solid 2px #1da1f2;
-  font-size: 30px;
-  transition: 0.5s;
+  outline: solid 2px #1da1f2;
+  transform: scale(1.5);
+  transition: 0.3s ease-in-out;
 }
 #footer .copyright {
   margin: 0 0 5px 0;
