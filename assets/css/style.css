@@ -1162,11 +1162,13 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding-top: 70px;
+  /* margin-left: -70px; */
 }
 
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
+  margin-top: 50px;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -1223,6 +1225,7 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
