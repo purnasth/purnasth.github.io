@@ -734,7 +734,6 @@ section {
   transform: translateX(-50%);
   font-size: 1.5rem;
   background: var(--clr);
-  background: red;
   background: var(--gradient-title);
   color: #fff;
   border-radius: 50%;
@@ -1599,15 +1598,15 @@ section {
 .inputBox input,
 .inputBox textarea {
   width: 100%;
-  border: 1px solid #ccc;
-  border: 1px solid #728394;
+  border: 0;
+  border-bottom: 2px solid #857598;
+  /* border: 1px solid #728394; */
   outline: none;
   background: #fff;
   color: #000 !important;
-  border-radius: 1rem;
-  padding: 1rem;
+  border-radius: 1em;
+  padding: 1em;
   font-size: 1.25rem;
-  height: 6vh;
 }
 
 .inputBox span {
@@ -1619,6 +1618,7 @@ section {
   color: #728394;
   text-transform: uppercase;
   transition: 0.5s;
+  letter-spacing: 1px;
 }
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span,
@@ -1634,8 +1634,8 @@ section {
   /* background: #fff; */
   /* border-left: 2px solid var(--clr); */
   /* border-right: 2px solid var(--clr); */
-  letter-spacing: 0.2em;
-  border-radius: 0.5em;
+  letter-spacing: 0.3em;
+  border-radius: 0.75em;
   font-family: namaste;
   /* font-family: gill sans, gill sans mt, Calibri, trebuchet ms, sans-serif; */
 
@@ -1652,7 +1652,9 @@ section {
 .inputBox input:focus,
 .inputBox textarea:valid,
 .inputBox textarea:focus {
-  border: 1px solid var(--clr);
+  border-bottom: 2px solid var(--clr);
+  background-color : #e8f0fe;
+  transition: 0.5s ease-in-out;
 }
 
 .inputBox > #message {
@@ -1794,9 +1796,12 @@ h4 {
 
 .lets-do-it-btn svg {
   display: inline-block;
-  transform: translate(-6px, -6px);
+  /* transform: translate(-6px, -6px); */
   transition: transform 0.3s ease-in-out;
 }
+/* .lets{
+  margin-top: -45px;
+} */
 .btn-hire-me {
   position: relative;
   text-decoration: none;
@@ -1806,15 +1811,25 @@ h4 {
   font-size: 1.25rem;
   letter-spacing: 3px;
   border: none;
-  /* border-radius: 50px 50px 0 0; */
   border-radius: 0;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  /* margin-block-start: 50px; */
+  /* display: flex;
+  align-items: center; */
   margin-left: 3vw;
+  min-width: 250px;
+  height: 75px;
+  /* margin-block-start: 20px; */
+}
+@media (max-width: 768px){
+  .lets{
+    margin-top: -45px;
+  }
+  .btn-hire-me{
+  margin-block-start: 20px;
+
+  }
 }
 .btn-hire-me:hover {
   color: #fff;
@@ -1975,7 +1990,6 @@ h4 {
   .lets-do-it-btn .btn-hire-me {
     width: 80%;
     padding: 16px;
-    /* background-color: red; */
     transform: translate(0, 20%);
   }
 }
