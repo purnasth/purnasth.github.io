@@ -36,7 +36,10 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
-
+::selection{
+  background-color: var(--clr);
+  color: #000;
+}
 h1,
 h2,
 h3,
