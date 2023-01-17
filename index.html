@@ -159,7 +159,7 @@
       </div>
       <div class="box intro">
         <div class="container" data-aos="zoom-in" data-aos-delay="100">
-            <span class="typed" data-typed-items="Namaste"></span>
+          <span class="typed" data-typed-items="Namaste"></span>
           <div class="social-links">
             <a
               href="https://www.facebook.com/purnaaa.sth"
@@ -2286,7 +2286,7 @@
             </div>
 
             <div class="col-lg-8 mt-5 mt-lg-0">
-              <form
+              <!-- <form
                 action="php/contact.php"
                 method="post"
                 role="form"
@@ -2332,6 +2332,109 @@
                       spellcheck="true"
                     ></textarea>
                     <span class="message">Message</span>
+                  </div>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="send-button text-center">
+                  <button type="submit">
+                    <div class="wrapper">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-send"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"
+                        />
+                      </svg>
+                    </div>
+                    <span>Send Message</span>
+                  </button>
+                </div>
+              </form> -->
+
+              <form
+                action="php/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <div class="form-control">
+                      <input type="text" required="" spellcheck="true" />
+                      <label>
+                        <span style="transition-delay: 0ms">U</span
+                        ><span style="transition-delay: 50ms">s</span
+                        ><span style="transition-delay: 100ms">e</span
+                        ><span style="transition-delay: 150ms">r</span
+                        ><span style="transition-delay: 200ms">n</span
+                        ><span style="transition-delay: 250ms">a</span
+                        ><span style="transition-delay: 300ms">m</span
+                        ><span style="transition-delay: 350ms">e</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <div class="form-control">
+                      <input type="email" spellcheck="true" required="" />
+                      <label>
+                        <span style="transition-delay: 0ms">E</span
+                        ><span style="transition-delay: 50ms">m</span
+                        ><span style="transition-delay: 100ms">a</span
+                        ><span style="transition-delay: 150ms">i</span
+                        ><span style="transition-delay: 200ms">l</span
+                        ><span style="transition-delay: 250ms"></span
+                        ><span style="transition-delay: 300ms"></span
+                        ><span style="transition-delay: 350ms"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <div class="form-control">
+                    <input type="value" spellcheck="true" required="" />
+                    <label>
+                      <span style="transition-delay: 0ms">S</span
+                      ><span style="transition-delay: 50ms">u</span
+                      ><span style="transition-delay: 100ms">b</span
+                      ><span style="transition-delay: 150ms">j</span
+                      ><span style="transition-delay: 200ms">e</span
+                      ><span style="transition-delay: 250ms">c</span
+                      ><span style="transition-delay: 300ms">t</span
+                      ><span style="transition-delay: 350ms"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <div class="form-control">
+                    <textarea
+                      type="value"
+                      id="message"
+                      name="message"
+                      required=""
+                      rows="4"
+                      spellcheck="true"
+                    ></textarea>
+                    <label>
+                      <span style="transition-delay: 0ms">M</span
+                      ><span style="transition-delay: 50ms">e</span
+                      ><span style="transition-delay: 100ms">s</span
+                      ><span style="transition-delay: 150ms">s</span
+                      ><span style="transition-delay: 200ms">a</span
+                      ><span style="transition-delay: 250ms">g</span
+                      ><span style="transition-delay: 300ms">e</span
+                      ><span style="transition-delay: 350ms"></span>
+                    </label>
                   </div>
                 </div>
                 <div class="my-3">
@@ -2664,7 +2767,9 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="heart-cursor gray-cursor">
       <div class="container">
-        <h3 class="footer-heading-3"><span>Motivated by the desire to achieve.</span></h3>
+        <h3 class="footer-heading-3">
+          <span>Motivated by the desire to achieve.</span>
+        </h3>
         <div class="social-links">
           <a
             href="https://www.facebook.com/purnaaa.sth"

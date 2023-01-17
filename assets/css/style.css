@@ -1594,7 +1594,7 @@ section {
 --------------------------------------------------------------
 # Input Contact Button
 -------------------------------------------------------------- */
-.inputBox {
+/* .inputBox {
   position: relative;
   font-family: gill sans, gill sans mt, Calibri, trebuchet ms, sans-serif;
 }
@@ -1603,7 +1603,6 @@ section {
   width: 100%;
   border: 0;
   border-bottom: 2px solid #857598;
-  /* border: 1px solid #728394; */
   outline: none;
   background: #fff;
   color: #000 !important;
@@ -1629,27 +1628,22 @@ section {
 .inputBox textarea:focus ~ span {
   padding: 5px;
   color: #fff;
-  /* color: var(--clr); */
   font-size: 0.75em;
-  /* font-weight: 800; */
   transform: translate(10px, -18px);
   background: var(--gradient-title);
-  /* background: #fff; */
-  /* border-left: 2px solid var(--clr); */
-  /* border-right: 2px solid var(--clr); */
   letter-spacing: 0.3em;
   border-radius: 0.75em;
   font-family: namaste;
-  /* font-family: gill sans, gill sans mt, Calibri, trebuchet ms, sans-serif; */
+  /* font-family: gill sans, gill sans mt, Calibri, trebuchet ms, sans-serif;
 }
-/* .inputBox:nth-child(2) input:valid ~ span,
+.inputBox:nth-child(2) input:valid ~ span,
 .inputBox:nth-child(2) input:focus ~ span,
 .inputBox:nth-child(2) textarea:valid ~ span,
 .inputBox:nth-child(2) textarea:focus ~ span {
   background-color: #00dfc4;
   color: #1d2b3a;
   border-radius: 2px;
-} */
+}
 .inputBox input:valid,
 .inputBox input:focus,
 .inputBox textarea:valid,
@@ -1666,6 +1660,78 @@ section {
 .inputBox span.message {
   position: absolute;
   top: 0;
+} */
+/* 
+--------------------------------------------------------------
+# Input Contact Button
+-------------------------------------------------------------- 
+*/
+.form-control {
+  position: relative;
+  /* margin: 20px 0 40px; */
+  border: none;
+  border-radius: 0;
+  /* font-family: footer; */
+
+}
+
+.form-control input,
+.form-control textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #728394 solid;
+  display: block;
+  width: 100%;
+  padding: 15px 5px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--clr);
+  /* background: var(--gradient-title);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  /* border-radius: 0.5em; */
+}
+
+.form-control input:focus,
+.form-control input:valid,
+.form-control textarea:focus,
+.form-control textarea:valid {
+  outline: 0;
+  background-color: #e8f0fe;
+  border-bottom-color: var(--clr);
+  filter: drop-shadow(0 1px 1px var(--clr));
+}
+
+.form-control label {
+  text-transform: uppercase;
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  pointer-events: none;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 1.25rem;
+  /* font-size: 2.25rem; */
+  min-width: 5px;
+  color: #728394;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span,
+.form-control textarea:focus + label span,
+.form-control textarea:valid + label span {
+  color: var(--clr);
+  font-weight: 600;
+  transform: translateY(-30px);
+  background: var(--gradient-title);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* background: var(--gradient-title);
+  background-clip: text;
+  color: transparent; */
 }
 
 /* 
