@@ -1672,7 +1672,7 @@ section {
   border: none;
   border-radius: 0;
   /* font-family: footer; */
-
+  font-family: gill sans, gill sans mt, Calibri, trebuchet ms, sans-serif;
 }
 
 .form-control input,
@@ -1684,8 +1684,8 @@ section {
   width: 100%;
   padding: 15px 5px;
   font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--clr);
+  /* font-weight: 800; */
+  color: #000;
   /* background: var(--gradient-title);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
