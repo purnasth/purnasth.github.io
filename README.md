@@ -1,3 +1,3 @@
 Click here to see my portfolio.
 
-[👉🏿](https://purnashrestha.com.np/)
+[👉 Click Me 🏿](https://purnashrestha.com.np/)
