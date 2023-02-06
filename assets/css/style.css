@@ -1686,6 +1686,7 @@ section {
   font-size: 1.5rem;
   /* font-weight: 800; */
   color: #000;
+  transition: border-color 2s;
   /* background: var(--gradient-title);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
@@ -1700,6 +1701,8 @@ section {
   background-color: #e8f0fe;
   border-bottom-color: var(--clr);
   filter: drop-shadow(0 1px 1px var(--clr));
+  border-image: var(--gradient-title);
+  border-image-slice: 1;
 }
 
 .form-control label {
