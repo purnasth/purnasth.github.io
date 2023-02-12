@@ -518,17 +518,29 @@ h6 {
   color: white;
   border-radius: 3px;
 }
-.bxl-google:hover {
-  background: radial-gradient(
-      circle at 30% 50%,
-      #f44336 20%,
-      #ffc107 50%,
-      #4caf50 30%,
-      #4285f4
-    )
-    20%;
+/* .bxl-google:hover {
+  background: conic-gradient(
+    #4285f4 0deg,
+    #4285f4 90deg,
+    #0f9d58 90deg,
+    #0f9d58 180deg,
+    #f4b400 180deg,
+    #f4b400 270deg,
+    #db4437 270deg,
+    #db4437 360deg
+  );
+  transform: rotate(35deg);
   border-radius: 50%;
   color: white;
+} */
+.google svg {
+  /* transform: translate(0, -5px); */
+  margin-top: -5px;
+  filter: contrast(0%);
+  /* filter: grayscale(100%); */
+}
+.google svg:hover {
+  filter: none;
 }
 /*Fonts Links ends*/
 @media (max-width: 992px) {
@@ -2257,4 +2269,41 @@ li:hover,
 .copyright-purna:hover,
 .designed-purna:hover {
   background-size: 100% 3px;
+}
+
+/* Call animation */
+@keyframes phone {
+  0%,
+  to {
+    transform: rotate(0deg);
+    transform-origin: 0 100%;
+  }
+  10%,
+  90% {
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+}
+/* MAIL animation */
+@keyframes open {
+  0% {
+    transform: translateX(10px) scale(0);
+    transform-origin: 50% 100%;
+  }
+  to {
+    transform: scale(1);
+    transform-origin: 50% 100%;
+  }
 }
