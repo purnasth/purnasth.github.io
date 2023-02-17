@@ -13,7 +13,7 @@
   background: var(--gradient);
   background: var(--gradient-title);
   animation: animate 5s linear infinite;
-  z-index: 999999;
+  z-index: 9998;
 }
 #progressbar:before,
 #progressbar:after {
@@ -61,6 +61,7 @@
 
 ::-webkit-scrollbar {
   width: 0.75rem;
+  height: 0;
 }
 
 ::-webkit-scrollbar-track {
