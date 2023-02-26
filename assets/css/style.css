@@ -658,11 +658,10 @@ h6 {
 #hero .social-links a:hover {
   /* transform: translate(0, -5px); */
   transform: rotate(720deg);
-  transition: all 0.5s;
 }
-.bxl-twitter:hover {
+/* .bxl-twitter:hover {
   color: #1da1f2;
-}
+} */
 .bxl-facebook:hover {
   background: #4267b2;
   color: #fff;
@@ -690,31 +689,25 @@ h6 {
   color: white;
   border-radius: 3px;
 }
-/* .bxl-google:hover {
-  background: conic-gradient(
-    #4285f4 0deg,
-    #4285f4 90deg,
-    #0f9d58 90deg,
-    #0f9d58 180deg,
-    #f4b400 180deg,
-    #f4b400 270deg,
-    #db4437 270deg,
-    #db4437 360deg
-  );
-  transform: rotate(35deg);
+#hero .codepen:hover {
   border-radius: 50%;
-  color: white;
-} */
-.google svg {
-  /* transform: translate(0, -5px); */
+  background: #000;
+  color: #fff;
+}
+/* .google svg {
   margin-top: -5px;
   filter: contrast(0%);
-  /* filter: grayscale(100%); */
 }
 .google svg:hover {
   filter: none;
-}
+} */
 /*Fonts Links ends*/
+
+@media screen and (max-width: 468px) {
+  #hero .bxl-facebook {
+    display: none;
+  }
+}
 @media (max-width: 992px) {
   #hero {
     text-align: center;
@@ -1106,12 +1099,12 @@ section {
 .resume .resume-item ul li a {
   position: absolute;
   color: #333;
-  transition: 0.3s ease-in-out;
+  transition: 0.15s ease;
   text-decoration: none;
 }
 .resume .resume-item ul li a:hover {
   color: var(--clr);
-  font-size: 1.25rem;
+  transform: translateX(3px) scale(1.1);
 }
 
 .resume .resume-item:last-child {
@@ -2421,12 +2414,11 @@ h4 {
   font-size: 13px;
 }
 
-p,
-ul,
-li,
+.fancy-link,
 .footer-heading-3 span,
 .copyright-purna,
 .designed-purna {
+  font-weight: 800;
   background-image: var(--gradient-title);
   background-size: 0% 3px;
   background-repeat: no-repeat;
@@ -2434,9 +2426,7 @@ li,
   transition: all 300ms ease;
 }
 
-p:hover,
-ul:hover,
-li:hover,
+.fancy-link:hover,
 .footer-heading-3 span:hover,
 .copyright-purna:hover,
 .designed-purna:hover {
