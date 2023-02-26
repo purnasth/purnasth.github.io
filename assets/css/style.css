@@ -1138,15 +1138,26 @@ section {
   text-align: center;
 }
 
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px 10px 0 0;
+  height: 32px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 15px 10px 15px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: #1a1a1a;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   border-radius: 3px;
@@ -1156,6 +1167,13 @@ section {
 .portfolio #portfolio-flters li.filter-active {
   color: var(--clr);
   transition: 0.3s;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px 10px 0 0;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.65);
+}
+.portfolio #portfolio-flters li.filter-active {
+  background: var(--gradient-title);
+  color: #fff;
 }
 
 .portfolio #portfolio-flters li:last-child {
