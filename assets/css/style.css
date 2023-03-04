@@ -2488,18 +2488,4 @@ h4 {
   }
 }
 
-.temporary{
-  color: var(--clr);
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  display: inline-block;
-  margin-top: 20px;
-}
-.temporary:hover{
-  color: #fff;
-  text-decoration: none;
-  text-shadow: 0 0 5px var(--clr), 0 0 10px var(--clr), 0 0 15px var(--clr);
-}
+
