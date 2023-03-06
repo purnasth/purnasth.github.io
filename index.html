@@ -62,6 +62,19 @@
     <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex flex-column justify-content-center intro">
+      <div class="social">
+        <ul>
+          <li>
+            <a href="" target="_blank">Github <i class="bx bxl-github"></i></a>
+          </li>
+          <li>
+            <a href="" target="_blank"
+              >Linkedin <i class="bx bxl-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
       <nav id="navbar" class="navbar nav-menu">
         <ul>
           <li>
@@ -2728,7 +2741,12 @@
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <div class="form-control">
-                      <input type="text" required="" spellcheck="true" name="Name"/>
+                      <input
+                        type="text"
+                        required=""
+                        spellcheck="true"
+                        name="Name"
+                      />
                       <label>
                         <span style="transition-delay: 0ms">F</span
                         ><span style="transition-delay: 50ms">u</span
@@ -2744,7 +2762,7 @@
                   </div>
                   <div class="col-md-6 form-group">
                     <div class="form-control">
-                      <input type="email" required="" name="E-mail"/>
+                      <input type="email" required="" name="E-mail" />
                       <label>
                         <span style="transition-delay: 0ms">E</span
                         ><span style="transition-delay: 50ms">m</span
@@ -2760,7 +2778,12 @@
                 </div>
                 <div class="form-group mt-3">
                   <div class="form-control">
-                    <input type="value" spellcheck="true" required="" name="Subject"/>
+                    <input
+                      type="value"
+                      spellcheck="true"
+                      required=""
+                      name="Subject"
+                    />
                     <label>
                       <span style="transition-delay: 0ms">S</span
                       ><span style="transition-delay: 50ms">u</span
@@ -3176,10 +3199,13 @@
           ></a>
         </div>
         <div class="copyright">
-          © Copyright 2022
-          <strong><span class="copyright-purna">Purna</span></strong
+          &copy; Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          <strong><span class="copyright-purna"> Purna</span></strong
           >. |All Rights Reserved|
-          <span class="copyright-purna"> <b> v1.2 </b></span>
+          <span class="copyright-purna"> <b> v1.2.1 </b></span>
         </div>
         <div class="credits">
           Designed by<span class="designed-purna"> Purna Shrestha</span>.
@@ -3289,10 +3315,10 @@
     <script src="vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="./assets/js/main.js"></script>
     <script src="./assets/js/scroll.js"></script>
     <script src="./assets/js/cursor.js"></script>
     <script src="./assets/js/signature.js"></script>
     <script src="./assets/js/animate.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

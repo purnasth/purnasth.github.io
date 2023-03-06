@@ -8,6 +8,9 @@
   --gradient-hover: linear-gradient(to bottom, #1fd1f9, #b621fe 90%);
   --gradient-title: linear-gradient(to left, #835dcb, #480370);
   --gradient-title-hover: linear-gradient(to right, #835dcb, #480370);
+  --white: #ffffff;
+  --black: #000000;
+  --text-clr: #272829;
 }
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap");
 
@@ -36,11 +39,11 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  color: var(--text-clr);
 }
 ::selection {
   background-color: var(--clr);
-  color: #000;
+  color: var(--black);
 }
 h1,
 h2,
@@ -92,7 +95,7 @@ h6 {
 .myCV button {
   background: transparent;
   font-size: 1rem;
-  color: #fff;
+  color: var(--white);
   padding: 0.6em 1em;
   padding-left: 0.9em;
   display: flex;
@@ -107,7 +110,7 @@ h6 {
 }
 .myCV button:hover {
   background: #643dad;
-  color: #fff;
+  color: var(--white);
   border: solid 3px #643dad;
   box-shadow: 0px 11px 30px -3px rgba(0, 0, 0, 0.73);
   transition: 0.5s ease-in-out;
@@ -143,7 +146,7 @@ h6 {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, #fff, transparent);
+  background: linear-gradient(90deg, transparent, var(--white), transparent);
   transition: 0.8s;
 }
 .myCV button:hover::before {
@@ -179,7 +182,7 @@ h6 {
   overflow: hidden;
 }
 .back-to-top .arrows-holder svg {
-  /* stroke: #000; */
+  /* stroke: var(--black); */
   width: 100%;
 }
 .back-to-top .arrows-holder {
@@ -232,7 +235,7 @@ h6 {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #000;
+  background: var(--black);
   pointer-events: none;
   font-family: "Roboto", sans-serif;
 }
@@ -249,7 +252,7 @@ h6 {
   left: 200px;
   width: 50px;
   height: 15px;
-  background: #000;
+  background: var(--black);
 }
 
 .loading-text {
@@ -291,7 +294,7 @@ h6 {
   left: 0;
   width: 14px;
   height: 36px;
-  background: #000;
+  background: var(--black);
   transform-origin: 100% 0;
   -webkit-animation: lineStretch 1800ms cubic-bezier(0.25, 0.25, 0.75, 0.75)
     infinite;
@@ -310,7 +313,7 @@ h6 {
   left: 2px;
   width: 9px;
   height: 15px;
-  background: #000;
+  background: var(--black);
 }
 
 @-webkit-keyframes dotMove {
@@ -464,7 +467,7 @@ h6 {
 @media (max-width: 992px) {
   #header {
     width: 300px;
-    /* background: #fff; */
+    /* background: var(--white); */
     background: transparent;
     backdrop-filter: blur(5px);
     /* border-right: 1px solid #e6e9ec; */
@@ -503,7 +506,7 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #fff;
+  color: var(--white);
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -529,9 +532,8 @@ h6 {
 .nav-menu a span,
 .nav-menu a:focus span {
   padding: 0 5px 0 7px;
-  /* color: #45505b; */
-  color: #fff;
-  filter: drop-shadow(0px 1px 5px #000);
+  color: var(--white);
+  filter: drop-shadow(0px 1px 5px var(--black));
 }
 
 @media (min-width: 992px) {
@@ -543,7 +545,7 @@ h6 {
   .nav-menu a span,
   .nav-menu a:focus span {
     display: none;
-    color: #fff;
+    color: var(--white);
   }
 }
 
@@ -551,7 +553,7 @@ h6 {
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover > a {
-  color: #fff;
+  color: var(--white);
   /* background: var(--clr); */
   background: var(--gradient-title);
 }
@@ -560,13 +562,13 @@ h6 {
 .nav-menu .active span,
 .nav-menu .active:focus span,
 .nav-menu li:hover > a span {
-  color: #fff;
+  color: var(--white);
 }
 
 .nav-menu a:hover,
 .nav-menu li:hover > a {
   width: 100%;
-  color: #fff;
+  color: var(--white);
 }
 
 .nav-menu a:hover span,
@@ -594,7 +596,7 @@ h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #45505b;
+  color: var(--text-clr);
 }
 
 .mobile-nav-active {
@@ -606,7 +608,7 @@ h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle {
-  color: #fff;
+  color: var(--white);
   background-color: var(--clr);
 }
 
@@ -650,7 +652,7 @@ h6 {
 #hero .social-links a {
   font-size: 1.5rem;
   display: inline-block;
-  color: #45505b;
+  color: var(--text-clr);
   line-height: 1;
   margin-right: 20px;
   transition: transform 500ms ease;
@@ -664,12 +666,12 @@ h6 {
 } */
 .bxl-facebook:hover {
   background: #4267b2;
-  color: #fff;
+  color: var(--white);
   border-radius: 50%;
 }
 .bxl-linkedin:hover {
   background: #0a66c2;
-  color: #fff;
+  color: var(--white);
   border-radius: 5px;
 }
 .bxl-instagram:hover {
@@ -682,17 +684,17 @@ h6 {
     #515ecf
   );
   border-radius: 8px;
-  color: white;
+  color: var(--white);
 }
 .bxl-github:hover {
   background-color: #333;
-  color: white;
+  color: var(--white);
   border-radius: 3px;
 }
 #hero .codepen:hover {
   border-radius: 50%;
-  background: #000;
-  color: #fff;
+  background: var(--black);
+  color: var(--white);
 }
 /* .google svg {
   margin-top: -5px;
@@ -747,7 +749,7 @@ section {
   text-align: center;
   color: var(--clr);
   text-transform: uppercase;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, var(--black) 8);
   line-height: 0.7em;
   animation: glow-text 5s linear infinite;
 }
@@ -766,7 +768,7 @@ section {
   opacity: 0.5;
   z-index: -1;
   transition: all 0.7s ease-in-out;
-  color: #fff;
+  color: var(--white);
 }
 .section-title h2:hover::before {
   content: attr(data-text);
@@ -802,7 +804,7 @@ section {
   90%,
   92.1%,
   100% {
-    color: #fff;
+    color: var(--white);
     text-shadow: 0 0 10px var(--clr), 0 0 20px var(--clr), 0 0 40px var(--clr),
       0 0 80px var(--clr), 0 0 160px var(--clr);
   }
@@ -922,7 +924,7 @@ section {
   font-size: 1.5rem;
   background: var(--clr);
   background: var(--gradient-title);
-  color: #fff;
+  color: var(--white);
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -1010,7 +1012,7 @@ section {
 }
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--clr);
-  /* background-color: #fff;
+  /* background-color: var(--white);
   box-shadow: 0 0 5px 2px var(--clr); */
 }
 .clients .swiper-slide svg {
@@ -1066,7 +1068,7 @@ section {
   word-spacing: 3px;
   margin-bottom: 10px;
   background: var(--gradient-title);
-  color: #000;
+  color: var(--black);
   border-radius: 10vw;
   text-align: center;
   padding: 5px;
@@ -1098,7 +1100,8 @@ section {
 }
 .resume .resume-item ul li a {
   position: absolute;
-  color: #333;
+  /* color: #333; */
+  color: var(--text-clr);
   transition: 0.15s ease;
   text-decoration: none;
 }
@@ -1119,7 +1122,7 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
+  background: var(--white);
   border: 2px solid var(--clr);
 }
 
@@ -1157,7 +1160,7 @@ section {
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
-  color: #1a1a1a;
+  color: var(--text-clr);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   border-radius: 3px;
@@ -1173,7 +1176,7 @@ section {
 }
 .portfolio #portfolio-flters li.filter-active {
   background: var(--gradient-title);
-  color: #fff;
+  color: var(--white);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1253,7 +1256,7 @@ section {
 /* External CSS */
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 1.8rem;
-  color: #fff;
+  color: var(--white);
   font-weight: 600;
 }
 .portfolio .portfolio-wrap .portfolio-info p {
@@ -1279,7 +1282,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #fff;
+  color: var(--white);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -1386,7 +1389,7 @@ section {
   .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: var(--white);
   opacity: 1;
   border: 1px solid var(--clr);
 }
@@ -1471,7 +1474,7 @@ section {
 .card:hover,
 .card:focus-within {
   transform: scale(1.05);
-  box-shadow: 0 0.1px 10px #000;
+  box-shadow: 0 0.1px 10px var(--black);
 }
 .card-content {
   --padding: 1.5rem;
@@ -1552,7 +1555,7 @@ section {
 .button:hover,
 .button:focus {
   background: var(--clr-accent-400);
-  color: white;
+  color: var(--white);
   border: solid 3px var(--clr-accent-400);
   box-shadow: 0px 11px 30px -3px rgba(0, 0, 0, 0.73);
   transition: 0.5s;
@@ -1564,7 +1567,7 @@ section {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, #fff, transparent);
+  background: linear-gradient(90deg, transparent, var(--white), transparent);
   transition: 0.5s;
 }
 .button:hover::before,
@@ -1610,12 +1613,12 @@ section {
   font-size: 2.5rem;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: var(--black);
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 1.75rem;
-  color: #777;
+  color: var(--text-clr);
   margin: 0 0 15px 0;
 }
 
@@ -1651,7 +1654,7 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: var(--white);
   opacity: 1;
   border: 1px solid var(--clr);
 }
@@ -1692,7 +1695,6 @@ section {
   font-size: 2.15rem;
   font-weight: 800;
   margin-bottom: 5px;
-  color: #45505b;
   background-image: var(--gradient-title);
   width: fit-content;
   background-clip: text;
@@ -1722,7 +1724,7 @@ section {
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
   background: var(--gradient-title);
-  color: #fff;
+  color: var(--white);
 } */
 
 .contact .php-email-form {
@@ -1736,7 +1738,7 @@ section {
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
+  color: var(--white);
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -1749,7 +1751,7 @@ section {
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  color: var(--white);
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -1758,7 +1760,7 @@ section {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: var(--white);
   text-align: center;
   padding: 15px;
 }
@@ -1806,8 +1808,8 @@ section {
   border: 0;
   border-bottom: 2px solid #857598;
   outline: none;
-  background: #fff;
-  color: #000 !important;
+  background: var(--white);
+  color: var(--black) !important;
   border-radius: 1em;
   padding: 1em;
   font-size: 1.25rem;
@@ -1829,7 +1831,7 @@ section {
 .inputBox textarea:valid ~ span,
 .inputBox textarea:focus ~ span {
   padding: 5px;
-  color: #fff;
+  color: var(--white);
   font-size: 0.75em;
   transform: translate(10px, -18px);
   background: var(--gradient-title);
@@ -1887,7 +1889,7 @@ section {
   padding: 15px 5px;
   font-size: 1.5rem;
   /* font-weight: 800; */
-  color: #000;
+  color: var(--black);
   transition: border-color 2s;
   /* background: var(--gradient-title);
   -webkit-background-clip: text;
@@ -1961,7 +1963,7 @@ section {
 }
 .contact .php-email-form .send-button button[type="submit"]:hover {
   background: var(--clr);
-  color: white;
+  color: var(--white);
   border: solid 3px var(--clr);
   box-shadow: 0px 11px 30px -3px rgba(0, 0, 0, 0.73);
   transition: 0.5s ease-in-out;
@@ -1996,7 +1998,7 @@ section {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, #fff, transparent);
+  background: linear-gradient(90deg, transparent, var(--white), transparent);
   transition: 0.8s;
 }
 .contact .php-email-form .send-button button[type="submit"]:hover::before {
@@ -2059,7 +2061,7 @@ h4 {
   font-size: 2.5ch;
   text-align: center;
   padding: 1.5vh;
-  color: #000;
+  color: var(--black);
 }
 /* .lets-do-it-btn, .btn-hire-me
 {
@@ -2078,7 +2080,7 @@ h4 {
 .btn-hire-me {
   position: relative;
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   text-transform: uppercase;
   font-family: namaste;
   font-size: 1.25rem;
@@ -2104,7 +2106,7 @@ h4 {
   }
 }
 .btn-hire-me:hover {
-  color: #fff;
+  color: var(--white);
   transition: 0.5s ease-in-out;
   box-shadow: 0px 11px 30px -3px rgba(0, 0, 0, 0.5);
 }
@@ -2147,7 +2149,7 @@ h4 {
   left: 0;
   width: 0;
   height: 1px;
-  background: #fff;
+  background: var(--white);
 }
 .btn-hire-me:hover span:nth-child(1) {
   width: 100%;
@@ -2159,7 +2161,7 @@ h4 {
   right: 0;
   width: 0;
   height: 1px;
-  background: #fff;
+  background: var(--white);
 }
 .btn-hire-me:hover span:nth-child(3) {
   width: 100%;
@@ -2170,7 +2172,7 @@ h4 {
   left: 0;
   width: 1px;
   height: 0;
-  background: #fff;
+  background: var(--white);
 }
 .btn-hire-me:hover span:nth-child(2) {
   height: 100%;
@@ -2181,7 +2183,7 @@ h4 {
   right: 0;
   width: 1px;
   height: 0;
-  background: #fff;
+  background: var(--white);
 }
 .btn-hire-me:hover span:nth-child(4) {
   height: 100%;
@@ -2216,7 +2218,7 @@ h4 {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, #fff, transparent);
+  background: linear-gradient(90deg, transparent, var(--white), transparent);
   transition: 0.8s;
 }
 .hire-me-btn:hover::before {
@@ -2276,7 +2278,7 @@ h4 {
 
 #footer {
   background: none;
-  color: #45505b;
+  color: var(--text-clr);
   text-align: center;
   padding: 30px 0;
 }
@@ -2284,6 +2286,7 @@ h4 {
 #footer .footer-heading-3 span {
   font-family: footer;
   font-size: 2.5rem;
+  font-weight: 500;
   margin: 0;
   margin: -10px auto;
   cursor: pointer;
@@ -2293,7 +2296,7 @@ h4 {
   margin-inline-end: 0px; */
 }
 #footer .footer-heading-3 span:hover {
-  color: #000;
+  color: var(--black);
   transition: 1s;
 }
 .copyright-purna {
@@ -2301,7 +2304,7 @@ h4 {
   font-size: 1.6rem;
 }
 .copyright-purna:hover {
-  color: black;
+  color: var(--black);
   transition: 1s;
 }
 .designed-purna {
@@ -2309,7 +2312,7 @@ h4 {
   font-family: purna;
   font-size: 1.75rem;
   font-weight: 600;
-  color: #000;
+  color: var(--black);
   cursor: pointer;
 }
 
@@ -2335,12 +2338,12 @@ h4 {
 }
 #footer .bxl-facebook {
   background: #4267b2;
-  color: #fff;
+  color: var(--white);
   border-radius: 50%;
 }
 #footer .bxl-facebook:hover {
   color: #4267b2;
-  background: white;
+  background: var(--white);
   outline: solid 2px #4267b2;
   border-radius: 50%;
   transform: scale(1.5);
@@ -2348,11 +2351,11 @@ h4 {
 }
 #footer .bxl-youtube {
   background: #ff0000;
-  color: #fff;
+  color: var(--white);
   border-radius: 5px;
 }
 #footer .bxl-youtube:hover {
-  background: #fff;
+  background: var(--white);
   color: #ff0000;
   outline: solid 2px #ff0000;
   border-radius: 8px;
@@ -2369,7 +2372,7 @@ h4 {
     #515ecf
   );
   border-radius: 8px;
-  color: #fff;
+  color: var(--white);
   transition: all 0.3s ease-in-out;
 }
 #footer .bxl-instagram:hover {
@@ -2377,24 +2380,24 @@ h4 {
 }
 #footer .bxl-gmail {
   background: #b3b304;
-  color: #fff;
+  color: var(--white);
   border-radius: 10px;
 }
 #footer .bxl-gmail:hover {
   color: #b3b304;
   outline: solid 2px #b3b304;
-  background: #fff;
+  background: var(--white);
   border-radius: 8px;
   transform: scale(1.5);
   transition: 0.3s ease-in-out;
 }
 #footer .bxl-linkedin {
   background: #0a66c2;
-  color: #fff;
+  color: var(--white);
   border-radius: 5px;
 }
 #footer .bxl-linkedin:hover {
-  background: #fff;
+  background: var(--white);
   color: #0a66c2;
   outline: solid 2px #0a66c2;
   transform: scale(1.5);
@@ -2402,11 +2405,11 @@ h4 {
 }
 #footer .bxl-github {
   background-color: #333;
-  color: white;
+  color: var(--white);
   border-radius: 5px;
 }
 #footer .bxl-github:hover {
-  background-color: #fff;
+  background-color: var(--white);
   color: #333;
   outline: solid 2px #333;
   transform: scale(1.5);
@@ -2414,11 +2417,11 @@ h4 {
 }
 #footer .bxl-twitter {
   background: #1da1f2;
-  color: #fff;
+  color: var(--white);
   border-radius: 50%;
 }
 #footer .bxl-twitter:hover {
-  background: #fff;
+  background: var(--white);
   color: #1da1f2;
   border-radius: 50%;
   outline: solid 2px #1da1f2;
@@ -2488,4 +2491,59 @@ h4 {
   }
 }
 
+/*--------------------------------------------------------------
+# Social Media Toggle Button for Mobile Devices
+--------------------------------------------------------------*/
+.social a {
+  color: var(--white);
+  text-decoration: none;
+}
+.social {
+  position: fixed;
+  top: 20px;
+}
+.social ul {
+  padding: 0px;
+  transform: translate(-270px, 0);
+}
+.social ul li {
+  display: block;
+  margin: 5px;
+  background: rgba(0, 0, 0, 0.36);
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+  transition: all 1s;
+}
+.social ul li:hover {
+  transform: translate(110px, 0);
+  background: rgba(255, 255, 255, 0.4);
+}
+.social ul li:hover a {
+  color: var(--black);
+}
+.social ul li:hover i {
+  color: var(--white);
+  background: var(--gradient-title);
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+.social ul li i {
+  margin-left: 10px;
+  color: var(--black);
+  background: var(--white);
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background: var(--white);
+  transform: rotate(0deg);
+}
 
+@media screen and (min-width: 992px) {
+  .social {
+    display: none;
+  }
+}
