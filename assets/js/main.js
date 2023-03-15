@@ -335,3 +335,22 @@ $(document).ready(function () {
         .addClass("active animated fadeIn");
     });
 });
+
+/*--------------------------------------------------------------
+  # Add your testimonials
+  --------------------------------------------------------------*/
+// For button
+$(".button").click(function () {
+  var buttonId = $(this).attr("id");
+  $("#modal-container").removeAttr("class").addClass(buttonId);
+  $("body").addClass("modal-active");
+});
+
+$(".submit-message-button").click(function () {
+  $(this).addClass("out");
+  $("body").removeClass("modal-active");
+});
+// $("#modal-container").click(function () {
+//   $(this).addClass("out");
+//   $("body").removeClass("modal-active");
+// });
