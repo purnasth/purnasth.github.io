@@ -3096,7 +3096,7 @@
           <div class="modal-background">
             <div class="modal">
               <div class="inner-container">
-                <h5>Write me a testimonial.</h5>
+                <!-- <h5>Write me a testimonial.</h5> -->
                 <!-- <p>How's my popup icon?</p> -->
                 <svg
                   class="modal-svg"
@@ -3121,6 +3121,50 @@
                     method="POST"
                     role="form"
                   >
+                    <div id="file-upload-form" class="uploader">
+                      <input
+                        id="file-upload"
+                        type="file"
+                        name="Image"
+                        accept="image/*"
+                      />
+                      <!-- <input
+                      id="file-upload"
+                        name="Image"
+                        accept="image/*"
+                        role="uploadcare-uploader"
+                        type="hidden"
+                      /> -->
+
+                      <label for="file-upload" id="file-drag">
+                        <img
+                          id="file-image"
+                          src="#"
+                          alt="Preview"
+                          class="hidden"
+                        />
+                        <div id="start">
+                          <i class="fa fa-download" aria-hidden="true"></i>
+                          <div>Select a file or drag here</div>
+                          <div id="notimage" class="hidden">
+                            Please select an image
+                          </div>
+                          <span id="file-upload-btn" class="btn btn-primary"
+                            >Upload your photo</span
+                          >
+                        </div>
+                        <div id="response" class="hidden">
+                          <div id="messages"></div>
+                          <progress
+                            class="progress"
+                            id="file-progress"
+                            value="0"
+                          >
+                            <span>0</span>%
+                          </progress>
+                        </div>
+                      </label>
+                    </div>
                     <div class="row">
                       <div class="col-md-6 form-group">
                         <div class="form-control">
@@ -3192,7 +3236,7 @@
                           id="message"
                           name="Message"
                           required=""
-                          rows="4"
+                          rows="3"
                           spellcheck="true"
                         ></textarea>
                         <label>
@@ -3966,6 +4010,16 @@
 
     <!-- Cursor for body -->
     <div class="inner-cursor"></div>
+
+    <!-- for photo upload -->
+    <!-- <script>
+      UPLOADCARE_PUBLIC_KEY = "demopublickey";
+    </script>
+
+    <script
+      src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"
+      charset="utf-8"
+    ></script> -->
 
     <!-- For lordicon -->
     <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
