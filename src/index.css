@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+
+    *,
+    html,
+    body {
+        @apply font-serif;
+    }
+
+    /* .filter-black {
+        @apply brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7449%) hue-rotate(190deg) brightness(107%) contrast(96%);
+        } */
+    .filter-black {
+        filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(97%) contrast(103%);
+    }
+
+    .transition-300 {
+        @apply transition-all duration-300 ease-linear;
+    }
+}
