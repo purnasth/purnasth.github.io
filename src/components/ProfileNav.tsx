@@ -4,16 +4,18 @@ import { MdOutlineArrowCircleRight } from "react-icons/md";
 const ProfileNav = () => {
   return (
     <>
-      <section className="fixed left-0 top-0 m-4 bg-white/5 backdrop-blur-sm border border-1 border-white/20 shadow-sm p-6 w-72 rounded-lg z-40">
-        <div className="profile space-y-8">
+      <section className="text-white fixed left-4 top-4 bg-black/10 backdrop-blur-sm border border-1 border-white/20 shadow-sm p-6 w-72 rounded-lg z-40 h-[calc(100%-2rem)]">
+        <div className="profile flex items- justify-center flex-col gap-7 h-full">
           <img
             src={hero}
             alt=""
-            className="w-full h-56 object-cover object-top roun ded-lg"
+            className="w-full h-56 object-cover object-top rounded-lg"
+            draggable="false"
           />
           <div className="details">
-            <h2 className="text-2xl text-gray-200">Purna Shrestha</h2>
-            <p className="text-sm text-gray-600">Full Stack Developer</p>
+            <h1 className="text-3xl text-gray-200">Purna Shrestha</h1>
+
+            <p className="text-sm text-gray-600">Web Developer</p>
           </div>
 
           <div className="description">
@@ -28,18 +30,18 @@ const ProfileNav = () => {
           <div>
             <h4>Companies worked with:</h4>
             <ul className="flex items-center flex-wrap gap-4 my-3">
-              <li>
+              <li className="flex items-center justify-center">
                 <img
                   src="https://www.lftechnology.com/images/lf-logo.svg"
                   alt="Leapfrog Technology"
-                  className="filter-black hover:filter-none transition-300 w-24 h-10 object-contain p-1"
+                  className="filter-white hover:filter-none transition-300 w-24 h-9 object-contain p-1 hover:bg-white rounded-xl"
                 />
               </li>
-              <li>
+              <li className="flex items-center justify-center">
                 <img
                   src="https://longtail.info/assets/img/longtail.svg"
                   alt="Longtail e-media"
-                  className="filter-black hover:filter-none transition-300 w-24 h-10 object-contain p-1"
+                  className="filter-white hover:filter-none transition-300 w-24 h-9 object-contain p-1 hover:bg-white rounded-xl"
                 />
               </li>
             </ul>

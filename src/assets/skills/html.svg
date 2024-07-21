@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:svgjs="http://svgjs.com/svgjs" width="80" height="80" x="0" y="0" viewBox="0 0 512 512"
+    style="enable-background: new 0 0 512 512" xml:space="preserve" class="">
+    <g>
+      <g>
+        <path d="m108.4 0h23v22.8h21.2v-22.8h23v69h-23v-23h-21v23h-23.2zm97.6 23h-20.3v-23h63.7v23h-20.4v46h-23zm53.5-23h24.1l14.8 24.3 14.8-24.3h24.1v69h-23v-34.2l-16.1 24.8-16.1-24.8v34.2h-22.6zm89.2 0h23v46.2h32.6v22.8h-55.6z" fill="#000000" data-original="#000000" class=""></path>
+        <path d="m107.6 471-33-370.4h362.8l-33 370.2-148.7 41.2" fill="#ff4c1e" data-original="#ff4c1e" class=""></path>
+        <path d="m256 480.5v-349.5h148.3l-28.3 316z" fill="#ff651e" data-original="#ff651e" class=""></path>
+        <path d="m142 176.3h114l16.951 22.7-16.951 22.7h-64.2l4.2 46.5h60l16.951 23.549-16.951 21.751h-101.6zm14.4 160h45.6l3.2 36.3 50.8 13.6 19.127 22.66-19.127 24.74-93.2-26z" fill="#ebebeb" data-original="#ebebeb" class=""></path>
+        <path d="m369.6 176.3h-113.8v45.4h109.6zm-8.3 91.9h-105.5v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8z" fill="#ffffff" data-original="#ffffff" class=""></path>
+      </g>
+    </g>
+  </svg>
