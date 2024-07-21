@@ -6,7 +6,9 @@ const SideNav: React.FC = () => {
     <>
       <header className="text-white fixed right-4 top-4 bg-black/10 backdrop-blur-sm border border-1 border-white/20 shadow-sm p-6 w-72 rounded-lg z-40 h-[calc(100%-2rem)]">
         <div className="flex items-center justify-between">
-          <span className="uppercase text-custom-black/50 text-xs">Menu</span>
+          <span className="uppercase text-white/80 hover:text-white transition-300/50 text-xs text-gray-400">
+            Menu
+          </span>
           <TbCirclePlus className="text-2xl" />
         </div>
 
@@ -14,7 +16,7 @@ const SideNav: React.FC = () => {
           {/* <li className="w-full">
             <a
               href="#"
-              className="navlink w-full pb-2 inline-block text-4xl text-custom-black font-medium"
+              className="navlink w-full pb-2 inline-block text-4xl text-white/80 hover:text-white transition-300 font-medium"
               aria-label="Home"
             >
               Home
@@ -23,7 +25,7 @@ const SideNav: React.FC = () => {
           <li className="w-full">
             <a
               href="#"
-              className="navlink w-full pb-2 inline-block text-4xl text-custom-black font-medium"
+              className="navlink w-full pb-2 inline-block text-4xl text-white/80 hover:text-white transition-300 font-medium"
               aria-label="About "
             >
               About
@@ -32,7 +34,7 @@ const SideNav: React.FC = () => {
           <li className="w-full">
             <a
               href="#"
-              className="navlink w-full pb-2 inline-block text-4xl text-custom-black font-medium"
+              className="navlink w-full pb-2 inline-block text-4xl text-white/80 hover:text-white transition-300 font-medium"
               aria-label="Portfolio"
             >
               Portfolio
@@ -41,7 +43,7 @@ const SideNav: React.FC = () => {
           <li className="w-full">
             <a
               href=""
-              className="navlink w-full pb-2 inline-block text-4xl text-custom-black font-medium"
+              className="navlink w-full pb-2 inline-block text-4xl text-white/80 hover:text-white transition-300 font-medium"
               aria-label="Contact"
             >
               Contact
@@ -49,7 +51,7 @@ const SideNav: React.FC = () => {
           </li>
         </ul>
 
-        <hr className="my-8" />
+        <hr className="my-8 opacity-30" />
 
         <div className="">
           <div className="my-4">
@@ -59,14 +61,16 @@ const SideNav: React.FC = () => {
           </div>
           <div className="testimonials mt-8">
             <div className="flex flex-col gap-4 relative transition-all duration-150 ease-linear max-h-64 overflow-y-auto">
-              <p className="text-justify text-sm">
+              <p className="text-justify text-sm text-gray-300">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
                 molestias at accusantium libero quas omnis magni perspiciatis
                 commodi numquam, provident officia minima.
               </p>
               <div className="flex items-center justify-between">
-                <h4 className="text-sm font-bold">Lorem, ipsum.</h4>
-                <span className="text-xs italic">- CEO</span>
+                <h4 className="text-sm font-bold text-white/90">
+                  Lorem, ipsum.
+                </h4>
+                <span className="text-xs italic text-white/90">- CEO</span>
               </div>
             </div>
 
@@ -78,7 +82,7 @@ const SideNav: React.FC = () => {
           </div>
         </div>
 
-        <hr className="my-8" />
+        <hr className="my-8 opacity-30" />
 
         <div>
           <a
@@ -89,11 +93,11 @@ const SideNav: React.FC = () => {
           >
             Contact Me
           </a>
-          <p className="mt-5 text-xs">
+          <p className="mt-5 text-xs text-white/80">
             Or directly mail at
             <a
               href="mailto:purnashrestha0310@gmail.com"
-              className="mx-1 underline underline-offset-2"
+              className="mx-1 underline underline-offset-2 text-white"
             >
               purnashrestha0310@gmail.com
             </a>
