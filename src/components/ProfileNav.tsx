@@ -1,3 +1,4 @@
+import hero from "../assets/img/hero.png";
 import { MdOutlineArrowCircleRight } from "react-icons/md";
 
 const ProfileNav = () => {
@@ -6,9 +7,9 @@ const ProfileNav = () => {
       <section className="fixed left-0 top-0 m-4 bg-white/5 backdrop-blur-sm border border-1 border-white/20 shadow-sm p-6 w-72 rounded-lg z-40">
         <div className="profile space-y-8">
           <img
-            src="https://www.purnashrestha.com.np/assets/img/purna%20pp1.png"
+            src={hero}
             alt=""
-            className="w-full h-56 object-cover rounded-lg"
+            className="w-full h-56 object-cover object-top roun ded-lg"
           />
           <div className="details">
             <h2 className="text-2xl text-gray-200">Purna Shrestha</h2>

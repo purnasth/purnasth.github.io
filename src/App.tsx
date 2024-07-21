@@ -1,6 +1,6 @@
 import "./index.css";
 import Hero from "./components/Hero";
-import gradientBg from "./assets/gradients/gradient1.avif";
+import gradientBg from "./assets/gradients/gradient2.avif";
 import ProfileNav from "./components/ProfileNav";
 
 const App = () => {

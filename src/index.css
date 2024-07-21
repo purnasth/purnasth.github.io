@@ -10,11 +10,28 @@
         @apply font-serif;
     }
 
-    /* .filter-black {
-        @apply brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7449%) hue-rotate(190deg) brightness(107%) contrast(96%);
-        } */
     .filter-black {
         filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(97%) contrast(103%);
+    }
+
+    .green-gradient {
+
+        @apply bg-gradient-to-t from-[#4caf50] from-[0%] via-[#81c784] via-[50%] to-[#aed581] to-[100%] text-transparent bg-clip-text;
+    }
+
+    .blue-gradient {
+        /* @apply bg-gradient-to-t from-[#33bbcf] from-[0%] via-[#bef3f5] via-[50%] to-[#aed581] to-[100%] text-transparent bg-clip-text; */
+
+
+        background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,
+                #def9fa 0.89%,
+                #bef3f5 17.23%,
+                #9dedf0 42.04%,
+                #7de7eb 55.12%,
+                #5ce1e6 71.54%,
+                #33bbcf 100%);
+
+        @apply text-transparent bg-clip-text;
     }
 
     .transition-300 {
