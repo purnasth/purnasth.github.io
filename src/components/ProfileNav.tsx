@@ -35,22 +35,22 @@ const ProfileNav = () => {
             <ul className="flex items-center justify-start gap-4">
               <li className="hover:scale-125 transition-300">
                 <a href="">
-                  <FaGithub />
+                  <FaGithub className="text-white/75 hover:text-white tranistion-300" />
                 </a>
               </li>
               <li className="hover:scale-125 transition-300">
                 <a href="">
-                  <FaLinkedinIn />
+                  <FaLinkedinIn className="text-white/75 hover:text-white tranistion-300" />
                 </a>
               </li>
               <li className="hover:scale-125 transition-300">
                 <a href="">
-                  <MdCall />
+                  <MdCall className="text-white/75 hover:text-white tranistion-300" />
                 </a>
               </li>
               <li className="hover:scale-125 transition-300">
                 <a href="">
-                  <MdMail />
+                  <MdMail className="text-white/75 hover:text-white tranistion-300" />
                 </a>
               </li>
             </ul>

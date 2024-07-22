@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import hero from "../../assets/img/hero_cutout.png";
 
 type SkillLogo = {
   id: number;
@@ -161,17 +162,47 @@ const skillLogos: SkillLogo[] = [
 
 const FloatLogo: React.FC = () => {
   const [displayedLogos, setDisplayedLogos] = useState<SkillLogo[]>([]);
+  const logoRefs = useRef<(HTMLImageElement | null)[]>([]);
+  const heroRef = useRef<HTMLImageElement | null>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
       const randomLogos = skillLogos
         .sort(() => 0.5 - Math.random())
-        .slice(0, 10); // Display 10 logos at a time
+        .slice(0, 15); // Display 10 logos at a time
       setDisplayedLogos(randomLogos);
     }, 5000); // Update every 5 seconds
 
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    const checkCollision = () => {
+      const heroRect = heroRef.current?.getBoundingClientRect();
+
+      if (!heroRect) return;
+
+      logoRefs.current.forEach((logo) => {
+        if (!logo) return;
+
+        const logoRect = logo.getBoundingClientRect();
+
+        if (
+          logoRect.right > heroRect.left &&
+          logoRect.left < heroRect.right &&
+          logoRect.bottom > heroRect.top &&
+          logoRect.top < heroRect.bottom
+        ) {
+          logo.style.animationDirection = "reverse";
+        } else {
+          logo.style.animationDirection = "normal";
+        }
+      });
+    };
+
+    const interval = setInterval(checkCollision, 100);
+    return () => clearInterval(interval);
+  }, [displayedLogos]);
 
   const getRandomAnimation = () => {
     const animations = ["float-up", "float-down", "float-left", "float-right"];
@@ -182,9 +213,10 @@ const FloatLogo: React.FC = () => {
 
   return (
     <section className="absolute inset-0 overflow-hidden">
-      {displayedLogos.map((logo) => (
+      {displayedLogos.map((logo, index) => (
         <img
           key={logo.id}
+          ref={(el) => (logoRefs.current[index] = el)}
           src={logo.url}
           alt={logo.title}
           className={`w-16 opacity-50 absolute ${getRandomAnimation()}`}
@@ -196,6 +228,12 @@ const FloatLogo: React.FC = () => {
           title={logo.title}
         />
       ))}
+      <img
+        src={hero}
+        alt=""
+        ref={heroRef}
+        className="select-none pointer-events-none w-[80vh] absolute left-1/2 -translate-x-1/2 bottom-0 opacity-20 mix-blend-normal -z-10"
+      />
     </section>
   );
 };

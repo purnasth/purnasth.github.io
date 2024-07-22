@@ -19,10 +19,11 @@
 // export default Hero;
 
 import React from "react";
+import FloatLogo from "./ui/FloatLogo";
 
 const Hero: React.FC = () => {
   return (
-    <main className="flex items-center flex-col w-[calc(100%-14rem-14rem-10rem)] mx-auto overflow-hidden relative">
+    <main className="flex items-center flex-col w-[calc(100%-14rem-14rem-10rem)] h-full mx-auto overflow-hidden relative">
       <div className="text-white p-6">
         <div className="flex items-center justify-evenly">
           <h4 className="green-gradient">#design</h4>
@@ -37,6 +38,8 @@ const Hero: React.FC = () => {
           Your imagination, Mine creation
         </h2>
       </div>
+
+      <FloatLogo />
     </main>
   );
 };

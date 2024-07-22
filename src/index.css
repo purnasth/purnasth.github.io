@@ -89,3 +89,75 @@
     @apply outline outline-1 outline-offset-2 outline-white bg-white;
   }
 }
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes float-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.float-up {
+  animation: float-up infinite ease-in-out;
+}
+
+.float-down {
+  animation: float-down infinite ease-in-out;
+}
+
+.float-left {
+  animation: float-left infinite ease-in-out;
+}
+
+.float-right {
+  animation: float-right infinite ease-in-out;
+}
