@@ -5,8 +5,9 @@
 @font-face {
   font-family: 'Bourbon St';
   src: url(./assets/fonts/bourbonst-regular.otf) format('opentype');
+}
 
-
+@font-face {
   font-family: 'Gold Badge';
   src: url(./assets/fonts/goldbadge.otf) format('opentype');
 }
