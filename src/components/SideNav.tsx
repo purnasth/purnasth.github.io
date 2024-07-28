@@ -1,18 +1,18 @@
 import React from "react";
 import { TbCirclePlus } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import { ReviewSlider } from "./ui/ReviewSlider";
 
 const SideNav: React.FC = () => {
   return (
     <>
-      <header className="text-white fixed right-4 top-4 bg-black/10 backdrop-blur-sm border border-1 border-white/20 shadow-sm p-6 w-72 rounded-lg z-40 h-[calc(100%-2rem)]">
+      <header className="text-white fixed right-4 top-4 bg-black/10 backdrop-blur-sm border border-1 border-white/20 shadow-sm p-6 w-72 rounded-lg z-40 h-[calc(100%-2rem)] overflow-hidden">
         <div className="flex items-center justify-between">
           <span className="uppercase text-white/80 hover:text-white transition-300/50 text-xs text-gray-400">
             Menu
           </span>
           <TbCirclePlus className="text-2xl" />
         </div>
-
         <ul className="mt-8 links flex items-start justify-start gap-2 md:gap-4 flex-col">
           {/* <li className="w-full">
             <a
@@ -51,10 +51,8 @@ const SideNav: React.FC = () => {
             </a>
           </li>
         </ul>
-
         <hr className="my-8 opacity-30" />
-
-        <div className="">
+        {/* <div className="">
           <div className="my-4">
             <h3 className="text-base font-semibold capitalize">
               Valued Clients Feedback
@@ -81,24 +79,30 @@ const SideNav: React.FC = () => {
               <span></span>
             </div>
           </div>
+        </div> */}
+        <div className="">
+          <div className="my-4 mb-8">
+            <h3 className="text-base font-semibold capitalize">
+              Valued Clients Feedback
+            </h3>
+          </div>
+          <ReviewSlider />
         </div>
-
         <hr className="my-8 opacity-30" />
-
         <div>
           <a
             rel="noopener noreferrer"
-            className="w-full text-center py-2 px-5 rounded-full flex items-center justify-center gap-2 backdrop-blur-md text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline"
+            className="mb-6 w-full text-center py-2 px-5 rounded-full flex items-center justify-center gap-2 backdrop-blur-md bg-white/10 text-white outline outline-2 outline-white pointer-events-auto hover-outline"
             href="#"
             target="_blank"
           >
-            Contact Me
+            Let's Talk
           </a>
-          <p className="mt-5 text-xs text-white/80">
+          <p className="mt-5 text-xs text-white/80 font-inria-sans">
             Or directly mail at
             <a
               href="mailto:purnashrestha0310@gmail.com"
-              className="mx-1 underline underline-offset-2 text-white"
+              className="mx-1 underline underline-offset-4 hover:underline-offset-2 text-white transition-300"
             >
               purnashrestha0310@gmail.com
             </a>

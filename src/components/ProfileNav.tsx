@@ -78,7 +78,7 @@ const ProfileNav = () => {
           </div>
 
           <div className="links">
-            <button className="mb-6 w-full text-center py-2 px-5 rounded-full flex items-center justify-center gap-2 backdrop-blur-md text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline">
+            <button className="mb-6 w-full text-center py-2 px-5 rounded-full flex items-center justify-center gap-2 backdrop-blur-md text-white border-2 border-white outline outline-1 outline-white/50 outline-offset-2 pointer-events-auto">
               Download my CV
             </button>
             <Link to="/about" className="flex items-center justify-between">
