@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import ProfileNav from "../components/ProfileNav";
 import SideNav from "../components/SideNav";
+import withFramerTransition from "../hoc/withFramerTransition";
 
 const Home = () => {
   return (
@@ -12,4 +13,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default withFramerTransition(Home);

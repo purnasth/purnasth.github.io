@@ -78,6 +78,20 @@
     @apply transition-all duration-300 ease-linear;
   }
 
+  .slide-in {
+    @apply fixed top-0 left-0 w-full h-screen bg-black origin-bottom transition-all duration-300 ease-linear z-50 pointer-events-none;
+  }
+
+  .slide-out {
+    @apply fixed top-0 left-0 w-full h-screen bg-black origin-top transition-all duration-300 ease-linear z-50 pointer-events-none;
+  }
+
+  .wave {
+    @apply fixed bottom-0 left-0 w-full h-screen bg-gradient-to-t from-[#4caf50] from-[0%] via-[#81c784] via-[50%] to-[#aed581] to-[100%];
+  }
+
+
+
   .pagination span {
     @apply size-2 bg-white/50 rounded-full cursor-pointer;
   }

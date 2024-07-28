@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
       className="size-full bg-cover bg-center -z-10 mix-blend-darken"
       style={{ backgroundImage: `url(${gradientBg})` }}
     >
-      <div className="flex items-center flex-col w-[calc(100%-14rem-14rem-10rem)] h-screen mx-auto overflow-hidden relative">
+      <div className="flex items-center flex-col w-[calc(100%-14rem-14rem-5rem-5rem)] h-screen mx-auto overflow-hidden relative">
         <div className="text-white p-6">
           <div className="flex items-center justify-evenly">
             <h4 className="green-gradient">#design</h4>
