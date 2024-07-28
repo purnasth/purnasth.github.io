@@ -1,5 +1,6 @@
 import React from "react";
 import { TbCirclePlus } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const SideNav: React.FC = () => {
   return (
@@ -23,13 +24,13 @@ const SideNav: React.FC = () => {
             </a>
           </li> */}
           <li className="w-full">
-            <a
-              href="#"
+            <Link
+              to="/about"
               className="navlink w-full pb-2 inline-block text-4xl text-white/80 hover:text-white transition-300 font-medium"
               aria-label="About "
             >
               About
-            </a>
+            </Link>
           </li>
           <li className="w-full">
             <a

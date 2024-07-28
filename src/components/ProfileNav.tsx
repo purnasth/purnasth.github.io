@@ -4,6 +4,7 @@ import { MdCall } from "react-icons/md";
 import { MdMail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ProfileNav = () => {
   return (
@@ -80,10 +81,10 @@ const ProfileNav = () => {
             <button className="mb-6 w-full text-center py-2 px-5 rounded-full flex items-center justify-center gap-2 backdrop-blur-md text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline">
               Download my CV
             </button>
-            <a href="" className="flex items-center justify-between">
+            <Link to="/about" className="flex items-center justify-between">
               <span>Know More About Me</span>
               <MdOutlineArrowCircleRight className="text-2xl" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

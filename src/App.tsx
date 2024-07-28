@@ -1,15 +1,24 @@
 import "./index.css";
-import gradientBg from "./assets/gradients/gradient2.avif";
 import Home from "./routes/Home";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import About from "./routes/About";
 
 const App = () => {
   return (
-    <main
-      className={`absolute inset-0 bg-[url('')] size-full bg-cover bg-center -z-10 mix-blend-darken`}
-      style={{ backgroundImage: `url(${gradientBg})` }}
-    >
-      <Home />
-    </main>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Navigate to="/home" />} />
+        </Routes>
+      </Router>
+    </>
   );
 };
 
