@@ -98,7 +98,10 @@ const Dots: React.FC<DotsProps> = ({ activeIndex, setActiveIndex }) => {
     <div className="mt-4 flex w-full justify-center gap-2">
       {testimonials.map((_, idx) => (
         <button
+          type="button"
           key={idx}
+          title={`Feedback ${idx + 1}`}
+          aria-label={`Feedback ${idx + 1}`}
           onClick={() => setActiveIndex(idx)}
           className={`size-2 bg-white/50 hover:bg-white/90 rounded-full cursor-pointer transition-all duration-300 ease-linear ${
             idx === activeIndex
