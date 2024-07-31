@@ -3,17 +3,16 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Bourbon St';
-  src: url(./assets/fonts/bourbonst-regular.otf) format('opentype');
+  font-family: "Bourbon St";
+  src: url(./assets/fonts/bourbonst-regular.otf) format("opentype");
 }
 
 @font-face {
-  font-family: 'Gold Badge';
-  src: url(./assets/fonts/goldbadge.otf) format('opentype');
+  font-family: "Gold Badge";
+  src: url(./assets/fonts/goldbadge.otf) format("opentype");
 }
 
 @layer components {
-
   /* *,
   html,
   body {
@@ -47,35 +46,41 @@
   }
 
   .filter-black {
-    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(97%) contrast(103%);
+    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%)
+      hue-rotate(21deg) brightness(97%) contrast(103%);
   }
 
   .filter-white {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+      hue-rotate(288deg) brightness(102%) contrast(102%);
   }
 
   .green-gradient {
-
     @apply bg-gradient-to-t from-[#4caf50] from-[0%] via-[#81c784] via-[50%] to-[#aed581] to-[100%] text-transparent bg-clip-text;
   }
 
   .blue-gradient {
     /* @apply bg-gradient-to-t from-[#33bbcf] from-[0%] via-[#bef3f5] via-[50%] to-[#aed581] to-[100%] text-transparent bg-clip-text; */
 
-
-    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,
-        #def9fa 0.89%,
-        #bef3f5 17.23%,
-        #9dedf0 42.04%,
-        #7de7eb 55.12%,
-        #5ce1e6 71.54%,
-        #33bbcf 100%);
+    background: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33bbcf 100%
+    );
 
     @apply text-transparent bg-clip-text;
   }
 
   .transition-300 {
     @apply transition-all duration-300 ease-linear;
+  }
+
+  .transition-700 {
+    @apply transition-all duration-700 ease-linear;
   }
 
   .slide-in {
@@ -89,8 +94,6 @@
   .wave {
     @apply fixed bottom-0 left-0 w-full h-screen bg-gradient-to-t from-[#4caf50] from-[0%] via-[#81c784] via-[50%] to-[#aed581] to-[100%];
   }
-
-
 
   .pagination span {
     @apply size-2 bg-white/50 rounded-full cursor-pointer;
