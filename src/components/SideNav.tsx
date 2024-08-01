@@ -33,13 +33,13 @@ const SideNav: React.FC = () => {
             </Link>
           </li>
           <li className="w-full">
-            <a
-              href="#"
+            <Link
+              to="/portfolio"
               className="navlink w-full pb-2 inline-block text-4xl text-white/80 hover:text-white transition-300 font-medium"
               aria-label="Portfolio"
             >
               Portfolio
-            </a>
+            </Link>
           </li>
           <li className="w-full">
             <a

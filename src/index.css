@@ -19,6 +19,10 @@
     @apply font-luxury;
   } */
 
+  main {
+    @apply py-20 px-4 sm:py-28 md:px-12 md:py-[7.5rem] lg:py-[9rem];
+  }
+
   h2 {
     @apply font-title;
   }
@@ -53,6 +57,10 @@
   .filter-white {
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
       hue-rotate(288deg) brightness(102%) contrast(102%);
+  }
+
+  .overlay {
+    @apply size-full bg-black/30 absolute inset-0 pointer-events-none transition-all duration-500 ease-linear;
   }
 
   .green-gradient {
