@@ -162,8 +162,8 @@ const About: React.FC = () => {
     },
   ];
   return (
-    <main className="size-full h-full bg-black text-white">
-      <div className="w-[calc(100%-14rem-5rem)] h-full ml-auto p-8">
+    <main className="size-full h-full bg-black text-white py-12">
+      <div className="w-[calc(100%-14rem-5rem)] h-full ml-auto">
         <ProfileNav />
         <section className="space-y-16">
           <div>

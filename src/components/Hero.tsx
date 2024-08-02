@@ -32,7 +32,7 @@ import gradientBg from "../assets/gradients/gradient2.avif";
 const Hero: React.FC = () => {
   return (
     <main
-      className="size-full bg-cover bg-center -z-10 mix-blend-darken"
+      className="size-full bg-cover bg-center -z-10 mix-blend-darken p-0 m-0"
       style={{ backgroundImage: `url(${gradientBg})` }}
     >
       <div className="flex items-center flex-col w-[calc(100%-14rem-14rem-5rem-5rem)] h-screen mx-auto overflow-hidden relative">
