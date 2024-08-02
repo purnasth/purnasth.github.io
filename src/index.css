@@ -83,6 +83,10 @@
     @apply text-transparent bg-clip-text;
   }
 
+  .text-gold-gradient {
+    @apply bg-gradient-to-b from-[#f3bf58] from-[27%] via-[#ffecb3] via-[40%] to-[#9a6700] to-[98%] text-transparent bg-clip-text;
+  }
+
   .transition-300 {
     @apply transition-all duration-300 ease-linear;
   }
