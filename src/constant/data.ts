@@ -1,6 +1,7 @@
 import hotelHimalaya from "../assets/img/portfolio/hotel-himalaya.png";
 import hotelDayatra from "../assets/img/portfolio/hotel-dayatra.png";
 import mithilaYatriNiwas from "../assets/img/portfolio/mithila.png";
+import hotelIchchha from "../assets/img/portfolio/hotel-ichchha.png";
 
 export const portfolioData = [
   {
@@ -120,6 +121,50 @@ export const portfolioData = [
           },
           {
             url: mithilaYatriNiwas,
+            alt: "Swimming Pool 4",
+            colSpan: 2,
+          },
+        ],
+        technologies: [
+          "Figma",
+          "React.js",
+          "TailwindCSS",
+          "API",
+          "React Router",
+          "TypeScript",
+          "HSTS",
+          "Google Fonts API",
+          "Cloudflare",
+          "Lenis",
+        ],
+        technologiesColor: "#00daff42",
+      },
+      {
+        id: "hotel-ichchha",
+        title: "Hotel Ichchha",
+        logoSrc: "https://hotelichchha.com/assets/logo-DU4e6XTo.svg",
+        portfolioUrl: "hotel-ichchha",
+        description:
+          "Nepal's First 5-Star Hotel in Simara Epitomizes luxury and sophistication, offering exceptional comfort, convenience, enjoyment, and services. Being a top hospitality provider, we guarantee our finest offerings due to its convenient location, it is a great option for business, leisure, and pilgrimage trips. The ideal option for a destination wedding that will enhance the memory of your special moments. Hotel Ichchha is perfectly suited for all your needs with a total of 100 rooms.",
+
+        landingImage: [
+          {
+            url: hotelIchchha,
+            alt: "Swimming Pool 1",
+            colSpan: 2,
+          },
+          {
+            url: hotelIchchha,
+            alt: "Swimming Pool 2",
+            colSpan: 3,
+          },
+          {
+            url: hotelIchchha,
+            alt: "Swimming Pool 3",
+            colSpan: 3,
+          },
+          {
+            url: hotelIchchha,
             alt: "Swimming Pool 4",
             colSpan: 2,
           },
