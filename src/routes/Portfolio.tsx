@@ -104,10 +104,12 @@ const Portfolio: React.FC = () => {
             <LightGallery
               plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
               mode="lg-fade"
-              options={{
-                thumbnail: true,
-                autoplay: true,
-              }}
+              // options={{
+              //   thumbnail: true,
+              //   autoplay: true,
+              // }}
+              thumbnail={true}
+              autoplay={true}
               elementClassNames={`col-span-2 grid grid-cols-5 gap-4 md:gap-8 ${
                 index % 2 === 0 ? "" : "xl:order-first"
               } md:mt-16 xl:mt-24 ${
