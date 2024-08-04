@@ -5,6 +5,7 @@ import { MdMail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import purnaCV from "../assets/docs/cv.pdf";
 
 const ProfileNav = () => {
   return (
@@ -78,9 +79,13 @@ const ProfileNav = () => {
           </div>
 
           <div className="links">
-            <button className="mb-6 w-full text-center py-2 px-5 rounded-full flex items-center justify-center gap-2 backdrop-blur-md text-white border-2 border-white outline outline-1 outline-white/50 outline-offset-2 pointer-events-auto">
+            <a
+              href={purnaCV}
+              className="mb-6 w-full text-center py-2 px-5 rounded-full flex items-center justify-center gap-2 backdrop-blur-md text-white border-2 border-white outline outline-1 outline-white/50 outline-offset-2 pointer-events-auto"
+              download={true}
+            >
               Download my CV
-            </button>
+            </a>
             <Link to="/about" className="flex items-center justify-between">
               <span>Know More About Me</span>
               <MdOutlineArrowCircleRight className="text-2xl" />
