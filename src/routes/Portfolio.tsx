@@ -12,29 +12,6 @@ import "lightgallery/css/lg-thumbnail.css";
 import "lightgallery/css/lg-fullscreen.css";
 import { Link } from "react-router-dom";
 
-interface PortfolioDetail {
-  id: string;
-  title: string;
-  logoSrc: string;
-  portfolioUrl: string;
-  description: string;
-  landingImage: {
-    url: string;
-    alt: string;
-    colSpan: number;
-  }[];
-  technologies: string[];
-  technologiesColor: string;
-}
-
-interface PortfolioItem {
-  id: number;
-  title: string;
-  heading: string;
-  description: string;
-  portfolioDetails: PortfolioDetail[];
-}
-
 const Portfolio: React.FC = () => {
   return (
     <main className="size-full h-full bg-black text-white">
@@ -81,9 +58,9 @@ const Portfolio: React.FC = () => {
                         <li
                           key={technologyIndex}
                           className="px-4 py-2 rounded-2xl relative overflow-hidden text-xs md:text-base"
-                          style={{
-                            backgroundColor: portfolio.technologiesColor,
-                          }}
+                          // style={{
+                          //   backgroundColor: portfolio.technologiesColor,
+                          // }}
                         >
                           <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></div>
                           {technology}
