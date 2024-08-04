@@ -1,4 +1,5 @@
 import hotelHimalaya from "../assets/img/portfolio/hotel-himalaya.png";
+import hotelDayatra from "../assets/img/portfolio/hotel-dayatra.png";
 
 export const portfolioData = [
   {
@@ -32,6 +33,49 @@ export const portfolioData = [
           },
           {
             url: hotelHimalaya,
+            alt: "Swimming Pool 4",
+            colSpan: 2,
+          },
+        ],
+        technologies: [
+          "Figma",
+          "React.js",
+          "TailwindCSS",
+          "API",
+          "React Router",
+          "TypeScript",
+          "HSTS",
+          "Google Fonts API",
+          "Cloudflare",
+          "Lenis",
+        ],
+        technologiesColor: "#00daff42",
+      },
+      {
+        id: "hotel-dayatra",
+        title: "Hotel Dayatra",
+        logoSrc: "https://www.purnashrestha.com.np/dayatra/assets/img/logo.svg",
+        portfolioUrl: "hotel-dayatra",
+        description:
+        "Hotel Dayatra Courtyard is a luxury hotel of amazing service and perfect for unwinding. The hotel is located in the heart of the pokhara, just 5 minutes away from the airport.",
+        landingImage: [
+          {
+            url: hotelDayatra,
+            alt: "Swimming Pool 1",
+            colSpan: 2,
+          },
+          {
+            url: hotelDayatra,
+            alt: "Swimming Pool 2",
+            colSpan: 3,
+          },
+          {
+            url: hotelDayatra,
+            alt: "Swimming Pool 3",
+            colSpan: 3,
+          },
+          {
+            url: hotelDayatra,
             alt: "Swimming Pool 4",
             colSpan: 2,
           },
