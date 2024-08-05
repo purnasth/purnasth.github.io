@@ -23,31 +23,30 @@
     @apply py-20 px-4 sm:py-28 md:px-12 md:py-[7.5rem] lg:py-[9rem];
   }
 
-  h2 {
-    @apply font-title;
-  }
-
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-inria-sans;
-  }
 
   h1,
+  h2,
+  h3,
   .navlink {
     @apply font-luxury;
   }
 
-  span,
-  button,
-  a {
-    @apply font-inria-sans;
+  h4,
+  h5,
+  h6,
+  a,
+  button {
+    @apply font-inria-sans font-semibold;
   }
 
-  p {
-    @apply font-pt-sans;
+  p,
+  span {
+    @apply font-inria-sans font-light;
   }
+
+  /* p {
+    @apply font-pt-sans;
+  } */
 
   .filter-black {
     filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(97%) contrast(103%);

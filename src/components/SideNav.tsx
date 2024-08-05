@@ -82,9 +82,9 @@ const SideNav: React.FC = () => {
         </div> */}
         <div className="">
           <div className="my-4 mb-8">
-            <h3 className="text-base font-semibold capitalize">
+            <h4 className="text-base font-semibold capitalize">
               Valued Clients Feedback
-            </h3>
+            </h4>
           </div>
           <ReviewSlider />
         </div>
@@ -98,7 +98,7 @@ const SideNav: React.FC = () => {
           >
             Let's Talk
           </a>
-          <p className="mt-5 text-xs text-white/80 font-inria-sans">
+          <p className="mt-5 text-xs text-white/80">
             Or directly mail at
             <a
               href="mailto:purnashrestha0310@gmail.com"

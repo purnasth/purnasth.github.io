@@ -167,7 +167,7 @@ const About: React.FC = () => {
         <ProfileNav />
         <section className="space-y-16">
           <div>
-            <h2 className="text-6xl font-luxury leading-snug">
+            <h2 className="text-6xl leading-snug">
               Hey, <br /> I'm Purna Shrestha.
             </h2>
             <p className="my-12 ml-32 text-2xl">
@@ -185,7 +185,7 @@ const About: React.FC = () => {
           </div>
 
           <div>
-            <h4 className="font-pt-sans bg-gray-800 text-white/90 inline-flex items-center justify-center gap-2 text-xl px-6 py-2 rounded-full">
+            <h4 className="bg-gray-800 text-white/90 inline-flex items-center justify-center gap-2 text-xl px-6 py-2 rounded-full">
               <span className="size-2 bg-green-500 rounded-full"></span>
               Available for work
             </h4>
@@ -215,7 +215,7 @@ const About: React.FC = () => {
           </div>
 
           <div>
-            <h4 className="font-pt-sans bg-gray-800 text-white/90 inline-flex items-center justify-center gap-2 text-xl px-6 py-2 rounded-full">
+            <h4 className="bg-gray-800 text-white/90 inline-flex items-center justify-center gap-2 text-xl px-6 py-2 rounded-full">
               <span className="size-2 bg-green-500 rounded-full"></span>
               Trusted by
             </h4>
@@ -265,7 +265,7 @@ const About: React.FC = () => {
           </div>
 
           <div>
-            <h4 className="font-pt-sans bg-gray-800 text-white/90 inline-flex items-center justify-center gap-2 text-xl px-6 py-2 rounded-full">
+            <h4 className="bg-gray-800 text-white/90 inline-flex items-center justify-center gap-2 text-xl px-6 py-2 rounded-full">
               <span className="size-2 bg-green-500 rounded-full"></span>
               Services Process
             </h4>
@@ -281,12 +281,12 @@ const About: React.FC = () => {
                 <div className="pointer-events-none absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] w-full h-full" />
                 <div className="pointer-events-none group absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0.6)] text-white text-center transition-all duration-700 ease-in-out transform translate-y-1/2 group-hover:translate-y-0">
                   <div className="p-4 pointer-events-auto">
-                    <h3 className="font-luxury text-3xl font-medium mb-24 group-hover:mb-0 transition-all duration-300">
+                    <h4 className="text-3xl font-medium mb-24 group-hover:mb-0 transition-all duration-300">
                       Consulting
-                    </h3>
-                    <h4 className="font-title opacity-0 group-hover:opacity-100 text-3xl font-cursive text-gradient font-medium mt-24 group-hover:mt-12 transition-all duration-300">
-                      Lorem ipsum dolor sit.
                     </h4>
+                    <h5 className="opacity-0 group-hover:opacity-100 text-3xl font-cursive text-gradient font-medium mt-24 group-hover:mt-12 transition-all duration-300">
+                      Lorem ipsum dolor sit.
+                    </h5>
                     <p className="text-white mt-4 mb-12">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Quos, error animi. Necessitatibus consequatur.
@@ -311,12 +311,12 @@ const About: React.FC = () => {
                 <div className="pointer-events-none absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] w-full h-full" />
                 <div className="pointer-events-none group absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0.6)] text-white text-center transition-all duration-700 ease-in-out transform translate-y-1/2 group-hover:translate-y-0">
                   <div className="p-4 pointer-events-auto">
-                    <h3 className="font-luxury text-3xl font-medium mb-24 group-hover:mb-0 transition-all duration-300">
+                    <h4 className="text-3xl font-medium mb-24 group-hover:mb-0 transition-all duration-300">
                       Designing
-                    </h3>
-                    <h4 className="font-title opacity-0 group-hover:opacity-100 text-3xl font-cursive text-gradient font-medium mt-24 group-hover:mt-12 transition-all duration-300">
-                      Lorem ipsum dolor sit.
                     </h4>
+                    <h5 className="opacity-0 group-hover:opacity-100 text-3xl font-cursive text-gradient font-medium mt-24 group-hover:mt-12 transition-all duration-300">
+                      Lorem ipsum dolor sit.
+                    </h5>
                     <p className="text-white mt-4 mb-12">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Quos, error animi. Necessitatibus consequatur.
@@ -341,12 +341,12 @@ const About: React.FC = () => {
                 <div className="pointer-events-none absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] w-full h-full" />
                 <div className="pointer-events-none group absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0.6)] text-white text-center transition-all duration-700 ease-in-out transform translate-y-1/2 group-hover:translate-y-0">
                   <div className="p-4 pointer-events-auto">
-                    <h3 className="font-luxury text-3xl font-medium mb-24 group-hover:mb-0 transition-all duration-300">
+                    <h4 className="text-3xl font-medium mb-24 group-hover:mb-0 transition-all duration-300">
                       Coding
-                    </h3>
-                    <h4 className="font-title opacity-0 group-hover:opacity-100 text-3xl font-cursive text-gradient font-medium mt-24 group-hover:mt-12 transition-all duration-300">
-                      Lorem ipsum dolor sit.
                     </h4>
+                    <h5 className="opacity-0 group-hover:opacity-100 text-3xl font-cursive text-gradient font-medium mt-24 group-hover:mt-12 transition-all duration-300">
+                      Lorem ipsum dolor sit.
+                    </h5>
                     <p className="text-white mt-4 mb-12">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Quos, error animi. Necessitatibus consequatur.

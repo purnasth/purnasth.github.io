@@ -21,22 +21,18 @@ export const portfolioData = [
           {
             url: hotelHimalaya,
             alt: "Swimming Pool 1",
-            colSpan: 2,
           },
           {
             url: hotelHimalaya,
             alt: "Swimming Pool 2",
-            colSpan: 3,
           },
           {
             url: hotelHimalaya,
             alt: "Swimming Pool 3",
-            colSpan: 3,
           },
           {
             url: hotelHimalaya,
             alt: "Swimming Pool 4",
-            colSpan: 2,
           },
         ],
         technologies: [
@@ -64,22 +60,18 @@ export const portfolioData = [
           {
             url: hotelDayatra,
             alt: "Swimming Pool 1",
-            colSpan: 2,
           },
           {
             url: hotelDayatra,
             alt: "Swimming Pool 2",
-            colSpan: 3,
           },
           {
             url: hotelDayatra,
             alt: "Swimming Pool 3",
-            colSpan: 3,
           },
           {
             url: hotelDayatra,
             alt: "Swimming Pool 4",
-            colSpan: 2,
           },
         ],
         technologies: [
@@ -107,22 +99,18 @@ export const portfolioData = [
           {
             url: mithilaYatriNiwas,
             alt: "Swimming Pool 1",
-            colSpan: 2,
           },
           {
             url: mithilaYatriNiwas,
             alt: "Swimming Pool 2",
-            colSpan: 3,
           },
           {
             url: mithilaYatriNiwas,
             alt: "Swimming Pool 3",
-            colSpan: 3,
           },
           {
             url: mithilaYatriNiwas,
             alt: "Swimming Pool 4",
-            colSpan: 2,
           },
         ],
         technologies: [
@@ -151,22 +139,18 @@ export const portfolioData = [
           {
             url: hotelIchchha,
             alt: "Swimming Pool 1",
-            colSpan: 2,
           },
           {
             url: hotelIchchha,
             alt: "Swimming Pool 2",
-            colSpan: 3,
           },
           {
             url: hotelIchchha,
             alt: "Swimming Pool 3",
-            colSpan: 3,
           },
           {
             url: hotelIchchha,
             alt: "Swimming Pool 4",
-            colSpan: 2,
           },
         ],
         technologies: [
