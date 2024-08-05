@@ -35,18 +35,18 @@ const Portfolio: React.FC = () => {
                 index % 2 === 0 ? "" : "xl:order-last"
               }`}
             >
-              <div className="space-y-8 md:space-y-20">
+              <div className="space-y-8 md:space-y-16">
                 <div>
                   <img
                     src={portfolio.logoSrc}
                     alt={portfolio.title}
                     className="w-32 h-28 md:w-40 md:h-36 object-contain"
                   />
-                  <p className="text-sm text-justify md:text-base mt-4 mb-8 md:mb-20">
+                  <p className="text-sm text-justify md:text-base mt-4">
                     {portfolio.description}
                   </p>
                 </div>
-                <div>
+                {/* <div>
                   <h4 className="text-xl md:text-2xl mb-6">Technologies</h4>
 
                   <ul className="flex items-center gap-3 md:gap-6 flex-wrap">
@@ -65,11 +65,11 @@ const Portfolio: React.FC = () => {
                       )
                     )}
                   </ul>
-                </div>
+                </div> */}
 
                 <Link
                   to={`/portfolio/${portfolio.portfolioUrl}`}
-                  className="bg-hotel-himalaya text-black px-10 py-3 rounded-full inline-block hover:bg-opacity-80 transition-all duration-300 ease-linear"
+                  className="bg-hotel-himalaya text-black px-8 py-2 text-lg rounded-full inline-block hover:bg-opacity-80 transition-all duration-300 ease-linear"
                 >
                   View Project
                 </Link>
