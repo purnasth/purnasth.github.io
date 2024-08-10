@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ProfileNav from "../components/ProfileNav";
 import purna from "../assets/img/purna/FC_20221024_0004.jpg";
 
@@ -9,6 +9,20 @@ type SkillLogo = {
 };
 
 const About: React.FC = () => {
+  const greetings: string[] = [
+    "Hello",
+    "ज्वजलपा", // Newari
+    "नमस्कार", // Nepali
+    "Hola", // Spanish
+    "Bonjour", // French
+    "Hallo", // German
+    "Ciao", // Italian
+    "こんにちは", // Japanese
+    "안녕하세요", // Korean
+    "你好", // Chinese
+    "Olá", // Portuguese
+  ];
+
   const skillLogos: SkillLogo[] = [
     {
       id: 1,
@@ -161,14 +175,29 @@ const About: React.FC = () => {
       url: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg",
     },
   ];
+
+  const [greeting, setGreeting] = useState<string>(greetings[0]);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setGreeting((prevGreeting) => {
+        const currentIndex = greetings.indexOf(prevGreeting);
+        const nextIndex = (currentIndex + 1) % greetings.length;
+        return greetings[nextIndex];
+      });
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <main className="size-full h-full bg-black text-white py-12">
       <div className="w-[calc(100%-14rem-5rem)] h-full ml-auto">
         <ProfileNav />
         <section className="space-y-16">
           <div>
-            <h2 className="text-6xl leading-snug">
-              Hey, <br /> I'm Purna Shrestha.
+            <h2 className="text-6xl leading-snug capitalize">
+              {greeting}, <br /> I'm Purna Shrestha.
             </h2>
             <p className="my-12 ml-32 text-2xl">
               ---------------- a software engineer based in Kathmandu, Nepal.
