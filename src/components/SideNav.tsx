@@ -1,5 +1,4 @@
 import React from "react";
-import { TbCirclePlus } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { ReviewSlider } from "./ui/ReviewSlider";
 
@@ -7,11 +6,10 @@ const SideNav: React.FC = () => {
   return (
     <>
       <header className="text-white fixed right-4 top-4 bg-black/10 backdrop-blur-sm border border-1 border-white/20 shadow-sm p-6 w-72 rounded-lg z-40 h-[calc(100%-2rem)] overflow-hidden">
-        <div className="flex items-center justify-between">
+        <div className="mt-3 flex items-center justify-between">
           <span className="uppercase text-white/80 hover:text-white transition-300/50 text-xs text-gray-400">
             Menu
           </span>
-          <TbCirclePlus className="text-2xl" />
         </div>
         <ul className="mt-8 links flex items-start justify-start gap-2 md:gap-4 flex-col">
           {/* <li className="w-full">
