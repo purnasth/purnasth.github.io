@@ -105,7 +105,7 @@ const Dots: React.FC<DotsProps> = ({ activeIndex, setActiveIndex }) => {
           onClick={() => setActiveIndex(idx)}
           className={`size-2 bg-white/50 hover:bg-white/90 rounded-full cursor-pointer transition-all duration-300 ease-linear ${
             idx === activeIndex
-              ? "outline outline-1 outline-offset-2 outline-white bg-white"
+              ? "outline outline-1 outline-offset-2 outline-white bg-white/80"
               : ""
           }`}
         />

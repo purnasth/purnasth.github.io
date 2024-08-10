@@ -110,10 +110,6 @@
   .pagination span:hover {
     @apply bg-white/90;
   }
-
-  .pagination span.active {
-    @apply outline outline-1 outline-offset-2 outline-white bg-white;
-  }
 }
 
 @keyframes float-up {
