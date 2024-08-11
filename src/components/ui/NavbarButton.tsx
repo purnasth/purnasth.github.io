@@ -13,7 +13,7 @@ const NavbarButton: React.FC = () => {
     <>
       <button
         onClick={toggleNav}
-        className={`group p-2 m-5 text-white z-50 border border-white/50 rounded-full hover:scale-125 hover:bg-white/20 hover:border-white transition-all duration-300 ease-linear ${
+        className={`group p-2 m-5 text-white z-50 border border-white/50 rounded-full backdrop-blur-lg hover:scale-125 hover:bg-white/20 hover:border-white transition-all duration-300 ease-linear ${
           isOpen
             ? "scale-[1.35] bg-white/20 border-white rotate-[315deg] animate-pulse"
             : ""

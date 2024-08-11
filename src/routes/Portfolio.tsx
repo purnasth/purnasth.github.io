@@ -11,10 +11,13 @@ import "lightgallery/css/lg-video.css";
 import "lightgallery/css/lg-thumbnail.css";
 import "lightgallery/css/lg-fullscreen.css";
 import { Link } from "react-router-dom";
+import NavbarBreadCrumb from "../components/NavbarBreadCrumb";
 
 const Portfolio: React.FC = () => {
   return (
     <main className="size-full h-full bg-black text-white">
+      <NavbarBreadCrumb page="Portfolio" />
+
       <div className="container">
         <div className="text-center space-y-4">
           <span>{portfolioData[0].title}</span>

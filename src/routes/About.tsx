@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ProfileNav from "../components/ProfileNav";
 import purna from "../assets/img/purna/FC_20221024_0004.jpg";
+import NavbarBreadCrumb from "../components/NavbarBreadCrumb";
 
 type SkillLogo = {
   id: number;
@@ -192,6 +193,7 @@ const About: React.FC = () => {
 
   return (
     <main className="size-full h-full bg-black text-white py-12">
+      <NavbarBreadCrumb page="About" />
       <div className="w-[calc(100%-14rem-5rem)] h-full ml-auto">
         <ProfileNav />
         <section className="space-y-16">
