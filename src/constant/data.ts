@@ -15,8 +15,10 @@ export const portfolioData = [
         title: "Hotel Himalaya",
         logoSrc: "https://hotelhimalaya.pages.dev/assets/logo-s4LMycLK.svg",
         portfolioUrl: "hotel-himalaya",
+        // description:
+        //   "Nestled within 6.58 acres of exquisitely landscaped grounds, Hotel Himalaya is conveniently located 8 km away from the Tribhuvan International Airport and only 2 km from the Kathmandu city center. ",
         description:
-          "Nestled within 6.58 acres of exquisitely landscaped grounds, Hotel Himalaya is conveniently located 8 km away from the Tribhuvan International Airport and only 2 km from the Kathmandu city center. ",
+          "Hotel Himalaya is conveniently located 8 km away from the Tribhuwan International Airport and only 2 km from the Kathmandu city center. The stay at Hotel Himalaya means enjoying every moment.",
         landingImage: [
           {
             url: hotelHimalaya,
@@ -47,7 +49,7 @@ export const portfolioData = [
         //   "Cloudflare",
         //   "Lenis",
         // ],
-        technologiesColor: "#00daff42",
+        // technologiesColor: "#00daff42",
       },
       {
         id: "hotel-dayatra",
