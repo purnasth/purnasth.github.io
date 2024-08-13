@@ -7,10 +7,10 @@ const PortfolioPresentation: React.FC = () => {
   const { website } = useParams();
   return (
     <>
-      <main>
+      <main className="px-0">
         <section>
           <div className="container">
-            <h1 className="text-8xl capitalize">{website}</h1>
+            <h1 className="text-8xl capitalize hidden">{website}</h1>
             <h1 className="text-8xl">Hotel Himalaya</h1>
             <p className="max-w-lg">
               Hotel Himalaya is conveniently located 8 km away from the
@@ -52,39 +52,51 @@ const PortfolioPresentation: React.FC = () => {
           </div>
         </section>
 
-        <section className="relative overflow-hidden">
+        <section className="relative overflow-hidden mb-16">
           <img
             src={hotelHimalaya}
             alt=""
-            className="absolute inset-0 w-[75%] object-contain mx-auto mt-20 -z-10"
+            className="absolute inset-0 w-[74.2%] h-screen object-contain mx-auto -z-10 -translate-y-4 rounded-2xl"
           />
 
           <div className="bg-[url('https://dennissnellenberg.com/assets/img/device-mbp-15-nonotch.png')] bg-no-repeat bg-contain bg-center w-full h-screen"></div>
+        </section>
 
-          <div className="flex items-center justify-between px-3">
-            <div className="w-80 h-[42rem] overflow-y-auto shadow-lg">
+        <section className="py-32">
+          <div className="flex items-center justify-evenly px-3">
+            <div className="w-[22rem] h-[40rem] overflow-y-auto shadow-lg">
               <iframe
                 src="https://hotelhimalaya.pages.dev/"
                 title="Hotel Himalaya Website Home Page"
                 className="size-full"
               ></iframe>
             </div>
-            <div className="w-96 h-[42rem] overflow-y-auto shadow-lg">
+            <div className="w-[22rem] h-[40rem] overflow-y-auto shadow-lg">
               <iframe
                 src="https://hotelhimalaya.pages.dev/stay"
                 className="size-full"
                 title="Hotel Himalaya Website Stay Page"
               ></iframe>
             </div>
-            <div className="w-80 h-[42rem] overflow-y-auto shadow-lg">
+            <div className="w-[22rem] h-[40rem] overflow-y-auto shadow-lg">
               <iframe
-                src="https://hotelhimalaya.pages.dev/social-offer"
+                src="https://hotelhimalaya.pages.dev/gallery"
                 className="size-full"
                 title="Hotel Himalaya Website Gallery Page"
               ></iframe>
             </div>
           </div>
         </section>
+
+        <div className="bg-[url('https://hotelhimalaya.pages.dev/images/banner/about.webp')] w-full h-screen bg-no-repeat bg-cover bg-center bg-fixed"></div>
+
+        <div className="w-full h-screen overflow-y-auto shadow-lg scale-[0.8]">
+          <iframe
+            src="https://hotelhimalaya.pages.dev/"
+            title="Hotel Himalaya Website Home Page"
+            className="size-full"
+          ></iframe>
+        </div>
       </main>
     </>
   );
