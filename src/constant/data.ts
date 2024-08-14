@@ -37,19 +37,29 @@ export const portfolioData = [
             alt: "Swimming Pool 4",
           },
         ],
-        // technologies: [
-        //   "Figma",
-        //   "React.js",
-        //   "TailwindCSS",
-        //   "API",
-        //   "React Router",
-        //   "TypeScript",
-        //   "HSTS",
-        //   "Google Fonts API",
-        //   "Cloudflare",
-        //   "Lenis",
-        // ],
-        // technologiesColor: "#00daff42",
+        portfolioWebsite: {
+          deployUrl: "https://hotelhimalaya.pages.dev",
+          role: "Design & Development",
+          year: "2024",
+          credits: "Longtail e-Media",
+          titleImage: "https://hotelhimalaya.pages.dev/images/hero/1.webp",
+          backgroundImage:
+            "https://hotelhimalaya.pages.dev/images/banner/about.webp",
+          iframePages: [
+            {
+              url: "https://hotelhimalaya.pages.dev/",
+              title: "Hotel Himalaya Website Home Page",
+            },
+            {
+              url: "https://hotelhimalaya.pages.dev/stay",
+              title: "Hotel Himalaya Website Stay Page",
+            },
+            {
+              url: "https://hotelhimalaya.pages.dev/gallery",
+              title: "Hotel Himalaya Website Gallery Page",
+            },
+          ],
+        },
       },
       {
         id: "hotel-dayatra",
