@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { TbArrowGuide } from "react-icons/tb";
 import { PageProp } from "../../constant/types";
 
-const BreadCrumb: React.FC<PageProp> = ({ page }) => {
+const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
@@ -38,7 +38,17 @@ const BreadCrumb: React.FC<PageProp> = ({ page }) => {
           Home
         </Link>
         <TbArrowGuide />
-        <span>{page}</span>
+        {currentPage ? (
+          <>
+            <Link to={`/${page}`} className="flex items-center justify-center gap-1">
+              {page}
+            </Link>
+            <TbArrowGuide />
+            <h4 className="font-inria-sans font-light">{currentPage}</h4>
+          </>
+        ) : (
+          <h3 className="font-inria-sans font-light">{page}</h3>
+        )}
       </h2>
     </nav>
   );
