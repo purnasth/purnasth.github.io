@@ -25,12 +25,11 @@ const ProfileNav = () => {
           </div>
 
           <div className="description">
-            <p className="text-gray-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-              a.
+            <p className="text-gray-400 text-justify">
+            The combination of my passion for design & development highlights me in the web world.
             </p>
 
-            <h5 className="font-semibold">20+ successful projects</h5>
+            <h5 className="font-medium mt-1">20+ successful projects</h5>
           </div>
 
           <div className="social-media">
