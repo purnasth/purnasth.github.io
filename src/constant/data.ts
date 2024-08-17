@@ -136,19 +136,30 @@ export const portfolioData = [
             alt: "Swimming Pool 4",
           },
         ],
-        // technologies: [
-        //   "Figma",
-        //   "React.js",
-        //   "TailwindCSS",
-        //   "API",
-        //   "React Router",
-        //   "TypeScript",
-        //   "HSTS",
-        //   "Google Fonts API",
-        //   "Cloudflare",
-        //   "Lenis",
-        // ],
-        technologiesColor: "#00daff42",
+        portfolioWebsite: {
+          deployUrl: "https://www.mithilayatriniwas.com",
+          role: "Design & Development",
+          year: "2024",
+          credits: "Longtail e-Media",
+          titleImage:
+            "https://mithila-yatri.pages.dev/assets/mithila-BauZmQvB.webp",
+          backgroundImage:
+            "https://mithila-yatri.pages.dev/assets/room1-Dq4x4xNH.webp",
+          iframePages: [
+            {
+              url: "https://mithila-yatri.pages.dev/",
+              title: "Mithila Yatri Niwas Website Home Page",
+            },
+            {
+              url: "https://mithila-yatri.pages.dev/accommodation",
+              title: "Mithila Yatri Niwas Website Stay Page",
+            },
+            {
+              url: "https://mithila-yatri.pages.dev/gallery",
+              title: "Mithila Yatri Niwas Website Gallery Page",
+            },
+          ],
+        },
       },
       {
         id: "hotel-ichchha",
