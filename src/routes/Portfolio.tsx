@@ -16,7 +16,7 @@ import NavbarBreadCrumb from "../components/NavbarBreadCrumb";
 const Portfolio: React.FC = () => {
   return (
     <main className="size-full h-full bg-black text-white">
-      <NavbarBreadCrumb page="Portfolio" />
+      <NavbarBreadCrumb page="Portfolio" currentPage="false" />
 
       <div className="container">
         <div className="text-center space-y-4">
