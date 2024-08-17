@@ -187,19 +187,30 @@ export const portfolioData = [
             alt: "Swimming Pool 4",
           },
         ],
-        // technologies: [
-        //   "Figma",
-        //   "React.js",
-        //   "TailwindCSS",
-        //   "API",
-        //   "React Router",
-        //   "TypeScript",
-        //   "HSTS",
-        //   "Google Fonts API",
-        //   "Cloudflare",
-        //   "Lenis",
-        // ],
-        technologiesColor: "#00daff42",
+        portfolioWebsite: {
+          deployUrl: "https://hotel-ichchha.pages.dev",
+          role: "Design & Development",
+          year: "2024",
+          credits: "Longtail e-Media",
+          titleImage:
+            "https://hotel-ichchha.pages.dev/assets/dlx3-CMsmsEgx.webp",
+          backgroundImage:
+            "https://hotel-ichchha.pages.dev/assets/ichchha1-0w26fpJq.webp",
+          iframePages: [
+            {
+              url: "https://hotel-ichchha.pages.dev/",
+              title: "Hotel Ichchha Website Home Page",
+            },
+            {
+              url: "https://hotel-ichchha.pages.dev/accommodation/executive-suite",
+              title: "Hotel Ichchha Website Stay Page",
+            },
+            {
+              url: "https://hotel-ichchha.pages.dev/events",
+              title: "Hotel Ichchha Website Gallery Page",
+            },
+          ],
+        },
       },
     ],
   },
