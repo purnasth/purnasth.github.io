@@ -47,7 +47,7 @@ const PortfolioPresentation: React.FC = () => {
                 <img
                   src={portfolioItem.logoSrc}
                   alt={`${portfolioItem.title} logo`}
-                  className="absolute w-32 h-28 md:w-64 md:h-44 object-contain filter-white hover:filter-none z-10 transition-300"
+                  className="absolute w-32 h-28 md:w-64 md:h-44 object-contain z-10 transition-300"
                 />
               </div>
             </div>

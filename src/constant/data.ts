@@ -86,19 +86,30 @@ export const portfolioData = [
             alt: "Swimming Pool 4",
           },
         ],
-        // technologies: [
-        //   "Figma",
-        //   "React.js",
-        //   "TailwindCSS",
-        //   "API",
-        //   "React Router",
-        //   "TypeScript",
-        //   "HSTS",
-        //   "Google Fonts API",
-        //   "Cloudflare",
-        //   "Lenis",
-        // ],
-        technologiesColor: "#00daff42",
+        portfolioWebsite: {
+          deployUrl: "https://hotelhimalaya.pages.dev",
+          role: "Design & Development",
+          year: "2024",
+          credits: "Longtail e-Media",
+          titleImage:
+            "https://www.purnashrestha.com.np/dayatra/assets/img/slider/building.webp",
+          backgroundImage:
+            "https://www.purnashrestha.com.np/dayatra/assets/img/banner/about.webp",
+          iframePages: [
+            {
+              url: "https://www.purnashrestha.com.np/dayatra/index.html",
+              title: "Hotel Da Yatra Website Home Page",
+            },
+            {
+              url: "https://www.purnashrestha.com.np/dayatra/accommodation.html",
+              title: "Hotel Da Yatra Website Stay Page",
+            },
+            {
+              url: "https://www.purnashrestha.com.np/dayatra/gallery.html",
+              title: "Hotel Da Yatra Website Gallery Page",
+            },
+          ],
+        },
       },
       {
         id: "mithila-yatri-niwas",
