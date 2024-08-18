@@ -56,6 +56,14 @@
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   }
 
+  .black-mode {
+    @apply text-black border-black/50 hover:bg-black/20 hover:border-black;
+  }
+
+  .white-mode {
+    @apply text-white border-white/50 hover:bg-white/20 hover:border-white;
+  }
+
   .overlay {
     @apply size-full bg-black/30 absolute inset-0 pointer-events-none transition-all duration-500 ease-linear;
   }

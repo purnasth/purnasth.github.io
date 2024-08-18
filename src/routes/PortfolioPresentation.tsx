@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { portfolioData } from "../constant/data";
+import NavbarBreadCrumb from "../components/NavbarBreadCrumb";
 
 const PortfolioPresentation: React.FC = () => {
   const { website } = useParams();
@@ -14,8 +15,15 @@ const PortfolioPresentation: React.FC = () => {
     return <p>Portfolio item not found</p>;
   }
 
+  const whiteBg = true;
+
   return (
     <>
+      <NavbarBreadCrumb
+        page="portfolio"
+        currentPage={portfolioItem.title}
+        whiteBg={whiteBg}
+      />
       <main className="px-0">
         <section>
           <div className="container">

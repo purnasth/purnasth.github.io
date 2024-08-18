@@ -55,13 +55,12 @@
 // };
 
 // export default BreadCrumb;
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { TbArrowGuide } from "react-icons/tb";
-import { PageProp } from "../../constant/types";
+import { BreadCrumbProps } from "../../constant/types"; // Adjust this path based on where you place your types
 
-const BreadCrumb: React.FC<PageProp> = ({ page }) => {
+const BreadCrumb: React.FC<BreadCrumbProps> = ({ page}) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
@@ -85,18 +84,24 @@ const BreadCrumb: React.FC<PageProp> = ({ page }) => {
     >
       <h2
         className={`px-4 py-1 rounded-full flex items-center justify-center gap-3 transition-all duration-[1s] ${
-          visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-12"
+          visible
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-12"
         } ${
           window.scrollY > 0
-            ? "text-white bg-white/10 outline outline-1 outline-white/60 backdrop-blur-lg"
-            : "text-white"
+            ? `outline outline-1 backdrop-blur-lg ${
+                page === "portfolio"
+                  ? "text-black bg-white/10 outline-black/60"
+                  : "text-white bg-white/10 outline-white/60"
+              }`
+            : `${page === "portfolio" ? "text-black" : "text-white"}`
         }`}
       >
         <Link to="/" className="flex items-center justify-center gap-1">
           Home
         </Link>
         <TbArrowGuide />
-        <span>{page}</span>
+        <span className="capitalize font-medium">{page}</span>
       </h2>
     </nav>
   );
