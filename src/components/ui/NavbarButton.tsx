@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { TbPlus, TbMail } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import { NavbarButtonProps } from "../../constant/types";
+import { PageProp } from "../../constant/types";
 
-const NavbarButton: React.FC<NavbarButtonProps> = ({ whiteBg }) => {
+const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNav = () => {

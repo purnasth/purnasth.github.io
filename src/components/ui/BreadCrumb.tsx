@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { TbArrowGuide } from "react-icons/tb";
-import { BreadCrumbProps } from "../../constant/types";
+import { PageProp } from "../../constant/types";
 
-const BreadCrumb: React.FC<BreadCrumbProps> = ({ page, currentPage }) => {
+const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
