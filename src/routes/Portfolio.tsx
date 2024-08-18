@@ -16,7 +16,7 @@ import NavbarBreadCrumb from "../components/NavbarBreadCrumb";
 const Portfolio: React.FC = () => {
   return (
     <main className="size-full h-full bg-black text-white">
-      <NavbarBreadCrumb page="Portfolio" currentPage="false" />
+      <NavbarBreadCrumb page="Portfolio" />
 
       <div className="container">
         <div className="text-center space-y-4">
@@ -49,26 +49,6 @@ const Portfolio: React.FC = () => {
                     {portfolio.description}
                   </p>
                 </div>
-                {/* <div>
-                  <h4 className="text-xl md:text-2xl mb-6">Technologies</h4>
-
-                  <ul className="flex items-center gap-3 md:gap-6 flex-wrap">
-                    {portfolio.technologies.map(
-                      (technology, technologyIndex) => (
-                        <li
-                          key={technologyIndex}
-                          className="px-4 py-2 rounded-2xl relative overflow-hidden text-xs md:text-base"
-                          style={{
-                            backgroundColor: portfolio.technologiesColor,
-                          }}
-                        >
-                          <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></div>
-                          {technology}
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div> */}
 
                 <Link
                   to={`/portfolio/${portfolio.portfolioUrl}`}

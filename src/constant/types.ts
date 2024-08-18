@@ -11,6 +11,6 @@ export interface BreadCrumbProps {
 
 export interface PageProp {
   page: string;
-  currentPage: string;
-  whiteBg: boolean;
+  currentPage?: string;
+  whiteBg?: boolean;
 }
