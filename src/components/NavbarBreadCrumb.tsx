@@ -6,7 +6,7 @@ import { PageProp } from "../constant/types";
 const NavbarBreadCrumb: React.FC<PageProp> = ({
   page,
   currentPage,
-  whiteBg,
+  whiteBg = false,
 }) => {
   return (
     <div className="fixed right-5 top-5 z-50 flex items-center justify-center rounded-full">
