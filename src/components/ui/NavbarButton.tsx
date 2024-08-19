@@ -69,7 +69,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
               </li>
               <li className="w-full">
                 <a
-                  href=""
+                  href="/contact"
                   className="navlink w-full pb-2 inline-block text-5xl text-white/80 hover:text-white transition-300 font-medium"
                   aria-label="Contact"
                 >

@@ -5,6 +5,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Portfolio from "./routes/Portfolio";
 import PortfolioPresentation from "./routes/PortfolioPresentation";
+import Contact from "./routes/Contact";
 
 const App = () => {
   const location = useLocation();
@@ -20,6 +21,7 @@ const App = () => {
             path="/portfolio/:website"
             element={<PortfolioPresentation />}
           />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
       </AnimatePresence>
