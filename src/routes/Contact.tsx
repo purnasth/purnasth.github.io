@@ -1,5 +1,6 @@
 import React from "react";
 import NavbarBreadCrumb from "../components/NavbarBreadCrumb";
+import purna from "../assets/img/hero.avif";
 
 const Contact: React.FC = () => {
   return (
@@ -7,14 +8,17 @@ const Contact: React.FC = () => {
       <NavbarBreadCrumb page="Contact" />
 
       <div className="container">
-        <div className="text-center space-y-4">
-          <span>Contact</span>
-          <h3 className="text-8xl text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] capitalize">
-            Your imagination, Mine creation
+        <div className="flex items-end gap-6">
+          {/* <span>Contact</span> */}
+          <h3 className="text-6xl text-pretty drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] capitalize leading-snug">
+            Let's start <br /> a project together
           </h3>
+          <img src={purna} alt="Purna" className="size-16 rounded-full object-contain -translate-y-4 bg-white" />
         </div>
 
-        <section className="mt-28">
+        <div className="my-16 w-full h-[0.5px] bg-gradient-to-r from-[#989AA6]/[0.5] to-transparent" />
+
+        <section className="">
           <h4 className="sticky top-8 z-30 bg-gray-800 text-white/90 inline-flex items-center justify-center gap-2 px-5 py-1 rounded-full font-medium text-lg">
             <span className="size-2 bg-green-500 rounded-full"></span>
             Services Process
@@ -23,7 +27,7 @@ const Contact: React.FC = () => {
             <div className="h-full w-0 lg:w-[4%]" />
             <div className="w-full">
               <div className="absolute left-0 hidden h-full w-[4%] justify-center lg:flex ">
-                <div className="sticky top-20 z-30 hidden h-10 w-10 items-center justify-center rounded-full bg-gradient lg:flex -translate-x-2">
+                <div className="sticky top-20 z-30 hidden size-10 items-center justify-center rounded-full bg-gradient lg:flex -translate-x-2">
                   <div className="flex size-8 items-center justify-center rounded-full">
                     <svg
                       stroke="currentColor"

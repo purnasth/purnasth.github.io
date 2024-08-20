@@ -40,13 +40,13 @@ const SideNav: React.FC = () => {
             </Link>
           </li>
           <li className="w-full">
-            <a
-              href=""
+            <Link
+              to="/contact"
               className="navlink w-full pb-2 inline-block text-4xl text-white/80 hover:text-white transition-300 font-medium"
               aria-label="Contact"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <hr className="my-8 opacity-30" />
