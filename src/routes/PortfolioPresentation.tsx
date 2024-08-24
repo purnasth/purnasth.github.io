@@ -94,7 +94,7 @@ const PortfolioPresentation: React.FC = () => {
               (iframe, index) => (
                 <div
                   key={index}
-                  className="w-[22rem] h-[40rem] overflow-y-auto shadow-lg"
+                  className="w-[22rem] h-[42rem] overflow-y-auto shadow-lg scale-90"
                 >
                   <iframe
                     src={iframe.url}
