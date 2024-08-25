@@ -7,6 +7,10 @@ import NavbarBreadCrumb from "../components/NavbarBreadCrumb";
 const PortfolioPresentation: React.FC = () => {
   const { website } = useParams();
 
+  const filteredProjects = portfolioData[0].portfolioDetails
+    .filter((project) => project.portfolioUrl !== website)
+    .slice(0, 2);
+
   const portfolioItem = portfolioData[0].portfolioDetails.find(
     (item) => item.portfolioUrl === website
   );
@@ -129,7 +133,7 @@ const PortfolioPresentation: React.FC = () => {
             Explore more projects
           </h5>
           <div className="border-[1px] border-black/40 rounded-3xl overflow-hidden">
-            {portfolioData[0].portfolioDetails.map((project) => (
+            {filteredProjects.map((project) => (
               <Link
                 key={project.id}
                 className="mb-8 border-b-[1px] md:mb-0 border-black/30 flex items-center flex-col md:flex-row justify-between gap-0 bg-bg-gold-dark hover:bg-gray-400 group transition-all duration-700"
