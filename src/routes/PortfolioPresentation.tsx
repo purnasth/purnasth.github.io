@@ -122,6 +122,65 @@ const PortfolioPresentation: React.FC = () => {
           ></iframe>
         </div>
       </main>
+
+      <section className="bg-gray-200 py-32">
+        <div className="container mx-auto">
+          <h5 className="text-4xl mb-12 font-luxury font-extralight">
+            Explore more projects
+          </h5>
+          <div className="border-[1px] border-black/40 rounded-3xl overflow-hidden">
+            {portfolioData[0].portfolioDetails.map((project) => (
+              <Link
+                key={project.id}
+                className="mb-8 border-b-[1px] md:mb-0 border-black/30 flex items-center flex-col md:flex-row justify-between gap-0 bg-bg-gold-dark hover:bg-gray-400 group transition-all duration-700"
+                to={`/portfolio/${project.portfolioUrl}`}
+              >
+                <div className="flex w-full md:w-1/3">
+                  <img
+                    src={project.landingImage[0]?.url}
+                    alt={project.title}
+                    className="w-full h-64 sm:h-96 md:h-60 object-cover origin-left transition-all duration-700 md:group-hover:scale-x-105"
+                  />
+                </div>
+                <div className="py-12 px-4 flex items-center justify-between md:p-12 w-full md:w-2/3 gap-10 transition-all duration-700 md:group-hover:translate-x-4">
+                  <div className="flex items-start flex-col gap-2 md:gap-5">
+                    <h4 className="text-2xl md:text-3xl">{project.title}</h4>
+                    <p className="text-base max-w-md line-clamp-2">
+                      {project.description}
+                    </p>
+                  </div>
+                  <div className="flex transition-all duration-700 md:group-hover:translate-x-4">
+                    <button
+                      type="button"
+                      className="bg-gray-400 text-black group-hover:text-gray-400 group-hover:bg-black px-4 py-1 rounded-full text-2xl transition-all duration-300 ease-linear"
+                      title="Explore More"
+                      aria-label="Explore More"
+                    >
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        strokeWidth={0}
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        className="md:group-hover:scale-x-150 group-hover:translate-x-0 transition-all duration-300 ease-linear"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 };
