@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { portfolioData } from "../constant/data";
 import NavbarBreadCrumb from "../components/NavbarBreadCrumb";
+import CaseStudy from "../components/CaseStudy";
 
 const PortfolioPresentation: React.FC = () => {
   const { website } = useParams();
@@ -76,6 +77,26 @@ const PortfolioPresentation: React.FC = () => {
             </div>
           </div>
         </section>
+
+        <CaseStudy
+      projectTitle="Hotel Himalaya"
+      designerName="Jane Doe"
+      developerName="John Smith"
+      problemStatement="The Hotel Himalaya website needed a complete redesign to improve user engagement and streamline the booking process."
+      solutionOverview="The redesign focused on creating a clean, modern interface with an intuitive booking system and responsive design."
+      designerResponsibilities={[
+        'Conducted user research and created personas.',
+        'Designed wireframes and prototypes.',
+        'Led the design of the user interface.',
+      ]}
+      developerResponsibilities={[
+        'Implemented the frontend using React and TailwindCSS.',
+        'Integrated the booking API.',
+        'Optimized the website for performance and accessibility.',
+      ]}
+      toolsUsed={['Figma', 'React', 'TailwindCSS', 'API integration']}
+      projectOutcome="The redesigned website saw a 30% increase in user engagement and a 20% increase in bookings within the first month."
+    />
 
         <section>
           <img
