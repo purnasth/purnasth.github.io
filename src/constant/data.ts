@@ -3,6 +3,9 @@ import hotelDayatra from "../assets/img/portfolio/hotel-dayatra.png";
 import mithilaYatriNiwas from "../assets/img/portfolio/mithila.png";
 import hotelIchchha from "../assets/img/portfolio/hotel-ichchha.png";
 
+// mockup
+import hotelHimalayaMockup from "../assets/img/portfolio/hotel-himalaya/hotelhimalaya_mockup.png";
+
 export const portfolioData = [
   {
     id: 1,
@@ -39,6 +42,7 @@ export const portfolioData = [
         ],
         portfolioWebsite: {
           deployUrl: "https://hotelhimalaya.pages.dev",
+          mockup: hotelHimalayaMockup,
           role: "Design & Development",
           year: "2024",
           credits: "Longtail e-Media",

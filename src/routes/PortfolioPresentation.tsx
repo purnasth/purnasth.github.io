@@ -77,7 +77,14 @@ const PortfolioPresentation: React.FC = () => {
           </div>
         </section>
 
-        <section className="relative overflow-hidden mb-16">
+        <section>
+          <img
+            src={portfolioItem.portfolioWebsite?.mockup}
+            alt={`${portfolioItem.title} Mockup`}
+            className="size-full object-contain"
+          />
+        </section>
+        {/* <section className="relative overflow-hidden mb-16">
           <img
             src={portfolioItem.landingImage[0]?.url}
             alt={portfolioItem.landingImage[0]?.alt}
@@ -90,7 +97,7 @@ const PortfolioPresentation: React.FC = () => {
               backgroundImage: `url(https://dennissnellenberg.com/assets/img/device-mbp-15-nonotch.png)`,
             }}
           ></div>
-        </section>
+        </section> */}
 
         <section className="py-32">
           <div className="flex items-center justify-evenly px-3">
@@ -98,7 +105,7 @@ const PortfolioPresentation: React.FC = () => {
               (iframe, index) => (
                 <div
                   key={index}
-                  className="w-[22rem] h-[42rem] overflow-y-auto shadow-lg scale-90"
+                  className="w-[22rem] h-[42rem] overflow-y-auto shadow-lg"
                 >
                   <iframe
                     src={iframe.url}
