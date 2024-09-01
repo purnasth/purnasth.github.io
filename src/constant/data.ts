@@ -5,6 +5,9 @@ import hotelIchchha from "../assets/img/portfolio/hotel-ichchha.png";
 
 // mockup
 import hotelHimalayaMockup from "../assets/img/portfolio/hotel-himalaya/hotelhimalaya_mockup.png";
+import hotelHDayatraMockup from "../assets/img/portfolio/hotel-dayatra/mockup.png";
+import mithilaMockup from "../assets/img/portfolio/mithila/mockup.png";
+import ichchhaMockup from "../assets/img/portfolio/hotel-ichchha/mockup.png";
 
 export const portfolioData = [
   {
@@ -92,6 +95,7 @@ export const portfolioData = [
         ],
         portfolioWebsite: {
           deployUrl: "https://hotelhimalaya.pages.dev",
+          mockup: hotelHDayatraMockup,
           role: "Design & Development",
           year: "2024",
           credits: "Longtail e-Media",
@@ -142,6 +146,7 @@ export const portfolioData = [
         ],
         portfolioWebsite: {
           deployUrl: "https://www.mithilayatriniwas.com",
+          mockup: mithilaMockup,
           role: "Design & Development",
           year: "2024",
           credits: "Longtail e-Media",
@@ -193,13 +198,14 @@ export const portfolioData = [
         ],
         portfolioWebsite: {
           deployUrl: "https://hotel-ichchha.pages.dev",
+          mockup: ichchhaMockup,
           role: "Design & Development",
           year: "2024",
           credits: "Longtail e-Media",
           titleImage:
             "https://hotel-ichchha.pages.dev/assets/dlx3-CMsmsEgx.webp",
           backgroundImage:
-            "https://hotel-ichchha.pages.dev/assets/ichchha1-0w26fpJq.webp",
+            "https://hotel-ichchha.pages.dev/assets/ichchha1-CmqxPbFg.webp",
           iframePages: [
             {
               url: "https://hotel-ichchha.pages.dev/",
