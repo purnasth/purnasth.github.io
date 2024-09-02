@@ -1,6 +1,13 @@
-import React from 'react';
-import { FaPencilAlt, FaCode, FaToolbox, FaTrophy } from 'react-icons/fa';
+import React from "react";
+import { FaPencilAlt, FaCode, FaToolbox, FaTrophy } from "react-icons/fa";
 
+import { TbReportSearch } from "react-icons/tb";
+import { TbFaceIdError } from "react-icons/tb";
+import { TbBulb } from "react-icons/tb";
+import { TbTools } from "react-icons/tb";
+import { TbAward } from "react-icons/tb";
+
+import { MdOutlineAutoFixHigh } from "react-icons/md";
 interface CaseStudyProps {
   projectTitle: string;
   designerName: string;
@@ -27,12 +34,19 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
   return (
     <section className="py-16">
       <div className="container mx-auto">
-        <h2 className="text-6xl mb-12 text-center font-bold text-gray-800">
-          {projectTitle} - Case Study
-        </h2>
+        {/* <h3 className="text-6xl mb-12 text-gray-800">
+          {projectTitle} - 
+          Case Study
+        </h3> */}
+
+        <h4 className="sticky top-10 z-30 px-5 py-1 rounded-full inline-flex items-center justify-center gap-3 outline outline-1 backdrop-blur-lg text-black bg-black/10 outline-black/30 mb-12">
+          <TbReportSearch />
+          Case Study
+        </h4>
 
         <div className="mb-16">
-          <h4 className="text-2xl mb-4 text-gray-700">
+          <h4 className="text-2xl mb-4 text-gray-700 flex items-center gap-2">
+            <TbFaceIdError />
             Problem Statement
           </h4>
           <p className="text-lg leading-relaxed text-gray-600 border-l-4 pl-4">
@@ -41,7 +55,8 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
         </div>
 
         <div className="mb-16">
-          <h4 className="text-2xl mb-4 text-gray-700">
+          <h4 className="text-2xl mb-4 text-gray-700 flex items-center gap-2">
+            <TbBulb />
             Solution Overview
           </h4>
           <p className="text-lg leading-relaxed text-gray-600 border-l-4 pl-4">
@@ -51,7 +66,8 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
 
         {/* Roles & Responsibilities with Timeline */}
         <div className="mb-16">
-          <h4 className="text-3xl mb-8 text-gray-700">
+          <h4 className="text-2xl mb-8 text-gray-700 flex items-center gap-2">
+            <MdOutlineAutoFixHigh />
             Roles & Responsibilities
           </h4>
 
@@ -62,15 +78,14 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
             {/* Designer Responsibilities */}
             <div className="mb-8 pl-12">
               <h5 className="text-xl mb-4 text-gray-800 flex items-center gap-2">
-                <FaPencilAlt className="text-gold" /> {designerName} - UI/UX Designer
+                <FaPencilAlt className="text-black" /> {designerName} - UI/UX
+                Designer
               </h5>
               {designerResponsibilities.map((responsibility, index) => (
-                <div key={index} className="relative mb-6">
-                  <div className="absolute left-0 top-1 w-4 h-4 bg-gold rounded-full"></div>
+                <div key={index} className="relative mb-6 pl-4">
+                  <div className="absolute left-6 top-1/2 size-1 bg-black rounded-full"></div>
                   <ul className="pl-6">
-                    <li className="text-lg text-gray-700">
-                      {responsibility}
-                    </li>
+                    <li className="text-lg text-gray-700">{responsibility}</li>
                   </ul>
                 </div>
               ))}
@@ -79,15 +94,13 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
             {/* Developer Responsibilities */}
             <div className="mb-8 pl-12">
               <h4 className="text-2xl font-semibold mb-4 text-gray-800 flex items-center gap-2">
-                <FaCode className="text-gold" /> {developerName} - Developer
+                <FaCode className="text-black" /> {developerName} - Developer
               </h4>
               {developerResponsibilities.map((responsibility, index) => (
-                <div key={index} className="relative mb-6">
-                  <div className="absolute left-0 top-1 w-4 h-4 bg-gold rounded-full"></div>
+                <div key={index} className="relative mb-6 pl-4">
+                  <div className="absolute left-6 top-1/2 size-1 bg-black rounded-full"></div>
                   <ul className="pl-6">
-                    <li className="text-lg text-gray-700">
-                      {responsibility}
-                    </li>
+                    <li className="text-lg text-gray-700">{responsibility}</li>
                   </ul>
                 </div>
               ))}
@@ -98,9 +111,9 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
         {/* Tools Used */}
         <div className="mb-16">
           <h4 className="text-2xl mb-4 text-gray-700 flex items-center gap-2">
-            <FaToolbox className="text-gold" /> Tools Used
+            <TbTools /> Tools Used
           </h4>
-          <ul className="list-none space-y-3">
+          {/* <ul className="list-none space-y-3">
             {toolsUsed.map((tool, index) => (
               <li
                 key={index}
@@ -109,13 +122,36 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
                 <span className="text-gold">•</span> {tool}
               </li>
             ))}
-          </ul>
+          </ul> */}
+
+          <div className="flex items-center gap-8 mt-8 border-l-4 pl-4">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+              alt=""
+              className="size-8 object-contain p-1"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+              alt=""
+              className="size-8 object-contain p-1"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+              alt=""
+              className="size-8 object-contain p-1"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg"
+              alt=""
+              className="size-8 object-contain p-1"
+            />
+          </div>
         </div>
 
         {/* Project Outcome */}
         <div className="mb-16">
           <h4 className="text-2xl mb-4 text-gray-700 flex items-center gap-2">
-            <FaTrophy className="text-gold" /> Project Outcome
+            <TbAward /> Project Outcome
           </h4>
           <p className="text-lg leading-relaxed text-gray-600 border-l-4 border-gold pl-4">
             {projectOutcome}

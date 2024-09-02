@@ -79,24 +79,25 @@ const PortfolioPresentation: React.FC = () => {
         </section>
 
         <CaseStudy
-      projectTitle="Hotel Himalaya"
-      designerName="Jane Doe"
-      developerName="John Smith"
-      problemStatement="The Hotel Himalaya website needed a complete redesign to improve user engagement and streamline the booking process."
-      solutionOverview="The redesign focused on creating a clean, modern interface with an intuitive booking system and responsive design."
-      designerResponsibilities={[
-        'Conducted user research and created personas.',
-        'Designed wireframes and prototypes.',
-        'Led the design of the user interface.',
-      ]}
-      developerResponsibilities={[
-        'Implemented the frontend using React and TailwindCSS.',
-        'Integrated the booking API.',
-        'Optimized the website for performance and accessibility.',
-      ]}
-      toolsUsed={['Figma', 'React', 'TailwindCSS', 'API integration']}
-      projectOutcome="The redesigned website saw a 30% increase in user engagement and a 20% increase in bookings within the first month."
-    />
+          projectTitle="Hotel Himalaya"
+          designerName="Purna Shrestha"
+          developerName="Purna Shrestha"
+          problemStatement="The Hotel Himalaya website needed a complete redesign to improve user engagement and streamline the booking process."
+          solutionOverview="The redesign focused on creating a clean, modern interface with an intuitive booking system and responsive design."
+          designerResponsibilities={[
+            "Conducted user research and created personas.",
+            "Designed wireframes and prototypes.",
+            "Led the design of the user interface.",
+          ]}
+          developerResponsibilities={[
+            "Implemented the frontend using React and TailwindCSS.",
+            "Integrated the booking API.",
+            "Optimized the website for performance and accessibility.",
+          ]}
+          toolsUsed={["Figma", "React", "TailwindCSS", "API integration"]}
+          // projectOutcome="The redesigned website saw a 30% increase in user engagement and a 20% increase in bookings within the first month."
+          projectOutcome="The redesigned website increased website visitors by 80%, boosted user engagement by 30%, and led to a 20% increase in bookings within the first month."
+        />
 
         <section>
           <img
@@ -146,7 +147,7 @@ const PortfolioPresentation: React.FC = () => {
           }}
         ></div>
 
-        <div className="w-full h-screen overflow-y-auto shadow-lg scale-[0.8]">
+        <div className="w-full h-[110vh] overflow-y-auto shadow-lg scale-[0.85]">
           <iframe
             src={portfolioItem.portfolioWebsite?.iframePages[0]?.url}
             title={portfolioItem.portfolioWebsite?.iframePages[0]?.title}
