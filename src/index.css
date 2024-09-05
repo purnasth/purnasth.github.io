@@ -68,6 +68,19 @@
     @apply size-full bg-black/30 absolute inset-0 pointer-events-none transition-all duration-500 ease-linear;
   }
 
+  /* .bg-blue-gradient {
+    background: radial-gradient(50% 50% at 50% 50%,#224c55 0,#111 100%);
+  } */
+
+  .bg-green-gradient {
+    background: radial-gradient(45% 35% at 53% 94%, #03887e 10%, transparent 100%);
+    /* filter: blur(20px); */
+  }
+  .bg-blue-gradient {
+    background: radial-gradient(45% 35% at 53% 94%, #032d82 10%, transparent 100%);
+    /* filter: blur(20px); */
+  }
+
   .green-gradient {
     @apply bg-gradient-to-t from-[#4caf50] from-[0%] via-[#81c784] via-[50%] to-[#aed581] to-[100%] text-transparent bg-clip-text;
   }

@@ -20,7 +20,7 @@
 
 import React from "react";
 import FloatLogo from "./ui/FloatLogo";
-import gradientBg from "../assets/gradients/gradient2.avif";
+// import gradientBg from "../assets/gradients/gradient2.avif";
 
 {
   /* <main
@@ -31,10 +31,20 @@ import gradientBg from "../assets/gradients/gradient2.avif";
 
 const Hero: React.FC = () => {
   return (
-    <main
-      className="size-full bg-cover bg-center -z-10 mix-blend-darken p-0 m-0"
-      style={{ backgroundImage: `url(${gradientBg})` }}
-    >
+    // <main
+    //   className="size-full bg-cover bg-center -z-10 mix-blend-darken p-0 m-0"
+    //   style={{ backgroundImage: `url(${gradientBg})` }}
+    // >
+    <main className="size-full bg-cover bg-center -z-10 p-0 m-0 relative  max-w-full overflow-x-hidden">
+      <div className="absolute inset-0 size-full bg-[#111] mix-blend-darken -z-50"></div>
+      <div
+        className="absolute size-full left-0 bottom-0 -translate-x-1/4 bg-green-gradient -z-20
+      "
+      ></div>
+      <div
+        className="absolute size-full right-0 bottom-0 translate-x-1/4 bg-blue-gradient -z-20
+      "
+      ></div>
       <div className="flex items-center flex-col w-[calc(100%-14rem-14rem-5rem-5rem)] h-screen mx-auto overflow-hidden relative">
         <div className="text-white p-6">
           <div className="flex items-center justify-evenly">
