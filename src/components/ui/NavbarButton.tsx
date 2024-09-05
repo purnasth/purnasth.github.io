@@ -24,7 +24,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
       </button>
 
       <section
-        className={`fixed inset-0 bg-black/30 backdrop-blur border border-1 border-white/20 shadow-sm m-4 rounded-lg transition-700 -z-10 ${
+        className={`fixed inset-0 bg-dark/40 backdrop-blur border border-1 border-white/20 shadow-sm m-4 rounded-lg transition-700 -z-10 ${
           isOpen
             ? "opacity-100 pointer-events-auto select-auto"
             : "opacity-0 pointer-events-none select-none"

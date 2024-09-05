@@ -39,7 +39,7 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
           Case Study
         </h3> */}
 
-        <h4 className="sticky top-10 z-30 px-5 py-1 rounded-full inline-flex items-center justify-center gap-3 outline outline-1 backdrop-blur-lg text-black bg-black/10 outline-black/30 mb-12">
+        <h4 className="sticky top-10 z-30 px-5 py-1 rounded-full inline-flex items-center justify-center gap-3 outline outline-1 backdrop-blur-lg text-dark bg-dark/10 outline-dark/30 mb-12">
           <TbReportSearch />
           Case Study
         </h4>
@@ -78,12 +78,12 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
             {/* Designer Responsibilities */}
             <div className="mb-8 pl-12">
               <h5 className="text-xl mb-4 text-gray-800 flex items-center gap-2">
-                <FaPencilAlt className="text-black" /> {designerName} - UI/UX
+                <FaPencilAlt className="text-dark" /> {designerName} - UI/UX
                 Designer
               </h5>
               {designerResponsibilities.map((responsibility, index) => (
                 <div key={index} className="relative mb-6 pl-4">
-                  <div className="absolute left-6 top-1/2 size-1 bg-black rounded-full"></div>
+                  <div className="absolute left-6 top-1/2 size-1 bg-dark rounded-full"></div>
                   <ul className="pl-6">
                     <li className="text-lg text-gray-700">{responsibility}</li>
                   </ul>
@@ -94,11 +94,11 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
             {/* Developer Responsibilities */}
             <div className="mb-8 pl-12">
               <h4 className="text-2xl font-semibold mb-4 text-gray-800 flex items-center gap-2">
-                <FaCode className="text-black" /> {developerName} - Developer
+                <FaCode className="text-dark" /> {developerName} - Developer
               </h4>
               {developerResponsibilities.map((responsibility, index) => (
                 <div key={index} className="relative mb-6 pl-4">
-                  <div className="absolute left-6 top-1/2 size-1 bg-black rounded-full"></div>
+                  <div className="absolute left-6 top-1/2 size-1 bg-dark rounded-full"></div>
                   <ul className="pl-6">
                     <li className="text-lg text-gray-700">{responsibility}</li>
                   </ul>

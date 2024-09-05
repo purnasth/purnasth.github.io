@@ -4,7 +4,7 @@ import purna from "../assets/img/hero.avif";
 
 const Contact: React.FC = () => {
   return (
-    <main className="size-full h-full bg-black text-white">
+    <main className="size-full h-full bg-dark text-white">
       <NavbarBreadCrumb page="Contact" />
 
       <div className="container">

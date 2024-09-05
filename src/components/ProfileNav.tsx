@@ -10,7 +10,7 @@ import purnaCV from "../assets/docs/cv.pdf";
 const ProfileNav = () => {
   return (
     <>
-      <section className="text-white fixed left-4 top-4 bg-black/10 backdrop-blur-sm border border-1 border-white/20 shadow-sm p-6 w-72 rounded-lg z-40 h-[calc(100%-2rem)]">
+      <section className="text-white fixed left-4 top-4 bg-dark/10 backdrop-blur-sm border border-1 border-white/20 shadow-sm p-6 w-72 rounded-lg z-40 h-[calc(100%-2rem)]">
         <div className="profile flex items- justify-center flex-col gap-6 h-full">
           <img
             src={hero}

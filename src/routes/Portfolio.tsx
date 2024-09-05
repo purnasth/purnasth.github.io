@@ -15,7 +15,7 @@ import NavbarBreadCrumb from "../components/NavbarBreadCrumb";
 
 const Portfolio: React.FC = () => {
   return (
-    <main className="size-full h-full bg-black text-white">
+    <main className="size-full bg-dark text-white">
       <NavbarBreadCrumb page="Portfolio" />
 
       <div className="container">
@@ -52,7 +52,7 @@ const Portfolio: React.FC = () => {
 
                 <Link
                   to={`/portfolio/${portfolio.portfolioUrl}`}
-                  className="bg-hotel-himalaya text-black px-8 py-2 text-lg rounded-full inline-block hover:bg-opacity-80 transition-all duration-300 ease-linear"
+                  className="bg-hotel-himalaya text-dark px-8 py-2 text-lg rounded-full inline-block hover:bg-opacity-80 transition-all duration-300 ease-linear"
                 >
                   View Project
                 </Link>

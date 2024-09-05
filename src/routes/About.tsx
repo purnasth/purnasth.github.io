@@ -192,7 +192,7 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <main className="size-full h-full bg-black text-white py-12">
+    <main className="size-full bg-dark text-white py-12">
       <NavbarBreadCrumb page="About" />
       <div className="w-[calc(100%-14rem-5rem)] h-full ml-auto">
         <ProfileNav />
@@ -323,7 +323,7 @@ const About: React.FC = () => {
                       Quos, error animi. Necessitatibus consequatur.
                     </p>
                     <a
-                      className="text-black bg-gradient px-6 py-2 rounded-full hover-outline"
+                      className="text-dark bg-gradient px-6 py-2 rounded-full hover-outline"
                       href="/dine"
                     >
                       View More
@@ -353,7 +353,7 @@ const About: React.FC = () => {
                       Quos, error animi. Necessitatibus consequatur.
                     </p>
                     <a
-                      className="text-black bg-gradient px-6 py-2 rounded-full hover-outline"
+                      className="text-dark bg-gradient px-6 py-2 rounded-full hover-outline"
                       href="/dine"
                     >
                       View More
@@ -383,7 +383,7 @@ const About: React.FC = () => {
                       Quos, error animi. Necessitatibus consequatur.
                     </p>
                     <a
-                      className="text-black bg-gradient px-6 py-2 rounded-full hover-outline"
+                      className="text-dark bg-gradient px-6 py-2 rounded-full hover-outline"
                       href="/dine"
                     >
                       View More

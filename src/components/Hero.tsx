@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
     //   style={{ backgroundImage: `url(${gradientBg})` }}
     // >
     <main className="size-full bg-cover bg-center -z-10 p-0 m-0 relative  max-w-full overflow-x-hidden">
-      <div className="absolute inset-0 size-full bg-[#111] mix-blend-darken -z-50"></div>
+      <div className="absolute inset-0 size-full bg-dark mix-blend-darken -z-50"></div>
       <div
         className="absolute size-full left-0 bottom-0 -translate-x-1/4 bg-green-gradient -z-20
       "

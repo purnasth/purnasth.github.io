@@ -161,11 +161,11 @@ const PortfolioPresentation: React.FC = () => {
           <h5 className="text-4xl mb-12 font-luxury font-extralight">
             Explore more projects
           </h5>
-          <div className="border-[1px] border-black/40 rounded-3xl overflow-hidden">
+          <div className="border-[1px] border-dark/40 rounded-3xl overflow-hidden">
             {filteredProjects.map((project) => (
               <Link
                 key={project.id}
-                className="mb-8 border-b-[1px] md:mb-0 border-black/30 flex items-center flex-col md:flex-row justify-between gap-0 bg-bg-gold-dark hover:bg-gray-400 group transition-all duration-700"
+                className="mb-8 border-b-[1px] md:mb-0 border-dark/30 flex items-center flex-col md:flex-row justify-between gap-0 bg-bg-gold-dark hover:bg-gray-400 group transition-all duration-700"
                 to={`/portfolio/${project.portfolioUrl}`}
               >
                 <div className="flex w-full md:w-1/3">
@@ -185,7 +185,7 @@ const PortfolioPresentation: React.FC = () => {
                   <div className="flex transition-all duration-700 md:group-hover:translate-x-4">
                     <button
                       type="button"
-                      className="bg-gray-400 text-black group-hover:text-gray-400 group-hover:bg-black px-4 py-1 rounded-full text-2xl transition-all duration-300 ease-linear"
+                      className="bg-gray-400 text-dark group-hover:text-gray-400 group-hover:bg-dark px-4 py-1 rounded-full text-2xl transition-all duration-300 ease-linear"
                       title="Explore More"
                       aria-label="Explore More"
                     >

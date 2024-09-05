@@ -32,10 +32,10 @@ const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
           window.scrollY > 0
             ? `outline outline-1 backdrop-blur-lg ${
                 page === "portfolio"
-                  ? "text-black bg-black/10 outline-black/30"
+                  ? "text-dark bg-dark/10 outline-dark/30"
                   : "text-white bg-white/10 outline-white/60"
               }`
-            : `${page === "portfolio" ? "text-black" : "text-white"}`
+            : `${page === "portfolio" ? "text-dark" : "text-white"}`
         }`}
       >
         <Link to="/" className="flex items-center justify-center gap-1 capitalize">

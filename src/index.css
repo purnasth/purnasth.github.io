@@ -48,7 +48,7 @@
     @apply font-pt-sans;
   } */
 
-  .filter-black {
+  .filter-dark {
     filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(97%) contrast(103%);
   }
 
@@ -56,8 +56,8 @@
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   }
 
-  .black-mode {
-    @apply text-black border-black/50 hover:bg-black/20 hover:border-black;
+  .dark-mode {
+    @apply text-dark border-dark/50 hover:bg-dark/20 hover:border-dark;
   }
 
   .white-mode {
@@ -65,7 +65,7 @@
   }
 
   .overlay {
-    @apply size-full bg-black/30 absolute inset-0 pointer-events-none transition-all duration-500 ease-linear;
+    @apply size-full bg-dark/30 absolute inset-0 pointer-events-none transition-all duration-500 ease-linear;
   }
 
   /* .bg-blue-gradient {
@@ -113,11 +113,11 @@
   }
 
   .slide-in {
-    @apply fixed top-0 left-0 w-full h-screen bg-black origin-bottom transition-all duration-300 ease-linear z-50 pointer-events-none;
+    @apply fixed top-0 left-0 w-full h-screen bg-dark origin-bottom transition-all duration-300 ease-linear z-50 pointer-events-none;
   }
 
   .slide-out {
-    @apply fixed top-0 left-0 w-full h-screen bg-black origin-top transition-all duration-300 ease-linear z-50 pointer-events-none;
+    @apply fixed top-0 left-0 w-full h-screen bg-dark origin-top transition-all duration-300 ease-linear z-50 pointer-events-none;
   }
 
   .wave {

@@ -28,6 +28,9 @@ export default {
           "sans-serif",
         ],
       },
+      colors: {
+        dark: "#111111",
+      },
       screens: {
         sm: "640px",
         md: "768px",
