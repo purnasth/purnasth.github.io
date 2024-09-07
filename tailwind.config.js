@@ -29,7 +29,7 @@ export default {
         ],
       },
       colors: {
-        dark: "#111111",
+        dark: "#0a0a0a",
       },
       screens: {
         sm: "640px",

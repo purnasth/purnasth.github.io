@@ -13,7 +13,11 @@ const Contact: React.FC = () => {
           <h3 className="text-6xl text-pretty drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] capitalize leading-snug">
             Let's start <br /> a project together
           </h3>
-          <img src={purna} alt="Purna" className="size-16 rounded-full object-contain -translate-y-4 bg-white" />
+          <img
+            src={purna}
+            alt="Purna"
+            className="size-16 rounded-full object-contain -translate-y-4 bg-white"
+          />
         </div>
 
         <div className="my-16 w-full h-[0.5px] bg-gradient-to-r from-[#989AA6]/[0.5] to-transparent" />
@@ -169,6 +173,26 @@ const Contact: React.FC = () => {
             </div>
           </div>
         </section>
+
+        <div className="flex items-end gap-6">
+          {/* <span>Contact</span> */}
+          <h3 className="text-4xl text-pretty drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] leading-snug flex items-center justify-center gap-1">
+            Interested in working together? <br />
+            {/* We should queue up a time to
+            chat. I'll buy the coffee. */}
+            Let's pencil in a time for a chat. I'll buy the coffee.
+            <img
+              src="https://ugokawaii.com/wp-content/uploads/2022/10/hot-coffee.gif"
+              alt="Coffee"
+              className="size-16 object-contain translate-y-3"
+            />
+          </h3>
+          {/* <img
+            src={purna}
+            alt="Purna"
+            className="size-16 rounded-full object-contain -translate-y-4 bg-white"
+          /> */}
+        </div>
       </div>
     </main>
   );
