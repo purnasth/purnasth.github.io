@@ -268,7 +268,7 @@ const About: React.FC = () => {
                 className="size-24 object-contain filter-white hover:filter-none transition-300 opacity-70 hover:opacity-100"
               />
               <img
-                src="https://www.babermahalvilas.com/images/preference/5gjq2-2020-01-24.png"
+                src="https://babermahalvilas.pages.dev/img/logo.svg"
                 alt="Baber Mahal Vilas"
                 className="size-24 object-contain filter-white hover:filter-none transition-300 opacity-70 hover:opacity-100"
               />
@@ -288,109 +288,10 @@ const About: React.FC = () => {
                 className="size-24 object-contain filter-white hover:filter-none transition-300 opacity-70 hover:opacity-100"
               />
               <img
-                src="https://sulavhealth.com/images/preference/qOKdD-sulav.jpg"
-                alt="Sulav Health"
+                src="https://www.purnashrestha.com.np/dayatra/assets/img/logo.svg"
+                alt="Hotel Da Yatra"
                 className="size-24 object-contain filter-white hover:filter-none transition-300 opacity-70 hover:opacity-100"
               />
-            </div>
-          </div>
-
-          <div>
-            <h4 className="bg-gray-800 text-white/90 inline-flex items-center justify-center gap-2 text-xl px-6 py-2 rounded-full">
-              <span className="size-2 bg-green-500 rounded-full"></span>
-              Services Process
-            </h4>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 mt-12 rounded-3xl overflow-hidden">
-              <div className="relative overflow-hidden group">
-                <img
-                  src="https://media.istockphoto.com/id/479324286/vector/busy-office-worker-giving-advice.jpg?s=612x612&w=0&k=20&c=EmPuNRgA4dCN0zPSvRTmrhh4DgOKCr2OMrlimFrzRvg="
-                  alt="Dine in Fine Place"
-                  className="w-full h-[70vh] shadow-md transition-700 group-hover:scale-150 object-cover"
-                  draggable="false"
-                />
-                <div className="pointer-events-none absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] w-full h-full" />
-                <div className="pointer-events-none group absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0.6)] text-white text-center transition-all duration-700 ease-in-out transform translate-y-1/2 group-hover:translate-y-0">
-                  <div className="p-4 pointer-events-auto">
-                    <h4 className="text-3xl font-medium mb-24 group-hover:mb-0 transition-all duration-300">
-                      Consulting
-                    </h4>
-                    <h5 className="opacity-0 group-hover:opacity-100 text-3xl font-cursive text-gradient font-medium mt-24 group-hover:mt-12 transition-all duration-300">
-                      Lorem ipsum dolor sit.
-                    </h5>
-                    <p className="text-white mt-4 mb-12">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quos, error animi. Necessitatibus consequatur.
-                    </p>
-                    <a
-                      className="text-dark bg-gradient px-6 py-2 rounded-full hover-outline"
-                      href="/dine"
-                    >
-                      View More
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative overflow-hidden group">
-                <img
-                  src="https://img.freepik.com/free-vector/storyboard-concept-with-man-desk_23-2148715228.jpg"
-                  alt="Dine in Fine Place"
-                  className="w-full h-[70vh] shadow-md transition-700 group-hover:scale-150 object-cover"
-                  draggable="false"
-                />
-                <div className="pointer-events-none absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] w-full h-full" />
-                <div className="pointer-events-none group absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0.6)] text-white text-center transition-all duration-700 ease-in-out transform translate-y-1/2 group-hover:translate-y-0">
-                  <div className="p-4 pointer-events-auto">
-                    <h4 className="text-3xl font-medium mb-24 group-hover:mb-0 transition-all duration-300">
-                      Designing
-                    </h4>
-                    <h5 className="opacity-0 group-hover:opacity-100 text-3xl font-cursive text-gradient font-medium mt-24 group-hover:mt-12 transition-all duration-300">
-                      Lorem ipsum dolor sit.
-                    </h5>
-                    <p className="text-white mt-4 mb-12">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quos, error animi. Necessitatibus consequatur.
-                    </p>
-                    <a
-                      className="text-dark bg-gradient px-6 py-2 rounded-full hover-outline"
-                      href="/dine"
-                    >
-                      View More
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative overflow-hidden group">
-                <img
-                  src="https://as2.ftcdn.net/v2/jpg/04/16/25/61/1000_F_416256149_Vai5AiSeHSUISQM6WBJ0QFGFjfNTXArt.jpg"
-                  alt="Dine in Fine Place"
-                  className="w-full h-[70vh] shadow-md transition-700 group-hover:scale-150 object-cover"
-                  draggable="false"
-                />
-                <div className="pointer-events-none absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] w-full h-full" />
-                <div className="pointer-events-none group absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0.6)] text-white text-center transition-all duration-700 ease-in-out transform translate-y-1/2 group-hover:translate-y-0">
-                  <div className="p-4 pointer-events-auto">
-                    <h4 className="text-3xl font-medium mb-24 group-hover:mb-0 transition-all duration-300">
-                      Coding
-                    </h4>
-                    <h5 className="opacity-0 group-hover:opacity-100 text-3xl font-cursive text-gradient font-medium mt-24 group-hover:mt-12 transition-all duration-300">
-                      Lorem ipsum dolor sit.
-                    </h5>
-                    <p className="text-white mt-4 mb-12">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quos, error animi. Necessitatibus consequatur.
-                    </p>
-                    <a
-                      className="text-dark bg-gradient px-6 py-2 rounded-full hover-outline"
-                      href="/dine"
-                    >
-                      View More
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
