@@ -27,10 +27,10 @@ const Portfolio: React.FC = () => {
         </div>
       </div>
 
-      <section className="mt-24 xl:p-8 xl:pt-0 py-0">
+      <section className="mt-24 xl:p-0 xl:pt-0 py-0">
         {portfolioData[0].portfolioDetails.map((portfolio, index) => (
           <div
-            className="grid grid-cols-1 xl:grid-cols-3 content-center gap-y-12 xl:gap-16 xl:p-8"
+            className="grid grid-cols-1 xl:grid-cols-3"
             key={portfolio.id}
           >
             <div
@@ -63,33 +63,23 @@ const Portfolio: React.FC = () => {
               mode="lg-fade"
               thumbnail={true}
               autoplay={true}
-              elementClassNames={`col-span-2 grid grid-cols-5 gap-4 md:gap-8 ${
-                index % 2 === 0 ? "" : "xl:order-first"
-              } md:mt-16 xl:mt-24 ${
+              elementClassNames={`col-span-2 justify-self-end md:mt-16 xl:mt-24 ${
                 index === portfolioData[0].portfolioDetails.length - 1
                   ? "mb-0"
                   : "mb-28 lg:mb-44 xl:mb-6"
               }`}
             >
-              {portfolio.landingImage.map((image, imageIndex) => {
-                const colSpan = [2, 3, 3, 2][imageIndex % 4];
-                return (
-                  <div
-                    key={imageIndex}
-                    data-src={image.url}
-                    className={`col-span-${colSpan} ${
-                      imageIndex % 2 === 0 ? "content-end" : ""
-                    } group overflow-hidden transition-all duration-200 ease-linear cursor-pointer`}
-                  >
-                    <img
-                      src={image.url}
-                      alt={image.alt}
-                      className="contrast-100 group-hover:contrast-150 object-cover rounded-2xl transition-all duration-300 ease-linear cursor-pointer"
-                      draggable="false"
-                    />
-                  </div>
-                );
-              })}
+              <div
+                data-src={portfolio.portfolioWebsite.mockup}
+                className="group overflow-hidden transition-all duration-200 ease-linear cursor-pointer"
+              >
+                <img
+                  src={portfolio.portfolioWebsite.mockup}
+                  alt={portfolio.title}
+                  className="contrast-100 group-hover:contrast-150 object-cover rounded-2xl transition-all duration-300 ease-linear cursor-pointer"
+                  draggable="false"
+                />
+              </div>
             </LightGallery>
           </div>
         ))}
