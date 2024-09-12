@@ -29,7 +29,7 @@ const PortfolioPresentation: React.FC = () => {
         currentPage={portfolioItem.title}
         whiteBg={whiteBg}
       />
-      <main className="px-0">
+      <main className="px-0 pb-0">
         <section>
           <div className="container">
             <h1 className="text-8xl capitalize hidden">{website}</h1>
@@ -49,7 +49,7 @@ const PortfolioPresentation: React.FC = () => {
 
             <div className="mt-20 relative -z-10">
               <div
-                className="bg-no-repeat bg-cover bg-center bg-fixed w-full h-screen outline outline-1 outline-white -outline-offset-[10px]"
+                className="bg-no-repeat bg-cover bg-center bg-fixed w-full h-screen outline outline-1 outline-white -outline-offset-[10px] z-10"
                 style={{
                   backgroundImage: `url(${portfolioItem.portfolioWebsite?.titleImage})`,
                 }}
@@ -147,7 +147,7 @@ const PortfolioPresentation: React.FC = () => {
           }}
         ></div>
 
-        <div className="w-full h-[110vh] overflow-y-auto shadow-lg scale-[0.85]">
+        <div className="my-16 w-full h-[110vh] overflow-y-auto shadow-lg scale-[0.85]">
           <iframe
             src={portfolioItem.portfolioWebsite?.iframePages[0]?.url}
             title={portfolioItem.portfolioWebsite?.iframePages[0]?.title}

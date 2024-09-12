@@ -73,19 +73,20 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
 
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute top-0 left-4 w-1 bg-gray-300 h-full"></div>
+            <div className="absolute top-0 left-4 w-1 bg-gray-100 h-full"></div>
 
             {/* Designer Responsibilities */}
             <div className="mb-8 pl-12">
-              <h5 className="text-xl mb-4 text-gray-800 flex items-center gap-2">
-                <FaPencilAlt className="text-dark" /> {designerName} - UI/UX
-                Designer
+              <h5 className="text-lg mb-4 text-gray-800 flex items-center gap-2">
+                <FaPencilAlt /> {designerName} - UI/UX Designer
               </h5>
               {designerResponsibilities.map((responsibility, index) => (
-                <div key={index} className="relative mb-6 pl-4">
-                  <div className="absolute left-6 top-1/2 size-1 bg-dark rounded-full"></div>
+                <div key={index} className="relative pl-4 group">
+                  <div className="absolute left-6 top-1/2 size-1 bg-gray-500 rounded-full outline outline-2 outline-gray-200 outline-offset-2 group-hover:outline-offset-0 transition-300"></div>
                   <ul className="pl-6">
-                    <li className="text-lg text-gray-700">{responsibility}</li>
+                    <li className="text-base text-gray-600 leading-loose">
+                      {responsibility}
+                    </li>
                   </ul>
                 </div>
               ))}
@@ -93,14 +94,16 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
 
             {/* Developer Responsibilities */}
             <div className="mb-8 pl-12">
-              <h4 className="text-2xl font-semibold mb-4 text-gray-800 flex items-center gap-2">
-                <FaCode className="text-dark" /> {developerName} - Developer
+              <h4 className="text-lg mb-4 text-gray-800 flex items-center gap-2">
+                <FaCode /> {developerName} - Developer
               </h4>
               {developerResponsibilities.map((responsibility, index) => (
-                <div key={index} className="relative mb-6 pl-4">
-                  <div className="absolute left-6 top-1/2 size-1 bg-dark rounded-full"></div>
+                <div key={index} className="relative pl-4 group">
+                  <div className="absolute left-6 top-1/2 size-1 bg-gray-500 rounded-full outline outline-2 outline-gray-200 outline-offset-2 group-hover:outline-offset-0 transition-300"></div>
                   <ul className="pl-6">
-                    <li className="text-lg text-gray-700">{responsibility}</li>
+                    <li className="text-base text-gray-600 leading-loose">
+                      {responsibility}
+                    </li>
                   </ul>
                 </div>
               ))}
