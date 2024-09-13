@@ -1,5 +1,4 @@
 import React from "react";
-import { FaPencilAlt, FaCode, FaToolbox, FaTrophy } from "react-icons/fa";
 
 import { TbReportSearch } from "react-icons/tb";
 import { TbFaceIdError } from "react-icons/tb";
@@ -14,6 +13,8 @@ interface CaseStudyProps {
   developerName: string;
   problemStatement: string;
   solutionOverview: string;
+  projectJourney: string;
+  journeyOverview: string;
   designerResponsibilities: string[];
   developerResponsibilities: string[];
   toolsUsed: string[];
@@ -29,6 +30,8 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
   designerResponsibilities,
   developerResponsibilities,
   toolsUsed,
+  projectJourney,
+  journeyOverview,
   projectOutcome,
 }) => {
   return (
@@ -45,37 +48,34 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
         </h4>
 
         <div className="mb-16">
-          <h4 className="text-2xl mb-4 text-gray-700 flex items-center gap-2">
+          <h4 className="text-xl mb-4 text-gray-700 flex items-center gap-2">
             <TbFaceIdError />
             Problem Statement
           </h4>
-          <p className="text-lg leading-relaxed text-gray-600 border-l-4 pl-4">
+          <p className="text-base leading-relaxed text-gray-600 border-l-4 pl-4">
             {problemStatement}
           </p>
         </div>
 
         <div className="mb-16">
-          <h4 className="text-2xl mb-4 text-gray-700 flex items-center gap-2">
+          <h4 className="text-xl mb-4 text-gray-700 flex items-center gap-2">
             <TbBulb />
             Solution Overview
           </h4>
-          <p className="text-lg leading-relaxed text-gray-600 border-l-4 pl-4">
+          <p className="text-base leading-relaxed text-gray-600 border-l-4 pl-4">
             {solutionOverview}
           </p>
         </div>
 
-        {/* Roles & Responsibilities with Timeline */}
-        <div className="mb-16">
-          <h4 className="text-2xl mb-8 text-gray-700 flex items-center gap-2">
+        {/* <div className="mb-16">
+          <h4 className="text-xl mb-8 text-gray-700 flex items-center gap-2">
             <MdOutlineAutoFixHigh />
             Roles & Responsibilities
           </h4>
 
           <div className="relative">
-            {/* Timeline Line */}
             <div className="absolute top-0 left-4 w-1 bg-gray-100 h-full"></div>
 
-            {/* Designer Responsibilities */}
             <div className="mb-8 pl-12">
               <h5 className="text-lg mb-4 text-gray-800 flex items-center gap-2">
                 <FaPencilAlt /> {designerName} - UI/UX Designer
@@ -92,7 +92,6 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
               ))}
             </div>
 
-            {/* Developer Responsibilities */}
             <div className="mb-8 pl-12">
               <h4 className="text-lg mb-4 text-gray-800 flex items-center gap-2">
                 <FaCode /> {developerName} - Developer
@@ -109,11 +108,28 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
               ))}
             </div>
           </div>
+        </div> */}
+
+        <div className="mb-16">
+          <h4 className="text-xl mb-8 text-gray-700 flex items-center gap-2">
+            <MdOutlineAutoFixHigh />
+            Project Journey
+          </h4>
+          <p className="text-base leading-relaxed text-gray-600 border-l-4 pl-4">
+            {journeyOverview}
+          </p>
+
+          <div className="relative">
+            <img
+              src={projectJourney}
+              alt="Project Journey"
+              className="w-full h-96 object-contain object-left"
+            />
+          </div>
         </div>
 
-        {/* Tools Used */}
         <div className="mb-16">
-          <h4 className="text-2xl mb-4 text-gray-700 flex items-center gap-2">
+          <h4 className="text-xl mb-4 text-gray-700 flex items-center gap-2">
             <TbTools /> Tools Used
           </h4>
           {/* <ul className="list-none space-y-3">
@@ -153,10 +169,10 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
 
         {/* Project Outcome */}
         <div className="mb-16">
-          <h4 className="text-2xl mb-4 text-gray-700 flex items-center gap-2">
+          <h4 className="text-xl mb-4 text-gray-700 flex items-center gap-2">
             <TbAward /> Project Outcome
           </h4>
-          <p className="text-lg leading-relaxed text-gray-600 border-l-4 border-gold pl-4">
+          <p className="text-base leading-relaxed text-gray-600 border-l-4 pl-4">
             {projectOutcome}
           </p>
         </div>

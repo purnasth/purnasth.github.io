@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { portfolioData } from "../constant/data";
 import NavbarBreadCrumb from "../components/NavbarBreadCrumb";
 import CaseStudy from "../components/CaseStudy";
+import projectJourney from ".././assets/img/portfolio/hotel-himalaya/project-journey.svg"
 
 const PortfolioPresentation: React.FC = () => {
   const { website } = useParams();
@@ -94,6 +95,9 @@ const PortfolioPresentation: React.FC = () => {
             "Integrated the booking API.",
             "Optimized the website for performance and accessibility.",
           ]}
+          projectJourney={projectJourney}
+          journeyOverview="This timeline illustrates the step-by-step process from identifying the initial problem to achieving the final goals."
+            
           toolsUsed={["Figma", "React", "TailwindCSS", "API integration"]}
           // projectOutcome="The redesigned website saw a 30% increase in user engagement and a 20% increase in bookings within the first month."
           projectOutcome="The redesigned website increased website visitors by 80%, boosted user engagement by 30%, and led to a 20% increase in bookings within the first month."
