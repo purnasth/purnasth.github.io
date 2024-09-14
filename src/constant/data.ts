@@ -86,6 +86,29 @@ export const portfolioData = [
               title: "Cloudflare",
             },
           ],
+          feedback: {
+            clientReview:
+              "We partnered with Purna to revamp our website, and the results were exceptional. The redesign modernized our site and led to an 80% increase in visitors, a 30% boost in engagement, and a 20% rise in bookings within the first month. Purna & the teams' meticulous attention to detail and seamless execution exceeded our expectations.",
+            author: "Hotel Himalaya",
+          },
+          galleryImages: [
+            {
+              src: "https://hotelhimalaya.pages.dev/images/hero/1.webp",
+              alt: "Hotel Himalaya",
+            },
+            {
+              src: "https://hotelhimalaya.pages.dev/images/stay/js2.webp",
+              alt: "Hotel Himalaya",
+            },
+            {
+              src: "https://hotelhimalaya.pages.dev/images/banner/dine.webp",
+              alt: "Hotel Himalaya",
+            },
+            {
+              src: "https://hotelhimalaya.pages.dev/images/banner/swimming.webp",
+              alt: "Hotel Himalaya",
+            },
+          ],
         },
       },
       {

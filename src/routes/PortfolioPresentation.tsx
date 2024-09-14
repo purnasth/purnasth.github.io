@@ -5,6 +5,19 @@ import { portfolioData } from "../constant/data";
 import NavbarBreadCrumb from "../components/NavbarBreadCrumb";
 import CaseStudy from "../components/CaseStudy";
 
+import { TbMessageChatbot } from "react-icons/tb";
+
+import LightGallery from "lightgallery/react";
+import lgZoom from "lightgallery/plugins/zoom";
+import lgVideo from "lightgallery/plugins/video";
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgFullscreen from "lightgallery/plugins/fullscreen";
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-video.css";
+import "lightgallery/css/lg-thumbnail.css";
+import "lightgallery/css/lg-fullscreen.css";
+
 const PortfolioPresentation: React.FC = () => {
   const { website } = useParams();
 
@@ -29,10 +42,9 @@ const PortfolioPresentation: React.FC = () => {
         currentPage={portfolioItem.title}
         whiteBg={whiteBg}
       />
-      <main className="px-0 pb-0">
+      <main className="px-0">
         <section>
           <div className="container">
-            <h1 className="text-8xl capitalize hidden">{website}</h1>
             <h1 className="text-8xl">{portfolioItem.title}</h1>
             <p className="max-w-lg">{portfolioItem.description}</p>
             <ul className="mt-8">
@@ -97,8 +109,8 @@ const PortfolioPresentation: React.FC = () => {
             }
             toolsUsed={
               portfolioItem.caseStudy?.toolsUsed?.map((tool) => ({
-                src: tool.src, // Ensure the image URL is passed
-                title: tool.title, // Ensure the title (name) is passed
+                src: tool.src,
+                title: tool.title,
               })) || []
             }
             projectOutcome={
@@ -163,6 +175,113 @@ const PortfolioPresentation: React.FC = () => {
             className="size-full"
           ></iframe>
         </div>
+
+        <section className="bg-white">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-12">
+              <div className="col-span-2">
+                <div className="space-y-4">
+                  <h5 className="text-4xl font-luxury font-extralight">
+                    Gallery
+                  </h5>
+                  <p className="text-xs md:text-sm max-w-lg">
+                    Explore the exquisite moments captured throughout our
+                    project journey. Each photograph tells a story of creativity
+                    and collaboration, celebrating the milestones and memories
+                    that defined our success.
+                  </p>
+                </div>
+
+                <LightGallery
+                  plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
+                  mode="lg-fade"
+                  thumbnail={true}
+                  autoplay={true}
+                  elementClassNames="mt-12 w-full grid grid-cols-1 md:grid-cols-2 gap-4 transition-linear"
+                >
+                  {portfolioItem.caseStudy?.galleryImages?.map(
+                    (image, index) => (
+                      <div
+                        key={index}
+                        className="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative shadow-md hover:shadow-xl"
+                        data-src={image.src}
+                      >
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                          loading="lazy"
+                          draggable="false"
+                        />
+                        <div className="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/70 to-black/0 z-0 group-hover:opacity-50 transition-all duration-300 ease-linear" />
+                        <h5 className="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear">
+                          {image.alt}
+                        </h5>
+                      </div>
+                    )
+                  )}
+                </LightGallery>
+              </div>
+
+              <div className="col-span-1">
+                <div className="space-y-4">
+                  <h5 className="text-4xl font-luxury font-extralight">
+                    Feedback
+                  </h5>
+                  <p className="text-xs md:text-sm max-w-xs">
+                    Discover what{" "}
+                    <strong className="text-inherit font-bold">
+                      {portfolioItem.title}
+                    </strong>{" "}
+                    has to say about entrusting their vision to me—and how our
+                    successful collaboration propelled their business to new
+                    heights.
+                  </p>
+                </div>
+
+                <div className="mt-12 p-4 shadow-lg border border-dark/10">
+                  <div className="testimonials">
+                    <div className="flex flex-col gap-4 relative transition-all duration-150 ease-linear max-h-64 overflow-y-auto">
+                      <p className="text-justify text-pretty text-dark text-sm md:text-base mr-3 review">
+                        {portfolioItem.caseStudy?.feedback?.clientReview}
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <h4 className="text-base text-dark font-bold">
+                          - {portfolioItem.caseStudy?.feedback?.author}
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-5">
+                  <a
+                    href="https://wa.me/+9779801084724"
+                    rel="noopener noreferrer"
+                    className="mt-4 group inline-flex items-center justify-center gap-2 bg-dark/10 hover:animate-bounce text-dark border border-dark/20 hover:shadow-xl shadow-md px-6 py-2 transition-300"
+                    target="_blank"
+                  >
+                    Schedule a meeting
+                    <TbMessageChatbot className="text-xl group-hover:translate-x-2 transition-300 group-hover:animate-ping" />
+                  </a>
+                  <p className="mt-2">
+                    or directly Mail me at
+                    <a
+                      href="mailto:purnashrestha0310@gmail.com"
+                      className="mx-1 text-base font-semibold relative group"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="purnashrestha0310@gmail.com"
+                    >
+                      <span className="absolute -bottom-1 -right-0 w-full h-[2px] bg-dark group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"></span>
+                      purnashrestha0310@gmail.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <section className="bg-gray-200 py-32">

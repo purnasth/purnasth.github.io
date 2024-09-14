@@ -26,7 +26,7 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
   projectOutcome,
 }) => {
   return (
-    <section className="py-16">
+    <section className="pb-16">
       <div className="container mx-auto">
         <h4 className="sticky top-10 z-30 px-5 py-1 rounded-full inline-flex items-center justify-center gap-3 outline outline-1 backdrop-blur-lg text-dark bg-dark/10 outline-dark/30 mb-12">
           <TbReportSearch />
@@ -80,9 +80,9 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
               {toolsUsed.map((tool, index) => (
                 <img
                   key={index}
-                  src={tool.src} // Correct image source
-                  alt={tool.title} // Correct tool title for alt
-                  title={tool.title} // Tool name for hover info
+                  src={tool.src}
+                  alt={tool.title}
+                  title={tool.title}
                   className="size-8 object-contain p-1"
                 />
               ))}

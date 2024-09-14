@@ -27,14 +27,15 @@
   h2,
   h3,
   .navlink {
-    @apply font-luxury;
+    @apply font-luxury font-extralight;
   }
 
   h4,
   h5,
   h6,
   a,
-  button {
+  button,
+  div {
     @apply font-inria-sans font-semibold;
   }
 
