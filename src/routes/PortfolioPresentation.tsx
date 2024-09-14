@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { portfolioData } from "../constant/data";
 import NavbarBreadCrumb from "../components/NavbarBreadCrumb";
 import CaseStudy from "../components/CaseStudy";
-import projectJourney from ".././assets/img/portfolio/hotel-himalaya/project-journey.svg"
 
 const PortfolioPresentation: React.FC = () => {
   const { website } = useParams();
@@ -79,29 +78,35 @@ const PortfolioPresentation: React.FC = () => {
           </div>
         </section>
 
-        <CaseStudy
-          projectTitle="Hotel Himalaya"
-          designerName="Purna Shrestha"
-          developerName="Purna Shrestha"
-          problemStatement="The Hotel Himalaya website needed a complete redesign to improve user engagement and streamline the booking process."
-          solutionOverview="The redesign focused on creating a clean, modern interface with an intuitive booking system and responsive design."
-          designerResponsibilities={[
-            "Conducted user research and created personas.",
-            "Designed wireframes and prototypes.",
-            "Led the design of the user interface.",
-          ]}
-          developerResponsibilities={[
-            "Implemented the frontend using React and TailwindCSS.",
-            "Integrated the booking API.",
-            "Optimized the website for performance and accessibility.",
-          ]}
-          projectJourney={projectJourney}
-          journeyOverview="This timeline illustrates the step-by-step process from identifying the initial problem to achieving the final goals."
-            
-          toolsUsed={["Figma", "React", "TailwindCSS", "API integration"]}
-          // projectOutcome="The redesigned website saw a 30% increase in user engagement and a 20% increase in bookings within the first month."
-          projectOutcome="The redesigned website increased website visitors by 80%, boosted user engagement by 30%, and led to a 20% increase in bookings within the first month."
-        />
+        {portfolioItem.caseStudy && (
+          <CaseStudy
+            problemStatement={
+              portfolioItem.caseStudy?.problemStatement ||
+              "No problem statement provided."
+            }
+            solutionOverview={
+              portfolioItem.caseStudy?.solutionOverview ||
+              "No solution overview provided."
+            }
+            projectJourney={
+              portfolioItem.caseStudy?.projectJourney?.projectJourney || ""
+            }
+            journeyOverview={
+              portfolioItem.caseStudy?.journeyOverview ||
+              "No journey overview provided."
+            }
+            toolsUsed={
+              portfolioItem.caseStudy?.toolsUsed?.map((tool) => ({
+                src: tool.src, // Ensure the image URL is passed
+                title: tool.title, // Ensure the title (name) is passed
+              })) || []
+            }
+            projectOutcome={
+              portfolioItem.caseStudy?.projectOutcome ||
+              "No project outcome provided."
+            }
+          />
+        )}
 
         <section>
           <img

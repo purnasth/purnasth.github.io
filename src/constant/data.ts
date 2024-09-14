@@ -9,6 +9,9 @@ import hotelHDayatraMockup from "../assets/img/portfolio/hotel-dayatra/mockup.pn
 import mithilaMockup from "../assets/img/portfolio/mithila/mockup.png";
 import ichchhaMockup from "../assets/img/portfolio/hotel-ichchha/mockup.png";
 
+// journey
+import projectJourney from "../assets/img/portfolio/hotel-himalaya/project-journey.svg";
+
 export const portfolioData = [
   {
     id: 1,
@@ -28,19 +31,7 @@ export const portfolioData = [
         landingImage: [
           {
             url: hotelHimalaya,
-            alt: "Swimming Pool 1",
-          },
-          {
-            url: hotelHimalaya,
-            alt: "Swimming Pool 2",
-          },
-          {
-            url: hotelHimalaya,
-            alt: "Swimming Pool 3",
-          },
-          {
-            url: hotelHimalaya,
-            alt: "Swimming Pool 4",
+            alt: "Hotel Himalaya",
           },
         ],
         portfolioWebsite: {
@@ -64,6 +55,35 @@ export const portfolioData = [
             {
               url: "https://hotelhimalaya.pages.dev/gallery",
               title: "Hotel Himalaya Website Gallery Page",
+            },
+          ],
+        },
+        caseStudy: {
+          problemStatement:
+            "The Hotel Himalaya website needed a complete redesign to improve user engagement and streamline the booking process.",
+          solutionOverview:
+            "The redesign focused on creating a clean, modern interface with an intuitive booking system and responsive design.",
+          projectJourney: { projectJourney },
+          journeyOverview:
+            "This timeline illustrates the step-by-step process from identifying the initial problem to achieving the final goals.",
+          projectOutcome:
+            "The redesigned website increased website visitors by 80%, boosted user engagement by 30%, and led to a 20% increase in bookings within the first month.",
+          toolsUsed: [
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+              title: "Figma",
+            },
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+              title: "React",
+            },
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+              title: "TailwindCSS",
+            },
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg",
+              title: "Cloudflare",
             },
           ],
         },
