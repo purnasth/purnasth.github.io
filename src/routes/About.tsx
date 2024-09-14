@@ -201,7 +201,7 @@ const About: React.FC = () => {
             <h2 className="text-6xl leading-snug capitalize">
               {greeting}, <br /> I'm Purna Shrestha.
             </h2>
-            <p className="my-12 ml-32 text-2xl">
+            <p className="my-12 ml-32 text-base">
               ---------------- a software engineer based in Kathmandu, Nepal.
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
               nam eligendi amet quam eos totam, blanditiis dolores commodi hic

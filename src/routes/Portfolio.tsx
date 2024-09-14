@@ -29,10 +29,7 @@ const Portfolio: React.FC = () => {
 
       <section className="mt-24 xl:p-0 xl:pt-0 py-0">
         {portfolioData[0].portfolioDetails.map((portfolio, index) => (
-          <div
-            className="grid grid-cols-1 xl:grid-cols-3"
-            key={portfolio.id}
-          >
+          <div className="grid grid-cols-1 xl:grid-cols-3" key={portfolio.id}>
             <div
               className={`col-span-1 content-center w-full ${
                 index % 2 === 0 ? "" : "xl:order-last"
@@ -84,6 +81,15 @@ const Portfolio: React.FC = () => {
           </div>
         ))}
       </section>
+
+      <div className="fixed left-12 top-10 flex w-auto mx-auto">
+        <p className="px-4 py-1 rounded-full transition-all duration-[1s] translate-y-0 outline outline-1 backdrop-blur-lg text-white bg-white/10 outline-white/60 text-xs">
+          <strong className="text-inherit font-extrabold">Note:</strong> Some
+          projects have been completed under{" "}
+          <strong className="text-inherit font-extrabold">NDAs</strong>, and
+          cannot be publicly shared.
+        </p>
+      </div>
     </main>
   );
 };
