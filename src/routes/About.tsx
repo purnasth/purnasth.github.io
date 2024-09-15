@@ -24,17 +24,7 @@ const About: React.FC = () => {
     "Olá", // Portuguese
   ];
 
-  const skillLogos: SkillLogo[] = [
-    {
-      id: 1,
-      title: "Git",
-      url: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg",
-    },
-    {
-      id: 2,
-      title: "Github",
-      url: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
-    },
+  const frontDevLogos: SkillLogo[] = [
     {
       id: 3,
       title: "HTML5",
@@ -51,6 +41,16 @@ const About: React.FC = () => {
       url: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
     },
     {
+      id: 9,
+      title: "React",
+      url: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    },
+    {
+      id: 17,
+      title: "Next.js",
+      url: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+    },
+    {
       id: 6,
       title: "Bootstrap",
       url: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
@@ -60,31 +60,9 @@ const About: React.FC = () => {
       title: "Tailwind CSS",
       url: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
     },
-    {
-      id: 8,
-      title: "Sass",
-      url: "https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg",
-    },
-    {
-      id: 9,
-      title: "React",
-      url: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-    },
-    {
-      id: 10,
-      title: "Figma",
-      url: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
-    },
-    {
-      id: 11,
-      title: "Php",
-      url: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
-    },
-    {
-      id: 12,
-      title: "MySQL",
-      url: "https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg",
-    },
+  ];
+
+  const backendLogos: SkillLogo[] = [
     {
       id: 13,
       title: "Node.js",
@@ -101,14 +79,14 @@ const About: React.FC = () => {
       url: "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg",
     },
     {
+      id: 12,
+      title: "MySQL",
+      url: "https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg",
+    },
+    {
       id: 16,
       title: "Firebase",
       url: "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg",
-    },
-    {
-      id: 17,
-      title: "Next.js",
-      url: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
     },
     {
       id: 18,
@@ -120,15 +98,13 @@ const About: React.FC = () => {
       title: "Django",
       url: "https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg",
     },
+  ];
+
+  const designLogos: SkillLogo[] = [
     {
-      id: 20,
-      title: "C",
-      url: "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
-    },
-    {
-      id: 21,
-      title: "C++",
-      url: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+      id: 10,
+      title: "Figma",
+      url: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
     },
     {
       id: 22,
@@ -160,18 +136,62 @@ const About: React.FC = () => {
       title: "Premiere Pro",
       url: "https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg",
     },
+  ];
+
+  const versionControlLogos: SkillLogo[] = [
     {
-      id: 28,
+      id: 1,
+      title: "Git",
+      url: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg",
+    },
+    {
+      id: 2,
+      title: "Github",
+      url: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+    },
+    {
+      id: 3,
+      title: "Cloudflare",
+      url: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg",
+    },
+  ];
+
+  const projectManagementLogos: SkillLogo[] = [
+    {
+      id: 31,
+      title: "Slack",
+      url: "https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png",
+    },
+    {
+      id: 32,
+      title: "Trello",
+      url: "https://cdn.worldvectorlogo.com/logos/trello.svg",
+    },
+    {
+      id: 33,
+      title: "Jira",
+      url: "https://cdn.worldvectorlogo.com/logos/jira-3.svg",
+    },
+    {
+      id: 34,
+      title: "Notion",
+      url: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg",
+    },
+  ];
+
+  const otherLogos: SkillLogo[] = [
+    {
+      id: 1,
       title: "Word",
       url: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg",
     },
     {
-      id: 29,
+      id: 2,
       title: "Excel",
       url: "https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg",
     },
     {
-      id: 30,
+      id: 3,
       title: "PowerPoint",
       url: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg",
     },
@@ -216,37 +236,153 @@ const About: React.FC = () => {
           </div>
 
           <div>
-            <h4 className="bg-gray-800 text-white/90 inline-flex items-center justify-center gap-2 text-xl px-6 py-2 rounded-full">
+            <h4 className="sticky top-4 px-4 py-1 font-normal rounded-full inline-flex items-center justify-center gap-2 outline outline-1 backdrop-blur text-green-400 bg-green-800/30 outline-green-400/40">
               <span className="size-2 bg-green-500 rounded-full"></span>
               Available for work
             </h4>
 
-            <p className="my-6 ml-32 text-2xl">
+            <p className="my-6 ml-32">
               ---------------- a software engineer based in Kathmandu, Nepal.
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
               nam eligendi amet quam eos totam, blanditiis dolores commodi hic
               quo?
             </p>
 
-            <div className="grid grid-cols-6 gap-4 mt-12">
-              {skillLogos.map((logo) => (
-                <div
-                  key={logo.id}
-                  className="flex items-center justify-center flex-col gap-4 my-6 group"
-                >
-                  <img
-                    src={logo.url}
-                    alt={logo.title}
-                    className="size-12 object-contain mix-blend-luminosity group-hover:mix-blend-normal transition-700 "
-                  />
-                  <p className="text-sm text-white/80">{logo.title}</p>
+            <div className="mt-24 space-y-8">
+              <div className="skills flex items-center justify-between">
+                <h5 className="text-white/90 font-normal">
+                  Frontend Development
+                </h5>
+                <span className="flex-grow border-2 border-dotted border-white/20 rounded-full ml-4"></span>
+                <div className="flex items-center gap-8 bg-white/10 px-8 py-2 rounded-full border border-white/50">
+                  {frontDevLogos.map((logo) => (
+                    <div
+                      key={logo.id}
+                      className="flex items-center justify-center flex-col gap-2 group"
+                    >
+                      <img
+                        src={logo.url}
+                        alt={logo.title}
+                        className="size-8 bg-white/80 p-[0.125em] object-contain rounded-full"
+                      />
+                      <p className="text-xs text-white/80">{logo.title}</p>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+
+              <div className="skills flex items-center justify-between">
+                <h5 className="text-white/90 font-normal">
+                  Backend Development
+                </h5>
+                <span className="flex-grow border-2 border-dotted border-white/20 rounded-full ml-4"></span>
+                <div className="flex items-center gap-8 bg-white/10 px-8 py-2 rounded-full border border-white/50">
+                  {backendLogos.map((logo) => (
+                    <div
+                      key={logo.id}
+                      className="flex items-center justify-center flex-col gap-2 group"
+                    >
+                      <img
+                        src={logo.url}
+                        alt={logo.title}
+                        className="size-8 bg-white/80 p-[0.125em] object-contain rounded-full"
+                      />
+                      <p className="text-xs text-white/80">{logo.title}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="skills flex items-center">
+                <h5 className="text-white/90 font-normal">
+                  UI/UX & Design Tools
+                </h5>
+                <span className="flex-grow border-2 border-dotted border-white/20 rounded-full ml-4"></span>
+                <div className="flex items-center gap-8 bg-white/10 px-8 py-2 rounded-full border border-white/50">
+                  {designLogos.map((logo) => (
+                    <div
+                      key={logo.id}
+                      className="flex items-center justify-center flex-col gap-2 group"
+                    >
+                      <img
+                        src={logo.url}
+                        alt={logo.title}
+                        className="size-8 bg-white/80 p-[0.125em] object-contain rounded-full"
+                      />
+                      <p className="text-xs text-white/80">{logo.title}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="skills flex items-center justify-between">
+                <h5 className="text-white/90 font-normal">
+                  Collaboration Tools
+                </h5>
+                <span className="flex-grow border-2 border-dotted border-white/20 rounded-full ml-4"></span>
+                <div className="flex items-center gap-8 bg-white/10 px-8 py-2 rounded-full border border-white/50">
+                  {projectManagementLogos.map((logo) => (
+                    <div
+                      key={logo.id}
+                      className="flex items-center justify-center flex-col gap-2 group"
+                    >
+                      <img
+                        src={logo.url}
+                        alt={logo.title}
+                        className="size-8 bg-white/80 p-[0.125em] object-contain rounded-full"
+                      />
+                      <p className="text-xs text-white/80">{logo.title}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="skills flex items-center justify-between">
+                <h5 className="text-white/90 font-normal">
+                  Version Control & Hosting
+                </h5>
+                <span className="flex-grow border-2 border-dotted border-white/20 rounded-full ml-4"></span>
+                <div className="flex items-center gap-8 bg-white/10 px-8 py-2 rounded-full border border-white/50">
+                  {versionControlLogos.map((logo) => (
+                    <div
+                      key={logo.id}
+                      className="flex items-center justify-center flex-col gap-2 group"
+                    >
+                      <img
+                        src={logo.url}
+                        alt={logo.title}
+                        className="size-8 bg-white/80 p-[0.125em] object-contain rounded-full"
+                      />
+                      <p className="text-xs text-white/80">{logo.title}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="skills flex items-center justify-between">
+                <h5 className="text-white/90 font-normal">Other Tools</h5>
+                <span className="flex-grow border-2 border-dotted border-white/20 rounded-full ml-4"></span>
+                <div className="flex items-center gap-8 bg-white/10 px-8 py-2 rounded-full border border-white/50">
+                  {otherLogos.map((logo) => (
+                    <div
+                      key={logo.id}
+                      className="flex items-center justify-center flex-col gap-2 group"
+                    >
+                      <img
+                        src={logo.url}
+                        alt={logo.title}
+                        className="size-8 bg-white/80 p-[0.125em] object-contain rounded-full"
+                      />
+                      <p className="text-xs text-white/80">{logo.title}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
           <div>
-            <h4 className="bg-gray-800 text-white/90 inline-flex items-center justify-center gap-2 text-xl px-6 py-2 rounded-full">
+            <h4 className="sticky top-4 px-4 py-1 font-normal rounded-full inline-flex items-center justify-center gap-2 outline outline-1 backdrop-blur text-green-400 bg-green-800/30 outline-green-400/40">
               <span className="size-2 bg-green-500 rounded-full"></span>
               Trusted by
             </h4>
