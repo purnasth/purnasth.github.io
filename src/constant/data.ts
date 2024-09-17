@@ -121,23 +121,11 @@ export const portfolioData = [
         landingImage: [
           {
             url: hotelDayatra,
-            alt: "Swimming Pool 1",
-          },
-          {
-            url: hotelDayatra,
-            alt: "Swimming Pool 2",
-          },
-          {
-            url: hotelDayatra,
-            alt: "Swimming Pool 3",
-          },
-          {
-            url: hotelDayatra,
-            alt: "Swimming Pool 4",
+            alt: "Hotel Da Yatra",
           },
         ],
         portfolioWebsite: {
-          deployUrl: "https://hotelhimalaya.pages.dev",
+          deployUrl: "https://www.purnashrestha.com.np/dayatra/",
           mockup: hotelHDayatraMockup,
           role: "Design & Development",
           year: "2024",
@@ -158,6 +146,58 @@ export const portfolioData = [
             {
               url: "https://www.purnashrestha.com.np/dayatra/gallery.html",
               title: "Hotel Da Yatra Website Gallery Page",
+            },
+          ],
+        },
+        caseStudy: {
+          problemStatement:
+            "After a beautiful renovation, Hotel Da Yatra realized their outdated website no longer reflected their new image and needed a modern upgrade to enhance user engagement and support their growing customer base.",
+          solutionOverview:
+            "The redesign introduced a fresh, modern interface with an intuitive navigation system and a responsive design. It focused on highlighting the renovated hotel's offerings while optimizing the booking process for a seamless user experience.",
+          projectJourney: { projectJourney },
+          journeyOverview:
+            "This timeline illustrates the step-by-step process from understanding the client's needs post-renovation to delivering a sleek, responsive, and modern website.",
+          projectOutcome:
+            "The revamped website attracted more users, with a 70% increase in website traffic, a 40% rise in user engagement, and a 25% boost in direct bookings in the first three months after launch.",
+          toolsUsed: [
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+              title: "Figma",
+            },
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+              title: "React",
+            },
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+              title: "TailwindCSS",
+            },
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg",
+              title: "Cloudflare",
+            },
+          ],
+          feedback: {
+            clientReview:
+              "We reached out to Purna after our hotel renovation, knowing our old website no longer matched the fresh, modern look of our brand. The new website transformed not only the visual appeal but also how our customers engage with our services. Purna and his team brought our vision to life, resulting in a significant boost in traffic and bookings.",
+            author: "Hotel Da Yatra",
+          },
+          galleryImages: [
+            {
+              src: "https://www.purnashrestha.com.np/dayatra/assets/img/slider/building.webp",
+              alt: "Hotel Da Yatra",
+            },
+            {
+              src: "https://www.purnashrestha.com.np/dayatra/assets/img/rooms/drs2.webp",
+              alt: "Hotel Da Yatra",
+            },
+            {
+              src: "https://www.purnashrestha.com.np/dayatra/assets/img/slider/welcome.webp",
+              alt: "Hotel Da Yatra",
+            },
+            {
+              src: "https://www.purnashrestha.com.np/dayatra/assets/img/daYatraEntry.webp",
+              alt: "Hotel Da Yatra",
             },
           ],
         },

@@ -168,7 +168,7 @@ const PortfolioPresentation: React.FC = () => {
           }}
         ></div>
 
-        <div className="my-16 w-full h-[110vh] overflow-y-auto shadow-lg scale-[0.85]">
+        <div className="my-16 w-full h-[110vh] overflow-y-auto shadow-lg scale-[0.875]">
           <iframe
             src={portfolioItem.portfolioWebsite?.iframePages[0]?.url}
             title={portfolioItem.portfolioWebsite?.iframePages[0]?.title}
@@ -178,7 +178,7 @@ const PortfolioPresentation: React.FC = () => {
 
         <section className="bg-white">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-8">
               <div className="col-span-2">
                 <div className="space-y-4">
                   <h5 className="text-4xl font-luxury font-extralight">
@@ -209,7 +209,7 @@ const PortfolioPresentation: React.FC = () => {
                         <img
                           src={image.src}
                           alt={image.alt}
-                          className="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                          className="contrast-100 group-hover:contrast-125 size-full h-72 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
                           loading="lazy"
                           draggable="false"
                         />
@@ -256,9 +256,9 @@ const PortfolioPresentation: React.FC = () => {
 
                 <div className="mt-5">
                   <a
-                    href="https://wa.me/+9779801084724"
+                    href="https://wa.me/+9779808021753"
                     rel="noopener noreferrer"
-                    className="mt-4 group inline-flex items-center justify-center gap-2 bg-dark/10 hover:animate-bounce text-dark border border-dark/20 hover:shadow-xl shadow-md px-6 py-2 transition-300"
+                    className="mt-4 group inline-flex items-center justify-center gap-2 bg-dark/10 hover:bg-dark/30 hover:animate-bounce text-dark border border-dark/20 hover:shadow-xl shadow-md px-6 py-2 transition-300"
                     target="_blank"
                   >
                     Schedule a meeting
