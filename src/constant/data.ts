@@ -208,23 +208,11 @@ export const portfolioData = [
         logoSrc: "https://www.mithilayatriniwas.com/assets/logo-BoMl5AAK.svg",
         portfolioUrl: "mithila-yatri-niwas",
         description:
-          "Mithila Yatri Niwas - A luxurious retreat in Janakpur, just a 10-minute walk from the sacred Janaki Temple. Discover the allure of Janakpur at Mithila Yatri Niwas, where luxury meets legacy just steps away from the divine Janaki Temple and the peaceful Dashrath Lake. Nestled in the city’s vibrant heart, our hotel is a sanctuary of modern comforts, offering unparalleled access to sacred sites and cultural treasures.",
+          "Mithila Yatri Niwas - A luxurious retreat in Janakpur, just a 10-minute walk from the sacred Janaki Temple where you can experience the rich cultural & traditional heritage of the city.",
         landingImage: [
           {
             url: mithilaYatriNiwas,
-            alt: "Swimming Pool 1",
-          },
-          {
-            url: mithilaYatriNiwas,
-            alt: "Swimming Pool 2",
-          },
-          {
-            url: mithilaYatriNiwas,
-            alt: "Swimming Pool 3",
-          },
-          {
-            url: mithilaYatriNiwas,
-            alt: "Swimming Pool 4",
+            alt: "Mithila Yatri Niwas",
           },
         ],
         portfolioWebsite: {
@@ -249,6 +237,58 @@ export const portfolioData = [
             {
               url: "https://mithila-yatri.pages.dev/gallery",
               title: "Mithila Yatri Niwas Website Gallery Page",
+            },
+          ],
+        },
+        caseStudy: {
+          problemStatement:
+            "Mithila Yatri Niwas required a new website that not only showcased the hotel's luxurious amenities but also highlighted the rich cultural heritage of Janakpur, particularly the sacred Janaki Temple and local traditions. The website needed to stand out from other hospitality offerings in the region by reflecting both modern comforts and the legacy of the city.",
+          solutionOverview:
+            "The new website was designed to integrate key hospitality features, ensuring an easy-to-navigate interface for bookings, services, and amenities. A strong emphasis was placed on visually capturing the essence of Janakpur's culture and its connection to the Janaki Temple, setting Mithila Yatri Niwas apart from competitors in the area.",
+          projectJourney: { projectJourney },
+          journeyOverview:
+            "This timeline illustrates the step-by-step process from identifying the initial problem to achieving the final goals.",
+          projectOutcome:
+            "The website redesign led successfully positioned Mithila Yatri Niwas as a cultural and luxurious destination. It led to a 50% increase in online inquiries and a notable rise in direct bookings through the site. The visual representation of Janakpur's heritage resonated with both local and international guests, improving engagement and brand visibility.",
+          toolsUsed: [
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+              title: "Figma",
+            },
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+              title: "React",
+            },
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+              title: "TailwindCSS",
+            },
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg",
+              title: "Cloudflare",
+            },
+          ],
+          feedback: {
+            clientReview:
+              "“We wanted our website to reflect the culture of Janakpur while highlighting the luxury we offer. Thank You Purna and his team for delivering exactly that. The new site truly captures the spirit of the Janaki Temple and our city, helping us stand out. Since launching, we've seen a 50% increase in bookings and a lot of positive feedback from guests.”",
+            author: "Mithila Yatri Niwas",
+          },
+          galleryImages: [
+            {
+              src: "https://mithila-yatri.pages.dev/assets/mithila_night-BP4wXxoQ.webp",
+              alt: "Mithila Yatri Niwas",
+            },
+            {
+              src: "https://mithila-yatri.pages.dev/assets/mithila2-CMWD05R9.webp",
+              alt: "Mithila Yatri Niwas",
+            },
+            {
+              src: "https://mithila-yatri.pages.dev/assets/room3-CGyEWjdq.webp",
+              alt: "Mithila Yatri Niwas",
+            },
+            {
+              src: "https://mithila-yatri.pages.dev/assets/hall1-VaKC5fnP.webp",
+              alt: "Mithila Yatri Niwas",
             },
           ],
         },
