@@ -259,24 +259,12 @@ export const portfolioData = [
         logoSrc: "https://hotelichchha.com/assets/logo-DU4e6XTo.svg",
         portfolioUrl: "hotel-ichchha",
         description:
-          "Nepal's First 5-Star Hotel in Simara Epitomizes luxury and sophistication, offering exceptional comfort, convenience, enjoyment, and services. Being a top hospitality provider, we guarantee our finest offerings due to its convenient location, it is a great option for business, leisure, and pilgrimage trips. The ideal option for a destination wedding that will enhance the memory of your special moments. Hotel Ichchha is perfectly suited for all your needs with a total of 100 rooms.",
+          "Being a top hospitality provider & Nepal's First 5-Star Hotel in Simara, Bara, Nepal, we guarantee our finest offerings due to its convenient location, it is a great option for business, leisure, and pilgrimage trips.",
 
         landingImage: [
           {
             url: hotelIchchha,
-            alt: "Swimming Pool 1",
-          },
-          {
-            url: hotelIchchha,
-            alt: "Swimming Pool 2",
-          },
-          {
-            url: hotelIchchha,
-            alt: "Swimming Pool 3",
-          },
-          {
-            url: hotelIchchha,
-            alt: "Swimming Pool 4",
+            alt: "Hotel Ichchha",
           },
         ],
         portfolioWebsite: {
@@ -301,6 +289,58 @@ export const portfolioData = [
             {
               url: "https://hotel-ichchha.pages.dev/events",
               title: "Hotel Ichchha Website Gallery Page",
+            },
+          ],
+        },
+        caseStudy: {
+          problemStatement:
+            "After achieving 5-star status in Simara, Bara, Nepal, Hotel Ichchha underwent significant updates to the property. To properly showcase these new offerings and increase online bookings, the hotel required a faster, more efficient website compared to their previous one.",
+          solutionOverview:
+            "The new website design focused on delivering an enhanced user experience with high-quality visuals and an intuitive booking system. The site was optimized for speed and responsiveness, ensuring potential guests could seamlessly explore the hotel's new amenities and easily make bookings.",
+          projectJourney: { projectJourney },
+          journeyOverview:
+            "This timeline illustrates the step-by-step process from identifying the initial problem to achieving the final goals.",
+          projectOutcome:
+            "The revamped website led to a 60% increase in website visitors, a 40% rise in online bookings, and improved engagement with the hotel's updated facilities.",
+          toolsUsed: [
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+              title: "Figma",
+            },
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+              title: "React",
+            },
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+              title: "TailwindCSS",
+            },
+            {
+              src: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg",
+              title: "Cloudflare",
+            },
+          ],
+          feedback: {
+            clientReview:
+              "“After our transition to a 5-star hotel, we needed a website that could reflect our new standards and facilities. Purna and the team delivered a site that not only showcases our updated amenities but also performs exceptionally well. Our online bookings have surged by 40%, and guest interactions with the site have been overwhelmingly positive. The attention to detail and performance improvements exceeded our expectations.”",
+            author: "Hotel Ichchha",
+          },
+          galleryImages: [
+            {
+              src: "https://hotel-ichchha.pages.dev/assets/g19-DES27q-W.webp",
+              alt: "Hotel Ichchha",
+            },
+            {
+              src: "https://hotel-ichchha.pages.dev/assets/g18-CQ4_uG3Z.webp",
+              alt: "Hotel Ichchha",
+            },
+            {
+              src: "https://hotel-ichchha.pages.dev/assets/g8-D7SpBndT.webp",
+              alt: "Hotel Ichchha",
+            },
+            {
+              src: "https://hotel-ichchha.pages.dev/assets/g23-D93mm9YZ.webp",
+              alt: "Hotel Ichchha",
             },
           ],
         },
