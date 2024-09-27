@@ -6,11 +6,14 @@ import Portfolio from "./routes/Portfolio";
 import PortfolioPresentation from "./routes/PortfolioPresentation";
 import Contact from "./routes/Contact";
 import withFramerTransition from "./hoc/withFramerTransition"; // PascalCase component
+import RouterToTop from "./utils/RouterToTop";
 
 const HomeWithTransition = withFramerTransition(Home);
 const AboutWithTransition = withFramerTransition(About);
 const PortfolioWithTransition = withFramerTransition(Portfolio);
-const PortfolioPresentationWithTransition = withFramerTransition(PortfolioPresentation);
+const PortfolioPresentationWithTransition = withFramerTransition(
+  PortfolioPresentation
+);
 const ContactWithTransition = withFramerTransition(Contact);
 
 const App = () => {
@@ -18,6 +21,7 @@ const App = () => {
 
   return (
     <>
+      <RouterToTop />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.key}>
           <Route path="/" element={<HomeWithTransition />} />
