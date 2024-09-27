@@ -42,7 +42,7 @@ const PortfolioPresentation: React.FC = () => {
         currentPage={portfolioItem.title}
         whiteBg={whiteBg}
       />
-      <main className="px-0">
+      <main className="px-0 bg-white">
         <section>
           <div className="container">
             <h1 className="text-8xl">{portfolioItem.title}</h1>
@@ -59,9 +59,9 @@ const PortfolioPresentation: React.FC = () => {
               </li>
             </ul>
 
-            <div className="mt-20 relative -z-10">
+            <div className="mt-20 relative">
               <div
-                className="bg-no-repeat bg-cover bg-center bg-fixed w-full h-screen outline outline-1 outline-white -outline-offset-[10px] z-10"
+                className="bg-no-repeat bg-cover bg-center bg-fixed w-full h-screen outline outline-1 outline-white -outline-offset-[10px] z-20"
                 style={{
                   backgroundImage: `url(${portfolioItem.portfolioWebsite?.titleImage})`,
                 }}

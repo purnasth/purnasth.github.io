@@ -24,3 +24,38 @@ const withFramerTransition = (OgComponent: ComponentType) => {
 };
 
 export default withFramerTransition;
+
+
+// import { ComponentType } from "react";
+// import { motion } from "framer-motion";
+// import { useLocation } from "react-router-dom";
+
+// const withFramerTransition = (Component: ComponentType) => {
+//   return (props: any) => {
+//     const location = useLocation();
+
+//     // Define the transition effect for each variant
+//     const transition = { duration: 0.75, ease: "easeInOut" };
+
+//     // Subtle, professional transition with opacity and slight vertical movement
+//     const transitionEffect = {
+//       initial: { opacity: 0, y: 20, transition },
+//       animate: { opacity: 1, y: 0, transition },
+//       exit: { opacity: 0, y: 20, transition },
+//     };
+
+//     return (
+//       <motion.div
+//         key={location.pathname} // Unique key for each route change
+//         initial="initial"
+//         animate="animate"
+//         exit="exit"
+//         variants={transitionEffect} // Assign the entire variants object here
+//       >
+//         <Component {...props} />
+//       </motion.div>
+//     );
+//   };
+// };
+
+// export default withFramerTransition;
