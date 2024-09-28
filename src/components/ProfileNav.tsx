@@ -10,8 +10,8 @@ import purnaCV from "../assets/docs/cv.pdf";
 const ProfileNav = () => {
   return (
     <>
-      <section className="text-white fixed left-4 top-4 bg-dark/10 backdrop-blur-sm border border-1 border-white/20 shadow-sm p-6 w-72 rounded-lg z-40 h-[calc(100%-2rem)]">
-        <div className="profile flex items- justify-center flex-col gap-6 h-full">
+      <section className="text-white fixed left-4 top-4 bg-dark/10 backdrop-blur-sm border border-1 border-white/20 shadow-sm p-6 w-72 rounded-lg z-40 h-[calc(100%-2rem)] overflow-y-auto">
+        <div className="profile flex flex-col gap-6 h-full">
           <img
             src={hero}
             alt=""
@@ -26,7 +26,8 @@ const ProfileNav = () => {
 
           <div className="description">
             <p className="text-gray-400 text-justify">
-            The combination of my passion for design & development highlights me in the web world.
+              The combination of my passion for design & development highlights
+              me in the web world.
             </p>
 
             <h5 className="font-medium mt-1">20+ successful projects</h5>
@@ -85,10 +86,10 @@ const ProfileNav = () => {
             >
               Download my CV
             </a>
-            <Link to="/about" className="flex items-center justify-between">
+            {/* <Link to="/about" className="flex items-center justify-between">
               <span>Know More About Me</span>
               <MdOutlineArrowCircleRight className="text-2xl" />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
