@@ -18,8 +18,8 @@
 
 // export default Hero;
 
-import React from "react";
-import FloatLogo from "./ui/FloatLogo";
+import React from 'react';
+import FloatLogo from './ui/FloatLogo';
 // import gradientBg from "../assets/gradients/gradient2.avif";
 
 {
@@ -35,28 +35,22 @@ const Hero: React.FC = () => {
     //   className="size-full bg-cover bg-center -z-10 mix-blend-darken p-0 m-0"
     //   style={{ backgroundImage: `url(${gradientBg})` }}
     // >
-    <main className="size-full bg-cover bg-center -z-10 p-0 m-0 relative  max-w-full overflow-x-hidden">
-      <div className="absolute inset-0 size-full bg-dark mix-blend-darken -z-50"></div>
-      <div
-        className="absolute size-full left-0 bottom-0 -translate-x-1/4 bg-green-gradient -z-20
-      "
-      ></div>
-      <div
-        className="absolute size-full right-0 bottom-0 translate-x-1/4 bg-blue-gradient -z-20
-      "
-      ></div>
-      <div className="flex items-center flex-col w-[calc(100%-14rem-14rem-5rem-5rem)] h-screen mx-auto overflow-hidden relative">
-        <div className="text-white p-6">
+    <main className="relative -z-10 m-0 size-full max-w-full overflow-x-hidden bg-cover bg-center p-0">
+      <div className="absolute inset-0 -z-50 size-full bg-dark mix-blend-darken"></div>
+      <div className="bg-green-gradient absolute bottom-0 left-0 -z-20 size-full -translate-x-1/4"></div>
+      <div className="bg-blue-gradient absolute bottom-0 right-0 -z-20 size-full translate-x-1/4"></div>
+      <div className="relative mx-auto flex h-screen w-[calc(100%-14rem-14rem-5rem-5rem)] flex-col items-center overflow-hidden">
+        <div className="p-6 text-white">
           <div className="flex items-center justify-evenly">
             <h4 className="green-gradient">#design</h4>
             <img
               src="https://tv.purnashrestha.com.np/assets/purna_shrestha-d517ddc5.svg"
               alt=""
-              className="h-16 filter-white opacity-0"
+              className="filter-white h-16 opacity-0"
             />
             <h4 className="blue-gradient">#development</h4>
           </div>
-          <h2 className="text-8xl text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] capitalize">
+          <h2 className="text-center text-8xl capitalize drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Your imagination, Mine creation
           </h2>
         </div>

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { TbPlus, TbMail } from "react-icons/tb";
-import { Link } from "react-router-dom";
-import { PageProp } from "../../constant/types";
+import React, { useState } from 'react';
+import { TbPlus, TbMail } from 'react-icons/tb';
+import { Link } from 'react-router-dom';
+import { PageProp } from '../../constant/types';
 
 const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,36 +14,36 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
     <>
       <button
         onClick={toggleNav}
-        className={`group p-2 m-5 z-50 border rounded-full backdrop-blur-lg hover:scale-125 transition-all duration-300 ease-linear ${
+        className={`group z-50 m-5 rounded-full border p-2 backdrop-blur-lg transition-all duration-300 ease-linear hover:scale-125 ${
           isOpen
-            ? "scale-[1.35] bg-white/20 border-white rotate-[315deg] animate-pulse"
-            : ""
-        } ${whiteBg ? "black-mode" : "white-mode"}`}
+            ? 'rotate-[315deg] scale-[1.35] animate-pulse border-white bg-white/20'
+            : ''
+        } ${whiteBg ? 'black-mode' : 'white-mode'}`}
       >
-        <TbPlus className="text-base group-hover:scale-110 group-hover:rotate-[315deg] transition-all duration-300 ease-linear group-hover:animate-pulse" />
+        <TbPlus className="text-base transition-all duration-300 ease-linear group-hover:rotate-[315deg] group-hover:scale-110 group-hover:animate-pulse" />
       </button>
 
       <section
-        className={`fixed inset-0 bg-dark/40 backdrop-blur border border-1 border-white/20 shadow-sm m-4 rounded-lg transition-700 -z-10 ${
+        className={`border-1 transition-700 fixed inset-0 -z-10 m-4 rounded-lg border border-white/20 bg-dark/40 shadow-sm backdrop-blur ${
           isOpen
-            ? "opacity-100 pointer-events-auto select-auto"
-            : "opacity-0 pointer-events-none select-none"
+            ? 'pointer-events-auto select-auto opacity-100'
+            : 'pointer-events-none select-none opacity-0'
         }`}
       >
-        <div className="p-4 text-white h-full overflow-hidden">
+        <div className="h-full overflow-hidden p-4 text-white">
           <Link
             to="/"
-            className={`inline-block group p-2 bg-white/20 text-white z-50 border border-white/50 rounded-full scale-125 hover:bg-white/20 hover:border-white animate-pulse transition-all duration-300 ease-linear`}
+            className={`group z-50 inline-block scale-125 animate-pulse rounded-full border border-white/50 bg-white/20 p-2 text-white transition-all duration-300 ease-linear hover:border-white hover:bg-white/20`}
           >
-            <TbMail className="text-base group-hover:scale-110 transition-all duration-300 ease-linear" />
+            <TbMail className="text-base transition-all duration-300 ease-linear group-hover:scale-110" />
           </Link>
 
-          <div className="py-8 px-16 grid grid-cols-4 h-[95%] content-center">
-            <ul className="col-span-1 links flex items-start justify-start gap-2 md:gap-20 flex-col">
+          <div className="grid h-[95%] grid-cols-4 content-center px-16 py-8">
+            <ul className="links col-span-1 flex flex-col items-start justify-start gap-2 md:gap-20">
               <li className="w-full">
                 <Link
                   to="/"
-                  className="navlink w-full pb-2 inline-block text-5xl text-white/80 hover:text-white transition-300 font-medium"
+                  className="navlink transition-300 inline-block w-full pb-2 text-5xl font-medium text-white/80 hover:text-white"
                   aria-label="Home"
                 >
                   Home
@@ -52,7 +52,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
               <li className="w-full">
                 <Link
                   to="/about"
-                  className="navlink w-full pb-2 inline-block text-5xl text-white/80 hover:text-white transition-300 font-medium"
+                  className="navlink transition-300 inline-block w-full pb-2 text-5xl font-medium text-white/80 hover:text-white"
                   aria-label="About"
                 >
                   About
@@ -61,7 +61,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
               <li className="w-full">
                 <Link
                   to="/portfolio"
-                  className="navlink w-full pb-2 inline-block text-5xl text-white/80 hover:text-white transition-300 font-medium"
+                  className="navlink transition-300 inline-block w-full pb-2 text-5xl font-medium text-white/80 hover:text-white"
                   aria-label="Portfolio"
                 >
                   Portfolio
@@ -70,7 +70,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
               <li className="w-full">
                 <a
                   href="/contact"
-                  className="navlink w-full pb-2 inline-block text-5xl text-white/80 hover:text-white transition-300 font-medium"
+                  className="navlink transition-300 inline-block w-full pb-2 text-5xl font-medium text-white/80 hover:text-white"
                   aria-label="Contact"
                 >
                   Contact

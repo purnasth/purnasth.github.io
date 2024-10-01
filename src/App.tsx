@@ -1,18 +1,18 @@
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
-import Home from "./routes/Home";
-import About from "./routes/About";
-import Portfolio from "./routes/Portfolio";
-import PortfolioPresentation from "./routes/PortfolioPresentation";
-import Contact from "./routes/Contact";
-import withFramerTransition from "./hoc/withFramerTransition"; // PascalCase component
-import RouterToTop from "./utils/RouterToTop";
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import Home from './routes/Home';
+import About from './routes/About';
+import Portfolio from './routes/Portfolio';
+import PortfolioPresentation from './routes/PortfolioPresentation';
+import Contact from './routes/Contact';
+import withFramerTransition from './hoc/withFramerTransition'; // PascalCase component
+import RouterToTop from './utils/RouterToTop';
 
 const HomeWithTransition = withFramerTransition(Home);
 const AboutWithTransition = withFramerTransition(About);
 const PortfolioWithTransition = withFramerTransition(Portfolio);
 const PortfolioPresentationWithTransition = withFramerTransition(
-  PortfolioPresentation
+  PortfolioPresentation,
 );
 const ContactWithTransition = withFramerTransition(Contact);
 

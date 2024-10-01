@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Bourbon St";
-  src: url(./assets/fonts/bourbonst-regular.otf) format("opentype");
+  font-family: 'Bourbon St';
+  src: url(./assets/fonts/bourbonst-regular.otf) format('opentype');
 }
 
 @font-face {
-  font-family: "Gold Badge";
-  src: url(./assets/fonts/goldbadge.otf) format("opentype");
+  font-family: 'Gold Badge';
+  src: url(./assets/fonts/goldbadge.otf) format('opentype');
 }
 
 @layer components {
@@ -24,7 +24,7 @@
   }
 
   main {
-    @apply py-20 px-4 sm:py-28 md:px-12 md:py-[7.5rem] lg:py-[9rem];
+    @apply px-4 py-20 sm:py-28 md:px-12 md:py-[7.5rem] lg:py-[9rem];
   }
 
   h1,
@@ -64,15 +64,15 @@
   }
 
   .dark-mode {
-    @apply text-dark border-dark/50 hover:bg-dark/20 hover:border-dark;
+    @apply border-dark/50 text-dark hover:border-dark hover:bg-dark/20;
   }
 
   .white-mode {
-    @apply text-white border-white/50 hover:bg-white/20 hover:border-white;
+    @apply border-white/50 text-white hover:border-white hover:bg-white/20;
   }
 
   .overlay {
-    @apply size-full bg-dark/30 absolute inset-0 pointer-events-none transition-all duration-500 ease-linear;
+    @apply pointer-events-none absolute inset-0 size-full bg-dark/30 transition-all duration-500 ease-linear;
   }
 
   /* .bg-blue-gradient {
@@ -97,7 +97,7 @@
   }
 
   .green-gradient {
-    @apply bg-gradient-to-t from-[#4caf50] from-[0%] via-[#81c784] via-[50%] to-[#aed581] to-[100%] text-transparent bg-clip-text;
+    @apply bg-gradient-to-t from-[#4caf50] from-[0%] via-[#81c784] via-[50%] to-[#aed581] to-[100%] bg-clip-text text-transparent;
   }
 
   .blue-gradient {
@@ -113,11 +113,11 @@
       #33bbcf 100%
     );
 
-    @apply text-transparent bg-clip-text;
+    @apply bg-clip-text text-transparent;
   }
 
   .text-gold-gradient {
-    @apply bg-gradient-to-b from-[#f3bf58] from-[27%] via-[#ffecb3] via-[40%] to-[#9a6700] to-[98%] text-transparent bg-clip-text;
+    @apply bg-gradient-to-b from-[#f3bf58] from-[27%] via-[#ffecb3] via-[40%] to-[#9a6700] to-[98%] bg-clip-text text-transparent;
   }
 
   .transition-300 {
@@ -129,19 +129,19 @@
   }
 
   .slide-in {
-    @apply fixed top-0 left-0 w-full h-screen bg-dark origin-bottom transition-all duration-300 ease-linear z-50 pointer-events-none;
+    @apply pointer-events-none fixed left-0 top-0 z-50 h-screen w-full origin-bottom bg-dark transition-all duration-300 ease-linear;
   }
 
   .slide-out {
-    @apply fixed top-0 left-0 w-full h-screen bg-dark origin-top transition-all duration-300 ease-linear z-50 pointer-events-none;
+    @apply pointer-events-none fixed left-0 top-0 z-50 h-screen w-full origin-top bg-dark transition-all duration-300 ease-linear;
   }
 
   .wave {
-    @apply fixed bottom-0 left-0 w-full h-screen bg-gradient-to-t from-[#4caf50] from-[0%] via-[#81c784] via-[50%] to-[#aed581] to-[100%];
+    @apply fixed bottom-0 left-0 h-screen w-full bg-gradient-to-t from-[#4caf50] from-[0%] via-[#81c784] via-[50%] to-[#aed581] to-[100%];
   }
 
   .pagination span {
-    @apply size-2 bg-white/50 rounded-full cursor-pointer;
+    @apply size-2 cursor-pointer rounded-full bg-white/50;
   }
 
   .pagination span:hover {

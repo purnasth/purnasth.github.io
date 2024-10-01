@@ -1,22 +1,22 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
-import { portfolioData } from "../constant/data";
-import NavbarBreadCrumb from "../components/NavbarBreadCrumb";
-import CaseStudy from "../components/CaseStudy";
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { portfolioData } from '../constant/data';
+import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
+import CaseStudy from '../components/CaseStudy';
 
-import { TbMessageChatbot } from "react-icons/tb";
+import { TbMessageChatbot } from 'react-icons/tb';
 
-import LightGallery from "lightgallery/react";
-import lgZoom from "lightgallery/plugins/zoom";
-import lgVideo from "lightgallery/plugins/video";
-import lgThumbnail from "lightgallery/plugins/thumbnail";
-import lgFullscreen from "lightgallery/plugins/fullscreen";
-import "lightgallery/css/lightgallery.css";
-import "lightgallery/css/lg-zoom.css";
-import "lightgallery/css/lg-video.css";
-import "lightgallery/css/lg-thumbnail.css";
-import "lightgallery/css/lg-fullscreen.css";
+import LightGallery from 'lightgallery/react';
+import lgZoom from 'lightgallery/plugins/zoom';
+import lgVideo from 'lightgallery/plugins/video';
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgFullscreen from 'lightgallery/plugins/fullscreen';
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-video.css';
+import 'lightgallery/css/lg-thumbnail.css';
+import 'lightgallery/css/lg-fullscreen.css';
 
 const PortfolioPresentation: React.FC = () => {
   const { website } = useParams();
@@ -26,7 +26,7 @@ const PortfolioPresentation: React.FC = () => {
     .slice(0, 2);
 
   const portfolioItem = portfolioData[0].portfolioDetails.find(
-    (item) => item.portfolioUrl === website
+    (item) => item.portfolioUrl === website,
   );
 
   if (!portfolioItem) {
@@ -42,26 +42,26 @@ const PortfolioPresentation: React.FC = () => {
         currentPage={portfolioItem.title}
         whiteBg={whiteBg}
       />
-      <main className="px-0 bg-white">
+      <main className="bg-white px-0">
         <section>
           <div className="container">
             <h1 className="text-8xl">{portfolioItem.title}</h1>
             <p className="max-w-lg">{portfolioItem.description}</p>
             <ul className="mt-8">
               <li>
-                <span className="text-gray-600">Role & Year:</span>{" "}
+                <span className="text-gray-600">Role & Year:</span>{' '}
                 {portfolioItem.portfolioWebsite?.role} (
                 {portfolioItem.portfolioWebsite?.year})
               </li>
               <li>
-                <span className="text-gray-600">Credits:</span>{" "}
+                <span className="text-gray-600">Credits:</span>{' '}
                 {portfolioItem.portfolioWebsite?.credits}
               </li>
             </ul>
 
-            <div className="mt-20 relative">
+            <div className="relative mt-20">
               <div
-                className="bg-no-repeat bg-cover bg-center bg-fixed w-full h-screen outline outline-1 outline-white -outline-offset-[10px] z-20"
+                className="z-20 h-screen w-full bg-cover bg-fixed bg-center bg-no-repeat outline outline-1 -outline-offset-[10px] outline-white"
                 style={{
                   backgroundImage: `url(${portfolioItem.portfolioWebsite?.titleImage})`,
                 }}
@@ -72,17 +72,17 @@ const PortfolioPresentation: React.FC = () => {
                 <img
                   src={portfolioItem.logoSrc}
                   alt={`${portfolioItem.title} logo`}
-                  className="absolute w-32 h-28 md:w-64 md:h-44 object-contain z-10 transition-300"
+                  className="transition-300 absolute z-10 h-28 w-32 object-contain md:h-44 md:w-64"
                 />
               </div>
             </div>
 
-            <div className="-translate-y-16 flex items-center justify-center">
+            <div className="flex -translate-y-16 items-center justify-center">
               <Link
-                to={portfolioItem.portfolioWebsite?.deployUrl || "#"}
+                to={portfolioItem.portfolioWebsite?.deployUrl || '#'}
                 target="_blank"
                 rel="noreferrer"
-                className="size-32 bg-hotel-himalaya rounded-full flex items-center justify-center outline outline-1 outline-white/50 -outline-offset-[8px]"
+                className="bg-hotel-himalaya flex size-32 items-center justify-center rounded-full outline outline-1 -outline-offset-[8px] outline-white/50"
               >
                 <h5>View Project</h5>
               </Link>
@@ -94,18 +94,18 @@ const PortfolioPresentation: React.FC = () => {
           <CaseStudy
             problemStatement={
               portfolioItem.caseStudy?.problemStatement ||
-              "No problem statement provided."
+              'No problem statement provided.'
             }
             solutionOverview={
               portfolioItem.caseStudy?.solutionOverview ||
-              "No solution overview provided."
+              'No solution overview provided.'
             }
             projectJourney={
-              portfolioItem.caseStudy?.projectJourney?.projectJourney || ""
+              portfolioItem.caseStudy?.projectJourney?.projectJourney || ''
             }
             journeyOverview={
               portfolioItem.caseStudy?.journeyOverview ||
-              "No journey overview provided."
+              'No journey overview provided.'
             }
             toolsUsed={
               portfolioItem.caseStudy?.toolsUsed?.map((tool) => ({
@@ -115,7 +115,7 @@ const PortfolioPresentation: React.FC = () => {
             }
             projectOutcome={
               portfolioItem.caseStudy?.projectOutcome ||
-              "No project outcome provided."
+              'No project outcome provided.'
             }
           />
         )}
@@ -148,7 +148,7 @@ const PortfolioPresentation: React.FC = () => {
               (iframe, index) => (
                 <div
                   key={index}
-                  className="w-[22rem] h-[42rem] overflow-y-auto shadow-lg"
+                  className="h-[42rem] w-[22rem] overflow-y-auto shadow-lg"
                 >
                   <iframe
                     src={iframe.url}
@@ -156,19 +156,19 @@ const PortfolioPresentation: React.FC = () => {
                     className="size-full"
                   ></iframe>
                 </div>
-              )
+              ),
             )}
           </div>
         </section>
 
         <div
-          className="bg-no-repeat bg-cover bg-center bg-fixed w-full h-screen"
+          className="h-screen w-full bg-cover bg-fixed bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${portfolioItem.portfolioWebsite?.backgroundImage})`,
           }}
         ></div>
 
-        <div className="my-16 w-full h-[110vh] overflow-y-auto shadow-lg scale-[0.875]">
+        <div className="my-16 h-[110vh] w-full scale-[0.875] overflow-y-auto shadow-lg">
           <iframe
             src={portfolioItem.portfolioWebsite?.iframePages[0]?.url}
             title={portfolioItem.portfolioWebsite?.iframePages[0]?.title}
@@ -178,13 +178,13 @@ const PortfolioPresentation: React.FC = () => {
 
         <section className="bg-white">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-8">
+            <div className="grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-8">
               <div className="col-span-2">
                 <div className="space-y-4">
-                  <h5 className="text-4xl font-luxury font-extralight">
+                  <h5 className="font-luxury text-4xl font-extralight">
                     Gallery
                   </h5>
-                  <p className="text-xs md:text-sm max-w-lg">
+                  <p className="max-w-lg text-xs md:text-sm">
                     Explore the exquisite moments captured throughout our
                     project journey. Each photograph tells a story of creativity
                     and collaboration, celebrating the milestones and memories
@@ -203,50 +203,50 @@ const PortfolioPresentation: React.FC = () => {
                     (image, index) => (
                       <div
                         key={index}
-                        className="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative shadow-md hover:shadow-xl"
+                        className="gallery-item group relative cursor-pointer overflow-hidden shadow-md transition-all duration-200 ease-linear hover:shadow-xl"
                         data-src={image.src}
                       >
                         <img
                           src={image.src}
                           alt={image.alt}
-                          className="contrast-100 group-hover:contrast-125 size-full h-72 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                          className="size-full h-72 cursor-pointer object-cover contrast-100 transition-all duration-300 ease-linear group-hover:scale-110 group-hover:contrast-125"
                           loading="lazy"
                           draggable="false"
                         />
-                        <div className="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/70 to-black/0 z-0 group-hover:opacity-50 transition-all duration-300 ease-linear" />
-                        <h5 className="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear">
+                        <div className="pointer-events-none absolute inset-0 z-0 size-full bg-gradient-to-t from-black/70 to-black/0 transition-all duration-300 ease-linear group-hover:opacity-50" />
+                        <h5 className="absolute bottom-0 z-10 w-full -translate-x-0 p-2 text-right text-white opacity-80 transition-all duration-300 ease-linear [text-shadow:1px_1px_2px_#cd9c31] group-hover:translate-x-1/2 group-hover:opacity-100">
                           {image.alt}
                         </h5>
                       </div>
-                    )
+                    ),
                   )}
                 </LightGallery>
               </div>
 
               <div className="col-span-1">
                 <div className="space-y-4">
-                  <h5 className="text-4xl font-luxury font-extralight">
+                  <h5 className="font-luxury text-4xl font-extralight">
                     Feedback
                   </h5>
-                  <p className="text-xs md:text-sm max-w-xs">
-                    Discover what{" "}
-                    <strong className="text-inherit font-bold">
+                  <p className="max-w-xs text-xs md:text-sm">
+                    Discover what{' '}
+                    <strong className="font-bold text-inherit">
                       {portfolioItem.title}
-                    </strong>{" "}
+                    </strong>{' '}
                     has to say about entrusting their vision to me—and how our
                     successful collaboration propelled their business to new
                     heights.
                   </p>
                 </div>
 
-                <div className="mt-12 p-4 shadow-lg border border-dark/10">
+                <div className="mt-12 border border-dark/10 p-4 shadow-lg">
                   <div className="testimonials">
-                    <div className="flex flex-col gap-4 relative transition-all duration-150 ease-linear max-h-64 overflow-y-auto">
-                      <p className="text-justify text-pretty text-dark text-sm md:text-base mr-3 review">
+                    <div className="relative flex max-h-64 flex-col gap-4 overflow-y-auto transition-all duration-150 ease-linear">
+                      <p className="review mr-3 text-pretty text-justify text-sm text-dark md:text-base">
                         {portfolioItem.caseStudy?.feedback?.clientReview}
                       </p>
                       <div className="flex items-center justify-between">
-                        <h4 className="text-base text-dark font-bold">
+                        <h4 className="text-base font-bold text-dark">
                           - {portfolioItem.caseStudy?.feedback?.author}
                         </h4>
                       </div>
@@ -258,22 +258,22 @@ const PortfolioPresentation: React.FC = () => {
                   <a
                     href="https://wa.me/+9779808021753"
                     rel="noopener noreferrer"
-                    className="mt-4 group inline-flex items-center justify-center gap-2 bg-dark/10 hover:bg-dark/30 hover:animate-bounce text-dark border border-dark/20 hover:shadow-xl shadow-md px-6 py-2 transition-300"
+                    className="transition-300 group mt-4 inline-flex items-center justify-center gap-2 border border-dark/20 bg-dark/10 px-6 py-2 text-dark shadow-md hover:animate-bounce hover:bg-dark/30 hover:shadow-xl"
                     target="_blank"
                   >
                     Schedule a meeting
-                    <TbMessageChatbot className="text-xl group-hover:translate-x-2 transition-300 group-hover:animate-ping" />
+                    <TbMessageChatbot className="transition-300 text-xl group-hover:translate-x-2 group-hover:animate-ping" />
                   </a>
                   <p className="mt-2">
                     or directly Mail me at
                     <a
                       href="mailto:purnashrestha0310@gmail.com"
-                      className="mx-1 text-base font-semibold relative group"
+                      className="group relative mx-1 text-base font-semibold"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="purnashrestha0310@gmail.com"
                     >
-                      <span className="absolute -bottom-1 -right-0 w-full h-[2px] bg-dark group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"></span>
+                      <span className="absolute -bottom-1 -right-0 h-[2px] w-full origin-left bg-dark transition-all duration-300 ease-linear group-hover:scale-x-0"></span>
                       purnashrestha0310@gmail.com
                     </a>
                   </p>
@@ -286,34 +286,34 @@ const PortfolioPresentation: React.FC = () => {
 
       <section className="bg-gray-200 py-32">
         <div className="container mx-auto">
-          <h5 className="text-4xl mb-12 font-luxury font-extralight">
+          <h5 className="mb-12 font-luxury text-4xl font-extralight">
             Explore more projects
           </h5>
-          <div className="border-[1px] border-dark/40 rounded-3xl overflow-hidden">
+          <div className="overflow-hidden rounded-3xl border-[1px] border-dark/40">
             {filteredProjects.map((project) => (
               <Link
                 key={project.id}
-                className="mb-8 border-b-[1px] md:mb-0 border-dark/30 flex items-center flex-col md:flex-row justify-between gap-0 bg-bg-gold-dark hover:bg-gray-400 group transition-all duration-700"
+                className="bg-bg-gold-dark group mb-8 flex flex-col items-center justify-between gap-0 border-b-[1px] border-dark/30 transition-all duration-700 hover:bg-gray-400 md:mb-0 md:flex-row"
                 to={`/portfolio/${project.portfolioUrl}`}
               >
                 <div className="flex w-full md:w-1/3">
                   <img
                     src={project.landingImage[0]?.url}
                     alt={project.title}
-                    className="w-full h-64 sm:h-96 md:h-60 object-cover origin-left transition-all duration-700 md:group-hover:scale-x-105"
+                    className="h-64 w-full origin-left object-cover transition-all duration-700 sm:h-96 md:h-60 md:group-hover:scale-x-105"
                   />
                 </div>
-                <div className="py-12 px-4 flex items-center justify-between md:p-12 w-full md:w-2/3 gap-10 transition-all duration-700 md:group-hover:translate-x-4">
-                  <div className="flex items-start flex-col gap-2 md:gap-5">
+                <div className="flex w-full items-center justify-between gap-10 px-4 py-12 transition-all duration-700 md:w-2/3 md:p-12 md:group-hover:translate-x-4">
+                  <div className="flex flex-col items-start gap-2 md:gap-5">
                     <h4 className="text-2xl md:text-3xl">{project.title}</h4>
-                    <p className="text-base max-w-md line-clamp-2">
+                    <p className="line-clamp-2 max-w-md text-base">
                       {project.description}
                     </p>
                   </div>
                   <div className="flex transition-all duration-700 md:group-hover:translate-x-4">
                     <button
                       type="button"
-                      className="bg-gray-400 text-dark group-hover:text-gray-400 group-hover:bg-dark px-4 py-1 rounded-full text-2xl transition-all duration-300 ease-linear"
+                      className="rounded-full bg-gray-400 px-4 py-1 text-2xl text-dark transition-all duration-300 ease-linear group-hover:bg-dark group-hover:text-gray-400"
                       title="Explore More"
                       aria-label="Explore More"
                     >
@@ -323,7 +323,7 @@ const PortfolioPresentation: React.FC = () => {
                         strokeWidth={0}
                         viewBox="0 0 24 24"
                         aria-hidden="true"
-                        className="md:group-hover:scale-x-150 group-hover:translate-x-0 transition-all duration-300 ease-linear"
+                        className="transition-all duration-300 ease-linear group-hover:translate-x-0 md:group-hover:scale-x-150"
                         height="1em"
                         width="1em"
                         xmlns="http://www.w3.org/2000/svg"

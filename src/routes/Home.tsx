@@ -1,8 +1,8 @@
-import Hero from "../components/Hero";
-import ProfileNav from "../components/ProfileNav";
-import SideNav from "../components/SideNav";
-import NavbarButton from "../components/ui/NavbarButton";
-import withFramerTransition from "../hoc/withFramerTransition";
+import Hero from '../components/Hero';
+import ProfileNav from '../components/ProfileNav';
+import SideNav from '../components/SideNav';
+import NavbarButton from '../components/ui/NavbarButton';
+import withFramerTransition from '../hoc/withFramerTransition';
 
 const Home = () => {
   return (

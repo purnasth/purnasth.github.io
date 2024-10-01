@@ -1,5 +1,5 @@
-import { ComponentType } from "react";
-import { motion } from "framer-motion";
+import { ComponentType } from 'react';
+import { motion } from 'framer-motion';
 
 const withFramerTransition = (OgComponent: ComponentType) => {
   return () => (
@@ -24,7 +24,6 @@ const withFramerTransition = (OgComponent: ComponentType) => {
 };
 
 export default withFramerTransition;
-
 
 // import { ComponentType } from "react";
 // import { motion } from "framer-motion";

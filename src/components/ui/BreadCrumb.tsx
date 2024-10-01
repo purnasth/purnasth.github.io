@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { TbArrowGuide } from "react-icons/tb";
-import { PageProp } from "../../constant/types";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { TbArrowGuide } from 'react-icons/tb';
+import { PageProp } from '../../constant/types';
 
 const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -14,31 +14,34 @@ const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
       setPrevScrollPos(currentScrollPos);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos]);
 
   return (
     <nav
-      className={`transition-all duration-500 z-40 ${
-        window.scrollY > 0 ? "" : ""
-      } ${visible ? "" : "-translate-y-full"}`}
+      className={`z-40 transition-all duration-500 ${
+        window.scrollY > 0 ? '' : ''
+      } ${visible ? '' : '-translate-y-full'}`}
     >
       <h2
-        className={`px-4 py-1 rounded-full flex items-center justify-center gap-3 transition-all duration-[1s] ${
-          visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-12"
+        className={`flex items-center justify-center gap-3 rounded-full px-4 py-1 transition-all duration-[1s] ${
+          visible ? 'translate-y-0 opacity-100' : '-translate-y-12 opacity-0'
         } ${
           window.scrollY > 0
             ? `outline outline-1 backdrop-blur-lg ${
-                page === "portfolio"
-                  ? "text-dark bg-dark/10 outline-dark/30"
-                  : "text-white bg-white/10 outline-white/60"
+                page === 'portfolio'
+                  ? 'bg-dark/10 text-dark outline-dark/30'
+                  : 'bg-white/10 text-white outline-white/60'
               }`
-            : `${page === "portfolio" ? "text-dark" : "text-white"}`
+            : `${page === 'portfolio' ? 'text-dark' : 'text-white'}`
         }`}
       >
-        <Link to="/" className="flex items-center justify-center gap-1 capitalize">
+        <Link
+          to="/"
+          className="flex items-center justify-center gap-1 capitalize"
+        >
           Home
         </Link>
         <TbArrowGuide />

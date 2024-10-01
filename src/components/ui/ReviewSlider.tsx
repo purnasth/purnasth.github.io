@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { motion, useMotionValue } from "framer-motion";
+import React, { useEffect, useState } from 'react';
+import { motion, useMotionValue } from 'framer-motion';
 
 interface Testimonial {
   feedback: string;
@@ -10,21 +10,21 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     feedback:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi molestias at accusantium libero quas omnis magni perspiciatis commodi numquam, provident officia minima.",
-    name: "John Doe",
-    position: "CEO",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi molestias at accusantium libero quas omnis magni perspiciatis commodi numquam, provident officia minima.',
+    name: 'John Doe',
+    position: 'CEO',
   },
   {
     feedback:
-      "This is another testimonial. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    name: "Jane Smith",
-    position: "CTO",
+      'This is another testimonial. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    name: 'Jane Smith',
+    position: 'CTO',
   },
   {
     feedback:
-      "Yet another testimonial. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    name: "Alice Johnson",
-    position: "Manager",
+      'Yet another testimonial. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    name: 'Alice Johnson',
+    position: 'Manager',
   },
 ];
 
@@ -33,7 +33,7 @@ const AUTO_DELAY = ONE_SECOND * 10;
 const DRAG_BUFFER = 50;
 
 const SPRING_OPTIONS = {
-  type: "spring",
+  type: 'spring',
   mass: 3,
   stiffness: 400,
   damping: 50,
@@ -103,10 +103,10 @@ const Dots: React.FC<DotsProps> = ({ activeIndex, setActiveIndex }) => {
           title={`Feedback ${idx + 1}`}
           aria-label={`Feedback ${idx + 1}`}
           onClick={() => setActiveIndex(idx)}
-          className={`size-2 bg-white/50 hover:bg-white/90 rounded-full cursor-pointer transition-all duration-300 ease-linear ${
+          className={`size-2 cursor-pointer rounded-full bg-white/50 transition-all duration-300 ease-linear hover:bg-white/90 ${
             idx === activeIndex
-              ? "outline outline-1 outline-offset-2 outline-white bg-white/80"
-              : ""
+              ? 'bg-white/80 outline outline-1 outline-offset-2 outline-white'
+              : ''
           }`}
         />
       ))}
@@ -130,7 +130,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ activeIndex }) => {
           <p className="text-justify text-sm text-gray-300">
             {testimonial.feedback}
           </p>
-          <div className="flex items-center justify-between mt-4">
+          <div className="mt-4 flex items-center justify-between">
             <h4 className="text-sm font-bold text-white/90">
               {testimonial.name}
             </h4>

@@ -1,52 +1,52 @@
-
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { portfolioData } from "../constant/data";
 import macbook from "../assets/img/mockup/macbook.png";
 
 const PortfolioPresentation: React.FC = () => {
-  const { website } = useParams<{ website: string }>();
+const { website } = useParams<{ website: string }>();
 
-  const portfolioItem = portfolioData[0].portfolioDetails.find(
-    (item) => item.id === website
-  );
+const portfolioItem = portfolioData[0].portfolioDetails.find(
+(item) => item.id === website
+);
 
-  if (!portfolioItem) {
-    return <div>Portfolio item not found</div>;
-  }
+if (!portfolioItem) {
+return <div>Portfolio item not found</div>;
+}
 
-  const {
-    title,
-    logoSrc,
-    description,
-    portfolioWebsite: {
-      deployUrl,
-      role,
-      year,
-      credits,
-      titleImage,
-      backgroundImage,
-      iframePages,
-    },
-  } = portfolioItem;
+const {
+title,
+logoSrc,
+description,
+portfolioWebsite: {
+deployUrl,
+role,
+year,
+credits,
+titleImage,
+backgroundImage,
+iframePages,
+},
+} = portfolioItem;
 
-  return (
-    <>
-      <main className="px-0 pb-0">
-        <section>
-          <div className="container">
-            <h1 className="text-8xl capitalize hidden">{website}</h1>
-            <h1 className="text-8xl">{title}</h1>
-            <p className="max-w-lg">{description}</p>
-            <ul className="mt-8">
-              <li>
-                <span className="text-gray-600">Role & Year:</span> {role} (
-                {year})
-              </li>
-              <li>
-                <span className="text-gray-600">Credits:</span> {credits}
-              </li>
-            </ul>
+return (
+<>
+
+<main className="px-0 pb-0">
+<section>
+<div className="container">
+<h1 className="text-8xl capitalize hidden">{website}</h1>
+<h1 className="text-8xl">{title}</h1>
+<p className="max-w-lg">{description}</p>
+<ul className="mt-8">
+<li>
+<span className="text-gray-600">Role & Year:</span> {role} (
+{year})
+</li>
+<li>
+<span className="text-gray-600">Credits:</span> {credits}
+</li>
+</ul>
 
             <div className="mt-20 relative -z-10">
               <div
@@ -118,12 +118,11 @@ const PortfolioPresentation: React.FC = () => {
       </main>
       <footer className="bg-black h-screen"></footer>
     </>
-  );
+
+);
 };
 
 export default PortfolioPresentation;
-
-
 
 <div className="capitalize">
           <NavbarBreadCrumb page="portfolio" currentPage="Hotel Himalaya" />

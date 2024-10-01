@@ -1,17 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { ReviewSlider } from "./ui/ReviewSlider";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { ReviewSlider } from './ui/ReviewSlider';
 
 const SideNav: React.FC = () => {
   return (
     <>
-      <header className="text-white fixed right-4 top-4 bg-dark/10 backdrop-blur-sm border border-1 border-white/20 shadow-sm p-6 w-72 rounded-lg z-40 h-[calc(100%-2rem)] overflow-y-auto">
+      <header className="border-1 fixed right-4 top-4 z-40 h-[calc(100%-2rem)] w-72 overflow-y-auto overflow-x-hidden rounded-lg border border-white/20 bg-dark/10 p-6 text-white shadow-sm backdrop-blur-sm">
         <div className="mt-3 flex items-center justify-between">
-          <span className="uppercase text-white/80 hover:text-white transition-300/50 text-xs text-gray-400">
+          <span className="transition-300/50 text-xs uppercase text-gray-400 text-white/80 hover:text-white">
             Menu
           </span>
         </div>
-        <ul className="mt-8 links flex items-start justify-start gap-2 md:gap-4 flex-col">
+        <ul className="links mt-8 flex flex-col items-start justify-start gap-2 md:gap-4">
           {/* <li className="w-full">
             <a
               href="#"
@@ -24,7 +24,7 @@ const SideNav: React.FC = () => {
           <li className="w-full">
             <Link
               to="/about"
-              className="navlink w-full pb-2 inline-block text-4xl text-white/80 hover:text-white transition-300 font-medium"
+              className="navlink transition-300 inline-block w-full pb-2 text-4xl font-medium text-white/80 hover:text-white"
               aria-label="About "
             >
               About
@@ -33,7 +33,7 @@ const SideNav: React.FC = () => {
           <li className="w-full">
             <Link
               to="/portfolio"
-              className="navlink w-full pb-2 inline-block text-4xl text-white/80 hover:text-white transition-300 font-medium"
+              className="navlink transition-300 inline-block w-full pb-2 text-4xl font-medium text-white/80 hover:text-white"
               aria-label="Portfolio"
             >
               Portfolio
@@ -42,7 +42,7 @@ const SideNav: React.FC = () => {
           <li className="w-full">
             <Link
               to="/contact"
-              className="navlink w-full pb-2 inline-block text-4xl text-white/80 hover:text-white transition-300 font-medium"
+              className="navlink transition-300 inline-block w-full pb-2 text-4xl font-medium text-white/80 hover:text-white"
               aria-label="Contact"
             >
               Contact
@@ -90,7 +90,7 @@ const SideNav: React.FC = () => {
         <div>
           <a
             rel="noopener noreferrer"
-            className="mb-6 w-full text-center py-2 px-5 rounded-full flex items-center justify-center gap-2 backdrop-blur-md bg-white/10 text-white outline outline-2 outline-white pointer-events-auto hover-outline"
+            className="hover-outline pointer-events-auto mb-6 flex w-full items-center justify-center gap-2 rounded-full bg-white/10 px-5 py-2 text-center text-white outline outline-2 outline-white backdrop-blur-md"
             href="#"
             target="_blank"
           >
@@ -100,7 +100,7 @@ const SideNav: React.FC = () => {
             Or directly mail at
             <a
               href="mailto:purnashrestha0310@gmail.com"
-              className="mx-1 underline underline-offset-4 hover:underline-offset-2 text-white transition-300"
+              className="transition-300 mx-1 text-white underline underline-offset-4 hover:underline-offset-2"
             >
               purnashrestha0310@gmail.com
             </a>

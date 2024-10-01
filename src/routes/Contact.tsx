@@ -1,6 +1,6 @@
-import React from "react";
-import NavbarBreadCrumb from "../components/NavbarBreadCrumb";
-import purna from "../assets/img/hero.avif";
+import React from 'react';
+import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
+import purna from '../assets/img/hero.avif';
 
 const Contact: React.FC = () => {
   return (
@@ -10,28 +10,28 @@ const Contact: React.FC = () => {
       <div className="container">
         <div className="flex items-end gap-6">
           {/* <span>Contact</span> */}
-          <h3 className="text-6xl text-pretty drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] capitalize leading-snug">
+          <h3 className="text-pretty text-6xl capitalize leading-snug drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Let's start <br /> a project together
           </h3>
           <img
             src={purna}
             alt="Purna"
-            className="size-16 rounded-full object-contain -translate-y-4 bg-white"
+            className="size-16 -translate-y-4 rounded-full bg-white object-contain"
           />
         </div>
 
-        <div className="my-16 w-full h-[0.5px] bg-gradient-to-r from-[#989AA6]/[0.5] to-transparent" />
+        <div className="my-16 h-[0.5px] w-full bg-gradient-to-r from-[#989AA6]/[0.5] to-transparent" />
 
         <section className="">
-          <h4 className="sticky top-8 z-30 bg-gray-800 text-white/90 inline-flex items-center justify-center gap-2 px-5 py-1 rounded-full font-medium text-lg">
-            <span className="size-2 bg-green-500 rounded-full"></span>
+          <h4 className="sticky top-8 z-30 inline-flex items-center justify-center gap-2 rounded-full bg-gray-800 px-5 py-1 text-lg font-medium text-white/90">
+            <span className="size-2 rounded-full bg-green-500"></span>
             Services Process
           </h4>
-          <div className="mt-16 relative flex lg:space-x-10">
+          <div className="relative mt-16 flex lg:space-x-10">
             <div className="h-full w-0 lg:w-[4%]" />
             <div className="w-full">
-              <div className="absolute left-0 hidden h-full w-[4%] justify-center lg:flex ">
-                <div className="sticky top-20 z-30 hidden size-10 items-center justify-center rounded-full bg-gradient lg:flex -translate-x-2">
+              <div className="absolute left-0 hidden h-full w-[4%] justify-center lg:flex">
+                <div className="bg-gradient sticky top-20 z-30 hidden size-10 -translate-x-2 items-center justify-center rounded-full lg:flex">
                   <div className="flex size-8 items-center justify-center rounded-full">
                     <svg
                       stroke="currentColor"
@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
                       viewBox="0 0 24 24"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="text-3xl p-px"
+                      className="p-px text-3xl"
                       height="1em"
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
@@ -56,26 +56,26 @@ const Contact: React.FC = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="absolute left-0 hidden h-full w-px items-center transition duration-100 lg:flex bg-gradient-to-t from-transparent via-[#989AA6]/[0.5] to-transparent" />
+                <div className="absolute left-0 hidden h-full w-px items-center bg-gradient-to-t from-transparent via-[#989AA6]/[0.5] to-transparent transition duration-100 lg:flex" />
               </div>
               <div className="">
                 <p className="mb-3">Meeting</p>
-                <h2 className="md:mb-8 text-2xl md:text-4xl lg:text-6xl">
+                <h2 className="text-2xl md:mb-8 md:text-4xl lg:text-6xl">
                   Consulting & Strategy
                 </h2>
-                <div className="relative grid grid-cols-1 gap-0 md:gap-12 md:grid-cols-3">
+                <div className="relative grid grid-cols-1 gap-0 md:grid-cols-3 md:gap-12">
                   <div>
-                    <p className="text-lg text-pretty">
+                    <p className="text-pretty text-lg">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Nulla, aut rem dolor ex neque fuga perspiciatis quia
                       voluptates.
                     </p>
-                    <button className="group relative rounded-xl p-px text-base leading-6 shadow-lg shadow-luminr-white/5 text-luminr-white mt-5 md:mt-10">
+                    <button className="shadow-luminr-white/5 text-luminr-white group relative mt-5 rounded-xl p-px text-base leading-6 shadow-lg md:mt-10">
                       <span className="absolute inset-0 overflow-hidden">
                         <span className="absolute inset-0 rounded-xl bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(219,99,50,1)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                       </span>
-                      <div className="relative z-10 rounded-xl backdrop-blur-md bg-gradient-to-b from-luminr-blue/20 to-luminr-orange/5 px-5 py-3 md:px-8 md:py-4 ring-1 ring-luminr-white/20 flex items-center space-x-2 hover:bg-luminr-blue transition-all duration-500">
-                        <span className="text-base transition-all duration-300 ease-linear group-hover:text-gradient">
+                      <div className="from-luminr-blue/20 to-luminr-orange/5 ring-luminr-white/20 hover:bg-luminr-blue relative z-10 flex items-center space-x-2 rounded-xl bg-gradient-to-b px-5 py-3 ring-1 backdrop-blur-md transition-all duration-500 md:px-8 md:py-4">
+                        <span className="group-hover:text-gradient text-base transition-all duration-300 ease-linear">
                           Learn More
                         </span>
                         <svg
@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
                           strokeWidth={2}
                           viewBox="0 0 24 24"
                           aria-hidden="true"
-                          className="text-xl group-hover:translate-x-2 transition duration-200 group-hover:text-luminr-orange"
+                          className="group-hover:text-luminr-orange text-xl transition duration-200 group-hover:translate-x-2"
                           height="1em"
                           width="1em"
                           xmlns="http://www.w3.org/2000/svg"
@@ -101,14 +101,14 @@ const Contact: React.FC = () => {
                   </div>
                   <div
                     className="relative md:col-span-2"
-                    style={{ opacity: 1, transform: "none" }}
+                    style={{ opacity: 1, transform: 'none' }}
                   >
                     <img
                       alt="Web Design and Development"
                       draggable="false"
                       loading="lazy"
                       decoding="async"
-                      className="transition duration-500 blur-0 rounded-2xl object-contain p-6 md:p-10 select-none"
+                      className="select-none rounded-2xl object-contain p-6 blur-0 transition duration-500 md:p-10"
                       src="https://luminr.pages.dev/assets/web-C42Nw-_y.svg"
                     />
                   </div>
@@ -116,35 +116,35 @@ const Contact: React.FC = () => {
               </div>
               <div className="py-16 md:py-40">
                 <p className="mb-3">UI/UX + React.js</p>
-                <h2 className="md:mb-8 text-2xl md:text-4xl lg:text-6xl">
+                <h2 className="text-2xl md:mb-8 md:text-4xl lg:text-6xl">
                   Web Design & Development
                 </h2>
-                <div className="relative grid grid-cols-1 gap-4 md:gap-20 md:grid-cols-3">
+                <div className="relative grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-20">
                   <div
                     className="relative md:col-span-2"
-                    style={{ opacity: 1, transform: "none" }}
+                    style={{ opacity: 1, transform: 'none' }}
                   >
                     <img
                       alt="SEO"
                       draggable="false"
                       loading="lazy"
                       decoding="async"
-                      className="transition duration-500 blur-0 object-contain p-6 md:p-10 md:scale-90"
+                      className="object-contain p-6 blur-0 transition duration-500 md:scale-90 md:p-10"
                       src="https://luminr.pages.dev/assets/seo-C4mOUhsv.svg"
                     />
                   </div>
                   <div>
-                    <p className="text-lg text-pretty">
+                    <p className="text-pretty text-lg">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Nulla, aut rem dolor ex neque fuga perspiciatis quia
                       voluptates.
                     </p>
-                    <button className="group relative rounded-xl p-px text-base leading-6 shadow-lg shadow-luminr-white/5 text-luminr-white mt-5 md:mt-10">
+                    <button className="shadow-luminr-white/5 text-luminr-white group relative mt-5 rounded-xl p-px text-base leading-6 shadow-lg md:mt-10">
                       <span className="absolute inset-0 overflow-hidden">
                         <span className="absolute inset-0 rounded-xl bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(219,99,50,1)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                       </span>
-                      <div className="relative z-10 rounded-xl backdrop-blur-md bg-gradient-to-b from-luminr-blue/20 to-luminr-orange/5 px-5 py-3 md:px-8 md:py-4 ring-1 ring-luminr-white/20 flex items-center space-x-2 hover:bg-luminr-blue transition-all duration-500">
-                        <span className="text-base transition-all duration-300 ease-linear group-hover:text-gradient">
+                      <div className="from-luminr-blue/20 to-luminr-orange/5 ring-luminr-white/20 hover:bg-luminr-blue relative z-10 flex items-center space-x-2 rounded-xl bg-gradient-to-b px-5 py-3 ring-1 backdrop-blur-md transition-all duration-500 md:px-8 md:py-4">
+                        <span className="group-hover:text-gradient text-base transition-all duration-300 ease-linear">
                           Learn More
                         </span>
                         <svg
@@ -153,7 +153,7 @@ const Contact: React.FC = () => {
                           strokeWidth={2}
                           viewBox="0 0 24 24"
                           aria-hidden="true"
-                          className="text-xl group-hover:translate-x-2 transition duration-200 group-hover:text-luminr-orange"
+                          className="group-hover:text-luminr-orange text-xl transition duration-200 group-hover:translate-x-2"
                           height="1em"
                           width="1em"
                           xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +176,7 @@ const Contact: React.FC = () => {
 
         <div className="flex items-end gap-6">
           {/* <span>Contact</span> */}
-          <h3 className="text-4xl text-pretty drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] leading-snug flex items-center justify-center gap-1">
+          <h3 className="flex items-center justify-center gap-1 text-pretty text-4xl leading-snug drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Interested in working together? <br />
             {/* We should queue up a time to
             chat. I'll buy the coffee. */}
@@ -184,7 +184,7 @@ const Contact: React.FC = () => {
             <img
               src="https://ugokawaii.com/wp-content/uploads/2022/10/hot-coffee.gif"
               alt="Coffee"
-              className="size-16 object-contain translate-y-3"
+              className="size-16 translate-y-3 object-contain"
             />
           </h3>
           {/* <img

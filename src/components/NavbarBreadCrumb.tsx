@@ -1,7 +1,7 @@
-import React from "react";
-import NavbarButton from "./ui/NavbarButton";
-import BreadCrumb from "./ui/BreadCrumb";
-import { PageProp } from "../constant/types";
+import React from 'react';
+import NavbarButton from './ui/NavbarButton';
+import BreadCrumb from './ui/BreadCrumb';
+import { PageProp } from '../constant/types';
 
 const NavbarBreadCrumb: React.FC<PageProp> = ({
   page,
