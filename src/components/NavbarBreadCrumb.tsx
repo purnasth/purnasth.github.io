@@ -9,7 +9,7 @@ const NavbarBreadCrumb: React.FC<PageProp> = ({
   whiteBg = false,
 }) => {
   return (
-    <div className="fixed right-5 top-5 z-50 flex items-center justify-center rounded-full">
+    <div className="fixed right-4 top-4 z-50 flex items-center justify-center rounded-full">
       <BreadCrumb page={page} currentPage={currentPage} />
       <NavbarButton whiteBg={whiteBg} />
     </div>

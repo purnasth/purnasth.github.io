@@ -34,16 +34,18 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <main className="size-full bg-dark py-12 text-white">
+    <main className="size-full bg-dark py-8 md:py-12 text-white">
       <NavbarBreadCrumb page="About" />
-      <div className="ml-auto h-full w-[calc(100%-14rem-5rem)]">
-        <ProfileNav />
+      <div className="ml-auto h-full w-full md:w-[calc(100%-14rem-5rem)]">
+        <div className="hidden md:block">
+          <ProfileNav />
+        </div>
         <section className="space-y-16">
           <div>
-            <h2 className="text-6xl capitalize leading-snug">
+            <h2 className="text-3xl capitalize leading-snug md:text-6xl">
               {greeting}, <br /> I'm Purna Shrestha.
             </h2>
-            <p className="my-12 ml-32 text-base">
+            <p className="my-5 ml-8 text-sm md:my-12 md:ml-32 md:text-base">
               ---------------- a software engineer based in Kathmandu, Nepal.
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
               nam eligendi amet quam eos totam, blanditiis dolores commodi hic
@@ -53,17 +55,17 @@ const About: React.FC = () => {
             <img
               src={purna}
               alt="Purna"
-              className="h-[42rem] w-full rounded-3xl object-cover"
+              className="h-64 w-full rounded-3xl object-cover md:h-[42rem]"
             />
           </div>
 
           <div>
-            <h4 className="sticky top-4 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur">
+            <h4 className="sticky top-6 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur">
               <span className="size-2 rounded-full bg-green-500"></span>
               Available for work
             </h4>
 
-            <p className="my-6 ml-32">
+            <p className="my-5 ml-8 text-sm md:my-12 md:ml-32 md:text-base">
               ---------------- a software engineer based in Kathmandu, Nepal.
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
               nam eligendi amet quam eos totam, blanditiis dolores commodi hic
@@ -74,12 +76,12 @@ const About: React.FC = () => {
           </div>
 
           <div>
-            <h4 className="sticky top-4 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur">
+            <h4 className="sticky top-6 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur">
               <span className="size-2 rounded-full bg-green-500"></span>
               Trusted by
             </h4>
 
-            <div className="align-center my-6 mt-12 flex justify-center gap-8">
+            <div className="align-center my-6 mt-12 flex flex-wrap justify-center gap-8">
               <img
                 src="https://hotelhimalaya.pages.dev/assets/logo-s4LMycLK.svg"
                 alt="Hotel Himalaya"

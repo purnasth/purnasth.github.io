@@ -39,18 +39,18 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 -z-50 size-full bg-dark mix-blend-darken"></div>
       <div className="bg-green-gradient absolute bottom-0 left-0 -z-20 size-full -translate-x-1/4"></div>
       <div className="bg-blue-gradient absolute bottom-0 right-0 -z-20 size-full translate-x-1/4"></div>
-      <div className="relative mx-auto flex h-screen w-[calc(100%-14rem-14rem-5rem-5rem)] flex-col items-center overflow-hidden">
-        <div className="p-6 text-white">
-          <div className="flex items-center justify-evenly">
+      <div className="relative mx-auto flex h-screen w-full flex-col items-center overflow-hidden md:w-[calc(100%-14rem-14rem-5rem-5rem)]">
+        <div className="space-y-8 p-4 text-white md:p-6">
+          <div className="mt-8 flex items-center justify-evenly md:mt-0">
             <h4 className="green-gradient">#design</h4>
-            <img
+            {/* <img
               src="https://tv.purnashrestha.com.np/assets/purna_shrestha-d517ddc5.svg"
               alt=""
               className="filter-white h-16 opacity-0"
-            />
+            /> */}
             <h4 className="blue-gradient">#development</h4>
           </div>
-          <h2 className="text-center text-8xl capitalize drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <h2 className="text-center text-4xl font-extralight capitalize drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-8xl">
             Your imagination, Mine creation
           </h2>
         </div>

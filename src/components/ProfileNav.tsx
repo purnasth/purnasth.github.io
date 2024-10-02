@@ -1,7 +1,5 @@
 import hero from '../assets/img/hero.png';
-import { MdOutlineArrowCircleRight } from 'react-icons/md';
-import { MdCall } from 'react-icons/md';
-import { MdMail } from 'react-icons/md';
+import { MdCall, MdMail, MdOutlineArrowCircleRight } from 'react-icons/md';
 import { FaLinkedinIn } from 'react-icons/fa6';
 import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -10,14 +8,16 @@ import purnaCV from '../assets/docs/cv.pdf';
 const ProfileNav = () => {
   return (
     <>
-      <section className="border-1 fixed left-4 top-4 z-40 h-[calc(100%-2rem)] w-72 overflow-y-auto rounded-lg border border-white/20 bg-dark/10 p-6 text-white shadow-sm backdrop-blur-sm">
+      <section className="border-1 left-4 top-4 z-40 mx-auto h-auto w-full overflow-y-auto rounded-lg border-white/20 bg-dark/10 p-6 text-white shadow-sm backdrop-blur-sm md:fixed md:h-[calc(100%-2rem)] md:w-72 md:border">
         <div className="profile flex h-full flex-col gap-6">
-          <img
-            src={hero}
-            alt=""
-            className="h-56 w-full rounded-lg object-cover object-top"
-            draggable="false"
-          />
+          <Link to="/">
+            <img
+              src={hero}
+              alt=""
+              className="hidden h-80 w-full rounded-lg object-cover object-top md:block md:h-56"
+              draggable="false"
+            />
+          </Link>
           <div className="details">
             <h1 className="text-3xl text-gray-200">Purna Shrestha</h1>
 
@@ -81,15 +81,18 @@ const ProfileNav = () => {
           <div className="links">
             <a
               href={purnaCV}
-              className="pointer-events-auto mb-6 flex w-full items-center justify-center gap-2 rounded-full border-2 border-white px-5 py-2 text-center text-white outline outline-1 outline-offset-2 outline-white/50 backdrop-blur-md"
+              className="pointer-events-auto mb-6 flex w-full max-w-52 items-center justify-center gap-2 rounded-full border-2 border-white px-5 py-2 text-center text-white outline outline-1 outline-offset-2 outline-white/50 backdrop-blur-md md:max-w-full"
               download={true}
             >
               Download my CV
             </a>
-            {/* <Link to="/about" className="flex items-center justify-between">
+            <Link
+              to="/about"
+              className="flex items-center justify-between md:hidden"
+            >
               <span>Know More About Me</span>
               <MdOutlineArrowCircleRight className="text-2xl" />
-            </Link> */}
+            </Link>
           </div>
         </div>
       </section>

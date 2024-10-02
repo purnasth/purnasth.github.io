@@ -10,8 +10,8 @@ const Home = () => {
       <div className="fixed right-5 top-5 z-50 flex items-center justify-center">
         <NavbarButton />
       </div>
-      <ProfileNav />
       <Hero />
+      <ProfileNav />
       <SideNav />
     </>
   );

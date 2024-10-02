@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import hero from '../../assets/img/hero_cutout.png';
+import hero_mobile from '../../assets/img/hero.png';
 
 type SkillLogo = {
   id: number;
@@ -219,7 +220,7 @@ const FloatLogo: React.FC = () => {
           ref={(el) => (logoRefs.current[index] = el)}
           src={logo.url}
           alt={logo.title}
-          className={`absolute w-16 opacity-50 ${getRandomAnimation()}`}
+          className={`absolute size-8 object-contain opacity-50 md:w-16 ${getRandomAnimation()}`}
           style={{
             top: `${Math.random() * 80}vh`,
             left: `${Math.random() * 80}vw`,
@@ -232,7 +233,13 @@ const FloatLogo: React.FC = () => {
         src={hero}
         alt=""
         ref={heroRef}
-        className="pointer-events-none absolute bottom-0 left-1/2 -z-10 w-[80vh] -translate-x-1/2 select-none opacity-20 mix-blend-normal"
+        className="pointer-events-none absolute bottom-0 left-1/2 -z-10 hidden w-2/3 -translate-x-1/2 select-none opacity-20 mix-blend-normal md:block"
+      />
+      <img
+        src={hero_mobile}
+        alt=""
+        ref={heroRef}
+        className="pointer-events-none absolute bottom-0 left-1/2 -z-10 w-full -translate-x-1/2 select-none opacity-20 mix-blend-normal md:hidden"
       />
     </section>
   );

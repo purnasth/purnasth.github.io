@@ -5,14 +5,15 @@ import { ReviewSlider } from './ui/ReviewSlider';
 const SideNav: React.FC = () => {
   return (
     <>
-      <header className="border-1 fixed right-4 top-4 z-40 h-[calc(100%-2rem)] w-72 overflow-y-auto overflow-x-hidden rounded-lg border border-white/20 bg-dark/10 p-6 text-white shadow-sm backdrop-blur-sm">
-        <div className="mt-3 flex items-center justify-between">
-          <span className="transition-300/50 text-xs uppercase text-gray-400 text-white/80 hover:text-white">
-            Menu
-          </span>
-        </div>
-        <ul className="links mt-8 flex flex-col items-start justify-start gap-2 md:gap-4">
-          {/* <li className="w-full">
+      <header className="border-1 right-4 top-4 z-40 mx-auto h-auto w-full overflow-y-auto overflow-x-hidden rounded-lg border-white/20 bg-dark/10 p-6 text-white shadow-sm backdrop-blur-sm md:fixed md:h-[calc(100%-2rem)] md:w-72 md:border">
+        <div className="hidden md:block">
+          <div className="mt-3 flex items-center justify-between">
+            <span className="transition-300/50 text-xs uppercase text-gray-400 text-white/80 hover:text-white">
+              Menu
+            </span>
+          </div>
+          <ul className="links mt-8 flex flex-col items-start justify-start gap-2 md:gap-4">
+            {/* <li className="w-full">
             <a
               href="#"
               className="navlink w-full pb-2 inline-block text-4xl text-white/80 hover:text-white transition-300 font-medium"
@@ -21,35 +22,36 @@ const SideNav: React.FC = () => {
               Home
             </a>
           </li> */}
-          <li className="w-full">
-            <Link
-              to="/about"
-              className="navlink transition-300 inline-block w-full pb-2 text-4xl font-medium text-white/80 hover:text-white"
-              aria-label="About "
-            >
-              About
-            </Link>
-          </li>
-          <li className="w-full">
-            <Link
-              to="/portfolio"
-              className="navlink transition-300 inline-block w-full pb-2 text-4xl font-medium text-white/80 hover:text-white"
-              aria-label="Portfolio"
-            >
-              Portfolio
-            </Link>
-          </li>
-          <li className="w-full">
-            <Link
-              to="/contact"
-              className="navlink transition-300 inline-block w-full pb-2 text-4xl font-medium text-white/80 hover:text-white"
-              aria-label="Contact"
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
-        <hr className="my-8 opacity-30" />
+            <li className="w-full">
+              <Link
+                to="/about"
+                className="navlink transition-300 inline-block w-full pb-2 text-4xl font-medium text-white/80 hover:text-white"
+                aria-label="About "
+              >
+                About
+              </Link>
+            </li>
+            <li className="w-full">
+              <Link
+                to="/portfolio"
+                className="navlink transition-300 inline-block w-full pb-2 text-4xl font-medium text-white/80 hover:text-white"
+                aria-label="Portfolio"
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li className="w-full">
+              <Link
+                to="/contact"
+                className="navlink transition-300 inline-block w-full pb-2 text-4xl font-medium text-white/80 hover:text-white"
+                aria-label="Contact"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <hr className="mb-8 opacity-30 md:my-8" />
         {/* <div className="">
           <div className="my-4">
             <h3 className="text-base font-semibold capitalize">
@@ -90,7 +92,7 @@ const SideNav: React.FC = () => {
         <div>
           <a
             rel="noopener noreferrer"
-            className="hover-outline pointer-events-auto mb-6 flex w-full items-center justify-center gap-2 rounded-full bg-white/10 px-5 py-2 text-center text-white outline outline-2 outline-white backdrop-blur-md"
+            className="hover-outline pointer-events-auto mb-6 flex w-full max-w-52 items-center justify-center gap-2 rounded-full bg-white/10 px-5 py-2 text-center text-white outline outline-2 outline-white backdrop-blur-md md:max-w-full"
             href="#"
             target="_blank"
           >

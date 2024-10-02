@@ -4,30 +4,30 @@ import purna from '../assets/img/hero.avif';
 
 const Contact: React.FC = () => {
   return (
-    <main className="size-full h-full bg-dark text-white">
+    <main className="size-full bg-dark text-white">
       <NavbarBreadCrumb page="Contact" />
 
-      <div className="container">
-        <div className="flex items-end gap-6">
+      <div className="md:container">
+        <div className="flex items-end gap-4 md:gap-6">
           {/* <span>Contact</span> */}
-          <h3 className="text-pretty text-6xl capitalize leading-snug drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <h3 className="text-pretty text-3xl capitalize leading-snug drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-6xl md:leading-snug">
             Let's start <br /> a project together
           </h3>
           <img
             src={purna}
             alt="Purna"
-            className="size-16 -translate-y-4 rounded-full bg-white object-contain"
+            className="size-10 -translate-y-1 rounded-full bg-white object-contain md:size-16 md:-translate-y-4"
           />
         </div>
 
-        <div className="my-16 h-[0.5px] w-full bg-gradient-to-r from-[#989AA6]/[0.5] to-transparent" />
+        <div className="my-10 h-px w-full bg-gradient-to-r from-[#989AA6]/[0.5] to-transparent md:my-16 md:h-[0.5px]" />
 
         <section className="">
-          <h4 className="sticky top-8 z-30 inline-flex items-center justify-center gap-2 rounded-full bg-gray-800 px-5 py-1 text-lg font-medium text-white/90">
+          <h4 className="sticky top-6 z-10 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur md:top-8">
             <span className="size-2 rounded-full bg-green-500"></span>
             Services Process
           </h4>
-          <div className="relative mt-16 flex lg:space-x-10">
+          <div className="relative mt-10 flex md:mt-16 lg:space-x-10">
             <div className="h-full w-0 lg:w-[4%]" />
             <div className="w-full">
               <div className="absolute left-0 hidden h-full w-[4%] justify-center lg:flex">
@@ -176,7 +176,7 @@ const Contact: React.FC = () => {
 
         <div className="flex items-end gap-6">
           {/* <span>Contact</span> */}
-          <h3 className="flex items-center justify-center gap-1 text-pretty text-4xl leading-snug drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <h3 className="flex items-center gap-1 text-pretty text-xl leading-relaxed drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-4xl md:leading-snug">
             Interested in working together? <br />
             {/* We should queue up a time to
             chat. I'll buy the coffee. */}
@@ -184,7 +184,7 @@ const Contact: React.FC = () => {
             <img
               src="https://ugokawaii.com/wp-content/uploads/2022/10/hot-coffee.gif"
               alt="Coffee"
-              className="size-16 translate-y-3 object-contain"
+              className="size-12 object-contain md:size-16 translate-y-3"
             />
           </h3>
           {/* <img
