@@ -14,7 +14,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
     <>
       <button
         onClick={toggleNav}
-        className={`group z-50 m-2 rounded-full border p-2 backdrop-blur-lg transition-all duration-300 ease-linear hover:scale-125 md:m-4 md:mr-8 ${
+        className={`group z-50 m-2 rounded-full border p-2 backdrop-blur-lg transition-all duration-300 ease-linear hover:scale-125 md:m-4 ${
           isOpen
             ? 'rotate-[315deg] scale-[1.35] animate-pulse border-white bg-white/20'
             : ''
@@ -24,7 +24,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
       </button>
 
       <section
-        className={`border-1 transition-700 fixed inset-0 -z-10 m-2 md:m-4 md:mr-8 rounded-lg border border-white/20 bg-dark/40 shadow-sm backdrop-blur ${
+        className={`border-1 transition-700 fixed inset-0 -z-10 m-2 md:m-4 rounded-lg border border-white/20 bg-dark/40 shadow-sm backdrop-blur ${
           isOpen
             ? 'pointer-events-auto select-auto opacity-100'
             : 'pointer-events-none select-none opacity-0'

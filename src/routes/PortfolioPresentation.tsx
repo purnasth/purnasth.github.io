@@ -42,12 +42,14 @@ const PortfolioPresentation: React.FC = () => {
         currentPage={portfolioItem.title}
         whiteBg={whiteBg}
       />
-      <main className="bg-white px-0">
+      <main className="bg-white md:px-0">
         <section>
-          <div className="container">
-            <h1 className="text-8xl">{portfolioItem.title}</h1>
-            <p className="max-w-lg">{portfolioItem.description}</p>
-            <ul className="mt-8">
+          <div className="mt-12 md:container md:mt-0">
+            <h1 className="text-4xl md:text-8xl">{portfolioItem.title}</h1>
+            <p className="max-w-lg text-pretty text-sm md:text-base">
+              {portfolioItem.description}
+            </p>
+            <ul className="mt-6 md:mt-8">
               <li>
                 <span className="text-gray-600">Role & Year:</span>{' '}
                 {portfolioItem.portfolioWebsite?.role} (
@@ -59,9 +61,9 @@ const PortfolioPresentation: React.FC = () => {
               </li>
             </ul>
 
-            <div className="relative mt-20">
+            <div className="relative mt-12 md:mt-20">
               <div
-                className="z-20 h-screen w-full bg-cover bg-fixed bg-center bg-no-repeat outline outline-1 -outline-offset-[10px] outline-white"
+                className="z-20 h-72 w-full bg-cover bg-center bg-no-repeat outline outline-1 -outline-offset-[10px] outline-white md:h-screen md:bg-fixed"
                 style={{
                   backgroundImage: `url(${portfolioItem.portfolioWebsite?.titleImage})`,
                 }}
@@ -77,12 +79,12 @@ const PortfolioPresentation: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex -translate-y-16 items-center justify-center">
+            <div className="flex -translate-y-1/2 items-center justify-center md:-translate-y-16">
               <Link
                 to={portfolioItem.portfolioWebsite?.deployUrl || '#'}
                 target="_blank"
                 rel="noreferrer"
-                className="bg-hotel-himalaya flex size-32 items-center justify-center rounded-full outline outline-1 -outline-offset-[8px] outline-white/50"
+                className="bg-hotel-himalaya flex size-24 items-center justify-center rounded-full text-xs outline outline-1 -outline-offset-[8px] outline-white/50 md:size-32 md:text-base"
               >
                 <h5>View Project</h5>
               </Link>
@@ -120,7 +122,7 @@ const PortfolioPresentation: React.FC = () => {
           />
         )}
 
-        <section>
+        <section className="">
           <img
             src={portfolioItem.portfolioWebsite?.mockup}
             alt={`${portfolioItem.title} Mockup`}
@@ -142,13 +144,13 @@ const PortfolioPresentation: React.FC = () => {
           ></div>
         </section> */}
 
-        <section className="py-32">
-          <div className="flex items-center justify-evenly px-3">
+        <section className="py-10 md:py-32">
+          <div className="hidden flex-col items-center justify-evenly gap-y-16 md:flex md:flex-row md:px-3">
             {portfolioItem.portfolioWebsite?.iframePages.map(
               (iframe, index) => (
                 <div
                   key={index}
-                  className="h-[42rem] w-[22rem] overflow-y-auto shadow-lg"
+                  className="h-[42rem] w-full overflow-y-auto shadow-lg md:w-[22rem]"
                 >
                   <iframe
                     src={iframe.url}
@@ -162,13 +164,13 @@ const PortfolioPresentation: React.FC = () => {
         </section>
 
         <div
-          className="h-screen w-full bg-cover bg-fixed bg-center bg-no-repeat"
+          className="h-72 w-full bg-cover bg-center bg-no-repeat md:h-screen md:bg-fixed"
           style={{
             backgroundImage: `url(${portfolioItem.portfolioWebsite?.backgroundImage})`,
           }}
         ></div>
 
-        <div className="my-16 h-[110vh] w-full scale-[0.875] overflow-y-auto shadow-lg">
+        <div className="my-8 h-screen w-full scale-[0.875] overflow-y-auto shadow-lg md:my-16 md:h-[110vh]">
           <iframe
             src={portfolioItem.portfolioWebsite?.iframePages[0]?.url}
             title={portfolioItem.portfolioWebsite?.iframePages[0]?.title}
@@ -177,7 +179,7 @@ const PortfolioPresentation: React.FC = () => {
         </div>
 
         <section className="bg-white">
-          <div className="container mx-auto px-4">
+          <div className="container md:px-4">
             <div className="grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-8">
               <div className="col-span-2">
                 <div className="space-y-4">
@@ -284,16 +286,16 @@ const PortfolioPresentation: React.FC = () => {
         </section>
       </main>
 
-      <section className="bg-gray-200 py-32">
-        <div className="container mx-auto">
-          <h5 className="mb-12 font-luxury text-4xl font-extralight">
+      <section className="bg-gray-200 px-4 py-24 md:px-0 md:py-32">
+        <div className="container">
+          <h5 className="mb-8 font-luxury text-3xl font-extralight md:mb-12 md:text-4xl">
             Explore more projects
           </h5>
           <div className="overflow-hidden rounded-3xl border-[1px] border-dark/40">
             {filteredProjects.map((project) => (
               <Link
                 key={project.id}
-                className="bg-bg-gold-dark group mb-8 flex flex-col items-center justify-between gap-0 border-b-[1px] border-dark/30 transition-all duration-700 hover:bg-gray-400 md:mb-0 md:flex-row"
+                className="bg-bg-gold-dark group flex flex-col items-center justify-between gap-0 border-b-[1px] border-dark/30 transition-all duration-700 hover:bg-gray-400  md:flex-row"
                 to={`/portfolio/${project.portfolioUrl}`}
               >
                 <div className="flex w-full md:w-1/3">
@@ -303,7 +305,7 @@ const PortfolioPresentation: React.FC = () => {
                     className="h-64 w-full origin-left object-cover transition-all duration-700 sm:h-96 md:h-60 md:group-hover:scale-x-105"
                   />
                 </div>
-                <div className="flex w-full items-center justify-between gap-10 px-4 py-12 transition-all duration-700 md:w-2/3 md:p-12 md:group-hover:translate-x-4">
+                <div className="flex w-full items-center justify-between gap-10 px-4 py-8 md:py-12 transition-all duration-700 md:w-2/3 md:p-12 md:group-hover:translate-x-4">
                   <div className="flex flex-col items-start gap-2 md:gap-5">
                     <h4 className="text-2xl md:text-3xl">{project.title}</h4>
                     <p className="line-clamp-2 max-w-md text-base">
