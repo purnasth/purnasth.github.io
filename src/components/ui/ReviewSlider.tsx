@@ -10,21 +10,21 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     feedback:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi molestias at accusantium libero quas omnis magni perspiciatis commodi numquam, provident officia minima.',
-    name: 'John Doe',
-    position: 'CEO',
+      "We partnered with Purna to revamp our website, and the results were exceptional. The redesign modernized our site and led to an 80% increase in visitors, a 30% boost in engagement, and a 20% rise in bookings within the first month. Purna & the teams' meticulous attention to detail and seamless execution exceeded our expectations.",
+    name: 'Hotel Himalaya',
+    position: 'HH',
   },
   {
     feedback:
-      'This is another testimonial. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    name: 'Jane Smith',
-    position: 'CTO',
+      'We wanted our website to reflect the culture of Janakpur while highlighting the luxury we offer. Thank You Purna and his team for delivering exactly that. The new site truly captures the spirit of the Janaki Temple and our city, helping us stand out. Since launching, we ve seen a 50% increase in bookings and a lot of positive feedback from guests.',
+    name: 'Mithila Yatri Niwas',
+    position: 'MYN',
   },
   {
     feedback:
-      'Yet another testimonial. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    name: 'Alice Johnson',
-    position: 'Manager',
+      'After our transition to a 5-star hotel, we needed a website that could reflect our new standards and facilities. Purna and the team delivered a site that not only showcases our updated amenities but also performs exceptionally well. Our online bookings have surged by 40%, and guest interactions with the site have been overwhelmingly positive. The attention to detail and performance improvements exceeded our expectations.',
+    name: 'Hotel Ichchha',
+    position: 'HI',
   },
 ];
 
@@ -127,7 +127,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ activeIndex }) => {
           }}
           transition={SPRING_OPTIONS}
         >
-          <p className="text-justify text-sm text-gray-300">
+          <p className="max-h-24 overflow-y-auto text-pretty text-justify text-sm text-gray-300">
             {testimonial.feedback}
           </p>
           <div className="mt-4 flex items-center justify-between">
