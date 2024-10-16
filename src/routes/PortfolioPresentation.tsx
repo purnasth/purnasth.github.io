@@ -42,55 +42,57 @@ const PortfolioPresentation: React.FC = () => {
         currentPage={portfolioItem.title}
         whiteBg={whiteBg}
       />
-      <main className="bg-white md:px-0">
-        <section>
-          <div className="mt-12 md:container md:mt-0">
-            <h1 className="text-4xl md:text-8xl">{portfolioItem.title}</h1>
-            <p className="max-w-lg text-pretty text-sm md:text-base">
-              {portfolioItem.description}
-            </p>
-            <ul className="mt-6 md:mt-8">
-              <li>
-                <span className="text-gray-600">Role & Year:</span>{' '}
-                {portfolioItem.portfolioWebsite?.role} (
-                {portfolioItem.portfolioWebsite?.year})
-              </li>
-              <li>
-                <span className="text-gray-600">Credits:</span>{' '}
-                {portfolioItem.portfolioWebsite?.credits}
-              </li>
-            </ul>
+      <main className="md:px-0">
+        {/* <div className="absolute inset-0 -z-10 h-4/5 w-full bg-[url('https://i.pinimg.com/originals/41/3f/79/413f79030afe575c4df464e9be636fa1.jpg')] bg-cover opacity-20 contrast-200" /> */}
+        {/* <div className="absolute inset-0 -z-10 h-4/5 w-full bg-[url('https://indieground.net/wp-content/uploads/2020/02/Freebie-DarkGrungeTextures-Preview-06.jpg')] bg-cover bg-center mix-blend-difference" /> */}
+        {/* <div className="absolute inset-0 -z-10 h-4/5 w-full bg-[url('https://cdn.pixabay.com/photo/2021/02/05/18/05/paper-5985445_1280.jpg')] bg-cover bg-center" /> */}
+        {/* <div className="absolute inset-0 -z-10 h-4/5 w-full bg-[url('https://homegrowngardencentre.com/wp-content/uploads/2023/06/Masthead-2200x1375.jpg')] bg-cover bg-center opacity-50" /> */}
+        <div className="mt-12 md:container md:mt-0">
+          <h1 className="text-4xl md:text-8xl">{portfolioItem.title}</h1>
+          <p className="max-w-lg text-pretty text-sm md:text-base">
+            {portfolioItem.description}
+          </p>
+          <ul className="mt-6 md:mt-8">
+            <li>
+              <span className="mr- text-gray-600">Role & Year:</span>
+              {portfolioItem.portfolioWebsite?.role} (
+              {portfolioItem.portfolioWebsite?.year})
+            </li>
+            <li>
+              <span className="mr- text-gray-600">Credits:</span>
+              {portfolioItem.portfolioWebsite?.credits}
+            </li>
+          </ul>
 
-            <div className="relative mt-12 md:mt-20">
-              <div
-                className="z-20 h-72 w-full bg-cover bg-center bg-no-repeat outline outline-1 -outline-offset-[10px] outline-white md:h-screen md:bg-fixed"
-                style={{
-                  backgroundImage: `url(${portfolioItem.portfolioWebsite?.titleImage})`,
-                }}
-              ></div>
+          <div className="relative mt-12 md:mt-20">
+            <div
+              className="z-20 h-72 w-full bg-cover bg-center bg-no-repeat outline outline-1 -outline-offset-[10px] outline-white md:h-screen md:bg-fixed"
+              style={{
+                backgroundImage: `url(${portfolioItem.portfolioWebsite?.titleImage})`,
+              }}
+            ></div>
 
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="overlay"></div>
-                <img
-                  src={portfolioItem.logoSrc}
-                  alt={`${portfolioItem.title} logo`}
-                  className="transition-300 absolute z-10 h-28 w-32 object-contain md:h-44 md:w-64"
-                />
-              </div>
-            </div>
-
-            <div className="flex -translate-y-1/2 items-center justify-center md:-translate-y-16">
-              <Link
-                to={portfolioItem.portfolioWebsite?.deployUrl || '#'}
-                target="_blank"
-                rel="noreferrer"
-                className="bg-hotel-himalaya flex size-24 items-center justify-center rounded-full text-xs outline outline-1 -outline-offset-[8px] outline-white/50 md:size-32 md:text-base"
-              >
-                <h5>View Project</h5>
-              </Link>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="overlay"></div>
+              <img
+                src={portfolioItem.logoSrc}
+                alt={`${portfolioItem.title} logo`}
+                className="transition-300 absolute z-10 h-28 w-32 object-contain md:h-44 md:w-64"
+              />
             </div>
           </div>
-        </section>
+
+          <div className="flex -translate-y-1/2 items-center justify-center md:-translate-y-16">
+            <Link
+              to={portfolioItem.portfolioWebsite?.deployUrl || '#'}
+              target="_blank"
+              rel="noreferrer"
+              className="bg-hotel-himalaya flex size-24 items-center justify-center rounded-full text-xs outline outline-1 -outline-offset-[8px] outline-white/50 md:size-32 md:text-base"
+            >
+              <h5>View Project</h5>
+            </Link>
+          </div>
+        </div>
 
         {portfolioItem.caseStudy && (
           <CaseStudy
@@ -231,10 +233,10 @@ const PortfolioPresentation: React.FC = () => {
                     Feedback
                   </h5>
                   <p className="max-w-xs text-xs md:text-sm">
-                    Discover what{' '}
-                    <strong className="font-bold text-inherit">
+                    Discover what
+                    <strong className="mx-1 font-bold text-inherit">
                       {portfolioItem.title}
-                    </strong>{' '}
+                    </strong>
                     has to say about entrusting their vision to me—and how our
                     successful collaboration propelled their business to new
                     heights.
@@ -295,7 +297,7 @@ const PortfolioPresentation: React.FC = () => {
             {filteredProjects.map((project) => (
               <Link
                 key={project.id}
-                className="bg-bg-gold-dark group flex flex-col items-center justify-between gap-0 border-b-[1px] border-dark/30 transition-all duration-700 hover:bg-gray-400  md:flex-row"
+                className="bg-bg-gold-dark group flex flex-col items-center justify-between gap-0 border-b-[1px] border-dark/30 transition-all duration-700 hover:bg-gray-400 md:flex-row"
                 to={`/portfolio/${project.portfolioUrl}`}
               >
                 <div className="flex w-full md:w-1/3">
@@ -305,7 +307,7 @@ const PortfolioPresentation: React.FC = () => {
                     className="h-64 w-full origin-left object-cover transition-all duration-700 sm:h-96 md:h-60 md:group-hover:scale-x-105"
                   />
                 </div>
-                <div className="flex w-full items-center justify-between gap-10 px-4 py-8 md:py-12 transition-all duration-700 md:w-2/3 md:p-12 md:group-hover:translate-x-4">
+                <div className="flex w-full items-center justify-between gap-10 px-4 py-8 transition-all duration-700 md:w-2/3 md:p-12 md:py-12 md:group-hover:translate-x-4">
                   <div className="flex flex-col items-start gap-2 md:gap-5">
                     <h4 className="text-2xl md:text-3xl">{project.title}</h4>
                     <p className="line-clamp-2 max-w-md text-base">

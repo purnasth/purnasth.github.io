@@ -1,13 +1,15 @@
 import React from 'react';
-import { LiaPenAltSolid } from 'react-icons/lia';
+// import { LiaPenAltSolid } from 'react-icons/lia';
+// import { RiPaintBrushLine } from 'react-icons/ri';
+import { GiPaintRoller } from 'react-icons/gi';
 
 const CreativeGap: React.FC = () => {
   return (
     <>
-      <div className="mr-1 inline-flex items-center gap-0">
-        <div className="mt-2 h-[0.5px] w-28 bg-white/60" />
-        <LiaPenAltSolid className="text-base text-white" />
-      </div>
+      <span className="-mb-2 mr-1 inline-flex -translate-y-1 items-center gap-0">
+        <i className="h-[0.5px] w-8 bg-white/60 md:w-28" />
+        <GiPaintRoller className="rotate-90 text-xl text-white/80 md:text-3xl" />
+      </span>
     </>
   );
 };

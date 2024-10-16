@@ -184,7 +184,7 @@ const Contact: React.FC = () => {
             <img
               src="https://ugokawaii.com/wp-content/uploads/2022/10/hot-coffee.gif"
               alt="Coffee"
-              className="size-12 object-contain md:size-16 translate-y-3"
+              className="size-12 translate-y-3 object-contain md:size-16"
             />
           </h3>
           {/* <img

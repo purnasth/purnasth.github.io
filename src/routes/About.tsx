@@ -88,66 +88,66 @@ const About: React.FC = () => {
               consectetur adipisicing elit. Eaque, rerum.
             </p>
 
-            <div className="relative my-6 mt-12 grid grid-cols-2 md:grid-cols-6">
+            <div className="relative my-6 mt-12 grid grid-cols-3 md:grid-cols-6">
               {/* <div className="pointer-events-none absolute inset-0 z-10 size-full select-none outline outline-2 -outline-offset-1 outline-dark" /> */}
               <img
                 src="https://hotelhimalaya.pages.dev/assets/logo-s4LMycLK.svg"
                 alt="Hotel Himalaya"
-                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 aspect-square size-32 w-full border border-dotted border-white/10 object-contain p-7 opacity-50 hover:border-white/50 hover:p-5 hover:opacity-100 hover:filter-none md:size-40 md:w-full"
                 title="Hotel Himalaya"
               />
               <img
                 src="https://hotel-ichchha.pages.dev/assets/logo-DwnyUaN0.svg"
                 alt="Hotel Ichchha"
-                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 aspect-square size-32 w-full border border-dotted border-white/10 object-contain p-7 opacity-50 hover:border-white/50 hover:p-5 hover:opacity-100 hover:filter-none md:size-40 md:w-full"
                 title="Hotel Ichchha"
               />
               <img
                 src="https://mithilayatriniwas.com/assets/logo-BoMl5AAK.svg"
                 alt="Mithila Yatri Niwas"
-                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 aspect-square size-32 w-full border border-dotted border-white/10 object-contain p-7 opacity-50 hover:border-white/50 hover:p-5 hover:opacity-100 hover:filter-none md:size-40 md:w-full"
                 title="Mithila Yatri Niwas"
               />
               <img
                 src="https://babermahalvilas.pages.dev/img/logo.svg"
                 alt="Baber Mahal Vilas"
-                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 aspect-square size-32 w-full border border-dotted border-white/10 object-contain p-7 opacity-50 hover:border-white/50 hover:p-5 hover:opacity-100 hover:filter-none md:size-40 md:w-full"
                 title="Baber Mahal Vilas"
               />
               <img
                 src="https://www.decrowninn.com/images/preference/AxIuw-logo.png"
                 alt="De Crown Inn"
-                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 aspect-square size-32 w-full border border-dotted border-white/10 object-contain p-7 opacity-50 hover:border-white/50 hover:p-5 hover:opacity-100 hover:filter-none md:size-40 md:w-full"
                 title="De Crown Inn"
               />
               <img
                 src="https://demo.airfarenepal.com/assets/images/logo.png"
                 alt="Airfare Nepal"
-                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 aspect-square size-32 w-full border border-dotted border-white/10 object-contain p-7 opacity-50 hover:border-white/50 hover:p-5 hover:opacity-100 hover:filter-none md:size-40 md:w-full"
                 title="Airfare Nepal"
               />
               <img
                 src="https://dayatra.purnashrestha.com.np/assets/img/logo.svg"
                 alt="Hotel Da Yatra"
-                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 aspect-square size-32 w-full border border-dotted border-white/10 object-contain p-7 opacity-50 hover:border-white/50 hover:p-5 hover:opacity-100 hover:filter-none md:size-40 md:w-full"
                 title="Hotel Da Yatra"
               />
               <img
                 src="https://himalayanflavours.pages.dev/assets/logo-suQbDJXC.svg"
                 alt="Himalayan Flavours"
-                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 aspect-square size-32 w-full border border-dotted border-white/10 object-contain p-7 opacity-50 hover:border-white/50 hover:p-5 hover:opacity-100 hover:filter-none md:size-40 md:w-full"
                 title="Himalayan Flavours"
               />
               <img
                 src="https://naikapvillageresort.com/images/preference/91wAZ-naikap_logo.svg"
                 alt="Naikap Village Resort"
-                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 aspect-square size-32 w-full border border-dotted border-white/10 object-contain p-7 opacity-50 hover:border-white/50 hover:p-5 hover:opacity-100 hover:filter-none md:size-40 md:w-full"
                 title="Naikap Village Resort"
               />
               <img
                 src="https://hotelmanang.com/images/preference/StO7F-manang-ogclr.png"
                 alt="Hotel Manang"
-                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 aspect-square size-32 w-full border border-dotted border-white/10 object-contain p-7 opacity-50 hover:border-white/50 hover:p-5 hover:opacity-100 hover:filter-none md:size-40 md:w-full"
                 title="Hotel Manang"
               />
             </div>
