@@ -11,22 +11,38 @@ const links = [
   { url: '/portfolio/mithila-yatri-niwas', changefreq: 'weekly', priority: 0.7 },
   { url: '/portfolio/hotel-ichchha', changefreq: 'weekly', priority: 0.7 },
   { url: '/contact', changefreq: 'monthly', priority: 0.6 },
-
-  // Subdomain links
   { url: 'https://hotelhimalaya.purnashrestha.com.np/', changefreq: 'weekly', priority: 0.7 },
   { url: 'https://dayatra.purnashrestha.com.np/', changefreq: 'weekly', priority: 0.7 },
   { url: 'https://mithilayatriniwas.purnashrestha.com.np/', changefreq: 'weekly', priority: 0.7 },
-  { url: 'https://hotelichchha.purnashrestha.com.np/', changefreq: 'weekly', priority: 0.7 },
+  { url: 'https://hotelichchha.purnashrestha.com.np/', changefreq: 'weekly', priority: 0.7 }
 ];
 
-const hostname = 'https://www.purnashrestha.com.np'; // Your domain
+// const hostname = 'https://www.purnashrestha.com.np';
+// const stream = new SitemapStream({ hostname });
+// const writeStream = createWriteStream('./public/sitemap.xml');
+
+// writeStream.write('<?xml version="1.0" encoding="UTF-8"?>\n');
+// writeStream.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n');
+
+// links.forEach(link => stream.write(link));
+
+// stream.end();
+
+// stream.pipe(writeStream).on('finish', () => {
+//   writeStream.write('</urlset>\n');
+//   console.log('Sitemap successfully generated');
+// });
+
+
+const hostname = 'https://www.purnashrestha.com.np';
 const stream = new SitemapStream({ hostname });
 const writeStream = createWriteStream('./public/sitemap.xml');
 
-streamToPromise(stream).then(() => {
+// Remove manual XML declarations and urlset tags
+links.forEach(link => stream.write(link));
+
+stream.end();
+
+stream.pipe(writeStream).on('finish', () => {
   console.log('Sitemap successfully generated');
 });
-
-links.forEach(link => stream.write(link));
-stream.end();
-stream.pipe(writeStream);
