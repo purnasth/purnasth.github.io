@@ -202,7 +202,7 @@ const skillsData: SkillsCategoryData[] = [
 const SkillsCategory: React.FC = () => {
   return (
     <>
-      <div className="mt-16 space-y-6 md:mt-24 md:space-y-8">
+      <div className="space-y-6 md:space-y-8">
         {skillsData.map((categoryData) => (
           <div
             key={categoryData.category}

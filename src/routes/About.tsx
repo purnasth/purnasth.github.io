@@ -3,6 +3,7 @@ import ProfileNav from '../components/ProfileNav';
 import purna from '../assets/img/purna/FC_20221024_0004.jpg';
 import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
 import SkillsCategory from '../components/ui/SkillsCategory';
+import CreativeGap from '../components/ui/CreativeGap';
 
 const About: React.FC = () => {
   const greetings: string[] = [
@@ -34,7 +35,7 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <main className="size-full bg-dark py-8 md:py-12 text-white">
+    <main className="size-full bg-dark py-8 text-white md:py-12">
       <NavbarBreadCrumb page="About" />
       <div className="ml-auto h-full w-full md:w-[calc(100%-14rem-5rem)]">
         <div className="hidden md:block">
@@ -46,7 +47,7 @@ const About: React.FC = () => {
               {greeting}, <br /> I'm Purna Shrestha.
             </h2>
             <p className="my-5 ml-8 text-sm md:my-12 md:ml-32 md:text-base">
-              ---------------- a software engineer based in Kathmandu, Nepal.
+              <CreativeGap /> a software engineer based in Kathmandu, Nepal.
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
               nam eligendi amet quam eos totam, blanditiis dolores commodi hic
               quo?
@@ -66,7 +67,7 @@ const About: React.FC = () => {
             </h4>
 
             <p className="my-5 ml-8 text-sm md:my-12 md:ml-32 md:text-base">
-              ---------------- a software engineer based in Kathmandu, Nepal.
+              <CreativeGap /> a software engineer based in Kathmandu, Nepal.
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
               nam eligendi amet quam eos totam, blanditiis dolores commodi hic
               quo?
@@ -81,46 +82,73 @@ const About: React.FC = () => {
               Trusted by
             </h4>
 
-            <div className="align-center my-6 mt-12 flex flex-wrap justify-center gap-8">
+            <p className="my-5 ml-8 text-sm md:my-12 md:ml-32 md:text-base">
+              <CreativeGap /> From early stage startups to renowned brands, we
+              have plenty of stories to share. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Eaque, rerum.
+            </p>
+
+            <div className="relative my-6 mt-12 grid grid-cols-2 md:grid-cols-6">
+              {/* <div className="pointer-events-none absolute inset-0 z-10 size-full select-none outline outline-2 -outline-offset-1 outline-dark" /> */}
               <img
                 src="https://hotelhimalaya.pages.dev/assets/logo-s4LMycLK.svg"
                 alt="Hotel Himalaya"
-                className="filter-white transition-300 size-24 object-contain opacity-70 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                title="Hotel Himalaya"
               />
               <img
-                src="https://hotel-ichchha.pages.dev/assets/logo-C7pBEzx4.svg"
+                src="https://hotel-ichchha.pages.dev/assets/logo-DwnyUaN0.svg"
                 alt="Hotel Ichchha"
-                className="filter-white transition-300 size-24 object-contain opacity-70 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                title="Hotel Ichchha"
               />
               <img
                 src="https://mithilayatriniwas.com/assets/logo-BoMl5AAK.svg"
                 alt="Mithila Yatri Niwas"
-                className="filter-white transition-300 size-24 object-contain opacity-70 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                title="Mithila Yatri Niwas"
               />
               <img
                 src="https://babermahalvilas.pages.dev/img/logo.svg"
                 alt="Baber Mahal Vilas"
-                className="filter-white transition-300 size-24 object-contain opacity-70 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                title="Baber Mahal Vilas"
               />
               <img
                 src="https://www.decrowninn.com/images/preference/AxIuw-logo.png"
                 alt="De Crown Inn"
-                className="filter-white transition-300 size-24 object-contain opacity-70 hover:opacity-100 hover:filter-none"
-              />
-              <img
-                src="https://barpeepal.pages.dev/logo.svg"
-                alt="Barpeepal Resort"
-                className="filter-white transition-300 size-24 object-contain opacity-70 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                title="De Crown Inn"
               />
               <img
                 src="https://demo.airfarenepal.com/assets/images/logo.png"
                 alt="Airfare Nepal"
-                className="filter-white transition-300 size-24 object-contain opacity-70 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                title="Airfare Nepal"
               />
               <img
-                src="https://www.purnashrestha.com.np/dayatra/assets/img/logo.svg"
+                src="https://dayatra.purnashrestha.com.np/assets/img/logo.svg"
                 alt="Hotel Da Yatra"
-                className="filter-white transition-300 size-24 object-contain opacity-70 hover:opacity-100 hover:filter-none"
+                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                title="Hotel Da Yatra"
+              />
+              <img
+                src="https://himalayanflavours.pages.dev/assets/logo-suQbDJXC.svg"
+                alt="Himalayan Flavours"
+                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                title="Himalayan Flavours"
+              />
+              <img
+                src="https://naikapvillageresort.com/images/preference/91wAZ-naikap_logo.svg"
+                alt="Naikap Village Resort"
+                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                title="Naikap Village Resort"
+              />
+              <img
+                src="https://hotelmanang.com/images/preference/StO7F-manang-ogclr.png"
+                alt="Hotel Manang"
+                className="filter-white transition-300 size-32 w-full border border-dotted border-white/10 object-contain p-5 opacity-50 hover:border-white/50 hover:opacity-100 hover:filter-none"
+                title="Hotel Manang"
               />
             </div>
           </div>
