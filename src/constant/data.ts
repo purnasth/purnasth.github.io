@@ -9,6 +9,9 @@ import hotelHDayatraMockup from '../assets/img/portfolio/hotel-dayatra/mockup.pn
 import mithilaMockup from '../assets/img/portfolio/mithila/mockup.png';
 import ichchhaMockup from '../assets/img/portfolio/hotel-ichchha/mockup.png';
 
+// ui presentation
+import hotelHimalayaUI from '../assets/img/portfolio/hotel-himalaya/himalaya-ui.avif';
+
 // journey
 import projectJourney from '../assets/img/portfolio/hotel-himalaya/project-journey.svg';
 
@@ -43,6 +46,7 @@ export const portfolioData = [
           titleImage: 'https://hotelhimalaya.pages.dev/images/hero/1.webp',
           backgroundImage:
             'https://hotelhimalaya.pages.dev/images/banner/about.webp',
+          uiPresentation: hotelHimalayaUI,
           iframePages: [
             {
               url: 'https://hotelhimalaya.pages.dev/',

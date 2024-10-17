@@ -131,6 +131,13 @@ const PortfolioPresentation: React.FC = () => {
             className="size-full object-contain"
           />
         </section>
+
+
+        <section className='container max-w-3xl my-16'>
+          <img
+          src={portfolioItem.portfolioWebsite?.uiPresentation}
+          alt={`UI Presentation of ${portfolioItem.title}`} className='size-full shadow' />
+        </section>
         {/* <section className="relative overflow-hidden mb-16">
           <img
             src={portfolioItem.landingImage[0]?.url}

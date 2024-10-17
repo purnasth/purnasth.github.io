@@ -26,7 +26,6 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
   projectOutcome,
 }) => {
   return (
-    <section className="">
       <div className="container">
         <h4 className="sticky top-10 z-30 mb-12 inline-flex items-center justify-center gap-3 rounded-full bg-dark/10 px-5 py-1 text-dark outline outline-1 outline-dark/30 backdrop-blur-lg">
           <TbReportSearch />
@@ -101,7 +100,6 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
           </div>
         </div>
       </div>
-    </section>
   );
 };
 
