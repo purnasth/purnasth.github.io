@@ -42,7 +42,7 @@ const PortfolioPresentation: React.FC = () => {
         currentPage={portfolioItem.title}
         whiteBg={whiteBg}
       />
-      <main className="md:px-0">
+      <main className="md:px-0 bg-white">
         {/* <div className="absolute inset-0 -z-10 h-4/5 w-full bg-[url('https://i.pinimg.com/originals/41/3f/79/413f79030afe575c4df464e9be636fa1.jpg')] bg-cover opacity-20 contrast-200" /> */}
         {/* <div className="absolute inset-0 -z-10 h-4/5 w-full bg-[url('https://indieground.net/wp-content/uploads/2020/02/Freebie-DarkGrungeTextures-Preview-06.jpg')] bg-cover bg-center mix-blend-difference" /> */}
         {/* <div className="absolute inset-0 -z-10 h-4/5 w-full bg-[url('https://cdn.pixabay.com/photo/2021/02/05/18/05/paper-5985445_1280.jpg')] bg-cover bg-center" /> */}
@@ -187,7 +187,7 @@ const PortfolioPresentation: React.FC = () => {
           ></iframe>
         </div>
 
-        <section className="bg-white">
+        <section className="">
           <div className="container md:px-4">
             <div className="grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-8">
               <div className="col-span-2">

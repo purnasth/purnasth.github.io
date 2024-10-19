@@ -8,7 +8,7 @@ import purnaCV from '../assets/docs/cv.pdf';
 const ProfileNav = () => {
   return (
     <>
-      <section className="border-1 left-4 top-4 z-40 mx-auto h-auto w-full overflow-y-auto rounded-lg border-white/20 bg-dark/10 p-6 text-white shadow-sm backdrop-blur-sm md:fixed md:h-[calc(100%-2rem)] md:w-72 md:border">
+      <section className="border-1 left-4 top-4 z-40 mx-auto h-auto w-full overflow-y-auto md:rounded-lg border-white/20 bg-dark md:bg-dark/10 p-6 text-white shadow-sm backdrop-blur-sm md:fixed md:h-[calc(100%-2rem)] md:w-72 md:border">
         <div className="profile flex h-full flex-col gap-6">
           <Link to="/">
             <img

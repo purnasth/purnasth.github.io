@@ -5,7 +5,7 @@ import { ReviewSlider } from './ui/ReviewSlider';
 const SideNav: React.FC = () => {
   return (
     <>
-      <header className="border-1 right-4 top-4 z-40 mx-auto h-auto w-full overflow-y-auto overflow-x-hidden rounded-lg border-white/20 bg-dark/10 p-6 text-white shadow-sm backdrop-blur-sm md:fixed md:h-[calc(100%-2rem)] md:w-72 md:border">
+      <header className="border-1 right-4 top-4 z-40 mx-auto h-auto w-full overflow-y-auto overflow-x-hidden md:rounded-lg border-white/20 bg-dark md:bg-dark/10 p-6 text-white shadow-sm backdrop-blur-sm md:fixed md:h-[calc(100%-2rem)] md:w-72 md:border">
         <div className="hidden md:block">
           <div className="mt-3 flex items-center justify-between">
             <span className="transition-300/50 text-xs uppercase text-gray-400 text-white/80 hover:text-white">

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { TbPlus, TbMail } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 import { PageProp } from '../../constant/types';
+import hero from '../../assets/img/hero_cutout.png';
 
 const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
       </button>
 
       <section
-        className={`border-1 transition-700 fixed inset-0 -z-10 m-2 md:m-4 rounded-lg border border-white/20 bg-dark/40 shadow-sm backdrop-blur ${
+        className={`border-1 transition-700 fixed inset-0 -z-10 m-2 rounded-lg border border-white/20 bg-dark/60 shadow-sm backdrop-blur md:m-4 ${
           isOpen
             ? 'pointer-events-auto select-auto opacity-100'
             : 'pointer-events-none select-none opacity-0'
@@ -38,12 +39,12 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
             <TbMail className="text-base transition-all duration-300 ease-linear group-hover:scale-110" />
           </Link>
 
-          <div className="grid h-[95%] grid-cols-4 content-center px-16 py-8">
-            <ul className="links col-span-1 flex flex-col items-start justify-start gap-2 md:gap-20">
+          <div className="grid h-full grid-cols-1 px-4 md:px-16 md:grid-cols-4">
+            <ul className="links col-span-1 flex flex-col items-center justify-center gap-8 md:gap-20">
               <li className="w-full">
                 <Link
                   to="/"
-                  className="navlink transition-300 inline-block w-full pb-2 text-5xl font-medium text-white/80 hover:text-white"
+                  className="navlink transition-300 inline-block w-full pb-2 text-3xl md:text-5xl font-extralight tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)]"
                   aria-label="Home"
                 >
                   Home
@@ -52,7 +53,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
               <li className="w-full">
                 <Link
                   to="/about"
-                  className="navlink transition-300 inline-block w-full pb-2 text-5xl font-medium text-white/80 hover:text-white"
+                  className="navlink transition-300 inline-block w-full pb-2 text-3xl md:text-5xl font-extralight tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)]"
                   aria-label="About"
                 >
                   About
@@ -61,7 +62,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
               <li className="w-full">
                 <Link
                   to="/portfolio"
-                  className="navlink transition-300 inline-block w-full pb-2 text-5xl font-medium text-white/80 hover:text-white"
+                  className="navlink transition-300 inline-block w-full pb-2 text-3xl md:text-5xl font-extralight tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)]"
                   aria-label="Portfolio"
                 >
                   Portfolio
@@ -70,14 +71,26 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
               <li className="w-full">
                 <a
                   href="/contact"
-                  className="navlink transition-300 inline-block w-full pb-2 text-5xl font-medium text-white/80 hover:text-white"
+                  className="navlink transition-300 inline-block w-full pb-2 text-3xl md:text-5xl font-extralight tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)]"
                   aria-label="Contact"
                 >
                   Contact
                 </a>
               </li>
             </ul>
-            <div className="col-span-3"></div>
+            <div className="relative justify-self-end md:col-span-3">
+              <img
+                src={hero}
+                alt=""
+                className="absolute inset-0 -z-10 size-full h-full scale-125 scale-x-150 object-contain blur-3xl"
+              />
+              <img
+                src={hero}
+                alt=""
+                className="h-full object-cover object-bottom"
+                draggable="false"
+              />
+            </div>
           </div>
         </div>
       </section>

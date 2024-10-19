@@ -25,8 +25,8 @@ const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
         window.scrollY > 0 ? '' : ''
       } ${visible ? '' : '-translate-y-full'}`}
     >
-      <h2
-        className={`flex items-center justify-center gap-3 rounded-full px-4 py-1 transition-all duration-[1s] ${
+      <h4
+        className={`text-xs md:text-base flex items-center justify-center gap-2 md:gap-3 rounded-full px-4 py-1 transition-all duration-[1s] ${
           visible ? 'translate-y-0 opacity-100' : '-translate-y-12 opacity-0'
         } ${
           window.scrollY > 0
@@ -61,7 +61,7 @@ const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
         ) : (
           <h3 className="font-inria-sans font-light capitalize">{page}</h3>
         )}
-      </h2>
+      </h4>
     </nav>
   );
 };
