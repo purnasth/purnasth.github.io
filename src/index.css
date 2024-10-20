@@ -32,6 +32,10 @@
     @apply px-4 py-20 sm:py-28 md:px-12 md:py-[7.5rem] lg:py-[9rem];
   }
 
+  section {
+    @apply px-0 py-8 sm:py-12 md:py-16 lg:py-20;
+  }
+
   h1,
   h2,
   h3,

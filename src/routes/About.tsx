@@ -91,7 +91,7 @@ const About: React.FC = () => {
             <div className="relative my-6 mt-12 grid grid-cols-3 md:grid-cols-6">
               {/* <div className="pointer-events-none absolute inset-0 z-10 size-full select-none outline outline-2 -outline-offset-1 outline-dark" /> */}
               <img
-                src="https://hotelhimalaya.pages.dev/assets/logo-s4LMycLK.svg"
+                src="https://hotelhimalaya.purnashrestha.com.np/assets/logo-s4LMycLK.svg"
                 alt="Hotel Himalaya"
                 className="filter-white transition-300 aspect-square size-32 w-full border border-dotted border-white/10 object-contain p-7 opacity-50 hover:border-white/50 hover:p-5 hover:opacity-100 hover:filter-none md:size-40 md:w-full"
                 title="Hotel Himalaya"

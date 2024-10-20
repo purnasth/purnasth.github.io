@@ -25,7 +25,7 @@ export const portfolioData = [
       {
         id: 'hotel-himalaya',
         title: 'Hotel Himalaya',
-        logoSrc: 'https://hotelhimalaya.pages.dev/assets/logo-s4LMycLK.svg',
+        logoSrc: 'https://hotelhimalaya.purnashrestha.com.np/assets/logo-s4LMycLK.svg',
         portfolioUrl: 'hotel-himalaya',
         // description:
         //   "Nestled within 6.58 acres of exquisitely landscaped grounds, Hotel Himalaya is conveniently located 8 km away from the Tribhuvan International Airport and only 2 km from the Kathmandu city center. ",
@@ -38,26 +38,26 @@ export const portfolioData = [
           },
         ],
         portfolioWebsite: {
-          deployUrl: 'https://hotelhimalaya.pages.dev',
+          deployUrl: 'https://hotelhimalaya.purnashrestha.com.np/',
           mockup: hotelHimalayaMockup,
           role: 'Design & Development',
           year: '2024',
           credits: 'Longtail e-Media',
-          titleImage: 'https://hotelhimalaya.pages.dev/images/hero/1.webp',
+          titleImage: 'https://hotelhimalaya.purnashrestha.com.np/images/hero/1.webp',
           backgroundImage:
-            'https://hotelhimalaya.pages.dev/images/banner/about.webp',
+            'https://hotelhimalaya.purnashrestha.com.np/images/banner/about.webp',
           uiPresentation: hotelHimalayaUI,
           iframePages: [
             {
-              url: 'https://hotelhimalaya.pages.dev/',
+              url: 'https://hotelhimalaya.purnashrestha.com.np/',
               title: 'Hotel Himalaya Website Home Page',
             },
             {
-              url: 'https://hotelhimalaya.pages.dev/stay',
+              url: 'https://hotelhimalaya.purnashrestha.com.np/stay',
               title: 'Hotel Himalaya Website Stay Page',
             },
             {
-              url: 'https://hotelhimalaya.pages.dev/gallery',
+              url: 'https://hotelhimalaya.purnashrestha.com.np/gallery',
               title: 'Hotel Himalaya Website Gallery Page',
             },
           ],
@@ -97,19 +97,19 @@ export const portfolioData = [
           },
           galleryImages: [
             {
-              src: 'https://hotelhimalaya.pages.dev/images/hero/1.webp',
+              src: 'https://hotelhimalaya.purnashrestha.com.np/images/hero/1.webp',
               alt: 'Hotel Himalaya',
             },
             {
-              src: 'https://hotelhimalaya.pages.dev/images/stay/js2.webp',
+              src: 'https://hotelhimalaya.purnashrestha.com.np/images/stay/js2.webp',
               alt: 'Hotel Himalaya',
             },
             {
-              src: 'https://hotelhimalaya.pages.dev/images/banner/dine.webp',
+              src: 'https://hotelhimalaya.purnashrestha.com.np/images/banner/dine.webp',
               alt: 'Hotel Himalaya',
             },
             {
-              src: 'https://hotelhimalaya.pages.dev/images/banner/swimming.webp',
+              src: 'https://hotelhimalaya.purnashrestha.com.np/images/banner/swimming.webp',
               alt: 'Hotel Himalaya',
             },
           ],
