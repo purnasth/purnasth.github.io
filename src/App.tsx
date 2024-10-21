@@ -7,6 +7,7 @@ import PortfolioPresentation from './routes/PortfolioPresentation';
 import Contact from './routes/Contact';
 import withFramerTransition from './hoc/withFramerTransition'; // PascalCase component
 import RouterToTop from './utils/RouterToTop';
+import useLenisScroll from './hooks/useLenisScroll';
 
 const HomeWithTransition = withFramerTransition(Home);
 const AboutWithTransition = withFramerTransition(About);
@@ -17,6 +18,7 @@ const PortfolioPresentationWithTransition = withFramerTransition(
 const ContactWithTransition = withFramerTransition(Contact);
 
 const App = () => {
+  useLenisScroll();
   const location = useLocation();
 
   return (

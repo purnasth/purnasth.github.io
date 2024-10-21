@@ -120,7 +120,7 @@ export const portfolioData = [
       {
         id: 'hotel-dayatra',
         title: 'Hotel Dayatra',
-        logoSrc: 'https://www.purnashrestha.com.np/dayatra/assets/img/logo.svg',
+        logoSrc: 'https://dayatra.purnashrestha.com.np/assets/img/logo.svg',
         portfolioUrl: 'hotel-dayatra',
         description:
           'Hotel Dayatra Courtyard is a luxury hotel of amazing service and perfect for unwinding. The hotel is located in the heart of the pokhara, just 5 minutes away from the airport.',
@@ -131,26 +131,26 @@ export const portfolioData = [
           },
         ],
         portfolioWebsite: {
-          deployUrl: 'https://www.purnashrestha.com.np/dayatra/',
+          deployUrl: 'https://dayatra.purnashrestha.com.np/',
           mockup: hotelHDayatraMockup,
           role: 'Design & Development',
           year: '2024',
           credits: 'Longtail e-Media',
           titleImage:
-            'https://www.purnashrestha.com.np/dayatra/assets/img/slider/building.webp',
+            'https://dayatra.purnashrestha.com.np/assets/img/slider/building.webp',
           backgroundImage:
-            'https://www.purnashrestha.com.np/dayatra/assets/img/banner/about.webp',
+            'https://dayatra.purnashrestha.com.np/assets/img/banner/about.webp',
           iframePages: [
             {
-              url: 'https://www.purnashrestha.com.np/dayatra/index.html',
+              url: 'https://dayatra.purnashrestha.com.np/',
               title: 'Hotel Da Yatra Website Home Page',
             },
             {
-              url: 'https://www.purnashrestha.com.np/dayatra/accommodation.html',
+              url: 'https://dayatra.purnashrestha.com.np/accommodation',
               title: 'Hotel Da Yatra Website Stay Page',
             },
             {
-              url: 'https://www.purnashrestha.com.np/dayatra/gallery.html',
+              url: 'https://dayatra.purnashrestha.com.np/gallery',
               title: 'Hotel Da Yatra Website Gallery Page',
             },
           ],
@@ -190,19 +190,19 @@ export const portfolioData = [
           },
           galleryImages: [
             {
-              src: 'https://www.purnashrestha.com.np/dayatra/assets/img/slider/building.webp',
+              src: 'https://dayatra.purnashrestha.com.np/assets/img/slider/building.webp',
               alt: 'Hotel Da Yatra',
             },
             {
-              src: 'https://www.purnashrestha.com.np/dayatra/assets/img/rooms/drs2.webp',
+              src: 'https://dayatra.purnashrestha.com.np/assets/img/rooms/drs2.webp',
               alt: 'Hotel Da Yatra',
             },
             {
-              src: 'https://www.purnashrestha.com.np/dayatra/assets/img/slider/welcome.webp',
+              src: 'https://dayatra.purnashrestha.com.np/assets/img/slider/welcome.webp',
               alt: 'Hotel Da Yatra',
             },
             {
-              src: 'https://www.purnashrestha.com.np/dayatra/assets/img/daYatraEntry.webp',
+              src: 'https://dayatra.purnashrestha.com.np/assets/img/daYatraEntry.webp',
               alt: 'Hotel Da Yatra',
             },
           ],
