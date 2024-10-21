@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { TbPlus, TbMail } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 import { PageProp } from '../../constant/types';
-import hero from '../../assets/img/hero_cutout.png';
+import heroNoise from '../../assets/img/hero_noise.png';
 
 const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
       </button>
 
       <section
-        className={`border-1 transition-700 fixed inset-0 -z-10 m-2 rounded-lg border border-white/20 bg-dark/60 shadow-sm backdrop-blur md:m-4 ${
+        className={`border-1 transition-700 fixed inset-0 -z-10 m-2 rounded-lg border border-white/20 bg-dark/60 p-0 shadow-sm backdrop-blur md:m-4 ${
           isOpen
             ? 'pointer-events-auto select-auto opacity-100'
             : 'pointer-events-none select-none opacity-0'
@@ -39,12 +39,12 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
             <TbMail className="text-base transition-all duration-300 ease-linear group-hover:scale-110" />
           </Link>
 
-          <div className="grid h-full grid-cols-1 px-4 md:px-16 md:grid-cols-4">
+          <div className="grid h-full grid-cols-1 px-4 md:grid-cols-4 md:px-16">
             <ul className="links col-span-1 flex flex-col items-center justify-center gap-8 md:gap-20">
               <li className="w-full">
                 <Link
                   to="/"
-                  className="navlink transition-300 inline-block w-full pb-2 text-3xl md:text-5xl font-extralight tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)]"
+                  className="navlink transition-300 inline-block w-full pb-2 text-3xl font-extralight tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)] md:text-5xl"
                   aria-label="Home"
                 >
                   Home
@@ -53,7 +53,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
               <li className="w-full">
                 <Link
                   to="/about"
-                  className="navlink transition-300 inline-block w-full pb-2 text-3xl md:text-5xl font-extralight tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)]"
+                  className="navlink transition-300 inline-block w-full pb-2 text-3xl font-extralight tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)] md:text-5xl"
                   aria-label="About"
                 >
                   About
@@ -62,7 +62,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
               <li className="w-full">
                 <Link
                   to="/portfolio"
-                  className="navlink transition-300 inline-block w-full pb-2 text-3xl md:text-5xl font-extralight tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)]"
+                  className="navlink transition-300 inline-block w-full pb-2 text-3xl font-extralight tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)] md:text-5xl"
                   aria-label="Portfolio"
                 >
                   Portfolio
@@ -71,23 +71,23 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
               <li className="w-full">
                 <a
                   href="/contact"
-                  className="navlink transition-300 inline-block w-full pb-2 text-3xl md:text-5xl font-extralight tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)]"
+                  className="navlink transition-300 inline-block w-full pb-2 text-3xl font-extralight tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)] md:text-5xl"
                   aria-label="Contact"
                 >
                   Contact
                 </a>
               </li>
             </ul>
-            <div className="relative justify-self-end md:col-span-3">
+            <div className="group relative content-end justify-self-end md:col-span-3">
               <img
-                src={hero}
+                src={heroNoise}
                 alt=""
-                className="absolute inset-0 -z-10 size-full h-full scale-125 scale-x-150 object-contain blur-3xl"
+                className="transition-300 absolute inset-0 -z-10 size-full scale-125 scale-x-150 object-contain blur-3xl group-hover:blur-[100px]"
               />
               <img
-                src={hero}
+                src={heroNoise}
                 alt=""
-                className="h-full object-cover object-bottom"
+                className="h-full max-h-[90vh] object-contain object-bottom"
                 draggable="false"
               />
             </div>

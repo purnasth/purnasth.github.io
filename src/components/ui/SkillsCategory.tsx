@@ -202,9 +202,9 @@ const skillsData: SkillsCategoryData[] = [
 const SkillsCategory: React.FC = () => {
   return (
     <>
-      <div className="space-y-6 md:space-y-8">
+      <ul className="portfolio-skills space-y-6 md:space-y-8">
         {skillsData.map((categoryData) => (
-          <div
+          <li
             key={categoryData.category}
             className="skills flex flex-col flex-wrap items-center justify-between gap-1 md:flex-row md:gap-0"
           >
@@ -212,11 +212,11 @@ const SkillsCategory: React.FC = () => {
               {categoryData.category}
             </h5>
             <span className="flex-grow rounded-full border-2 border-dotted border-white/20 md:ml-4"></span>
-            <div className="flex flex-wrap items-center gap-3 rounded-3xl border border-white/50 bg-white/10 p-2 md:gap-8 md:rounded-full md:px-8">
+            <ul className="skills flex flex-wrap items-center gap-3 rounded-3xl border border-white/50 bg-white/10 p-2 md:gap-8 md:rounded-full md:px-8">
               {categoryData.logos.map((logo) => (
-                <div
+                <li
                   key={logo.id}
-                  className="group flex flex-col items-center justify-center gap-2"
+                  className="group flex flex-col items-center justify-center gap-2 opacity-100"
                 >
                   <img
                     src={logo.url}
@@ -226,12 +226,12 @@ const SkillsCategory: React.FC = () => {
                   <p className="hidden text-xs text-white/80 md:block">
                     {logo.title}
                   </p>
-                </div>
+                </li>
               ))}
-            </div>
-          </div>
+            </ul>
+          </li>
         ))}
-      </div>
+      </ul>
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import hero from '../../assets/img/hero_cutout.png';
 import hero_mobile from '../../assets/img/hero.png';
+import heroNoise from '../../assets/img/hero_noise.png';
 
 type SkillLogo = {
   id: number;
@@ -229,11 +230,17 @@ const FloatLogo: React.FC = () => {
           title={logo.title}
         />
       ))}
-      <img
-        src={hero}
+      {/* <img
+        src={heroNoise}
         alt=""
         ref={heroRef}
-        className="pointer-events-none absolute bottom-0 left-1/2 -z-10 hidden w-2/3 -translate-x-1/2 select-none opacity-20 mix-blend-normal md:block"
+        className="pointer-events-none absolute bottom-0 left-1/2 -z-50 hidden max-h-[95vh] w-full -translate-x-1/2 select-none object-contain opacity-50 mix-blend-luminosity blur-[100px] md:block"
+      /> */}
+      <img
+        src={heroNoise}
+        alt=""
+        ref={heroRef}
+        className="pointer-events-none absolute bottom-0 left-1/2 -z-10 hidden max-h-[75vh] w-4/5 -translate-x-1/2 select-none object-contain opacity-20 md:block"
       />
       <img
         src={hero_mobile}
