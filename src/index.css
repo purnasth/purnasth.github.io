@@ -58,16 +58,25 @@
     @apply font-inria-sans font-light;
   }
 
+  ul:hover li {
+    @apply opacity-50 transition-all duration-300 ease-in-out;
+  }
+
+  ul li:hover {
+    @apply opacity-100 blur-0 transition-all duration-300 ease-in-out;
+  }
   /* p {
     @apply font-pt-sans;
   } */
 
   .filter-dark {
-    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(97%) contrast(103%);
+    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%)
+      hue-rotate(21deg) brightness(97%) contrast(103%);
   }
 
   .filter-white {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+      hue-rotate(288deg) brightness(102%) contrast(102%);
   }
 
   .dark-mode {
@@ -87,16 +96,20 @@
   } */
 
   .bg-green-gradient {
-    background: radial-gradient(45% 35% at 53% 94%,
-        #03887e 10%,
-        transparent 100%);
+    background: radial-gradient(
+      45% 35% at 53% 94%,
+      #03887e 10%,
+      transparent 100%
+    );
     /* filter: blur(20px); */
   }
 
   .bg-blue-gradient {
-    background: radial-gradient(45% 35% at 53% 94%,
-        #032d82 10%,
-        transparent 100%);
+    background: radial-gradient(
+      45% 35% at 53% 94%,
+      #032d82 10%,
+      transparent 100%
+    );
     /* filter: blur(20px); */
   }
 
@@ -107,13 +120,15 @@
   .blue-gradient {
     /* @apply bg-gradient-to-t from-[#33bbcf] from-[0%] via-[#bef3f5] via-[50%] to-[#aed581] to-[100%] text-transparent bg-clip-text; */
 
-    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,
-        #def9fa 0.89%,
-        #bef3f5 17.23%,
-        #9dedf0 42.04%,
-        #7de7eb 55.12%,
-        #5ce1e6 71.54%,
-        #33bbcf 100%);
+    background: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33bbcf 100%
+    );
 
     @apply bg-clip-text text-transparent;
   }
@@ -225,10 +240,12 @@
 
 /* css  */
 .bg-hotel-himalaya {
-  background-image: linear-gradient(121.21deg,
-      #c79d4f 13.03%,
-      #fad694 48.04%,
-      #e9c279 81.98%);
+  background-image: linear-gradient(
+    121.21deg,
+    #c79d4f 13.03%,
+    #fad694 48.04%,
+    #e9c279 81.98%
+  );
 }
 
 /* body {

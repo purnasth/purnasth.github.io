@@ -25,7 +25,8 @@ export const portfolioData = [
       {
         id: 'hotel-himalaya',
         title: 'Hotel Himalaya',
-        logoSrc: 'https://hotelhimalaya.purnashrestha.com.np/assets/logo-s4LMycLK.svg',
+        logoSrc:
+          'https://hotelhimalaya.purnashrestha.com.np/assets/logo-s4LMycLK.svg',
         portfolioUrl: 'hotel-himalaya',
         // description:
         //   "Nestled within 6.58 acres of exquisitely landscaped grounds, Hotel Himalaya is conveniently located 8 km away from the Tribhuvan International Airport and only 2 km from the Kathmandu city center. ",
@@ -43,7 +44,8 @@ export const portfolioData = [
           role: 'Design & Development',
           year: '2024',
           credits: 'Longtail e-Media',
-          titleImage: 'https://hotelhimalaya.purnashrestha.com.np/images/hero/1.webp',
+          titleImage:
+            'https://hotelhimalaya.purnashrestha.com.np/images/hero/1.webp',
           backgroundImage:
             'https://hotelhimalaya.purnashrestha.com.np/images/banner/about.webp',
           uiPresentation: hotelHimalayaUI,
