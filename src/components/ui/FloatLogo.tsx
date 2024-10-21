@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import hero from '../../assets/img/hero_cutout.png';
+// import hero from '../../assets/img/hero_cutout.png';
 import hero_mobile from '../../assets/img/hero.png';
 import heroNoise from '../../assets/img/hero_noise.png';
 

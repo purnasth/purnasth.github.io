@@ -25,7 +25,7 @@ const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
         window.scrollY > 0 ? '' : ''
       } ${visible ? '' : '-translate-y-full'}`}
     >
-      <h4
+      <h3
         className={`text-xs md:text-base flex items-center justify-center gap-2 md:gap-3 rounded-full px-4 py-1 transition-all duration-[1s] ${
           visible ? 'translate-y-0 opacity-100' : '-translate-y-12 opacity-0'
         } ${
@@ -54,14 +54,14 @@ const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
               {page}
             </Link>
             <TbArrowGuide />
-            <h4 className="font-inria-sans font-medium capitalize">
+            <span className="font-inria-sans font-medium capitalize">
               {currentPage}
-            </h4>
+            </span>
           </>
         ) : (
-          <h3 className="font-inria-sans font-light capitalize">{page}</h3>
+          <span className="font-inria-sans font-light capitalize">{page}</span>
         )}
-      </h4>
+      </h3>
     </nav>
   );
 };
