@@ -52,12 +52,12 @@ const GalleryReview: React.FC<GalleryReviewProps> = ({ portfolioItem }) => {
                 mode="lg-fade"
                 thumbnail={true}
                 autoplay={true}
-                elementClassNames="mt-12 w-full grid grid-cols-1 md:grid-cols-2 gap-4 transition-linear"
+                elementClassNames="ul mt-12 w-full grid grid-cols-1 md:grid-cols-2 gap-4 transition-linear"
               >
                 {portfolioItem.caseStudy?.galleryImages?.map((image, index) => (
                   <div
                     key={index}
-                    className="gallery-item group relative cursor-pointer overflow-hidden shadow-md transition-all duration-200 ease-linear hover:shadow-xl"
+                    className="li gallery-item group relative cursor-pointer overflow-hidden shadow-md transition-all duration-200 ease-linear hover:shadow-xl"
                     data-src={image.src}
                   >
                     <img
@@ -86,9 +86,8 @@ const GalleryReview: React.FC<GalleryReviewProps> = ({ portfolioItem }) => {
                   <strong className="mx-1 font-bold text-inherit">
                     {portfolioItem.title}
                   </strong>
-                  has to say about entrusting their vision to me—and how our
-                  successful collaboration propelled their business to new
-                  heights.
+                  has to say about entrusting their vision to us—and how we
+                  propelled their business to new heights.
                 </p>
               </div>
 

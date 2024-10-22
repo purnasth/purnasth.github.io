@@ -69,6 +69,14 @@
   ul.portfolio-skills:hover li ul.skills li {
     @apply opacity-100;
   }
+
+  .ul:hover .li {
+    @apply opacity-80 blur-[1px] grayscale transition-all duration-300 ease-in-out;
+  }
+
+  .ul .li:hover {
+    @apply opacity-100 blur-0 grayscale-0 transition-all duration-300 ease-in-out;
+  }
   /* p {
     @apply font-pt-sans;
   } */
@@ -168,10 +176,6 @@
   .pagination span:hover {
     @apply bg-white/90;
   }
-
-  .text-stroke-3 {
-    -webkit-text-stroke: 3px #fff;
-}
 }
 
 @keyframes float-up {

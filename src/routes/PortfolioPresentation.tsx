@@ -37,13 +37,13 @@ const PortfolioPresentation: React.FC = () => {
             {portfolioItem.description}
           </p>
           <ul className="mt-6 md:mt-8">
-            <li>
-              <span className="mr- text-gray-600">Role & Year:</span>
+            <li className="font-medium">
+              <span className="mr-1 text-gray-600">Role & Year :</span>
               {portfolioItem.portfolioWebsite?.role} (
               {portfolioItem.portfolioWebsite?.year})
             </li>
-            <li>
-              <span className="mr- text-gray-600">Credits:</span>
+            <li className="font-medium">
+              <span className="mr-1 text-gray-600">Credits :</span>
               {portfolioItem.portfolioWebsite?.credits}
             </li>
           </ul>

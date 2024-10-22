@@ -33,8 +33,8 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
           Case Study
         </h4>
 
-        <div className="max-w-4xl">
-          <div className="mb-16">
+        <ul className="max-w-4xl">
+          <li className="mb-16">
             <h4 className="mb-4 flex items-center gap-2 text-xl text-gray-700">
               <TbFaceIdError />
               Problem Statement
@@ -42,9 +42,9 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
             <p className="border-l-4 pl-4 text-base leading-relaxed text-gray-600">
               {problemStatement}
             </p>
-          </div>
+          </li>
 
-          <div className="mb-16">
+          <li className="mb-16">
             <h4 className="mb-4 flex items-center gap-2 text-xl text-gray-700">
               <TbBulb />
               Solution Overview
@@ -52,9 +52,9 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
             <p className="border-l-4 pl-4 text-base leading-relaxed text-gray-600">
               {solutionOverview}
             </p>
-          </div>
+          </li>
 
-          <div className="mb-16">
+          <li className="mb-16">
             <h4 className="mb-8 flex items-center gap-2 text-xl text-gray-700">
               <MdOutlineAutoFixHigh />
               Project Journey
@@ -70,10 +70,10 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
                 className="h-96 w-full object-contain object-left"
               />
             </div>
-          </div>
+          </li>
 
           {toolsUsed && toolsUsed.length > 0 && (
-            <div className="mb-16">
+            <li className="mb-16">
               <h4 className="mb-4 flex items-center gap-2 text-xl text-gray-700">
                 <TbTools /> Tools Used
               </h4>
@@ -88,18 +88,18 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
                   />
                 ))}
               </div>
-            </div>
+            </li>
           )}
 
-          <div className="mb-16">
+          <li className="mb-16">
             <h4 className="mb-4 flex items-center gap-2 text-xl text-gray-700">
               <TbAward /> Project Outcome
             </h4>
             <p className="border-l-4 pl-4 text-base leading-relaxed text-gray-600">
               {projectOutcome}
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
   );
