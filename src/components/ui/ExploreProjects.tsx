@@ -38,13 +38,13 @@ const ExploreProjects: React.FC<ExploreProjectsProps> = ({
           to={`/portfolio/${portfolioDetails[nextProjectIndex].portfolioUrl}`}
         >
           <div className="text-center">
-            <h3 className="transition-300 font-luxury text-4xl font-extralight group-hover:translate-y-16 group-hover:scale-150 group-hover:opacity-60 md:text-7xl">
+            <h3 className="transition-500 font-luxury text-4xl font-extralight group-hover:translate-y-16 group-hover:scale-150 group-hover:opacity-60 md:text-7xl">
               {portfolioDetails[nextProjectIndex].title}
             </h3>
             <img
               src={portfolioDetails[nextProjectIndex].portfolioWebsite?.mockup}
               alt={portfolioDetails[nextProjectIndex].title}
-              className="transition-300 h-96 object-contain group-hover:-translate-y-14 group-hover:scale-125 group-hover:drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]"
+              className="transition-500 h-96 object-contain group-hover:-translate-y-14 group-hover:scale-125 group-hover:drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]"
             />
           </div>
         </Link>
@@ -64,10 +64,10 @@ const ExploreProjects: React.FC<ExploreProjectsProps> = ({
         <li className="flex-shrink-0">
           <Link
             to="/portfolio"
-            className="transition-300 inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-center text-base font-medium uppercase text-dark shadow outline outline-1 outline-dark hover:bg-dark/20 hover:tracking-widest hover:shadow-xl"
+            className="transition-300 inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-center text-base font-medium uppercase bg-dark text-light shadow outline outline-1 outline-dark hover:bg-dark/90 hover:tracking-widest hover:shadow-2xl"
           >
             All Projects
-            <sup className="text-base font-bold group-hover:text-dark">
+            <sup className="green-gradient text-base font-bold group-hover:text-dark">
               ({portfolioDetails.length})
             </sup>
           </Link>

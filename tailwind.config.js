@@ -39,6 +39,7 @@ export default {
       },
       colors: {
         dark: '#0a0a0a',
+        light: '#f8f8f8',
       },
       screens: {
         sm: '640px',

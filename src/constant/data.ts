@@ -20,7 +20,7 @@ export const portfolioData = [
     id: 1,
     title: 'Portfolio',
     heading: 'A collection of my best projects',
-    description: 'Lorem20',
+    description: 'From early stage startups to renowned brands, from latest brand building to revamping existing ones, I have worked on a variety of projects. Here are some of my best works. Click on the project to witness the journey.',
     portfolioDetails: [
       {
         id: 'hotel-himalaya',
