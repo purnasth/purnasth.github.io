@@ -52,10 +52,10 @@ const About: React.FC = () => {
               .
             </h2>
             <p className="my-5 ml-8 text-sm md:my-12 md:ml-32 md:text-base">
-              <CreativeGap /> a software engineer based in Kathmandu, Nepal.
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
-              nam eligendi amet quam eos totam, blanditiis dolores commodi hic
-              quo?
+              <CreativeGap color="white" /> a software engineer based in
+              Kathmandu, Nepal. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Ducimus nam eligendi amet quam eos totam,
+              blanditiis dolores commodi hic quo?
             </p>
 
             <img
@@ -66,31 +66,31 @@ const About: React.FC = () => {
           </div>
 
           <div>
-            <h4 className="sticky top-6 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur">
+            <h4 className="sticky top-7 z-10 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 text-xs font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur sm:text-sm md:top-8 md:text-base">
               <span className="size-2 rounded-full bg-green-500"></span>
               Available for work
             </h4>
 
             <p className="my-5 ml-8 text-sm md:my-12 md:ml-32 md:text-base">
-              <CreativeGap /> a software engineer based in Kathmandu, Nepal.
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
-              nam eligendi amet quam eos totam, blanditiis dolores commodi hic
-              quo?
+              <CreativeGap color="white" /> a software engineer based in
+              Kathmandu, Nepal. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Ducimus nam eligendi amet quam eos totam,
+              blanditiis dolores commodi hic quo?
             </p>
 
             <SkillsCategory />
           </div>
 
           <div>
-            <h4 className="sticky top-6 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur">
+            <h4 className="sticky top-7 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 text-xs font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur sm:text-sm md:top-8 md:text-base">
               <span className="size-2 rounded-full bg-green-500"></span>
               Trusted by
             </h4>
 
             <p className="my-5 ml-8 text-sm md:my-12 md:ml-32 md:text-base">
-              <CreativeGap /> From early stage startups to renowned brands, we
-              have plenty of stories to share. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Eaque, rerum.
+              <CreativeGap color="white" /> From early stage startups to
+              renowned brands, we have plenty of stories to share. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Eaque, rerum.
             </p>
 
             <ul className="relative my-6 mt-12 grid grid-cols-3 md:grid-cols-6">

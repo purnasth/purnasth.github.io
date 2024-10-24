@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
         <div className="my-10 h-px w-full bg-gradient-to-r from-[#989AA6]/[0.5] to-transparent md:my-16 md:h-[0.5px]" />
 
         <section className="">
-          <h4 className="sticky top-6 z-10 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur md:top-8">
+          <h4 className="sticky top-7 z-10 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 text-xs font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur sm:text-sm md:top-8 md:text-base">
             <span className="size-2 rounded-full bg-green-500"></span>
             Services Process
           </h4>
@@ -60,49 +60,18 @@ const Contact: React.FC = () => {
               </div>
               <div className="">
                 <p className="mb-3">Meeting</p>
-                <h2 className="text-2xl md:mb-8 md:text-4xl lg:text-6xl">
+                <h2 className="mb-4 text-2xl md:mb-8 md:text-4xl lg:text-6xl">
                   Consulting & Strategy
                 </h2>
                 <div className="relative grid grid-cols-1 gap-0 md:grid-cols-3 md:gap-12">
                   <div>
-                    <p className="text-pretty text-lg">
+                    <p className="text-pretty text-base opacity-80">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Nulla, aut rem dolor ex neque fuga perspiciatis quia
                       voluptates.
                     </p>
-                    <button className="shadow-luminr-white/5 text-luminr-white group relative mt-5 rounded-xl p-px text-base leading-6 shadow-lg md:mt-10">
-                      <span className="absolute inset-0 overflow-hidden">
-                        <span className="absolute inset-0 rounded-xl bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(219,99,50,1)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                      </span>
-                      <div className="from-luminr-blue/20 to-luminr-orange/5 ring-luminr-white/20 hover:bg-luminr-blue relative z-10 flex items-center space-x-2 rounded-xl bg-gradient-to-b px-5 py-3 ring-1 backdrop-blur-md transition-all duration-500 md:px-8 md:py-4">
-                        <span className="group-hover:text-gradient text-base transition-all duration-300 ease-linear">
-                          Learn More
-                        </span>
-                        <svg
-                          stroke="currentColor"
-                          fill="none"
-                          strokeWidth={2}
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                          className="group-hover:text-luminr-orange text-xl transition duration-200 group-hover:translate-x-2"
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                          />
-                        </svg>
-                      </div>
-                      <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-[rgb(219,99,50)] to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
-                    </button>
                   </div>
-                  <div
-                    className="relative md:col-span-2"
-                    style={{ opacity: 1, transform: 'none' }}
-                  >
+                  <div className="relative transform-none opacity-100 md:col-span-2">
                     <img
                       alt="Web Design and Development"
                       draggable="false"
@@ -120,10 +89,7 @@ const Contact: React.FC = () => {
                   Web Design & Development
                 </h2>
                 <div className="relative grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-20">
-                  <div
-                    className="relative md:col-span-2"
-                    style={{ opacity: 1, transform: 'none' }}
-                  >
+                  <div className="relative transform-none opacity-100 md:col-span-2">
                     <img
                       alt="SEO"
                       draggable="false"
@@ -134,39 +100,11 @@ const Contact: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <p className="text-pretty text-lg">
+                    <p className="text-pretty text-base opacity-80">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Nulla, aut rem dolor ex neque fuga perspiciatis quia
                       voluptates.
                     </p>
-                    <button className="shadow-luminr-white/5 text-luminr-white group relative mt-5 rounded-xl p-px text-base leading-6 shadow-lg md:mt-10">
-                      <span className="absolute inset-0 overflow-hidden">
-                        <span className="absolute inset-0 rounded-xl bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(219,99,50,1)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                      </span>
-                      <div className="from-luminr-blue/20 to-luminr-orange/5 ring-luminr-white/20 hover:bg-luminr-blue relative z-10 flex items-center space-x-2 rounded-xl bg-gradient-to-b px-5 py-3 ring-1 backdrop-blur-md transition-all duration-500 md:px-8 md:py-4">
-                        <span className="group-hover:text-gradient text-base transition-all duration-300 ease-linear">
-                          Learn More
-                        </span>
-                        <svg
-                          stroke="currentColor"
-                          fill="none"
-                          strokeWidth={2}
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                          className="group-hover:text-luminr-orange text-xl transition duration-200 group-hover:translate-x-2"
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                          />
-                        </svg>
-                      </div>
-                      <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-[rgb(219,99,50)] to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
-                    </button>
                   </div>
                 </div>
               </div>
@@ -174,19 +112,19 @@ const Contact: React.FC = () => {
           </div>
         </section>
 
-        <div className="flex items-end gap-6">
+        <div className=" items-end gap-6 hidden">
           {/* <span>Contact</span> */}
-          <h3 className="flex items-center gap-1 text-pretty text-xl leading-relaxed drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-4xl md:leading-snug">
-            Interested in working together? <br />
-            {/* We should queue up a time to
-            chat. I'll buy the coffee. */}
-            Let's pencil in a time for a chat. I'll buy the coffee.
-            <img
-              src="https://ugokawaii.com/wp-content/uploads/2022/10/hot-coffee.gif"
-              alt="Coffee"
-              className="size-12 translate-y-3 object-contain md:size-16"
-            />
+          <h3 className="flex flex-col gap-1 text-pretty font-inria-sans text-xl font-bold leading-relaxed drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-3xl md:leading-snug uppercase">
+            Interested in collaborating? <br />
+            <span className="font-bold text-inherit opacity-60 text-lg md:text-2xl">
+              Let's schedule a chat—coffee's on me.
+            </span>
           </h3>
+          <img
+            src="https://ugokawaii.com/wp-content/uploads/2022/10/hot-coffee.gif"
+            alt="Coffee"
+            className="size-12 translate-y-3 object-contain md:size-16"
+          />
           {/* <img
             src={purna}
             alt="Purna"

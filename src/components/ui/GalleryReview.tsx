@@ -35,8 +35,8 @@ const GalleryReview: React.FC<GalleryReviewProps> = ({ portfolioItem }) => {
         <div className="px-0 xl:container xl:px-4">
           <div className="grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-8">
             <div className="col-span-2">
-              <div className="space-y-4">
-                <h5 className="font-luxury text-4xl font-extralight">
+              <div className="space-y-2 md:space-y-4">
+                <h5 className="font-luxury text-2xl font-extralight md:text-4xl">
                   Gallery
                 </h5>
                 <p className="max-w-lg text-xs md:text-sm">
@@ -52,7 +52,7 @@ const GalleryReview: React.FC<GalleryReviewProps> = ({ portfolioItem }) => {
                 mode="lg-fade"
                 thumbnail={true}
                 autoplay={true}
-                elementClassNames="ul mt-12 w-full grid grid-cols-1 md:grid-cols-2 gap-4 transition-linear"
+                elementClassNames="ul mt-6 md:mt-12 w-full grid grid-cols-1 md:grid-cols-2 gap-4 transition-linear"
               >
                 {portfolioItem.caseStudy?.galleryImages?.map((image, index) => (
                   <div
@@ -63,7 +63,7 @@ const GalleryReview: React.FC<GalleryReviewProps> = ({ portfolioItem }) => {
                     <img
                       src={image.src}
                       alt={image.alt}
-                      className="size-full h-72 cursor-pointer object-cover contrast-100 transition-all duration-300 ease-linear group-hover:scale-110 group-hover:contrast-125 md:h-52 xl:h-72"
+                      className="size-full h-56 cursor-pointer object-cover contrast-100 transition-all duration-300 ease-linear group-hover:scale-110 group-hover:contrast-125 md:h-52 xl:h-72"
                       loading="lazy"
                       draggable="false"
                     />
@@ -77,8 +77,8 @@ const GalleryReview: React.FC<GalleryReviewProps> = ({ portfolioItem }) => {
             </div>
 
             <div className="col-span-1">
-              <div className="space-y-4">
-                <h5 className="font-luxury text-4xl font-extralight">
+              <div className="space-y-2 md:space-y-4">
+                <h5 className="font-luxury text-2xl font-extralight md:text-4xl">
                   Feedback
                 </h5>
                 <p className="max-w-xs text-xs md:text-sm">
@@ -91,7 +91,7 @@ const GalleryReview: React.FC<GalleryReviewProps> = ({ portfolioItem }) => {
                 </p>
               </div>
 
-              <div className="mt-12 border border-dark/10 p-4 shadow-lg">
+              <div className="mt-6 md:mt-12 border border-dark/10 p-4 shadow-lg">
                 <div className="testimonials">
                   <div className="relative flex max-h-64 flex-col gap-4 overflow-y-auto transition-all duration-150 ease-linear">
                     <p className="review mr-3 text-pretty text-justify text-sm text-dark md:text-base">

@@ -24,7 +24,7 @@ const Portfolio: React.FC = () => {
 
       {/* <ProjectsUI_OG /> */}
 
-      <div className="static left-12 top-10 mx-auto mt-12 flex w-auto md:fixed md:mt-0">
+      <div className="static left-12 top-10 mx-auto mt-10 flex w-auto md:fixed md:mt-0">
         <p className="bg-light/10 text-light outline-light/60 translate-y-0 rounded-xl px-4 py-1 text-base outline outline-1 backdrop-blur-lg transition-all duration-[1s] md:rounded-full md:text-xs">
           <strong className="font-extrabold text-inherit">Note:</strong> Some
           projects have been completed under{' '}

@@ -33,17 +33,17 @@ const PortfolioPresentation: React.FC = () => {
       <main className="bg-white md:px-4 xl:px-0">
         <div className="md:container">
           <h1 className="text-4xl md:text-8xl">{portfolioItem.title}</h1>
-          <p className="max-w-lg text-pretty text-sm md:text-base">
+          <p className="mt-2 max-w-lg text-pretty text-sm md:text-base">
             {portfolioItem.description}
           </p>
           <ul className="mt-6 md:mt-8">
-            <li className="font-medium">
-              <span className="mr-1 text-gray-600">Role & Year :</span>
+            <li className="text-sm font-medium md:text-base">
+              <span className="mr-1 text-gray-600">Role & Year:</span>
               {portfolioItem.portfolioWebsite?.role} (
               {portfolioItem.portfolioWebsite?.year})
             </li>
-            <li className="font-medium">
-              <span className="mr-1 text-gray-600">Credits :</span>
+            <li className="text-sm font-medium md:text-base">
+              <span className="mr-1 text-gray-600">Credits:</span>
               {portfolioItem.portfolioWebsite?.credits}
             </li>
           </ul>
@@ -108,11 +108,11 @@ const PortfolioPresentation: React.FC = () => {
           />
         )}
 
-        <section className="py-0">
+        <section className="py-10 md:py-0 overflow-hidden">
           <img
             src={portfolioItem.portfolioWebsite?.mockup}
             alt={`${portfolioItem.title} Mockup`}
-            className="size-full object-contain"
+            className="size-full scale-125 object-contain md:scale-100"
           />
         </section>
 
@@ -124,7 +124,7 @@ const PortfolioPresentation: React.FC = () => {
           />
         </section>
 
-        <section className="md:py-32">
+        <section className="py-4 md:py-32">
           <div className="hidden flex-col items-center justify-evenly gap-y-16 md:px-3 xl:flex xl:flex-row">
             {portfolioItem.portfolioWebsite?.iframePages.map(
               (iframe, index) => (
