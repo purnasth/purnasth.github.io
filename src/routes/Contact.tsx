@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
 
         <div className="my-10 h-px w-full bg-gradient-to-r from-[#989AA6]/[0.5] to-transparent md:my-16 md:h-[0.5px]" />
 
-        <section className="">
+        {/* <section className="">
           <h4 className="sticky top-7 z-10 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 text-xs font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur sm:text-sm md:top-8 md:text-base">
             <span className="size-2 rounded-full bg-green-500"></span>
             Services Process
@@ -110,10 +110,9 @@ const Contact: React.FC = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <div className=" items-end gap-6 hidden">
-          {/* <span>Contact</span> */}
+        {/* <div className=" items-end gap-6">
           <h3 className="flex flex-col gap-1 text-pretty font-inria-sans text-xl font-bold leading-relaxed drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-3xl md:leading-snug uppercase">
             Interested in collaborating? <br />
             <span className="font-bold text-inherit opacity-60 text-lg md:text-2xl">
@@ -125,12 +124,12 @@ const Contact: React.FC = () => {
             alt="Coffee"
             className="size-12 translate-y-3 object-contain md:size-16"
           />
-          {/* <img
+           <img
             src={purna}
             alt="Purna"
             className="size-16 rounded-full object-contain -translate-y-4 bg-white"
-          /> */}
-        </div>
+          /> 
+        </div> */}
       </div>
     </main>
   );

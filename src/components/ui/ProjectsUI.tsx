@@ -5,9 +5,12 @@ import { CgArrowLongRight } from 'react-icons/cg';
 
 const ProjectsUI: React.FC = () => {
   const { portfolioDetails } = portfolioData[0];
+
+  console.log(portfolioDetails);
+
   return (
     <>
-      <section className="mt-10 md:mt-24">
+      <section className="pt-12 mt-10 md:mt-24">
         <div className="border-light/10 overflow-hidden rounded-3xl border-[1px]">
           {portfolioDetails.map((project) => (
             <Link
@@ -15,7 +18,7 @@ const ProjectsUI: React.FC = () => {
               className="transition-300 border-light/20 text-light hover:bg-light group grid grid-cols-1 gap-0 border-b-[1px] hover:text-dark md:grid-cols-3 md:flex-row"
               to={`/portfolio/${project.portfolioUrl}`}
             >
-              <div className="col-span-1 p-4 md:p-0">
+              <div className="col-span-1 p-4 md:p-0 overflow-hidden">
                 <img
                   src={project.portfolioWebsite.mockup}
                   alt={project.title}
@@ -27,7 +30,7 @@ const ProjectsUI: React.FC = () => {
                   <h4 className="font-luxury text-xl font-extralight md:text-6xl">
                     {project.title}
                   </h4>
-                  <p className="line-clamp-2 hidden max-w-sm text-sm opacity-80 md:inline-block">
+                  <p className="hidden max-w-sm text-sm opacity-80 md:line-clamp-2">
                     {project.description}
                   </p>
                 </div>
@@ -44,6 +47,17 @@ const ProjectsUI: React.FC = () => {
               </div>
             </Link>
           ))}
+        </div>
+        <div className="mt-24 flex items-center justify-center">
+          <Link
+            to="/portfolio"
+            className="transition-300 text-light inline-flex scale-90 items-center justify-center gap-2 rounded-full bg-dark px-4 py-3 text-center text-xs font-medium uppercase shadow outline outline-1 outline-light/20 hover:bg-dark/90 hover:tracking-wide hover:shadow-2xl sm:text-sm md:scale-100 md:px-8 md:py-4 md:text-base md:hover:tracking-widest"
+          >
+            All Projects
+            <sup className="green-gradient text-xs font-bold group-hover:text-dark sm:text-sm md:text-base">
+              ({portfolioDetails.length})
+            </sup>
+          </Link>
         </div>
       </section>
     </>

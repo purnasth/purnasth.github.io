@@ -29,7 +29,7 @@ const ExploreProjects: React.FC<ExploreProjectsProps> = ({
     portfolioDetails.length;
 
   return (
-    <main className="bg-gray-100 pb-8 md:pb-16">
+    <main className="bg-gray-100 px-0 md:px-4 xl:px-8 pb-8 md:pb-16">
       <div className="text-center">
         <span className="text-xs uppercase tracking-wider md:text-base">
           Next Project
@@ -52,7 +52,7 @@ const ExploreProjects: React.FC<ExploreProjectsProps> = ({
         </Link>
       </div>
       <hr className="mx-auto max-w-4xl" />
-      <ul className="mt-8 flex flex-row items-center justify-between gap-2 md:gap-4 md:mt-12 md:flex-row">
+      <ul className="px-2 md:px-0 mt-8 flex flex-row items-center justify-between gap-2 md:gap-4 md:mt-12 md:flex-row">
         <li className="flex-1">
           <Link
             to={`/portfolio/${portfolioDetails[prevProjectIndex].portfolioUrl}`}

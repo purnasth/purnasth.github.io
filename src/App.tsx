@@ -5,7 +5,8 @@ import About from './routes/About';
 import Portfolio from './routes/Portfolio';
 import PortfolioPresentation from './routes/PortfolioPresentation';
 import Contact from './routes/Contact';
-import withFramerTransition from './hoc/withFramerTransition'; // PascalCase component
+import Services from './routes/Services';
+import withFramerTransition from './hoc/withFramerTransition'; 
 import RouterToTop from './utils/RouterToTop';
 import useLenisScroll from './hooks/useLenisScroll';
 
@@ -16,6 +17,7 @@ const PortfolioPresentationWithTransition = withFramerTransition(
   PortfolioPresentation,
 );
 const ContactWithTransition = withFramerTransition(Contact);
+const ServicesWithTransition = withFramerTransition(Services);
 
 const App = () => {
   useLenisScroll();
@@ -34,6 +36,7 @@ const App = () => {
             element={<PortfolioPresentationWithTransition />}
           />
           <Route path="/contact" element={<ContactWithTransition />} />
+          <Route path="/services" element={<ServicesWithTransition />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </AnimatePresence>

@@ -41,7 +41,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
 
           <div className="grid h-full grid-cols-1 px-4 md:grid-cols-4 md:px-16">
             <ul className="links col-span-1 flex flex-col items-center justify-center gap-8 md:gap-20">
-              <li className="w-full">
+              {/* <li className="w-full">
                 <Link
                   to="/"
                   className="navlink transition-300 inline-block w-full pb-2 text-3xl font-extralight tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)] md:text-5xl"
@@ -49,7 +49,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
                 >
                   Home
                 </Link>
-              </li>
+              </li> */}
               <li className="w-full">
                 <Link
                   to="/about"
@@ -66,6 +66,15 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
                   aria-label="Portfolio"
                 >
                   Portfolio
+                </Link>
+              </li>
+              <li className="w-full">
+                <Link
+                  to="/services"
+                  className="navlink transition-300 inline-block w-full pb-2 text-3xl font-extralight tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)] md:text-5xl"
+                  aria-label="Services"
+                >
+                  Services
                 </Link>
               </li>
               <li className="w-full">
