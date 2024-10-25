@@ -81,6 +81,10 @@
     @apply font-pt-sans;
   } */
 
+  .nav-link {
+    @apply transition-300 inline-block w-full pb-2 font-luxury text-3xl font-extralight uppercase tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)] md:text-5xl;
+  }
+
   .filter-dark {
     filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%)
       hue-rotate(21deg) brightness(97%) contrast(103%);
@@ -159,6 +163,10 @@
 
   .transition-700 {
     @apply transition-all duration-700 ease-linear;
+  }
+
+  .transition-1000 {
+    @apply transition-all duration-1000 ease-in-out;
   }
 
   .slide-in {
