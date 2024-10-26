@@ -58,6 +58,10 @@
     @apply font-inria-sans font-light;
   }
 
+  strong {
+    @apply font-inria-sans font-medium text-light;
+  }
+
   ul:hover li {
     @apply opacity-50 transition-all duration-300 ease-in-out;
   }

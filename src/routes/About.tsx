@@ -51,11 +51,14 @@ const About: React.FC = () => {
               </strong>
               .
             </h2>
-            <p className="my-5 ml-8 text-sm md:my-12 md:ml-32 md:text-base">
-              <CreativeGap color="white" /> a software engineer based in
-              Kathmandu, Nepal. Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Ducimus nam eligendi amet quam eos totam,
-              blanditiis dolores commodi hic quo?
+            <p className="my-5 ml-8 text-sm text-light/70 md:my-12 md:ml-32 md:text-base">
+              <CreativeGap color="white" /> a <strong>UI/UX Designer</strong> &{' '}
+              <strong>Web Developer</strong> helping brands{' '}
+              <strong>build globally</strong> through design and code. I bring{' '}
+              <strong>ideas to life</strong> by crafting{' '}
+              <strong>seamless digital experiences</strong> that are both
+              beautiful and functional.{' '}
+              <strong>Let's create something unforgettable together!</strong>
             </p>
 
             <img
@@ -71,11 +74,15 @@ const About: React.FC = () => {
               Available for work
             </h4>
 
-            <p className="my-5 ml-8 text-sm md:my-12 md:ml-32 md:text-base">
-              <CreativeGap color="white" /> a software engineer based in
-              Kathmandu, Nepal. Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Ducimus nam eligendi amet quam eos totam,
-              blanditiis dolores commodi hic quo?
+            <p className="my-5 ml-8 text-sm text-light/70 md:my-12 md:ml-32 md:text-base">
+              <CreativeGap color="white" /> I turn{' '}
+              <strong>caffeine into code</strong> and{' '}
+              <strong>ideas into design</strong>. With my{' '}
+              <strong>skills</strong> and <strong>creativity</strong>, I'll make
+              your website look so good, you might want to{' '}
+              <strong>marry it</strong> (no judgments here!). By working with
+              me, you'll benefit from <strong>professional services</strong>{' '}
+              tailored to bring your <strong>vision to life</strong>.
             </p>
 
             <SkillsCategory />
@@ -87,10 +94,15 @@ const About: React.FC = () => {
               Trusted by
             </h4>
 
-            <p className="my-5 ml-8 text-sm md:my-12 md:ml-32 md:text-base">
-              <CreativeGap color="white" /> From early stage startups to
-              renowned brands, we have plenty of stories to share. Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Eaque, rerum.
+            <p className="my-5 ml-8 text-sm text-light/70 md:my-12 md:ml-32 md:text-base">
+              <CreativeGap color="white" /> From{' '}
+              <strong>ambitious startups</strong> to{' '}
+              <strong>renowned brands</strong>, I have a <strong>wealth</strong>{' '}
+              of stories to share.
+              <strong>Trusted</strong> by clients across the{' '}
+              <strong>globe</strong>, I'm here to build{' '}
+              <strong>digital experiences</strong> that make an{' '}
+              <strong>impact</strong>.
             </p>
 
             <ul className="relative my-6 mt-12 grid grid-cols-3 md:grid-cols-6">
@@ -174,7 +186,7 @@ const About: React.FC = () => {
                   className="filter-white transition-300 aspect-square size-32 w-full border border-dotted border-white/10 object-contain p-7 opacity-50 hover:border-white/50 hover:p-5 hover:opacity-100 hover:filter-none md:size-40 md:w-full"
                   title="Hotel Manang"
                 />
-              </li>
+            </li>
             </ul>
           </div>
         </section>
