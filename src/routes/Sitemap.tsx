@@ -56,13 +56,14 @@ const Sitemap: React.FC = () => {
           {urls.map((url, index) => (
             <tr
               key={index}
-              className="border-b border-light/20 text-light/80 hover:bg-light/20 transition-300"
+              className="transition-300 border-b border-light/20 text-light/80 hover:bg-light/20"
             >
               <td className="px-4 py-2">{url.loc.split('/').pop()}</td>
               <td className="px-4 py-2">
                 <Link
                   to={url.loc}
                   className="transition-300 font-medium hover:text-light hover:underline"
+                  aria-label={url.loc}
                 >
                   {url.loc}
                 </Link>

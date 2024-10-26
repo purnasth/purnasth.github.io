@@ -72,6 +72,7 @@ const PortfolioPresentation: React.FC = () => {
               target="_blank"
               rel="noreferrer"
               className="bg-hotel-himalaya flex size-24 items-center justify-center rounded-full text-xs shadow outline outline-1 -outline-offset-[8px] outline-white/50 hover:animate-bounce md:size-32 md:text-base"
+              aria-label="View Project"
             >
               <h5>View Project</h5>
             </Link>
@@ -108,7 +109,7 @@ const PortfolioPresentation: React.FC = () => {
           />
         )}
 
-        <section className="py-10 md:py-0 overflow-hidden">
+        <section className="overflow-hidden py-10 md:py-0">
           <img
             src={portfolioItem.portfolioWebsite?.mockup}
             alt={`${portfolioItem.title} Mockup`}

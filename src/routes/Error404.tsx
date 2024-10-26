@@ -21,8 +21,11 @@ const Error404: React.FC = () => {
         Oops! The page you're looking for doesn't exist.
       </p> */}
       <button
+        type="button"
         onClick={() => navigate(-1)}
         className="transition-300 group mt-12 flex translate-y-0 items-center justify-center gap-2 rounded-full bg-light/10 px-8 py-4 text-xs text-light opacity-100 outline outline-1 outline-light/60 backdrop-blur-lg hover:bg-light hover:text-dark md:text-base"
+        aria-label="Go Back"
+        title="Go Back"
       >
         <CgArrowLongLeft className="transition-300 text-2xl group-hover:-translate-x-2" />
         Go Back

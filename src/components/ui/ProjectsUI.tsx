@@ -6,19 +6,18 @@ import { CgArrowLongRight } from 'react-icons/cg';
 const ProjectsUI: React.FC = () => {
   const { portfolioDetails } = portfolioData[0];
 
-  console.log(portfolioDetails);
-
   return (
     <>
-      <section className="pt-12 mt-10 md:mt-24">
-        <div className="border-light/10 overflow-hidden rounded-3xl border-[1px]">
+      <section className="mt-10 pt-12 md:mt-24">
+        <div className="overflow-hidden rounded-3xl border-[1px] border-light/10">
           {portfolioDetails.map((project) => (
             <Link
               key={project.id}
-              className="transition-300 border-light/20 text-light hover:bg-light group grid grid-cols-1 gap-0 border-b-[1px] hover:text-dark md:grid-cols-3 md:flex-row"
+              className="transition-300 group grid grid-cols-1 gap-0 border-b-[1px] border-light/20 text-light hover:bg-light hover:text-dark md:grid-cols-3 md:flex-row"
               to={`/portfolio/${project.portfolioUrl}`}
+              aria-label={project.title}
             >
-              <div className="col-span-1 p-4 md:p-0 overflow-hidden">
+              <div className="col-span-1 overflow-hidden p-4 xl:p-0 2xl:p-8">
                 <img
                   src={project.portfolioWebsite.mockup}
                   alt={project.title}
@@ -37,7 +36,7 @@ const ProjectsUI: React.FC = () => {
                 <div className="transition-300 flex md:group-hover:translate-x-4">
                   <button
                     type="button"
-                    className="transition-300 bg-light group-hover:text-light rounded-full px-4 py-1 text-base text-dark ease-linear group-hover:bg-dark md:text-2xl"
+                    className="transition-300 rounded-full bg-light px-4 py-1 text-base text-dark ease-linear group-hover:bg-dark group-hover:text-light md:text-2xl"
                     title="Explore More"
                     aria-label="Explore More"
                   >
@@ -51,7 +50,8 @@ const ProjectsUI: React.FC = () => {
         <div className="mt-24 flex items-center justify-center">
           <Link
             to="/portfolio"
-            className="transition-300 text-light inline-flex scale-90 items-center justify-center gap-2 rounded-full bg-dark px-4 py-3 text-center text-xs font-medium uppercase shadow outline outline-1 outline-light/20 hover:bg-dark/90 hover:tracking-wide hover:shadow-2xl sm:text-sm md:scale-100 md:px-8 md:py-4 md:text-base md:hover:tracking-widest"
+            className="transition-300 inline-flex scale-90 items-center justify-center gap-2 rounded-full bg-dark px-4 py-3 text-center text-xs font-medium uppercase text-light shadow outline outline-1 outline-light/20 hover:bg-dark/90 hover:tracking-wide hover:shadow-2xl sm:text-sm md:scale-100 md:px-8 md:py-4 md:text-base md:hover:tracking-widest"
+            aria-label="All Projects"
           >
             All Projects
             <sup className="green-gradient text-xs font-bold group-hover:text-dark sm:text-sm md:text-base">

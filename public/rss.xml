@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Purna Shrestha - Designer & Developer</title>
+    <link>https://www.purnashrestha.com.np</link>
+    <description>Latest updates and projects from Purna Shrestha, a software engineer specializing in UI/UX design and web development.</description>
+    <language>en-us</language>
+
+    <item>
+      <title>Home</title>
+      <link>https://www.purnashrestha.com.np/</link>
+      <description>Welcome to my personal website, showcasing my work as a designer and developer.</description>
+      <pubDate>Fri, 26 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>https://www.purnashrestha.com.np/</guid>
+    </item>
+
+    <item>
+      <title>About Me</title>
+      <link>https://www.purnashrestha.com.np/about</link>
+      <description>Learn more about my journey, skills, and experiences in the field of web development and design.</description>
+      <pubDate>Fri, 26 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>https://www.purnashrestha.com.np/about</guid>
+    </item>
+
+    <item>
+      <title>Contact</title>
+      <link>https://www.purnashrestha.com.np/contact</link>
+      <description>Get in touch with me for collaborations, inquiries, or just to say hi!</description>
+      <pubDate>Fri, 26 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>https://www.purnashrestha.com.np/contact</guid>
+    </item>
+
+    <item>
+      <title>Services</title>
+      <link>https://www.purnashrestha.com.np/services</link>
+      <description>Explore the services I offer, including UI/UX design and web development.</description>
+      <pubDate>Fri, 26 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>https://www.purnashrestha.com.np/services</guid>
+    </item>
+
+    <item>
+      <title>Portfolio</title>
+      <link>https://www.purnashrestha.com.np/portfolio</link>
+      <description>Check out my portfolio showcasing various projects and case studies.</description>
+      <pubDate>Fri, 26 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>https://www.purnashrestha.com.np/portfolio</guid>
+    </item>
+
+    <item>
+      <title>Hotel Himalaya Project</title>
+      <link>https://www.purnashrestha.com.np/portfolio/hotel-himalaya</link>
+      <description>A detailed case study of my work with Hotel Himalaya.</description>
+      <pubDate>Fri, 26 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>https://www.purnashrestha.com.np/portfolio/hotel-himalaya</guid>
+    </item>
+
+    <item>
+      <title>Hotel Da Yatra Project</title>
+      <link>https://www.purnashrestha.com.np/portfolio/hotel-dayatra</link>
+      <description>Discover the design process and results from my project with Hotel Da Yatra.</description>
+      <pubDate>Fri, 26 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>https://www.purnashrestha.com.np/portfolio/hotel-dayatra</guid>
+    </item>
+
+    <item>
+      <title>Mithila Yatri Niwas Project</title>
+      <link>https://www.purnashrestha.com.np/portfolio/mithila-yatri-niwas</link>
+      <description>Explore my collaboration with Mithila Yatri Niwas and the outcomes achieved.</description>
+      <pubDate>Fri, 26 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>https://www.purnashrestha.com.np/portfolio/mithila-yatri-niwas</guid>
+    </item>
+
+    <item>
+      <title>Hotel Ichchha Project</title>
+      <link>https://www.purnashrestha.com.np/portfolio/hotel-ichchha</link>
+      <description>A showcase of my work with Hotel Ichchha, highlighting the design and development process.</description>
+      <pubDate>Fri, 26 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>https://www.purnashrestha.com.np/portfolio/hotel-ichchha</guid>
+    </item>
+
+    <item>
+      <title>Baber Mahal Vilas Project</title>
+      <link>https://babermahalvilas.purnashrestha.com.np/</link>
+      <description>Explore the design and development journey of Baber Mahal Vilas.</description>
+      <pubDate>Fri, 26 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>https://babermahalvilas.purnashrestha.com.np/</guid>
+    </item>
+
+    <item>
+      <title>Himalayan Flavours Project</title>
+      <link>https://himalayanflavours.purnashrestha.com.np/</link>
+      <description>Discover my work with Himalayan Flavours, showcasing their unique culinary offerings.</description>
+      <pubDate>Fri, 26 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>https://himalayanflavours.purnashrestha.com.np/</guid>
+    </item>
+
+    <item>
+      <title>TV Project</title>
+      <link>https://tv.purnashrestha.com.np/</link>
+      <description>Learn more about my TV project, showcasing innovative designs and functionality.</description>
+      <pubDate>Fri, 26 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>https://tv.purnashrestha.com.np/</guid>
+    </item>
+
+    <item>
+      <title>Blogs</title>
+      <link>https://blogs.purnashrestha.com.np/</link>
+      <description>Check out my blog for insights, tutorials, and updates on my projects.</description>
+      <pubDate>Fri, 26 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>https://blogs.purnashrestha.com.np/</guid>
+    </item>
+
+  </channel>
+</rss>

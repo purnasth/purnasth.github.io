@@ -26,7 +26,7 @@ const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
       } ${visible ? '' : '-translate-y-full'}`}
     >
       <h3
-        className={`text-xs md:text-base flex items-center justify-center gap-2 md:gap-3 rounded-full px-4 py-1 transition-all duration-[1s] ${
+        className={`flex items-center justify-center gap-2 rounded-full px-4 py-1 text-xs transition-all duration-[1s] md:gap-3 md:text-base ${
           visible ? 'translate-y-0 opacity-100' : '-translate-y-12 opacity-0'
         } ${
           window.scrollY > 0
@@ -41,6 +41,7 @@ const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
         <Link
           to="/"
           className="flex items-center justify-center gap-1 capitalize"
+          aria-label="Home"
         >
           Home
         </Link>
@@ -50,6 +51,7 @@ const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
             <Link
               to={`/${page}`}
               className="flex items-center justify-center gap-1 capitalize"
+              aria-label={page}
             >
               {page}
             </Link>

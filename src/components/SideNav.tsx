@@ -13,15 +13,6 @@ const SideNav: React.FC = () => {
             </span>
           </div>
           <ul className="links mt-8 flex flex-col items-start justify-start gap-2 md:gap-4">
-            {/* <li className="w-full">
-            <a
-              href="#"
-              className="navlink w-full pb-2 inline-block text-4xl text-white/80 hover:text-white transition-300 font-medium"
-              aria-label="Home"
-            >
-              Home
-            </a>
-          </li> */}
             <li className="w-full">
               <Link
                 to="/about"
@@ -90,22 +81,24 @@ const SideNav: React.FC = () => {
         </div>
         <hr className="my-8 opacity-30" />
         <div>
-          <a
+          <Link
             rel="noopener noreferrer"
             className="hover-outline pointer-events-auto mb-6 flex w-full max-w-52 items-center justify-center gap-2 rounded-full bg-white/10 px-5 py-2 text-center text-white outline outline-2 outline-white backdrop-blur-md md:max-w-full"
-            href="#"
+            to="#"
             target="_blank"
+            aria-label="Let's Talk"
           >
             Let's Talk
-          </a>
+          </Link>
           <p className="mt-5 text-xs text-white/80">
             Or directly mail at
-            <a
-              href="mailto:purnashrestha0310@gmail.com"
+            <Link
+              to="mailto:purnashrestha0310@gmail.com"
               className="transition-300 mx-1 text-white underline underline-offset-4 hover:underline-offset-2"
+              aria-label="Email"
             >
               purnashrestha0310@gmail.com
-            </a>
+            </Link>
           </p>
         </div>
       </header>

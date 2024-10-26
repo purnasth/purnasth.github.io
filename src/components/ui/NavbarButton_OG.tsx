@@ -14,12 +14,15 @@ const NavbarButton_OG: React.FC<PageProp> = ({ whiteBg }) => {
   return (
     <>
       <button
+        type="button"
         onClick={toggleNav}
         className={`group z-50 m-2 rounded-full border p-2 backdrop-blur-lg transition-all duration-300 ease-linear hover:scale-125 md:m-4 ${
           isOpen
             ? 'rotate-[315deg] scale-[1.35] animate-pulse border-white bg-white/20'
             : ''
         } ${whiteBg ? 'black-mode' : 'white-mode'}`}
+        aria-label="Navigation"
+        title="Navigation"
       >
         <TbPlus className="text-base transition-all duration-300 ease-linear group-hover:rotate-[315deg] group-hover:scale-110 group-hover:animate-pulse" />
       </button>
@@ -51,11 +54,7 @@ const NavbarButton_OG: React.FC<PageProp> = ({ whiteBg }) => {
                 </Link>
               </li> */}
               <li className="w-full">
-                <Link
-                  to="/about"
-                  className="nav-link"
-                  aria-label="About"
-                >
+                <Link to="/about" className="nav-link" aria-label="About">
                   About
                 </Link>
               </li>
@@ -69,20 +68,12 @@ const NavbarButton_OG: React.FC<PageProp> = ({ whiteBg }) => {
                 </Link>
               </li>
               <li className="w-full">
-                <Link
-                  to="/services"
-                  className="nav-link"
-                  aria-label="Services"
-                >
+                <Link to="/services" className="nav-link" aria-label="Services">
                   Services
                 </Link>
               </li>
               <li className="w-full">
-                <a
-                  href="/contact"
-                  className="nav-link"
-                  aria-label="Contact"
-                >
+                <a href="/contact" className="nav-link" aria-label="Contact">
                   Contact
                 </a>
               </li>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { TbMessageChatbot } from 'react-icons/tb';
+import { Link } from 'react-router-dom';
 
 import LightGallery from 'lightgallery/react';
 import lgZoom from 'lightgallery/plugins/zoom';
@@ -107,19 +108,20 @@ const GalleryReview: React.FC<GalleryReviewProps> = ({ portfolioItem }) => {
               </div>
 
               <div className="mt-5">
-                <a
-                  href="https://wa.me/+9779808021753"
+                <Link
+                  to="https://wa.me/+9779808021753"
                   rel="noopener noreferrer"
                   className="transition-300 group mt-4 inline-flex items-center justify-center gap-2 border border-dark/20 bg-dark/10 px-6 py-2 text-dark shadow-md hover:animate-bounce hover:bg-dark/30 hover:shadow-xl"
                   target="_blank"
+                  aria-label="Schedule a meeting"
                 >
                   Schedule a meeting
                   <TbMessageChatbot className="transition-300 text-xl group-hover:translate-x-2 group-hover:animate-ping" />
-                </a>
+                </Link>
                 <p className="mt-2">
                   or directly Mail me at
-                  <a
-                    href="mailto:purnashrestha0310@gmail.com"
+                  <Link
+                    to="mailto:purnashrestha0310@gmail.com"
                     className="group relative mx-1 text-base font-semibold"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -127,7 +129,7 @@ const GalleryReview: React.FC<GalleryReviewProps> = ({ portfolioItem }) => {
                   >
                     <span className="absolute -bottom-1 -right-0 h-[2px] w-full origin-left bg-dark transition-all duration-300 ease-linear group-hover:scale-x-0"></span>
                     purnashrestha0310@gmail.com
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>

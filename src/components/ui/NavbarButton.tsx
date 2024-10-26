@@ -57,12 +57,15 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
   return (
     <>
       <button
+        type="button"
         onClick={toggleNav}
         className={`group z-50 m-2 rounded-full border p-2 backdrop-blur-lg transition-all duration-300 ease-linear hover:scale-125 md:m-4 ${
           isOpen
             ? 'rotate-[315deg] scale-[1.35] animate-pulse border-white bg-white/20'
             : ''
         } ${whiteBg ? 'black-mode' : 'white-mode'}`}
+        aria-label="Navigation"
+        title="Navigation"
       >
         <TbPlus className="text-base transition-all duration-300 ease-linear group-hover:rotate-[315deg] group-hover:scale-110 group-hover:animate-pulse" />
       </button>
@@ -78,13 +81,15 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
           <Link
             to="/"
             className={`group z-50 inline-block scale-125 animate-pulse rounded-full border border-white/50 bg-white/20 p-2 text-white transition-all duration-300 ease-linear hover:border-white hover:bg-white/20`}
+            aria-label="Mail"
+            title="Mail"
           >
             <TbMail className="text-base transition-all duration-300 ease-linear group-hover:scale-110" />
           </Link>
 
           <div className="flex h-full items-start px-4 md:items-center md:justify-center md:px-16">
             <div className="overlay bg-dark/20 md:bg-dark/50" />
-            <ul className="mt-12 md:mt-0 links z-30 flex flex-wrap items-center justify-center gap-y-6 gap-12 md:flex-nowrap md:items-end md:gap-24 text-center">
+            <ul className="links z-30 mt-12 flex flex-wrap items-center justify-center gap-12 gap-y-6 text-center md:mt-0 md:flex-nowrap md:items-end md:gap-24">
               {navLinks.map((link) => (
                 <li
                   key={link.id}

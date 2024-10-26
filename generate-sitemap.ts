@@ -35,6 +35,26 @@ const links = [
     changefreq: 'weekly',
     priority: 0.9,
   },
+  {
+    url: 'https://babermahalvilas.purnashrestha.com.np/',
+    changefreq: 'weekly',
+    priority: 0.9,
+  },
+  {
+    url: 'https://himalayanflavours.purnashrestha.com.np/',
+    changefreq: 'weekly',
+    priority: 0.9,
+  },
+  {
+    url: 'https://tv.purnashrestha.com.np/',
+    changefreq: 'weekly',
+    priority: 0.8,
+  },
+  {
+    url: 'https://blogs.purnashrestha.com.np/',
+    changefreq: 'weekly',
+    priority: 0.8,
+  },
 ];
 
 const hostname = 'https://www.purnashrestha.com.np';
