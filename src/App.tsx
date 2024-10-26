@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Home from './routes/Home';
 import About from './routes/About';
@@ -6,9 +6,11 @@ import Portfolio from './routes/Portfolio';
 import PortfolioPresentation from './routes/PortfolioPresentation';
 import Contact from './routes/Contact';
 import Services from './routes/Services';
-import withFramerTransition from './hoc/withFramerTransition'; 
+import withFramerTransition from './hoc/withFramerTransition';
 import RouterToTop from './utils/RouterToTop';
 import useLenisScroll from './hooks/useLenisScroll';
+import NotFoundPage from './routes/NotFoundPage';
+import Error404 from './routes/Error404';
 
 const HomeWithTransition = withFramerTransition(Home);
 const AboutWithTransition = withFramerTransition(About);
@@ -37,7 +39,8 @@ const App = () => {
           />
           <Route path="/contact" element={<ContactWithTransition />} />
           <Route path="/services" element={<ServicesWithTransition />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          {/* <Route path="*" element={<NotFoundPage />} /> */}
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </AnimatePresence>
     </>

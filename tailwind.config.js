@@ -5,16 +5,15 @@ export default {
     extend: {
       fontFamily: {
         luxury: ['"Gold Badge"', 'Georgia', 'Cambria', 'serif'],
-        title: ['"Bourbon St"', 'Georgia', 'Cambria', 'serif'],
-        kalnia: [
-          '"Kalnia"',
-          'ui-serif',
-          'Georgia',
-          'Cambria',
-          'Times New Roman',
-          'Times',
-          'serif',
-        ],
+        // title: [
+        //   '"Kalnia"',
+        //   'ui-serif',
+        //   'Georgia',
+        //   'Cambria',
+        //   'Times New Roman',
+        //   'Times',
+        //   'serif',
+        // ],
         'inria-sans': [
           '"Inria Sans"',
           'ui-sans-serif',

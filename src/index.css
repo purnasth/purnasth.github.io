@@ -39,7 +39,7 @@
   h1,
   h2,
   h3,
-  .navlink {
+  .nav-link {
     @apply font-luxury font-extralight;
   }
 
@@ -82,7 +82,7 @@
   } */
 
   .nav-link {
-    @apply transition-300 inline-block w-full pb-2 font-luxury text-3xl font-extralight uppercase tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)] md:text-5xl;
+    @apply transition-300 inline-block w-full pb-2 font-luxury text-2xl uppercase tracking-wider text-white/80 hover:text-white hover:[text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)] md:text-5xl;
   }
 
   .filter-dark {

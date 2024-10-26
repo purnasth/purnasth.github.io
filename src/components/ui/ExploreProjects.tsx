@@ -40,7 +40,7 @@ const ExploreProjects: React.FC<ExploreProjectsProps> = ({
           to={`/portfolio/${portfolioDetails[nextProjectIndex].portfolioUrl}`}
         >
           <div className="text-center">
-            <h3 className="transition-500 font-luxury text-4xl font-extralight group-hover:translate-y-8 group-hover:scale-150 group-hover:opacity-60 md:text-7xl md:group-hover:translate-y-16">
+            <h3 className="transition-500 font-luxury text-4xl group-hover:translate-y-8 group-hover:scale-150 group-hover:opacity-60 md:text-7xl md:group-hover:translate-y-16">
               {portfolioDetails[nextProjectIndex].title}
             </h3>
             <img

@@ -1,7 +1,7 @@
 import React from 'react';
 import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
 import purna from '../assets/img/hero.avif';
-import design from '../assets/img/svg/design.svg';
+import design from '../assets/img/nav/services.svg';
 import develop from '../assets/img/svg/develop.svg';
 import app from '../assets/img/svg/app.svg';
 import earth from '../assets/img/svg/earth.gif';
@@ -83,7 +83,7 @@ const Services: React.FC = () => {
                       <h2 className="mb-4 text-2xl md:mb-8 md:text-4xl lg:text-6xl">
                         {service.title}
                       </h2>
-                      <div className="relative grid grid-cols-1 gap-0 md:grid-cols-3 md:gap-12">
+                      <div className="relative grid grid-cols-1 gap-0 gap-y-12 md:grid-cols-3 md:gap-12">
                         <div>
                           <p className="text-pretty text-sm opacity-80">
                             {service.description}
@@ -95,7 +95,7 @@ const Services: React.FC = () => {
                             draggable="false"
                             loading="lazy"
                             decoding="async"
-                            className="size-full -translate-y-24 select-none object-cover transition duration-500"
+                            className="size-full md:-translate-y-24 select-none object-cover transition duration-500"
                             src={service.image}
                           />
                         </div>
@@ -109,7 +109,7 @@ const Services: React.FC = () => {
                       <h2 className="text-2xl md:mb-8 md:text-4xl lg:text-6xl">
                         {service.title}
                       </h2>
-                      <div className="relative grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-20">
+                      <div className="mt-12 relative grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-20">
                         <div className="relative transform-none opacity-100 md:col-span-2">
                           <img
                             alt={service.title}

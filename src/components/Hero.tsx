@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
             /> */}
             <h4 className="blue-gradient">#development</h4>
           </div>
-          <h2 className="text-center text-4xl font-extralight capitalize drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-6xl md:leading-tight">
+          <h2 className="text-center text-4xl capitalize drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-6xl md:leading-tight">
             Your imagination, <br/> Mine creation
           </h2>
         </div>
