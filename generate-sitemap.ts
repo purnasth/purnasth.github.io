@@ -4,6 +4,8 @@ import { createWriteStream } from 'fs';
 const links = [
   { url: '/', changefreq: 'daily', priority: 1.0 },
   { url: '/about', changefreq: 'monthly', priority: 0.8 },
+  { url: '/contact', changefreq: 'monthly', priority: 0.7 },
+  { url: '/services', changefreq: 'monthly', priority: 0.7 },
   { url: '/portfolio', changefreq: 'weekly', priority: 0.9 },
   { url: '/portfolio/hotel-himalaya', changefreq: 'weekly', priority: 0.9 },
   { url: '/portfolio/hotel-dayatra', changefreq: 'weekly', priority: 0.9 },
@@ -13,7 +15,6 @@ const links = [
     priority: 0.9,
   },
   { url: '/portfolio/hotel-ichchha', changefreq: 'weekly', priority: 0.9 },
-  { url: '/contact', changefreq: 'monthly', priority: 0.6 },
   {
     url: 'https://hotelhimalaya.purnashrestha.com.np/',
     changefreq: 'weekly',

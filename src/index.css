@@ -48,13 +48,15 @@
   h6,
   a,
   button,
-  div {
+  div,
+  th {
     @apply font-inria-sans font-semibold;
   }
 
   p,
   span,
-  li {
+  li,
+  td {
     @apply font-inria-sans font-light;
   }
 

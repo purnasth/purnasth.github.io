@@ -9,7 +9,8 @@ import Services from './routes/Services';
 import withFramerTransition from './hoc/withFramerTransition';
 import RouterToTop from './utils/RouterToTop';
 import useLenisScroll from './hooks/useLenisScroll';
-import NotFoundPage from './routes/NotFoundPage';
+import Sitemap from './routes/Sitemap';
+// import NotFoundPage from './routes/NotFoundPage';
 import Error404 from './routes/Error404';
 
 const HomeWithTransition = withFramerTransition(Home);
@@ -39,6 +40,7 @@ const App = () => {
           />
           <Route path="/contact" element={<ContactWithTransition />} />
           <Route path="/services" element={<ServicesWithTransition />} />
+          <Route path="/sitemap" element={<Sitemap />} />
           {/* <Route path="*" element={<NotFoundPage />} /> */}
           <Route path="*" element={<Error404 />} />
         </Routes>
