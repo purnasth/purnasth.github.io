@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Home from './routes/Home';
@@ -22,9 +23,26 @@ const PortfolioPresentationWithTransition = withFramerTransition(
 const ContactWithTransition = withFramerTransition(Contact);
 const ServicesWithTransition = withFramerTransition(Services);
 
-const App = () => {
+const App: React.FC = () => {
   useLenisScroll();
   const location = useLocation();
+
+  useEffect(() => {
+    if (window.location.host === 'https://purna.pages.dev') {
+      window.location.replace(
+        'https://www.purnashrestha.com.np' + location.pathname,
+      );
+    }
+  }, [location]);
+
+  // useEffect(() => {
+  //   const host = window.location.host;
+  //   if (host === 'purna.pages.dev' || host === 'localhost:5173') {
+  //     window.location.replace(
+  //       'https://www.purnashrestha.com.np' + window.location.pathname,
+  //     );
+  //   }
+  // }, [location]);
 
   return (
     <>
