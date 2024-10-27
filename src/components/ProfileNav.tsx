@@ -94,7 +94,7 @@ const ProfileNav = () => {
         <hr className="opacity-10" />
 
         <div>
-          <h3>Companies worked with:</h3>
+          <h4>Companies worked with:</h4>
           <ul className="my-3 flex flex-wrap items-center gap-4">
             {aboutContents.companies.map((company) => (
               <li key={company.id}>
