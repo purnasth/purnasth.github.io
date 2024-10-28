@@ -3,7 +3,7 @@ import { MdCall, MdMail, MdOutlineArrowCircleRight } from 'react-icons/md';
 import { FaLinkedinIn } from 'react-icons/fa6';
 import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import purnaCV from '../assets/docs/cv.pdf';
+import purnaCV from '../assets/docs/purna-cv.pdf';
 
 const aboutContents = {
   profileImage: hero,
