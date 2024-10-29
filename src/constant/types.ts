@@ -3,3 +3,11 @@ export interface PageProp {
   currentPage?: string;
   whiteBg?: boolean;
 }
+
+export interface SEOProps {
+  title: string;
+  description?: string;
+  keywords?: string;
+  image?: string;
+  url?: string;
+}

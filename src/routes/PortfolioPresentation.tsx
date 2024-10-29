@@ -6,6 +6,7 @@ import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
 import CaseStudy from '../components/CaseStudy';
 import GalleryReview from '../components/ui/GalleryReview';
 import ExploreProjects from '../components/ui/ExploreProjects';
+import SEO from '../utils/SEO';
 
 const PortfolioPresentation: React.FC = () => {
   const { website } = useParams();
@@ -25,6 +26,13 @@ const PortfolioPresentation: React.FC = () => {
 
   return (
     <>
+      <SEO
+        title={`${portfolioItem.title} - Purna Shrestha Portfolio`}
+        description={`Explore the innovative web design for ${portfolioItem.title} by Purna Shrestha, featuring a modern user interface that enhances online bookings and user experience.`}
+        keywords="web design, Hotel Himalaya, Purna Shrestha, user experience, online booking"
+        url={`https://www.purnashrestha.com.np/portfolio/${portfolioItem.portfolioUrl}`}
+        image={portfolioItem?.logoSrc}
+      />
       <NavbarBreadCrumb
         page="portfolio"
         currentPage={portfolioItem.title}
