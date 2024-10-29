@@ -1,4 +1,5 @@
-import Hero from '../components/Hero';
+// import Hero from '../components/Hero';
+import HeroProfile from '../components/HeroProfile';
 import ProfileNav from '../components/ProfileNav';
 import SideNav from '../components/SideNav';
 import NavbarButton from '../components/ui/NavbarButton';
@@ -10,7 +11,8 @@ const Home = () => {
       <div className="fixed right-5 top-5 z-50 flex items-center justify-center">
         <NavbarButton />
       </div>
-      <Hero />
+      {/* <Hero /> */}
+      <HeroProfile />
       <section className="m-0 p-0 md:hidden">
         <ProfileNav />
         <SideNav />
