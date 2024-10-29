@@ -1,28 +1,35 @@
 import React from 'react';
 import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
 import purna from '../assets/img/hero.avif';
+import SEO from '../utils/SEO';
 
 const Contact: React.FC = () => {
   return (
-    <main className="size-full bg-dark text-white">
-      <NavbarBreadCrumb page="Contact" />
+    <>
+      <SEO
+        title="Contact - Purna Shrestha"
+        description="Get in touch with Purna Shrestha for web design, development, and software project inquiries."
+        keywords="contact Purna Shrestha, UI/UX designer, web developer, project inquiries, collaboration"
+      />
+      <main className="size-full bg-dark text-white">
+        <NavbarBreadCrumb page="Contact" />
 
-      <div className="md:container">
-        <div className="flex items-end gap-4 md:gap-6">
-          {/* <span>Contact</span> */}
-          <h3 className="text-pretty text-3xl capitalize leading-snug drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-6xl md:leading-snug">
-            Let's start <br /> a project together
-          </h3>
-          <img
-            src={purna}
-            alt="Purna"
-            className="size-10 -translate-y-1 rounded-full bg-white object-contain md:size-16 md:-translate-y-4"
-          />
-        </div>
+        <div className="md:container">
+          <div className="flex items-end gap-4 md:gap-6">
+            {/* <span>Contact</span> */}
+            <h3 className="text-pretty text-3xl capitalize leading-snug drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-6xl md:leading-snug">
+              Let's start <br /> a project together
+            </h3>
+            <img
+              src={purna}
+              alt="Purna"
+              className="size-10 -translate-y-1 rounded-full bg-white object-contain md:size-16 md:-translate-y-4"
+            />
+          </div>
 
-        <div className="my-10 h-px w-full bg-gradient-to-r from-[#989AA6]/[0.5] to-transparent md:my-16 md:h-[0.5px]" />
+          <div className="my-10 h-px w-full bg-gradient-to-r from-[#989AA6]/[0.5] to-transparent md:my-16 md:h-[0.5px]" />
 
-        {/* <section className="">
+          {/* <section className="">
           <h4 className="sticky top-7 z-10 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 text-xs font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur sm:text-sm md:top-8 md:text-base">
             <span className="size-2 rounded-full bg-green-500"></span>
             Services Process
@@ -112,7 +119,7 @@ const Contact: React.FC = () => {
           </div>
         </section> */}
 
-        {/* <div className=" items-end gap-6">
+          {/* <div className=" items-end gap-6">
           <h3 className="flex flex-col gap-1 text-pretty font-inria-sans text-xl font-bold leading-relaxed drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-3xl md:leading-snug uppercase">
             Interested in collaborating? <br />
             <span className="font-bold text-inherit opacity-60 text-lg md:text-2xl">
@@ -130,8 +137,9 @@ const Contact: React.FC = () => {
             className="size-16 rounded-full object-contain -translate-y-4 bg-white"
           /> 
         </div> */}
-      </div>
-    </main>
+        </div>
+      </main>
+    </>
   );
 };
 
