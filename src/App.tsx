@@ -13,6 +13,7 @@ import RouterToTop from './utils/RouterToTop';
 import useLenisScroll from './hooks/useLenisScroll';
 import Sitemap from './routes/Sitemap';
 import Error404 from './routes/Error404';
+import AwSnap from './components/ui/AwSnap';
 
 const HomeWithTransition = withFramerTransition(Home);
 const AboutWithTransition = withFramerTransition(About);
@@ -42,6 +43,7 @@ const App: React.FC = () => {
           <Route path="/contact" element={<ContactWithTransition />} />
           <Route path="/services" element={<ServicesWithTransition />} />
           <Route path="/sitemap" element={<Sitemap />} />
+          <Route path="/test" element={<AwSnap/>} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </AnimatePresence>
