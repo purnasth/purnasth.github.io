@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ProfileNav from '../components/ProfileNav';
-import purna from '../assets/img/purna/FC_20221024_0004.jpg';
+// import purna from '../assets/img/purna/FC_20221024_0004.jpg';
+import purna from '../assets/img/purna.jpeg';
 import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
 import SkillsCategory from '../components/ui/SkillsCategory';
 import CreativeGap from '../components/ui/CreativeGap';
@@ -106,7 +107,7 @@ const About: React.FC = () => {
                 <CreativeGap color="white" /> From{' '}
                 <strong>ambitious startups</strong> to{' '}
                 <strong>renowned brands</strong>, I have a{' '}
-                <strong>wealth</strong> of stories to share.
+                <strong>wealth</strong> of stories to share.{''}
                 <strong>Trusted</strong> by clients across the{' '}
                 <strong>globe</strong>, I'm here to build{' '}
                 <strong>digital experiences</strong> that make an{' '}

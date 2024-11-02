@@ -2,6 +2,7 @@
 import HeroProfile from '../components/HeroProfile';
 import ProfileNav from '../components/ProfileNav';
 import SideNav from '../components/SideNav';
+import Footer from '../components/ui/Footer';
 import NavbarButton from '../components/ui/NavbarButton';
 import withFramerTransition from '../hoc/withFramerTransition';
 import SEO from '../utils/SEO';
@@ -23,6 +24,8 @@ const Home = () => {
         <ProfileNav />
         <SideNav />
       </section>
+      <main className="h-screen bg-light"></main>
+      <Footer />
     </>
   );
 };
