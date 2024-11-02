@@ -4,7 +4,7 @@ import mithilaYatriNiwas from '../assets/img/portfolio/mithila.png';
 import hotelIchchha from '../assets/img/portfolio/hotel-ichchha.png';
 
 // mockup
-import hotelHimalayaMockup from '../assets/img/portfolio/hotel-himalaya/hotelhimalaya_mockup.png';
+import hotelHimalayaMockup from '../assets/img/portfolio/hotel-himalaya/hotelhimalaya_mockup.avif';
 import hotelHDayatraMockup from '../assets/img/portfolio/hotel-dayatra/mockup.png';
 import mithilaMockup from '../assets/img/portfolio/mithila/mockup.png';
 import ichchhaMockup from '../assets/img/portfolio/hotel-ichchha/mockup.png';
