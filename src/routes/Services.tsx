@@ -1,12 +1,13 @@
 import React from 'react';
 import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
-import purna from '../assets/img/hero.avif';
+// import purna from '../assets/img/hero.avif';
 import design from '../assets/img/nav/services.svg';
 import develop from '../assets/img/svg/develop.svg';
 import app from '../assets/img/svg/app.svg';
 import earth from '../assets/img/svg/earth.gif';
 import ProjectsUI from '../components/ui/ProjectsUI';
 import SEO from '../utils/SEO';
+import Footer from '../components/ui/Footer';
 
 const servicesContent = [
   {
@@ -43,11 +44,11 @@ const Services: React.FC = () => {
         description="Explore the range of services offered by Purna Shrestha, including UI/UX design, web development, and software solutions."
         keywords="UI/UX design services, web development services, software solutions, frontend developer, React developer"
       />
-      <main className="size-full bg-dark text-white">
+      <main className="size-full bg-dark pb-28 text-white">
         <NavbarBreadCrumb page="Services" />
 
-        <div className="md:container">
-          <div className="flex items-end gap-4 md:gap-6">
+        <div className="container">
+          {/* <div className="flex items-end gap-4 md:gap-6">
             <h3 className="text-pretty text-3xl capitalize leading-snug drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-6xl md:leading-snug">
               Expert Solutions <br /> Tailored for Your Needs
             </h3>
@@ -58,9 +59,9 @@ const Services: React.FC = () => {
             />
           </div>
 
-          <div className="my-10 h-px w-full bg-gradient-to-r from-[#989AA6]/[0.5] to-transparent md:my-16 md:h-[0.5px]" />
+          <div className="my-10 h-px w-full bg-gradient-to-r from-[#989AA6]/[0.5] to-transparent md:my-16 md:h-[0.5px]" /> */}
 
-          <section className="">
+          <section className="pt-0">
             <h4 className="sticky top-7 z-30 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 text-xs font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur sm:text-sm md:top-8 md:text-base">
               <span className="size-2 rounded-full bg-green-500"></span>
               Services
@@ -146,10 +147,11 @@ const Services: React.FC = () => {
               Glimpse of some of my recent projects.
             </p>
 
-            <ProjectsUI />
+            <ProjectsUI limit={4} />
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

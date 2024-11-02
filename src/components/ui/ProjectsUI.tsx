@@ -3,14 +3,21 @@ import { Link } from 'react-router-dom';
 import { portfolioData } from '../../constant/data';
 import { CgArrowLongRight } from 'react-icons/cg';
 
-const ProjectsUI: React.FC = () => {
+interface ProjectsUIProps {
+  limit?: number;
+}
+
+const ProjectsUI: React.FC<ProjectsUIProps> = ({ limit }) => {
+
   const { portfolioDetails } = portfolioData[0];
+
+  const displayedProjects = limit ? portfolioDetails.slice(0, limit) : portfolioDetails;
 
   return (
     <>
       <section className="mt-10 pt-12 md:mt-24">
         <div className="overflow-hidden rounded-3xl border-[1px] border-light/10">
-          {portfolioDetails.map((project) => (
+          {displayedProjects.map((project) => (
             <Link
               key={project.id}
               className="transition-300 group grid grid-cols-1 gap-0 border-b-[1px] border-light/20 text-light hover:bg-light hover:text-dark md:grid-cols-3 md:flex-row"

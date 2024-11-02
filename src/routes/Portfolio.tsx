@@ -4,6 +4,7 @@ import { portfolioData } from '../constant/data';
 import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
 import ProjectsUI from '../components/ui/ProjectsUI';
 import SEO from '../utils/SEO';
+import Footer from '../components/ui/Footer';
 // import ProjectsUI_OG from '../components/ui/ProjectsUI_OG';
 
 const Portfolio: React.FC = () => {
@@ -28,7 +29,9 @@ const Portfolio: React.FC = () => {
           </p>
         </div>
 
-        <ProjectsUI />
+        <div className="container">
+          <ProjectsUI />
+        </div>
 
         {/* <ProjectsUI_OG /> */}
 
@@ -41,6 +44,7 @@ const Portfolio: React.FC = () => {
           </p>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

@@ -107,7 +107,7 @@ const About: React.FC = () => {
                 <CreativeGap color="white" /> From{' '}
                 <strong>ambitious startups</strong> to{' '}
                 <strong>renowned brands</strong>, I have a{' '}
-                <strong>wealth</strong> of stories to share.{''}
+                <strong>wealth</strong> of stories to share.{' '}
                 <strong>Trusted</strong> by clients across the{' '}
                 <strong>globe</strong>, I'm here to build{' '}
                 <strong>digital experiences</strong> that make an{' '}

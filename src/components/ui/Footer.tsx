@@ -32,11 +32,11 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="bg-dark text-light">
+      <footer className="bg-dark text-light border-t border-light/20 h-screen flex items-center justify-center">
         <div className="container">
           <div className="flex items-end gap-4 md:gap-6">
             {/* <span>Contact</span> */}
-            <h3 className="text-pretty text-3xl capitalize leading-snug text-light/40 md:text-6xl md:leading-snug">
+            <h3 className="text-pretty text-3xl capitalize leading-snug text-light/60 md:text-6xl md:leading-snug">
               <strong className="font-luxury text-inherit text-light">
                 Let's start
               </strong>{' '}
