@@ -1,9 +1,12 @@
 // import Hero from '../components/Hero';
+import AboutHome from '../components/AboutHome';
 import HeroProfile from '../components/HeroProfile';
 import ProfileNav from '../components/ProfileNav';
 import SideNav from '../components/SideNav';
 import Footer from '../components/ui/Footer';
 import NavbarButton from '../components/ui/NavbarButton';
+import ProjectsSlider from '../components/ui/ProjectsSlider';
+import ProjectsUI from '../components/ui/ProjectsUI';
 import withFramerTransition from '../hoc/withFramerTransition';
 import SEO from '../utils/SEO';
 
@@ -19,12 +22,20 @@ const Home = () => {
         <NavbarButton />
       </div>
       {/* <Hero /> */}
-      <HeroProfile />
       <section className="m-0 p-0 md:hidden">
         <ProfileNav />
         <SideNav />
       </section>
-      <main className="h-screen bg-light"></main>
+      <AboutHome />
+      <h2 className="my-24 text-center text-4xl capitalize text-light/50 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-8xl md:leading-snug">
+        Bringing your <strong className="font-luxury text-light">vision</strong>{' '}
+        to <strong className="font-luxury text-light">life</strong>
+      </h2>
+      <HeroProfile />
+      <ProjectsSlider />
+      <div className="container">
+        <ProjectsUI />
+      </div>
       <Footer />
     </>
   );

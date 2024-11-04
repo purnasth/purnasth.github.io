@@ -77,11 +77,11 @@
   }
 
   .ul:hover .li {
-    @apply opacity-80 blur-[1px] grayscale transition-all duration-300 ease-in-out;
+    @apply opacity-50 blur-[1px] transition-all duration-300 ease-in-out;
   }
 
   .ul .li:hover {
-    @apply opacity-100 blur-0 grayscale-0 transition-all duration-300 ease-in-out;
+    @apply opacity-100 blur-0 transition-all duration-300 ease-in-out;
   }
   /* p {
     @apply font-pt-sans;
@@ -281,3 +281,39 @@
 /* body {
   background-color: #0a0a0a;
 } */
+
+@keyframes bannermoveRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes bannermoveLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.animation-paused {
+  animation-play-state: paused;
+}
+
+.photobanner-right {
+  animation: bannermoveRight 20s linear infinite;
+}
+
+.photobanner-left {
+  animation: bannermoveLeft 20s linear infinite;
+}
+
+.photobanner:hover {
+  animation-play-state: paused;
+}

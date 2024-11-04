@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ProfileNav from '../components/ProfileNav';
 // import purna from '../assets/img/purna/FC_20221024_0004.jpg';
 import purna from '../assets/img/purna.jpeg';
@@ -6,37 +6,9 @@ import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
 import SkillsCategory from '../components/ui/SkillsCategory';
 import CreativeGap from '../components/ui/CreativeGap';
 import SEO from '../utils/SEO';
+import Hello from '../components/ui/Hello';
 
 const About: React.FC = () => {
-  const greetings: string[] = [
-    'Hello',
-    'नमस्कार', // Nepali
-    'ज्वजलपा', // Newari
-    'Hola', // Spanish
-    'Bonjour', // French
-    'Hallo', // German
-    'Ciao', // Italian
-    'こんにちは', // Japanese
-    '안녕하세요', // Korean
-    '你好', // Chinese
-    'Olá', // Portuguese
-    'مرحبا', // Arabic
-  ];
-
-  const [greeting, setGreeting] = useState<string>(greetings[0]);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setGreeting((prevGreeting) => {
-        const currentIndex = greetings.indexOf(prevGreeting);
-        const nextIndex = (currentIndex + 1) % greetings.length;
-        return greetings[nextIndex];
-      });
-    }, 800);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
   return (
     <>
       <SEO
@@ -53,13 +25,7 @@ const About: React.FC = () => {
           </div>
           <section className="space-y-16 pt-0">
             <div>
-              <h2 className="transition-300 font-sans text-3xl font-medium capitalize leading-snug md:text-6xl md:leading-snug">
-                {greeting}, <br />
-                <strong className="transition-300 font-luxury font-extralight text-white/50 hover:text-white">
-                  I'm Purna Shrestha
-                </strong>
-                .
-              </h2>
+              <Hello />
               <p className="my-5 ml-8 text-sm text-light/70 md:my-12 md:ml-32 md:text-base">
                 <CreativeGap color="white" /> a <strong>UI/UX Designer</strong>{' '}
                 & <strong>Web Developer</strong> helping brands{' '}
