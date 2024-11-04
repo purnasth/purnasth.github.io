@@ -6,6 +6,7 @@ import purna from '../../assets/img/hero.avif';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { MdCall, MdMail } from 'react-icons/md';
 import { RiInstagramFill } from 'react-icons/ri';
+import WebsiteUseTime from './WebsiteUseTime';
 
 const aboutContents = {
   profileImage: purna,
@@ -32,7 +33,7 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="bg-dark text-light border-t border-light/20 h-screen flex items-center justify-center">
+      <footer className="flex h-screen items-center justify-center border-t border-light/20 bg-dark text-light">
         <div className="container">
           <div className="flex items-end gap-4 md:gap-6">
             {/* <span>Contact</span> */}
@@ -81,19 +82,19 @@ const Footer: React.FC = () => {
               <span className="text-sm uppercase text-light/50">
                 Copyright & Version
               </span>
-              <p className="">
+              <p className="font-medium">
                 &copy; {year}{' '}
                 <strong className="uppercase">Purna Shrestha</strong> | v
                 <strong>2.0.4</strong>
               </p>
             </div>
-            <div></div>
+            <WebsiteUseTime />
             <div className="space-y-3">
               <span className="text-sm uppercase text-light/50">
                 Socials & Contact
               </span>
               <div className="flex items-center justify-between gap-1">
-                <p className="inline-block">Say Hi &#128075;</p>
+                <p className="inline-block font-medium">Say Hi &#128075;</p>
                 <span className="h-px w-1/3 bg-gradient-to-r from-transparent via-light/30 to-transparent"></span>
                 <ul className="flex items-center gap-6">
                   {aboutContents.socialLinks.map((link) => (
