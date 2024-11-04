@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { TbMessageChatbot } from 'react-icons/tb';
-import purna from '../../assets/img/hero.avif';
+import purna from '../assets/img/hero.avif';
 
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { MdCall, MdMail } from 'react-icons/md';
 import { RiInstagramFill } from 'react-icons/ri';
-import WebsiteUseTime from './WebsiteUseTime';
+import WebsiteUseTime from '../components/ui/WebsiteUseTime';
 
 const aboutContents = {
   profileImage: purna,
@@ -94,9 +94,7 @@ const Footer: React.FC = () => {
                 Socials & Contact
               </span>
               <div className="flex items-center justify-between gap-1">
-                <p className="w-full font-medium">
-                  Say Hi &#128075;
-                </p>
+                <p className="w-full font-medium">Say Hi &#128075;</p>
                 <span className="mr-4 h-px w-full bg-gradient-to-r from-light/10 to-light/40"></span>
                 <ul className="flex items-center gap-6">
                   {aboutContents.socialLinks.map((link) => (

@@ -4,7 +4,7 @@ import { portfolioData } from '../constant/data';
 import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
 import ProjectsUI from '../components/ui/ProjectsUI';
 import SEO from '../utils/SEO';
-import Footer from '../components/ui/Footer';
+import Footer from '../layout/Footer';
 // import ProjectsUI_OG from '../components/ui/ProjectsUI_OG';
 
 const Portfolio: React.FC = () => {

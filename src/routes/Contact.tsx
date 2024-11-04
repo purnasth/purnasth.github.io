@@ -1,7 +1,7 @@
 import React from 'react';
 import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
 import SEO from '../utils/SEO';
-import Footer from '../components/ui/Footer';
+import Footer from '../layout/Footer';
 
 const Contact: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
         description="Get in touch with Purna Shrestha for web design, development, and software project inquiries."
         keywords="contact Purna Shrestha, UI/UX designer, web developer, project inquiries, collaboration"
       />
-        <NavbarBreadCrumb page="Contact" />
+      <NavbarBreadCrumb page="Contact" />
       {/* <main className="size-full bg-dark text-white">
 
         <div className="md:container">

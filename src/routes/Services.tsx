@@ -7,7 +7,7 @@ import app from '../assets/img/svg/app.svg';
 import earth from '../assets/img/svg/earth.gif';
 import ProjectsUI from '../components/ui/ProjectsUI';
 import SEO from '../utils/SEO';
-import Footer from '../components/ui/Footer';
+import Footer from '../layout/Footer';
 
 const servicesContent = [
   {

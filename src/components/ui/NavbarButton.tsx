@@ -2,92 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { TbPlus, TbMail } from 'react-icons/tb';
 import { NavLink, useLocation, Link } from 'react-router-dom';
 import { PageProp } from '../../constant/types';
-import heroNoise from '../../assets/img/hero_noise.png';
-import portfolio from '../../assets/img/nav/portfolio.svg';
-import services from '../../assets/img/nav/services.svg';
-import contact from '../../assets/img/nav/contact.svg';
-
-import hotelHimalayaMockup from '../../assets/img/portfolio/hotel-himalaya/hotelhimalaya_mockup.avif';
-import ichchhaMockup from '../../assets/img/portfolio/hotel-ichchha/mockup.png';
-import hotelDayatraMockup from '../../assets/img/portfolio/hotel-dayatra/mockup.png';
-import mithilaMockup from '../../assets/img/portfolio/mithila/mockup.png';
-
-const navLinks = [
-  {
-    id: 'About',
-    title: 'About',
-    routing: '/about',
-    picture: heroNoise,
-  },
-  {
-    id: 'Portfolio',
-    title: 'Portfolio',
-    routing: '/portfolio',
-    picture: portfolio,
-    subLinks: [
-      {
-        id: 'hotel-himalaya',
-        title: 'Hotel Himalaya',
-        routing: '/portfolio/hotel-himalaya',
-        picture: hotelHimalayaMockup,
-      },
-      {
-        id: 'hotel-ichchha',
-        title: 'Hotel Ichchha',
-        routing: '/portfolio/hotel-ichchha',
-        picture: ichchhaMockup,
-      },
-      {
-        id: 'hotel-dayatra',
-        title: 'Hotel Dayatra',
-        routing: '/portfolio/hotel-dayatra',
-        picture: hotelDayatraMockup,
-      },
-      {
-        id: 'mithila',
-        title: 'Mithila',
-        routing: '/portfolio/mithila-yatri-niwas',
-        picture: mithilaMockup,
-      },
-    ],
-  },
-  {
-    id: 'Services',
-    title: 'Services',
-    routing: '/services',
-    picture: services,
-  },
-  {
-    id: 'Contact',
-    title: 'Contact',
-    routing: '/contact',
-    picture: contact,
-  },
-  {
-    id: 'hotel-himalaya',
-    title: 'Hotel Himalaya',
-    routing: '/portfolio/hotel-himalaya',
-    picture: hotelHimalayaMockup,
-  },
-  {
-    id: 'hotel-ichchha',
-    title: 'Hotel Ichchha',
-    routing: '/portfolio/hotel-ichchha',
-    picture: ichchhaMockup,
-  },
-  {
-    id: 'hotel-dayatra',
-    title: 'Hotel Dayatra',
-    routing: '/portfolio/hotel-dayatra',
-    picture: hotelDayatraMockup,
-  },
-  {
-    id: 'mithila',
-    title: 'Mithila',
-    routing: '/portfolio/mithila-yatri-niwas',
-    picture: mithilaMockup,
-  },
-];
+import { navLinks } from '../../constant/data';
 
 const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -126,7 +41,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
       </button>
 
       <section
-        className={`border-1 transition-1000 fixed inset-0 -z-10 m-2 rounded-lg overflow-hidden border border-white/20 bg-dark/50 p-0 shadow-sm backdrop-blur-sm md:m-4 ${
+        className={`border-1 transition-1000 fixed inset-0 -z-10 m-2 overflow-hidden rounded-lg border border-white/20 bg-dark/50 p-0 shadow-sm backdrop-blur-sm md:m-4 ${
           isOpen
             ? 'pointer-events-auto select-auto opacity-100'
             : 'pointer-events-none select-none opacity-0'
