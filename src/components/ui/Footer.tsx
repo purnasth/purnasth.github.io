@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="flex h-screen items-center justify-center border-t border-light/20 bg-dark text-light">
+      <footer className="flex h-full items-center justify-center border-t border-light/20 bg-dark px-4 py-16 text-light md:h-screen md:px-12">
         <div className="container">
           <div className="flex items-end gap-4 md:gap-6">
             {/* <span>Contact</span> */}
@@ -49,11 +49,11 @@ const Footer: React.FC = () => {
               className="size-10 -translate-y-1 rounded-full bg-white object-contain md:size-16 md:-translate-y-4"
             />
           </div>
-          <div className="mt-12">
+          <div className="mt-6 md:mt-12">
             <Link
               to="https://wa.me/+9779808021753"
               rel="noopener noreferrer"
-              className="transition-300 group mt-4 inline-flex items-center justify-center gap-2 rounded-full border border-light/20 bg-light/10 px-8 py-4 text-light shadow-md hover:animate-bounce hover:bg-light/30 hover:shadow-xl"
+              className="transition-300 group mt-4 inline-flex items-center justify-center gap-2 rounded-full border border-light/20 bg-light/10 px-8 py-4 text-sm text-light shadow-md hover:animate-bounce hover:bg-light/30 hover:shadow-xl md:text-base"
               target="_blank"
               aria-label="Schedule a meeting"
             >
@@ -75,9 +75,9 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
-          <hr className="my-20 border-light/10" />
+          <hr className="my-12 border-light/10 md:my-20" />
 
-          <div className="grid grid-cols-3">
+          <div className="grid grid-cols-1 gap-y-8 md:grid-cols-3">
             <div className="space-y-3">
               <span className="text-sm uppercase text-light/50">
                 Copyright & Version
@@ -94,8 +94,10 @@ const Footer: React.FC = () => {
                 Socials & Contact
               </span>
               <div className="flex items-center justify-between gap-1">
-                <p className="inline-block font-medium">Say Hi &#128075;</p>
-                <span className="h-px w-1/3 bg-gradient-to-r from-transparent via-light/30 to-transparent"></span>
+                <p className="w-full font-medium">
+                  Say Hi &#128075;
+                </p>
+                <span className="mr-4 h-px w-full bg-gradient-to-r from-light/10 to-light/40"></span>
                 <ul className="flex items-center gap-6">
                   {aboutContents.socialLinks.map((link) => (
                     <li

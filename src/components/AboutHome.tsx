@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const AboutHome: React.FC = () => {
   return (
-    <main className="relative h-screen">
+    <main className="relative h-screen max-w-[100vw] overflow-x-hidden">
       <div className="container h-full">
         <div className="inline-flex h-full max-w-6xl flex-col justify-center text-light">
           {/* <h2 className="text-4xl capitalize text-light/50 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-8xl md:leading-snug">
@@ -15,7 +15,7 @@ const AboutHome: React.FC = () => {
           </h2> */}
 
           <Hello />
-          <p className="my-2 max-w-xl text-sm leading- text-light/70">
+          <p className="my-2 max-w-xl text-sm leading-relaxed text-light/70">
             a <strong>UI/UX Designer</strong> & <strong>Web Developer</strong>{' '}
             helping brands <strong>build globally</strong> through design and
             code. I bring <strong>ideas to life</strong> by crafting{' '}
