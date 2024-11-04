@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/logo.png';
 
 import { navLinks } from '../constant/data';
 import { NavLink } from 'react-router-dom';
+import Logo from '../components/ui/Logo';
 
 const Navbar: React.FC = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -23,24 +23,26 @@ const Navbar: React.FC = () => {
   return (
     <>
       <nav
-        className={`transition-1000 pointer-events-none fixed top-0 z-40 w-full p-5 ${
+        className={`transition-1000 pointer-events-none fixed top-0 z-50 w-full p-5 mix-blend-difference ${
           window.scrollY > 0 ? '' : ''
-        } ${visible ? '' : '-translate-y-full'}`}
+          // } ${visible ? '' : '-translate-y-full'}`}
+        }`}
       >
         <div className={`flex w-full items-start justify-between`}>
           <a
             href="/"
             className={`transition-1000 pointer-events-auto object-contain ${
-              visible ? '' : ''
-            } ${window.scrollY > 0 ? '' : ''}`}
+              visible ? 'scale-100' : 'scale-100'
+            } ${window.scrollY > 0 ? 'origin-top-left translate-y-0 scale-75' : ''}`}
           >
-            <img
+            {/* <img
               src={logo}
               alt="logo"
-              className={`transition-1000 h-28 w-auto object-contain opacity-80 hover:opacity-100 hover:drop-shadow-[0_4px_10px_rgba(255,255,255,0.5)] ${
+              className={`transition-1000 h-20 w-auto object-contain hover:opacity-100 hover:drop-shadow-[0_4px_10px_rgba(255,255,255,0.5)] ${
                 visible ? '-translate-y-0' : '-translate-y-6 scale-100'
-              } ${window.scrollY > 0 ? 'origin-top-left translate-y-0 scale-50' : ''}`}
-            />
+              } ${window.scrollY > 0 ? 'origin-top-left translate-y-0 scale-75' : ''}`}
+            /> */}
+            <Logo />
           </a>
 
           <div
@@ -55,6 +57,7 @@ const Navbar: React.FC = () => {
                     to={link.routing}
                     className="text-light"
                     aria-label={link.title}
+                    title={link.title}
                   >
                     {link.title}
                   </NavLink>

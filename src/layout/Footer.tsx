@@ -94,8 +94,9 @@ const Footer: React.FC = () => {
                 Socials & Contact
               </span>
               <div className="flex items-center justify-between gap-1">
-                <p className="w-full font-medium">Say Hi &#128075;</p>
-                <span className="mr-4 h-px w-full bg-gradient-to-r from-light/10 to-light/40"></span>
+                <p className="font-medium">Say&nbsp;Hi</p>
+                <i className="hello-wave text-2xl">&#128075;</i>
+                <span className="mr-4 h-px w-full bg-gradient-to-r from-transparent to-light/40"></span>
                 <ul className="flex items-center gap-6">
                   {aboutContents.socialLinks.map((link) => (
                     <li

@@ -15,7 +15,7 @@ const ProjectsUI: React.FC<ProjectsUIProps> = ({ limit }) => {
 
   return (
     <>
-      <section className="mt-10 pt-12 md:mt-24">
+      <section className="pt-12">
         <div className="overflow-hidden rounded-3xl border-[1px] border-light/10">
           {displayedProjects.map((project) => (
             <Link

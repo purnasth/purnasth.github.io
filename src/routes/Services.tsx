@@ -8,6 +8,7 @@ import earth from '../assets/img/svg/earth.gif';
 import ProjectsUI from '../components/ui/ProjectsUI';
 import SEO from '../utils/SEO';
 import Footer from '../layout/Footer';
+import ScrollReveal from '../components/ui/ScrollReveal';
 
 const servicesContent = [
   {
@@ -142,10 +143,14 @@ const Services: React.FC = () => {
             ))}
           </section>
 
-          <div className="space-y-0">
-            <p className="mt-10 text-sm opacity-80 md:text-base">
+          <div className="mt-12 space-y-0">
+            {/* <p className="mt-10 text-sm opacity-80 md:text-base">
               Glimpse of some of my recent projects.
-            </p>
+            </p> */}
+            <ScrollReveal
+              heading=" Glimpse of my best projects."
+              styles="text-light text-6xl font-luxury font-extralight leading-snug text-pretty md:leading-snug"
+            />
 
             <ProjectsUI limit={4} />
           </div>

@@ -10,6 +10,7 @@ import ProjectsUI from '../components/ui/ProjectsUI';
 import withFramerTransition from '../hoc/withFramerTransition';
 import SEO from '../utils/SEO';
 import Navbar from '../layout/Navbar';
+import ScrollReveal from '../components/ui/ScrollReveal';
 
 const Home = () => {
   return (
@@ -32,13 +33,13 @@ const Home = () => {
       <div className="sticky right-5 top-5 z-50 ml-auto mt-5 w-fit">
         <NavbarButton />
       </div>
-      <h2 className="my-24 text-center text-4xl capitalize text-light/50 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-8xl md:leading-snug">
-        Bringing your <strong className="font-luxury text-light">vision</strong>{' '}
-        to <strong className="font-luxury text-light">life</strong>
-      </h2>
       <HeroProfile />
       <ProjectsSlider />
       <div className="container">
+      <ScrollReveal
+        heading="UI/UX Design. Web Development."
+        styles="text-light text-6xl font-luxury font-extralight leading-snug text-pretty md:leading-snug"
+      />
         <ProjectsUI />
       </div>
       <Footer />

@@ -29,7 +29,7 @@ const Portfolio: React.FC = () => {
           </p>
         </div>
 
-        <div className="container">
+        <div className="mt-12 container">
           <ProjectsUI />
         </div>
 
