@@ -1,5 +1,10 @@
 import React from 'react';
 import heroHotelHimalaya from '../../assets/videos/hero.mp4';
+import himalayaHome from '../../assets/videos/himalaya-home.mp4';
+import himalayaStay from '../../assets/videos/himalaya-stay.mp4';
+import himalayaDine from '../../assets/videos/himalaya-dine.mp4';
+import himalayaGallery from '../../assets/videos/himalaya-gallery.mp4';
+import himalayaContact from '../../assets/videos/himalaya-contact.mp4';
 
 const projectVideos = [
   {
@@ -8,38 +13,35 @@ const projectVideos = [
   },
   {
     title: 'heroHotelHimalaya',
-    video: heroHotelHimalaya,
+    video: himalayaHome,
   },
   {
     title: 'heroHotelHimalaya',
-    video: heroHotelHimalaya,
+    video: himalayaStay,
   },
   {
     title: 'heroHotelHimalaya',
-    video: heroHotelHimalaya,
+    video: himalayaDine,
   },
   {
     title: 'heroHotelHimalaya',
-    video: heroHotelHimalaya,
+    video: himalayaGallery,
   },
   {
     title: 'heroHotelHimalaya',
-    video: heroHotelHimalaya,
-  },
-  {
-    title: 'heroHotelHimalaya',
-    video: heroHotelHimalaya,
+    video: himalayaContact,
   },
 ];
 
 const ProjectsSlider: React.FC = () => {
   return (
     <>
-      <main className="max-w-screen space-y-12 overflow-x-auto py-48">
+      <main className="max-w-[100vw] space-y-12 overflow-x-hidden py-48">
         {/* <div className="relative overflow-hidden"> */}
         <div className="ul photobanner photobanner-right hover:animation-paused flex items-center justify-center gap-0 whitespace-nowrap md:gap-12">
           {projectVideos.map((project, index) => (
             <video
+              // poster={purna}
               key={index}
               className="li transition-1000 h-32 w-auto bg-light/20 object-cover md:h-64"
               autoPlay

@@ -1,8 +1,3 @@
-import hotelHimalaya from '../assets/img/portfolio/hotel-himalaya.png';
-import hotelDayatra from '../assets/img/portfolio/hotel-dayatra.png';
-import mithilaYatriNiwas from '../assets/img/portfolio/mithila.png';
-import hotelIchchha from '../assets/img/portfolio/hotel-ichchha.png';
-
 // mockup
 import hotelHimalayaMockup from '../assets/img/portfolio/hotel-himalaya/hotelhimalaya_mockup.avif';
 import hotelDayatraMockup from '../assets/img/portfolio/hotel-dayatra/mockup.png';
@@ -38,12 +33,7 @@ export const portfolioData = [
         //   "Nestled within 6.58 acres of exquisitely landscaped grounds, Hotel Himalaya is conveniently located 8 km away from the Tribhuvan International Airport and only 2 km from the Kathmandu city center. ",
         description:
           'Hotel Himalaya is conveniently located 8 km away from the Tribhuwan International Airport and only 2 km from the Kathmandu city center. The stay at Hotel Himalaya means enjoying every moment.',
-        landingImage: [
-          {
-            url: hotelHimalaya,
-            alt: 'Hotel Himalaya',
-          },
-        ],
+
         portfolioWebsite: {
           deployUrl: 'https://hotelhimalaya.purnashrestha.com.np/',
           mockup: hotelHimalayaMockup,
@@ -130,12 +120,6 @@ export const portfolioData = [
         portfolioUrl: 'hotel-dayatra',
         description:
           'Hotel Dayatra Courtyard is a luxury hotel of amazing service and perfect for unwinding. The hotel is located in the heart of the pokhara, just 5 minutes away from the airport.',
-        landingImage: [
-          {
-            url: hotelDayatra,
-            alt: 'Hotel Da Yatra',
-          },
-        ],
         portfolioWebsite: {
           deployUrl: 'https://dayatra.purnashrestha.com.np/',
           mockup: hotelDayatraMockup,
@@ -221,12 +205,6 @@ export const portfolioData = [
         portfolioUrl: 'mithila-yatri-niwas',
         description:
           'Mithila Yatri Niwas - A luxurious retreat in Janakpur, just a 10-minute walk from the sacred Janaki Temple where you can experience the rich cultural & traditional heritage of the city.',
-        landingImage: [
-          {
-            url: mithilaYatriNiwas,
-            alt: 'Mithila Yatri Niwas',
-          },
-        ],
         portfolioWebsite: {
           deployUrl: 'https://www.mithilayatriniwas.com',
           mockup: mithilaMockup,
@@ -312,13 +290,6 @@ export const portfolioData = [
         portfolioUrl: 'hotel-ichchha',
         description:
           "Being a top hospitality provider & Nepal's First 5-Star Hotel in Simara, Bara, Nepal, we guarantee our finest offerings due to its convenient location, it is a great option for business, leisure, and pilgrimage trips.",
-
-        landingImage: [
-          {
-            url: hotelIchchha,
-            alt: 'Hotel Ichchha',
-          },
-        ],
         portfolioWebsite: {
           deployUrl: 'https://hotel-ichchha.pages.dev',
           mockup: ichchhaMockup,

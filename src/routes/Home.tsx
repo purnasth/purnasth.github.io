@@ -36,10 +36,10 @@ const Home = () => {
       <HeroProfile />
       <ProjectsSlider />
       <div className="container">
-      <ScrollReveal
-        heading="UI/UX Design. Web Development."
-        styles="text-light text-6xl font-luxury font-extralight leading-snug text-pretty md:leading-snug"
-      />
+        <ScrollReveal
+          heading="UI/UX Design. Web Development."
+          styles="text-light text-6xl font-luxury font-extralight leading-snug text-pretty md:leading-snug"
+        />
         <ProjectsUI />
       </div>
       <Footer />
