@@ -4,7 +4,7 @@ import ScrollReveal from './ui/ScrollReveal';
 
 const HeroProfile: React.FC = () => {
   return (
-    <main className="relative m-0 h-[110vh] w-full p-0">
+    <main className="relative m-0 h-[75vh] w-full p-0 md:h-[110vh]">
       <img
         src={purna}
         alt=""
@@ -31,7 +31,7 @@ const HeroProfile: React.FC = () => {
       {/* <div className="bg-blue-gradient absolute top-0 right-0 -z-10 w-full h-96 translate-x-1/4 rotate-180 opacity-50"></div> */}
       <ScrollReveal
         heading="Bringing your Vision to Life"
-        styles="absolute inset-0 size-full text-light text-8xl font-luxury font-extralight leading-snug text-center my-24 md:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:leading-snug"
+        styles="px-4 absolute inset-0 size-full text-light text-5xl md:text-8xl font-luxury font-extralight leading-snug text-center my-24 md:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:leading-snug"
       />
     </main>
   );

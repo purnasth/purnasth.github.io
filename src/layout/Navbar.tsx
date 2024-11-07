@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       <nav
-        className={`transition-1000 pointer-events-none fixed top-0 z-50 w-full p-5 mix-blend-difference ${
+        className={`transition-1000 pointer-events-none fixed top-0 z-50 w-full p-2 md:p-5 mix-blend-difference ${
           window.scrollY > 0 ? '' : ''
           // } ${visible ? '' : '-translate-y-full'}`}
         }`}
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
           </a>
 
           <div
-            className={`transition-1000 mt-1 cursor-pointer pr-4 text-light ${
+            className={`transition-1000 mt-1 hidden cursor-pointer pr-4 text-light md:block ${
               visible ? 'translate-y-0' : '-translate-y-6'
             } ${window.scrollY > 0 ? '-translate-y-6 opacity-0' : ''}`}
           >

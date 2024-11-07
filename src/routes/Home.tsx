@@ -1,8 +1,8 @@
 // import Hero from '../components/Hero';
 import AboutHome from '../components/AboutHome';
 import HeroProfile from '../components/HeroProfile';
-import ProfileNav from '../components/ProfileNav';
-import SideNav from '../components/SideNav';
+// import ProfileNav from '../components/ProfileNav';
+// import SideNav from '../components/SideNav';
 import Footer from '../layout/Footer';
 import NavbarButton from '../components/ui/NavbarButton';
 import ProjectsSlider from '../components/ui/ProjectsSlider';
@@ -25,10 +25,10 @@ const Home = () => {
         <NavbarButton />
       </div> */}
       {/* <Hero /> */}
-      <section className="m-0 p-0 md:hidden">
+      {/* <section className="m-0 p-0 md:hidden">
         <ProfileNav />
         <SideNav />
-      </section>
+      </section> */}
       <AboutHome />
       <div className="sticky right-5 top-5 z-50 ml-auto mt-5 w-fit">
         <NavbarButton />
@@ -38,7 +38,7 @@ const Home = () => {
       <div className="container">
         <ScrollReveal
           heading="UI/UX Design. Web Development."
-          styles="text-light text-6xl font-luxury font-extralight leading-snug text-pretty md:leading-snug"
+          styles="px-4 md:px-0 text-light text-3xl md:text-6xl font-luxury font-extralight leading-snug text-pretty md:leading-snug"
         />
         <ProjectsUI />
       </div>

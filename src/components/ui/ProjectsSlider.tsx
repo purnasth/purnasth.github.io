@@ -36,14 +36,14 @@ const projectVideos = [
 const ProjectsSlider: React.FC = () => {
   return (
     <>
-      <main className="max-w-[100vw] space-y-12 overflow-x-hidden py-48">
+      <main className="max-w-[100vw] space-y-6 overflow-x-hidden py-24 md:space-y-12 md:py-48">
         {/* <div className="relative overflow-hidden"> */}
-        <div className="ul photobanner photobanner-right hover:animation-paused flex items-center justify-center gap-0 whitespace-nowrap md:gap-12">
+        <div className="ul photobanner photobanner-right hover:animation-paused flex items-center justify-center gap-6 whitespace-nowrap md:gap-12">
           {projectVideos.map((project, index) => (
             <video
               // poster={purna}
               key={index}
-              className="li transition-1000 h-32 w-auto bg-light/20 object-cover md:h-64"
+              className="li transition-1000 h-24 w-auto bg-light/20 object-cover sm:h-32 md:h-64"
               autoPlay
               loop
               playsInline
@@ -63,11 +63,11 @@ const ProjectsSlider: React.FC = () => {
         </div>
         {/* </div> */}
 
-        <div className="ul photobanner photobanner-left hover:animation-paused flex items-center justify-center gap-0 whitespace-nowrap md:gap-12">
+        <div className="ul photobanner photobanner-left hover:animation-paused flex items-center justify-center gap-6 whitespace-nowrap md:gap-12">
           {[...projectVideos].reverse().map((project, index) => (
             <video
               key={index}
-              className="li transition-1000 h-32 w-auto bg-light/20 object-cover md:h-64"
+              className="li transition-1000 h-24 w-auto bg-light/20 object-cover sm:h-32 md:h-64"
               src={project.video}
               autoPlay
               loop
@@ -78,14 +78,14 @@ const ProjectsSlider: React.FC = () => {
           ))}
         </div>
 
-        <div className="ul photobanner photobanner-right hover:animation-paused flex items-center justify-center gap-0 whitespace-nowrap md:gap-12">
+        <div className="ul photobanner photobanner-right hover:animation-paused flex items-center justify-center gap-6 whitespace-nowrap md:gap-12">
           {[
             ...projectVideos.slice(Math.floor(projectVideos.length / 2)),
             ...projectVideos.slice(0, Math.floor(projectVideos.length / 2)),
           ].map((project, index) => (
             <video
               key={index}
-              className="li transition-1000 h-32 w-auto bg-light/20 object-cover md:h-64"
+              className="li transition-1000 h-24 w-auto bg-light/20 object-cover sm:h-32 md:h-64"
               autoPlay
               loop
               playsInline

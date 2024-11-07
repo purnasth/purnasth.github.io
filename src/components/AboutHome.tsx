@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 
 const AboutHome: React.FC = () => {
   return (
-    <main className="relative h-screen max-w-[100vw] overflow-x-hidden">
+    <main className="relative mt-12 h-[85vh] max-w-[100vw] overflow-x-hidden md:mt-0 md:h-screen">
       <div className="container h-full">
-        <div className="inline-flex h-full max-w-6xl flex-col justify-center text-light">
+        <div className="inline-flex h-full max-w-6xl flex-col justify-start text-light md:justify-center">
           {/* <h2 className="text-4xl capitalize text-light/50 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:text-8xl md:leading-snug">
             Bringing your{' '}
             <strong className="font-luxury text-light">vision</strong> to{' '}
@@ -25,7 +25,7 @@ const AboutHome: React.FC = () => {
           </p>
           <Link
             to="/about"
-            className="max-w-56 transition-300 group mt-12 inline-flex items-center justify-center gap-2 rounded-full border border-light/20 bg-light/10 px-8 py-4 text-light shadow-md hover:animate-bounce hover:bg-light/30 hover:shadow-xl"
+            className="transition-300 group mt-4 inline-flex max-w-56 items-center justify-center gap-2 rounded-full border border-light/20 bg-light/10 py-2 text-base text-light shadow-md hover:animate-bounce hover:bg-light/30 hover:shadow-xl md:mt-12 md:px-8 md:py-4 md:text-base"
           >
             Know more about me
           </Link>
