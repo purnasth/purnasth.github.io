@@ -10,6 +10,7 @@ const Contact: React.FC = () => {
         title="Contact - Purna Shrestha"
         description="Get in touch with Purna Shrestha for web design, development, and software project inquiries."
         keywords="contact Purna Shrestha, UI/UX designer, web developer, project inquiries, collaboration"
+        url="https://www.purnashrestha.com.np/contact"
       />
       <NavbarBreadCrumb page="Contact" />
       {/* <main className="size-full bg-dark text-white">

@@ -19,6 +19,7 @@ const Home = () => {
         title="Purna Shrestha - Designer & Developer"
         description="Purna Shrestha is a software engineer with 2+ years experience. He has completed 20+ projects with companies like Leapfrog and Longtail e-Media."
         keywords="Web Developer, Full Stack Developer, React Developer, UI/UX Designer, Frontend Developer, Software Engineer, Purna Shrestha, Web Design, Web Development, Software Development, Portfolio, Professional"
+        url="https://www.purnashrestha.com.np/"
       />
       <Navbar />
       {/* <div className="fixed right-5 top-5 z-50 flex items-center justify-center">

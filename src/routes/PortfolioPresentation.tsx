@@ -29,7 +29,7 @@ const PortfolioPresentation: React.FC = () => {
       <SEO
         title={`${portfolioItem.title} - Purna Shrestha Portfolio`}
         description={`Explore the innovative web design for ${portfolioItem.title} by Purna Shrestha, featuring a modern user interface that enhances online bookings and user experience.`}
-        keywords="web design, Hotel Himalaya, Purna Shrestha, user experience, online booking"
+        keywords={`web design, ${portfolioItem.title}, Purna Shrestha, user experience, online booking`}
         url={`https://www.purnashrestha.com.np/portfolio/${portfolioItem.portfolioUrl}`}
         image={portfolioItem?.logoSrc}
       />

@@ -44,6 +44,7 @@ const Services: React.FC = () => {
         title="Services - Purna Shrestha"
         description="Explore the range of services offered by Purna Shrestha, including UI/UX design, web development, and software solutions."
         keywords="UI/UX design services, web development services, software solutions, frontend developer, React developer"
+        url="https://www.purnashrestha.com.np/services"
       />
       <main className="size-full bg-dark pb-28 text-white">
         <NavbarBreadCrumb page="Services" />

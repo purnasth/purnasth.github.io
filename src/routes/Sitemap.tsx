@@ -41,6 +41,7 @@ const Sitemap: React.FC = () => {
         title="Sitemap - Purna Shrestha"
         description="Navigate through Purna Shrestha's portfolio website with ease. Explore sections like About, Services, Portfolio, and Contact to discover web design and development projects."
         keywords="sitemap, Purna Shrestha, web design, portfolio, navigation"
+        url="https://www.purnashrestha.com.np/sitemap"
       />
       <main className="relative flex h-screen flex-col items-center justify-center gap-2 p-0 text-light">
         <img
