@@ -129,7 +129,7 @@ const PortfolioPresentation: React.FC = () => {
           <img
             src={portfolioItem.portfolioWebsite?.uiPresentation}
             alt={`UI Presentation of ${portfolioItem.title}`}
-            className="size-full shadow"
+            className="size-full shadow mix-blend-darken"
           />
         </section>
 

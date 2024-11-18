@@ -6,6 +6,7 @@ import ichchhaMockup from '../assets/img/portfolio/hotel-ichchha/mockup.png';
 
 // ui presentation
 import hotelHimalayaUI from '../assets/img/portfolio/hotel-himalaya/himalaya-ui.avif';
+import mithilaUI from '../assets/img/portfolio/mithila/mithila-ui.avif';
 
 // journey
 import projectJourney from '../assets/img/portfolio/hotel-himalaya/project-journey.svg';
@@ -215,6 +216,7 @@ export const portfolioData = [
             'https://mithila-yatri.pages.dev/assets/mithila-BauZmQvB.webp',
           backgroundImage:
             'https://mithila-yatri.pages.dev/assets/room1-Dq4x4xNH.webp',
+          uiPresentation: mithilaUI,
           iframePages: [
             {
               url: 'https://mithila-yatri.pages.dev/',
