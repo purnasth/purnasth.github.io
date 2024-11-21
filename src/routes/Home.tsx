@@ -11,6 +11,7 @@ import withFramerTransition from '../hoc/withFramerTransition';
 import SEO from '../utils/SEO';
 import Navbar from '../layout/Navbar';
 import ScrollReveal from '../components/ui/ScrollReveal';
+import EmbedPosts from '../components/EmbedPosts';
 
 const Home = () => {
   return (
@@ -43,6 +44,7 @@ const Home = () => {
         />
         <ProjectsUI />
       </div>
+      <EmbedPosts />
       <Footer />
     </>
   );

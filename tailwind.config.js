@@ -15,7 +15,8 @@ export default {
         //   'serif',
         // ],
         'inria-sans': [
-          '"Inria Sans"',
+          // '"Syne"',
+          'Inria Sans',
           'ui-sans-serif',
           'system-ui',
           'sans-serif',
