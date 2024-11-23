@@ -15,6 +15,7 @@ export default {
         //   'serif',
         // ],
         'inria-sans': [
+          // '"Bricolage Grotesque"',
           // '"Syne"',
           'Inria Sans',
           'ui-sans-serif',
