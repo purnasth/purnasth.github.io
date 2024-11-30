@@ -125,11 +125,11 @@ const PortfolioPresentation: React.FC = () => {
           />
         </section>
 
-        <section className="container max-w-3xl pb-0">
+        <section className="pb-0">
           <img
             src={portfolioItem.portfolioWebsite?.uiPresentation}
             alt={`UI Presentation of ${portfolioItem.title}`}
-            className="size-full shadow mix-blend-darken"
+            className="size-full min-h-96 mix-blend-darken object-contain"
           />
         </section>
 
