@@ -21,14 +21,14 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
   problemStatement,
   solutionOverview,
   toolsUsed,
-  projectJourney,
+  // projectJourney,
   journeyOverview,
   projectOutcome,
 }) => {
   return (
     <section className="pt-0">
       <div className="container">
-        <h4 className="sticky top-7 z-30 mb-8 md:mb-12 inline-flex items-center justify-center gap-3 rounded-full bg-dark/10 px-4 py-1 text-xs text-dark outline outline-1 outline-dark/30 backdrop-blur-lg sm:text-sm md:top-8 md:text-base">
+        <h4 className="sticky top-7 z-30 mb-8 inline-flex items-center justify-center gap-3 rounded-full bg-dark/10 px-4 py-1 text-xs text-dark outline outline-1 outline-dark/30 backdrop-blur-lg sm:text-sm md:top-8 md:mb-12 md:text-base">
           <TbReportSearch />
           Case Study
         </h4>
@@ -64,7 +64,8 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
             </p>
             <div className="relative">
               <img
-                src={projectJourney}
+                src="#"
+                // src={projectJourney}
                 alt="Project Journey"
                 className="h-96 w-full object-contain object-left"
               />
