@@ -31,7 +31,7 @@ const Hello: React.FC = () => {
   }, []);
   return (
     <>
-      <h1 className="transition-300 font-sans text-3xl font-medium capitalize leading-snug md:text-7xl md:leading-snug">
+      <h1 className="transition-300 font-body text-3xl font-medium capitalize leading-snug md:text-7xl md:leading-snug">
         {greeting}, <br />
         {/* <strong className="transition-300 font-luxury font-extralight text-white/50 hover:text-white"> */}
         <span className="font-luxury font-extralight opacity-50">I'm</span>{' '}

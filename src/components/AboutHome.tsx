@@ -25,7 +25,7 @@ const AboutHome: React.FC = () => {
           </p>
           <Link
             to="/about"
-            className="transition-300 group mt-4 inline-flex max-w-56 items-center justify-center gap-2 rounded-full border border-light/20 bg-light/10 py-2 text-base text-light shadow-md hover:animate-bounce hover:bg-light/30 hover:shadow-xl md:mt-12 md:px-8 md:py-4 md:text-base"
+            className="transition-300 group mt-4 inline-flex max-w-56 items-center justify-center gap-2 rounded-full border border-light/20 bg-light/10 py-2 text-base font-semibold text-light shadow-md hover:animate-bounce hover:bg-light/30 hover:shadow-xl md:mt-12 md:px-8 md:py-4 md:text-sm"
           >
             Know more about me
           </Link>

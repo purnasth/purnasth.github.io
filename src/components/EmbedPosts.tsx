@@ -31,7 +31,7 @@ const EmbedPosts: React.FC = () => {
         {/* <h3 className="text-xl uppercase leading-snug sm:text-2xl md:text-3xl lg:leading-snug">
           Social Media Wall
         </h3> */}
-        <h3 className="text-center font-inria-sans text-3xl text-light">
+        <h3 className="font-body text-5xl text-light">
           Stay connected with the latest updates on
           <Link
             to="https://www.linkedin.com/in/purna-shrestha-0310ps/"

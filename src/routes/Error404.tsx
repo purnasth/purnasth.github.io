@@ -22,7 +22,7 @@ const Error404: React.FC = () => {
           className="absolute inset-0 -z-10 size-full object-cover"
         />
         <div className="overlay -z-10 bg-dark/50" />
-        <h1 className="text-center font-inria-sans text-6xl font-bold leading-snug">
+        <h1 className="text-center font-body text-6xl font-bold leading-snug">
           404 <br /> Page Not Found
         </h1>
         {/* <p className="mt-4 text-lg">

@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        luxury: ['"Gold Badge"', 'Georgia', 'Cambria', 'serif'],
+        luxury: [
+          '"Gold Badge"', 'Georgia', 'Cambria', 'serif'],
         // title: [
         //   '"Kalnia"',
         //   'ui-serif',
@@ -14,9 +15,15 @@ export default {
         //   'Times',
         //   'serif',
         // ],
-        'inria-sans': [
-          // '"Bricolage Grotesque"',
+        'body': [
+          '"Bricolage Grotesque"',
           // '"Syne"',
+          'Inria Sans',
+          'ui-sans-serif',
+          'system-ui',
+          'sans-serif',
+        ],
+        'inria-sans': [
           'Inria Sans',
           'ui-sans-serif',
           'system-ui',

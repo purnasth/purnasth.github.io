@@ -56,12 +56,12 @@ const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
               {page}
             </Link>
             <TbArrowGuide />
-            <span className="font-inria-sans font-medium capitalize">
+            <span className="font-body font-medium capitalize">
               {currentPage}
             </span>
           </>
         ) : (
-          <span className="font-inria-sans font-light capitalize">{page}</span>
+          <span className="font-body font-light capitalize">{page}</span>
         )}
       </h3>
     </nav>

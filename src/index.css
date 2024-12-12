@@ -50,18 +50,18 @@
   button,
   div,
   th {
-    @apply font-inria-sans font-semibold;
+    @apply font-body font-semibold;
   }
 
   p,
   span,
   li,
   td {
-    @apply font-inria-sans font-light;
+    @apply font-body font-light;
   }
 
   strong {
-    @apply font-inria-sans font-medium text-light;
+    @apply font-body font-medium text-light;
   }
 
   ul:hover li {
