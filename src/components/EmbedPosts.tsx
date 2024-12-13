@@ -1,7 +1,4 @@
 import React, { useEffect } from 'react';
-
-import { FaLinkedinIn } from 'react-icons/fa';
-import { RiInstagramFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
 const embedded = [
@@ -27,33 +24,33 @@ const EmbedPosts: React.FC = () => {
 
   return (
     <main className="border-t border-light/30">
-      <div className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-4">
-        {/* <h3 className="text-xl uppercase leading-snug sm:text-2xl md:text-3xl lg:leading-snug">
+      {/* <h3 className="text-xl uppercase leading-snug sm:text-2xl md:text-3xl lg:leading-snug">
           Social Media Wall
         </h3> */}
-        <h3 className="font-body text-5xl text-light">
-          Stay connected with the latest updates on
-          <Link
-            to="https://www.linkedin.com/in/purna-shrestha-0310ps/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative mx-3 inline-block text-xl"
-          >
-            <span className="absolute -bottom-2 -right-0 h-px w-full origin-left bg-light transition-all duration-300 ease-linear group-hover:scale-x-0"></span>
-            <FaLinkedinIn />
-          </Link>
-          and
-          <Link
-            to="https://www.instagram.com/purna.codes/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative mx-3 inline-block text-xl"
-          >
-            <span className="absolute -bottom-2 -right-0 h-px w-full origin-left bg-light transition-all duration-300 ease-linear group-hover:scale-x-0"></span>
-            <RiInstagramFill />
-          </Link>
-        </h3>
-      </div>
+      <h3 className="font-body text-4xl text-light/80 font-normal leading-snug">
+        Stay connected with the latest updates on
+        <Link
+          to="https://www.linkedin.com/in/purna-shrestha-0310ps/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group relative mx-3 inline-block text-inherit font-normal text-light"
+        >
+          <span className="absolute -bottom-2 -right-0 h-px w-full origin-left bg-light transition-all duration-300 ease-linear group-hover:scale-x-0"></span>
+          Linkedin
+          {/* <FaLinkedinIn /> */}
+        </Link>
+        and
+        <Link
+          to="https://www.instagram.com/purna.codes/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group relative mx-3 inline-block text-inherit font-normal text-light"
+        >
+          <span className="absolute -bottom-2 -right-0 h-px w-full origin-left bg-light transition-all duration-300 ease-linear group-hover:scale-x-0"></span>
+          Instagram
+          {/* <RiInstagramFill /> */}
+        </Link>
+      </h3>
       <div className="scroll mt-12 flex max-w-full gap-6 overflow-x-auto text-light md:mt-20">
         {embedded.map((postUrl, index) => {
           // Check if the URL is for LinkedIn or Instagram

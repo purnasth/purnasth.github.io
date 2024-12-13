@@ -37,9 +37,9 @@ const Portfolio: React.FC = () => {
 
         <div className="static left-12 top-10 mx-auto mt-10 flex w-auto md:fixed md:mt-0">
           <p className="translate-y-0 rounded-xl bg-light/10 px-4 py-1 text-base text-light outline outline-1 outline-light/60 backdrop-blur-lg transition-all duration-[1s] md:rounded-full md:text-xs">
-            <strong className="font-extrabold text-inherit">Note:</strong> Some
+            <strong className="font-bold text-inherit">Note:</strong> Some
             projects have been completed under{' '}
-            <strong className="font-extrabold text-inherit">NDAs</strong>, and
+            <strong className="font-bold text-inherit">NDAs</strong>, and
             cannot be publicly shared.
           </p>
         </div>

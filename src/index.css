@@ -61,7 +61,7 @@
   }
 
   strong {
-    @apply font-body font-medium text-light;
+    @apply font-body font-normal text-light;
   }
 
   ul:hover li {

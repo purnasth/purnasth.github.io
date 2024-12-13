@@ -8,16 +8,17 @@ interface ProjectsUIProps {
 }
 
 const ProjectsUI: React.FC<ProjectsUIProps> = ({ limit }) => {
-
   const { portfolioDetails } = portfolioData[0];
 
-  const displayedProjects = limit ? portfolioDetails.slice(0, limit) : portfolioDetails;
+  const displayedProjects = limit
+    ? portfolioDetails.slice(0, limit)
+    : portfolioDetails;
 
   return (
     <>
       <section className="pt-12">
         <div className="overflow-hidden rounded-3xl border-[1px] border-light/10">
-          {displayedProjects.map((project) => (
+          {displayedProjects.map((project, index) => (
             <Link
               key={project.id}
               className="transition-300 group grid grid-cols-1 gap-0 border-b-[1px] border-light/20 text-light hover:bg-light hover:text-dark md:grid-cols-3 md:flex-row"
@@ -43,11 +44,16 @@ const ProjectsUI: React.FC<ProjectsUIProps> = ({ limit }) => {
                 <div className="transition-300 flex md:group-hover:translate-x-4">
                   <button
                     type="button"
-                    className="transition-300 rounded-full bg-light px-4 py-1 text-base text-dark ease-linear group-hover:bg-dark group-hover:text-light md:text-2xl"
+                    className="transition-300 group flex h-6 w-16 items-center justify-center rounded-full bg-light text-2xl text-dark group-hover:bg-dark group-hover:text-light"
                     title="Explore More"
                     aria-label="Explore More"
                   >
-                    <CgArrowLongRight className="transition-300 ease-linear group-hover:translate-x-0 md:group-hover:scale-x-125" />
+                    <CgArrowLongRight
+                      className={`hidden transition-all duration-300 ease-linear group-hover:block`}
+                    />
+                    <span className="text-sm font-semibold group-hover:hidden">
+                      {(index + 1).toString().padStart(2, '0')}
+                    </span>
                   </button>
                 </div>
               </div>
