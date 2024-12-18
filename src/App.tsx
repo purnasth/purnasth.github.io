@@ -14,6 +14,7 @@ import useLenisScroll from './hooks/useLenisScroll';
 import Sitemap from './routes/Sitemap';
 import Error404 from './routes/Error404';
 import AwSnap from './components/ui/AwSnap';
+import Video from './components/Video';
 
 const HomeWithTransition = withFramerTransition(Home);
 const AboutWithTransition = withFramerTransition(About);
@@ -31,6 +32,7 @@ const App: React.FC = () => {
   return (
     <HelmetProvider>
       <RouterToTop />
+      <Video />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.key}>
           <Route path="/" element={<HomeWithTransition />} />

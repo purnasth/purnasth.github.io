@@ -50,8 +50,8 @@ const AboutHome: React.FC = () => {
           />
         </aside>
       </div>
-      <div className="bg-green-gradient absolute bottom-0 left-0 -z-20 size-full -translate-x-1/4 opacity-50"></div>
-      <div className="bg-blue-gradient absolute bottom-0 right-0 -z-20 size-full translate-x-1/4 opacity-50"></div>
+      {/* <div className="bg-green-gradient absolute bottom-0 left-0 -z-20 size-full -translate-x-1/4 opacity-50"></div>
+      <div className="bg-blue-gradient absolute bottom-0 right-0 -z-20 size-full translate-x-1/4 opacity-50"></div> */}
     </main>
   );
 };

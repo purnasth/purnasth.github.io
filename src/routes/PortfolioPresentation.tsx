@@ -7,6 +7,7 @@ import CaseStudy from '../components/CaseStudy';
 import GalleryReview from '../components/ui/GalleryReview';
 import ExploreProjects from '../components/ui/ExploreProjects';
 import SEO from '../utils/SEO';
+import bgVideo from '../assets/video/gradientOG.mp4';
 
 const PortfolioPresentation: React.FC = () => {
   const { website } = useParams();
@@ -38,7 +39,16 @@ const PortfolioPresentation: React.FC = () => {
         currentPage={portfolioItem.title}
         whiteBg={whiteBg}
       />
-      <main className="bg-white md:px-4 xl:px-0">
+      <main className="bg-white/70 md:px-4 xl:px-0">
+        <video
+          className="fixed inset-0 z-[-98] h-screen w-full object-cover mix-blend-difference"
+          autoPlay
+          muted
+          loop
+        >
+          <source src={bgVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="md:container">
           <h1 className="text-4xl md:text-8xl">{portfolioItem.title}</h1>
           <p className="mt-2 max-w-lg text-pretty text-sm md:text-base">
@@ -129,7 +139,7 @@ const PortfolioPresentation: React.FC = () => {
           <img
             src={portfolioItem.portfolioWebsite?.uiPresentation}
             alt={`UI Presentation of ${portfolioItem.title}`}
-            className="size-full min-h-96 mix-blend-darken object-contain"
+            className="size-full min-h-96 object-contain mix-blend-darken"
           />
         </section>
 

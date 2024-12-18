@@ -16,7 +16,7 @@ const Portfolio: React.FC = () => {
         keywords="Portfolio, Purna Shrestha, Projects, UI/UX Design, Web Development, Software Engineer, Designer, Developer"
         url="https://www.purnashrestha.com.np/portfolio"
       />
-      <main className="bg-dark text-light">
+      <main className="text-light">
         <NavbarBreadCrumb page="Portfolio" />
 
         <div className="mx-auto max-w-4xl space-y-4 md:text-center">

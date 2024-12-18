@@ -17,7 +17,7 @@ const About: React.FC = () => {
         keywords="About Purna Shrestha, UI/UX Designer, Web Developer, Portfolio, Developer Journey, Purna's Story, Purna Shrestha, Purna Shrestha Portfolio"
         url="https://www.purnashrestha.com.np/about"
       />
-      <main className="size-full bg-dark py-8 text-white md:py-12">
+      <main className="size-full py-8 text-white md:py-12">
         <NavbarBreadCrumb page="About" />
         <div className="ml-auto h-full w-full md:w-[calc(100%-14rem-5rem)]">
           <div className="hidden md:block">

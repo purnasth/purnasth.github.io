@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="flex h-full items-center justify-center border-t border-light/20 bg-dark px-4 py-16 text-light md:h-screen md:px-12">
+      <footer className="flex h-full items-center justify-center border-t border-light/20 bg-dark/50 backdrop-blur-sm px-4 py-16 text-light md:h-screen md:px-12">
         <div className="container">
           <div className="flex items-end gap-4 md:gap-6">
             {/* <span>Contact</span> */}
