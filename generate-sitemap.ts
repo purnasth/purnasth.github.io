@@ -15,46 +15,6 @@ const links = [
     priority: 0.9,
   },
   { url: '/portfolio/hotel-ichchha', changefreq: 'weekly', priority: 0.9 },
-  {
-    url: 'https://hotelhimalaya.purnashrestha.com.np/',
-    changefreq: 'weekly',
-    priority: 0.9,
-  },
-  {
-    url: 'https://dayatra.purnashrestha.com.np/',
-    changefreq: 'weekly',
-    priority: 0.9,
-  },
-  {
-    url: 'https://mithilayatriniwas.purnashrestha.com.np/',
-    changefreq: 'weekly',
-    priority: 0.9,
-  },
-  {
-    url: 'https://hotelichchha.purnashrestha.com.np/',
-    changefreq: 'weekly',
-    priority: 0.9,
-  },
-  {
-    url: 'https://babermahalvilas.purnashrestha.com.np/',
-    changefreq: 'weekly',
-    priority: 0.9,
-  },
-  {
-    url: 'https://himalayanflavours.purnashrestha.com.np/',
-    changefreq: 'weekly',
-    priority: 0.9,
-  },
-  {
-    url: 'https://tv.purnashrestha.com.np/',
-    changefreq: 'weekly',
-    priority: 0.8,
-  },
-  {
-    url: 'https://blogs.purnashrestha.com.np/',
-    changefreq: 'weekly',
-    priority: 0.8,
-  },
 ];
 
 const hostname = 'https://www.purnashrestha.com.np';

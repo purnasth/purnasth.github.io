@@ -84,7 +84,7 @@ const GalleryReview: React.FC<GalleryReviewProps> = ({ portfolioItem }) => {
                 </h5>
                 <p className="max-w-xs text-xs md:text-sm">
                   Discover what
-                  <strong className="mx-1 font-bold text-inherit">
+                  <strong className="mx-1 font-semibold text-inherit">
                     {portfolioItem.title}
                   </strong>
                   has to say about entrusting their vision to us—and how we
@@ -92,7 +92,7 @@ const GalleryReview: React.FC<GalleryReviewProps> = ({ portfolioItem }) => {
                 </p>
               </div>
 
-              <div className="mt-6 md:mt-12 border border-dark/10 p-4 shadow-lg">
+              <div className="mt-6 md:mt-12 border border-dark/10 backdrop-blur p-4 shadow-lg">
                 <div className="testimonials">
                   <div className="relative flex max-h-64 flex-col gap-4 overflow-y-auto transition-all duration-150 ease-linear">
                     <p className="review mr-3 text-pretty text-justify text-sm text-dark md:text-base">

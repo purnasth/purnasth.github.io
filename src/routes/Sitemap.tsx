@@ -47,13 +47,13 @@ const Sitemap: React.FC = () => {
         <img
           src={globe}
           alt="Globe"
-          className="absolute inset-0 -z-10 h-screen w-full object-cover"
+          className="absolute inset-0 -z-10 h-screen w-full object-cover mix-blend-color-dodge"
         />
         <div className="overlay -z-10 bg-dark/50" />
         {/* <h1 className="mb-4 text-3xl font-bold">Sitemap</h1> */}
         <table className="container w-full border-collapse border border-light/20 p-8 backdrop-blur">
           <thead>
-            <tr className="border-b border-light/20 bg-light/20">
+            <tr className="border-b border-light/20 bg-light/10">
               <th className="px-4 py-2 text-left">Page</th>
               <th className="px-4 py-2 text-left">URL</th>
               <th className="px-4 py-2 text-left">Change Frequency</th>
@@ -64,20 +64,22 @@ const Sitemap: React.FC = () => {
             {urls.map((url, index) => (
               <tr
                 key={index}
-                className="transition-300 border-b border-light/20 text-light/80 hover:bg-light/20"
+                className="transition-300 border-b border-light/15 text-light/80 hover:bg-light/10"
               >
-                <td className="px-4 py-2">{url.loc.split('/').pop()}</td>
-                <td className="px-4 py-2">
+                <td className="px-4 py-2 hover:text-white">
+                  {url.loc.split('/').pop()}
+                </td>
+                <td className="px-4 py-2 hover:text-white">
                   <Link
                     to={url.loc}
-                    className="transition-300 font-medium hover:text-light hover:underline"
+                    className="transition-300 font-extralight hover:text-light hover:underline"
                     aria-label={url.loc}
                   >
                     {url.loc}
                   </Link>
                 </td>
-                <td className="px-4 py-2">{url.changefreq}</td>
-                <td className="px-4 py-2">{url.priority}</td>
+                <td className="px-4 py-2 hover:text-white">{url.changefreq}</td>
+                <td className="px-4 py-2 hover:text-white">{url.priority}</td>
               </tr>
             ))}
           </tbody>

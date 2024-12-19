@@ -10,7 +10,7 @@ const aboutContents = {
   name: 'Purna Shrestha',
   title: 'Designer + Developer',
   description:
-    'A software engineer with 2+ years in software development & UI/UX design.',
+    'A software engineer with 2+ years in web and software development, and UI/UX design.',
   successfulProjects: '20+',
   socialLinks: [
     { id: 'Github', icon: FaGithub, url: 'https://github.com/purnasth' },
@@ -61,7 +61,7 @@ const ProfileNav = () => {
         <hr className="opacity-10" />
 
         <div className="description">
-          <p className="text-pretty text-justify text-sm text-light/60">
+          <p className="text-pretty text-justify text-sm font-light text-light/70">
             {aboutContents.description}
           </p>
           <p className="mt-1 text-sm font-light">

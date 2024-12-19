@@ -39,12 +39,13 @@ const PortfolioPresentation: React.FC = () => {
         currentPage={portfolioItem.title}
         whiteBg={whiteBg}
       />
-      <main className="bg-white/70 md:px-4 xl:px-0">
+      <main className="bg-white/50 md:px-4 xl:px-0">
         <video
           className="fixed inset-0 z-[-98] h-screen w-full object-cover mix-blend-difference"
           autoPlay
-          muted
           loop
+          muted
+          playsInline
         >
           <source src={bgVideo} type="video/mp4" />
           Your browser does not support the video tag.
@@ -139,7 +140,8 @@ const PortfolioPresentation: React.FC = () => {
           <img
             src={portfolioItem.portfolioWebsite?.uiPresentation}
             alt={`UI Presentation of ${portfolioItem.title}`}
-            className="size-full min-h-96 object-contain mix-blend-darken"
+            // className="size-full min-h-96 object-contain mix-blend-darken"
+            className="size-full min-h-96 object-contain"
           />
         </section>
 
@@ -149,7 +151,7 @@ const PortfolioPresentation: React.FC = () => {
               (iframe, index) => (
                 <div
                   key={index}
-                  className="h-[42rem] w-full overflow-y-auto shadow-lg md:w-[22rem]"
+                  className="h-[42rem] w-full overflow-y-auto bg-white shadow-lg md:w-[22rem]"
                 >
                   <iframe
                     src={iframe.url}
@@ -172,7 +174,7 @@ const PortfolioPresentation: React.FC = () => {
         </section>
 
         <section>
-          <div className="h-screen w-full overflow-y-auto shadow-lg md:h-[110vh] md:scale-[0.875]">
+          <div className="h-screen w-full overflow-y-auto bg-white shadow-lg md:h-[110vh] md:scale-[0.875]">
             <iframe
               src={portfolioItem.portfolioWebsite?.iframePages[0]?.url}
               title={portfolioItem.portfolioWebsite?.iframePages[0]?.title}

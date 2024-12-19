@@ -17,11 +17,11 @@ const ProjectsUI: React.FC<ProjectsUIProps> = ({ limit }) => {
   return (
     <>
       <section className="pt-12">
-        <div className="overflow-hidden rounded-3xl border-[1px] border-light/10">
+        <div className="overflow-hidden rounded-3xl backdrop-blur-sm bg-dark/50 border-[1px] border-light/10">
           {displayedProjects.map((project, index) => (
             <Link
               key={project.id}
-              className="transition-300 group grid grid-cols-1 gap-0 border-b-[1px] border-light/20 text-light hover:bg-light hover:text-dark md:grid-cols-3 md:flex-row"
+              className="transition-300 group grid grid-cols-1 gap-0 border-b-[1px] border-light/20 text-light hover:bg-light/90 hover:text-dark md:grid-cols-3 md:flex-row"
               to={`/portfolio/${project.portfolioUrl}`}
               aria-label={project.title}
             >

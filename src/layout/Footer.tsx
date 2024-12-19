@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
               aria-label="Schedule a meeting"
             >
               Schedule a meeting
-              <TbMessageChatbot className="transition-300 text-xl group-hover:translate-x-2 group-hover:animate-ping" />
+              <TbMessageChatbot className="transition-300 text-xl group-hover:text-2xl group-hover:translate-x-2 group-hover:animate-wave" />
             </Link>
             <p className="mt-6 text-light/60">
               or directly mail me at
@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
               </span>
               <div className="flex items-center justify-between gap-1">
                 <p className="font-medium">Say&nbsp;Hi</p>
-                <i className="hello-wave text-2xl">&#128075;</i>
+                <i className="animate-wave text-2xl">&#128075;</i>
                 <span className="mr-4 h-px w-full bg-gradient-to-r from-transparent to-light/40"></span>
                 <ul className="flex items-center gap-6">
                   {aboutContents.socialLinks.map((link) => (

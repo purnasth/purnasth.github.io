@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        luxury: [
-          '"Gold Badge"', 'Georgia', 'Cambria', 'serif'],
+        luxury: ['"Gold Badge"', 'Georgia', 'Cambria', 'serif'],
         // title: [
         //   '"Kalnia"',
         //   'ui-serif',
@@ -15,7 +14,7 @@ export default {
         //   'Times',
         //   'serif',
         // ],
-        'body': [
+        body: [
           '"Bricolage Grotesque"',
           // '"Syne"',
           'Inria Sans',
@@ -66,6 +65,27 @@ export default {
           xl: '1280px',
           '2xl': '1600px',
         },
+      },
+      keyframes: {
+        floating: {
+          '0%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+        wave: {
+          '0%': { transform: 'rotate(0deg)' },
+          '10%': { transform: 'rotate(14deg)' },
+          '20%': { transform: 'rotate(-8deg)' },
+          '30%': { transform: 'rotate(14deg)' },
+          '40%': { transform: 'rotate(-4deg)' },
+          '50%': { transform: 'rotate(10deg)' },
+          '60%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        },
+      },
+      animation: {
+        floating: 'floating 3s ease-in-out infinite',
+        wave: 'wave 2.5s infinite',
       },
     },
   },

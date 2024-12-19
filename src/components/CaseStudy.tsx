@@ -35,31 +35,31 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
 
         <ul className="max-w-4xl space-y-8 md:space-y-12">
           <li className="space-y-2 md:space-y-3">
-            <h4 className="flex items-center gap-2 text-base text-gray-600 md:text-xl">
+            <h4 className="flex items-center gap-2 text-base text-dark md:text-xl">
               <TbFaceIdError />
               Problem Statement
             </h4>
-            <p className="border-l-4 pl-4 text-sm leading-relaxed text-gray-600 md:text-base">
+            <p className="border-l-2 border-dark/60 pl-4 text-sm leading-relaxed text-dark opacity-70 md:text-base">
               {problemStatement}
             </p>
           </li>
 
           <li className="space-y-2 md:space-y-3">
-            <h4 className="flex items-center gap-2 text-base text-gray-600 md:text-xl">
+            <h4 className="flex items-center gap-2 text-base text-dark md:text-xl">
               <TbBulb />
               Solution Overview
             </h4>
-            <p className="border-l-4 pl-4 text-sm leading-relaxed text-gray-600 md:text-base">
+            <p className="border-l-2 border-dark/60 pl-4 text-sm leading-relaxed text-dark opacity-70 md:text-base">
               {solutionOverview}
             </p>
           </li>
 
           <li className="space-y-2 md:space-y-3">
-            <h4 className="flex items-center gap-2 text-base text-gray-600 md:text-xl">
+            <h4 className="flex items-center gap-2 text-base text-dark md:text-xl">
               <MdOutlineAutoFixHigh />
               Project Journey
             </h4>
-            <p className="border-l-4 pl-4 text-sm leading-relaxed text-gray-600 md:text-base">
+            <p className="border-l-2 border-dark/60 pl-4 text-sm leading-relaxed text-dark opacity-70 md:text-base">
               {journeyOverview}
             </p>
             <div className="relative">
@@ -74,10 +74,10 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
 
           {toolsUsed && toolsUsed.length > 0 && (
             <li className="space-y-2 md:space-y-3">
-              <h4 className="flex items-center gap-2 text-base text-gray-600 md:text-xl">
+              <h4 className="flex items-center gap-2 text-base text-dark md:text-xl">
                 <TbTools /> Tools Used
               </h4>
-              <div className="mt-8 flex items-center gap-8 border-l-4 pl-4">
+              <div className="mt-8 flex items-center gap-8 border-l-2 border-dark/60 pl-4">
                 {toolsUsed.map((tool, index) => (
                   <img
                     key={index}
@@ -92,10 +92,10 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
           )}
 
           <li className="space-y-2 md:space-y-3">
-            <h4 className="flex items-center gap-2 text-base text-gray-600 md:text-xl">
+            <h4 className="flex items-center gap-2 text-base text-dark md:text-xl">
               <TbAward /> Project Outcome
             </h4>
-            <p className="border-l-4 pl-4 text-sm leading-relaxed text-gray-600 md:text-base">
+            <p className="border-l-2 border-dark/60 pl-4 text-sm leading-relaxed text-dark opacity-70 md:text-base">
               {projectOutcome}
             </p>
           </li>

@@ -27,27 +27,27 @@ const EmbedPosts: React.FC = () => {
       {/* <h3 className="text-xl uppercase leading-snug sm:text-2xl md:text-3xl lg:leading-snug">
           Social Media Wall
         </h3> */}
-      <h3 className="font-body text-4xl text-light/80 font-normal leading-snug">
+      <h3 className="font-body text-4xl text-light/70 font-normal leading-snug inline-flex gap-0">
         Stay connected with the latest updates on
         <Link
           to="https://www.linkedin.com/in/purna-shrestha-0310ps/"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative mx-3 inline-block text-inherit font-normal text-light"
+          className="group relative inline-block text-inherit font-normal text-light scale-75"
         >
-          <span className="absolute -bottom-2 -right-0 h-px w-full origin-left bg-light transition-all duration-300 ease-linear group-hover:scale-x-0"></span>
-          Linkedin
+          <span className="absolute -bottom-0 -right-0 h-px w-full origin-left bg-light transition-all duration-300 ease-linear group-hover:scale-x-0"></span>
+          linkedin
           {/* <FaLinkedinIn /> */}
         </Link>
-        and
+        &
         <Link
           to="https://www.instagram.com/purna.codes/"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative mx-3 inline-block text-inherit font-normal text-light"
+          className="group relative inline-block text-inherit font-normal text-light scale-75"
         >
-          <span className="absolute -bottom-2 -right-0 h-px w-full origin-left bg-light transition-all duration-300 ease-linear group-hover:scale-x-0"></span>
-          Instagram
+          <span className="absolute -bottom-0 -right-0 h-px w-full origin-left bg-light transition-all duration-300 ease-linear group-hover:scale-x-0"></span>
+          instagram
           {/* <RiInstagramFill /> */}
         </Link>
       </h3>
