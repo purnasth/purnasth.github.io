@@ -17,35 +17,38 @@ const Error404: React.FC = () => {
         keywords="404 error, page not found, missing page, Purna Shrestha, web developer"
         robots="noindex, nofollow"
       />
-      <main className="relative flex h-screen flex-col items-center justify-center gap-2 p-0 text-light">
+      <main className="relative flex h-screen items-center justify-center flex-col gap-2 p-0 text-light">
         <img
           src={globe}
           alt="Globe"
           className="absolute inset-0 -z-10 size-full object-cover mix-blend-color-dodge"
         />
-        <div className="overlay -z-10 bg-dark/50" />
-        {/* <h1 className="font-body text-center text-6xl font-normal leading-snug">
-          404 <br /> Page Not Found
-        </h1> */}
-        <img
-          src={error}
-          alt="Error"
-          draggable="false"
-         className="h-[80vh] w-full object-contain animate-floating"
-        />
-        {/* <p className="mt-4 text-lg">
-        Oops! The page you're looking for doesn't exist.
-      </p> */}
-        <button
-          type="button"
-          onClick={() => navigate(-1)}
-          className="transition-300 group flex translate-y-0 items-center justify-center gap-2 rounded-full bg-light/10 px-8 py-4 text-xs text-light opacity-100 outline outline-1 outline-light/60 backdrop-blur-lg hover:bg-light hover:text-dark md:text-base"
-          aria-label="Go Back"
-          title="Go Back"
-        >
-          <CgArrowLongLeft className="transition-300 text-2xl group-hover:-translate-x-2" />
-          Go Back
-        </button>
+        <div className="relative">
+          <img
+            src={error}
+            alt="Error"
+            draggable="false"
+            className="animate-floating absolute inset-0 h-96 md:h-[80vh] w-full object-contain blur-xl"
+          />
+          <img
+            src={error}
+            alt="Error"
+            draggable="false"
+            className="animate-floating h-96 md:h-[80vh] w-full object-contain"
+          />
+        </div>
+        <div className="md:absolute inset-0 flex items-center justify-center">
+          <button
+            type="button"
+            onClick={() => navigate(-1)}
+            className="transition-300 group flex h-fit w-fit translate-y-0 items-center justify-center gap-2 rounded-full bg-dark/40 px-8 py-4 text-xs text-light opacity-100 outline outline-1 outline-light/60 backdrop-blur-sm hover:bg-light hover:text-dark md:text-base"
+            aria-label="Go Back"
+            title="Go Back"
+          >
+            <CgArrowLongLeft className="transition-300 text-2xl group-hover:-translate-x-2" />
+            Go Back
+          </button>
+        </div>
       </main>
     </>
   );

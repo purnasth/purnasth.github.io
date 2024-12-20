@@ -4,10 +4,11 @@ const Video = () => {
   return (
     <>
       <video
-        className="fixed inset-0 z-[-99] h-screen w-full object-cover mix-blend-luminosity opacity-40 contrast-150"
+        className="fixed inset-0 z-[-99] h-screen w-full object-cover opacity-40 mix-blend-luminosity contrast-150"
         autoPlay
-        muted
         loop
+        muted
+        playsInline
       >
         <source src={bgVideo} type="video/mp4" />
         Your browser does not support the video tag.
