@@ -8,6 +8,7 @@ import ichchhaMockup from '../assets/img/portfolio/hotel-ichchha/mockup.png';
 import hotelHimalayaUI from '../assets/img/portfolio/hotel-himalaya/himalaya-ui.webp';
 import mithilaUI from '../assets/img/portfolio/mithila/mithila-ui.avif';
 import hotelIchchhaUI from '../assets/img/portfolio/hotel-ichchha/hotel-ichchha-ui.avif';
+import babermahalUI from '../assets/img/portfolio/baber-mahal-vilas/babermahalUI.webp';
 
 // journey
 import projectJourney from '../assets/img/portfolio/hotel-himalaya/project-journey.svg';
@@ -130,8 +131,7 @@ export const portfolioData = [
           credits: 'Longtail e-Media',
           titleImage: 'https://babermahalvilas.purnashrestha.com.np/img/banner/12.webp',
           backgroundImage: 'https://babermahalvilas.purnashrestha.com.np/img/banner/2.webp',
-          uiPresentation:
-            'https://www.babermahalvilas.com/assets/ui-presentation.avif',
+          uiPresentation: babermahalUI,
           iframePages: [
             {
               url: 'https://babermahalvilas.purnashrestha.com.np/home',
