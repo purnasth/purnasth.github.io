@@ -3,6 +3,7 @@ import hotelHimalayaMockup from '../assets/img/portfolio/hotel-himalaya/hotelhim
 import hotelDayatraMockup from '../assets/img/portfolio/hotel-dayatra/mockup.png';
 import mithilaMockup from '../assets/img/portfolio/mithila/mockup.png';
 import ichchhaMockup from '../assets/img/portfolio/hotel-ichchha/mockup.png';
+import baberMahalMockup from '../assets/img/portfolio/baber-mahal-vilas/babermahal-mockup.webp';
 
 // ui presentation
 import hotelHimalayaUI from '../assets/img/portfolio/hotel-himalaya/himalaya-ui.webp';
@@ -125,7 +126,7 @@ export const portfolioData = [
           'Baber Mahal Vilas is a luxury boutique hotel in Kathmandu, Nepal. The hotel is a fusion of modern luxury and traditional architecture, offering a unique experience to its guests.',
         portfolioWebsite: {
           deployUrl: 'https://babermahalvilas.purnashrestha.com.np/',
-          mockup: '',
+          mockup: baberMahalMockup,
           role: 'Design & Development',
           year: '2024',
           credits: 'Longtail e-Media',
