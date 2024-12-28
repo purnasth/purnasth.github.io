@@ -116,6 +116,91 @@ export const portfolioData = [
         },
       },
       {
+        id: 'baber-mahal-vilas',
+        title: 'Baber Mahal Vilas',
+        logoSrc: 'https://babermahalvilas.purnashrestha.com.np/img/logo.svg',
+        portfolioUrl: 'baber-mahal-vilas',
+        description:
+          'Baber Mahal Vilas is a luxury boutique hotel in Kathmandu, Nepal. The hotel is a fusion of modern luxury and traditional architecture, offering a unique experience to its guests.',
+        portfolioWebsite: {
+          deployUrl: 'https://babermahalvilas.purnashrestha.com.np/',
+          mockup: '',
+          role: 'Design & Development',
+          year: '2024',
+          credits: 'Longtail e-Media',
+          titleImage: 'https://babermahalvilas.purnashrestha.com.np/img/banner/12.webp',
+          backgroundImage: 'https://babermahalvilas.purnashrestha.com.np/img/banner/2.webp',
+          uiPresentation:
+            'https://www.babermahalvilas.com/assets/ui-presentation.avif',
+          iframePages: [
+            {
+              url: 'https://babermahalvilas.purnashrestha.com.np/home',
+              title: 'Baber Mahal Vilas Website Home Page',
+            },
+            {
+              url: 'https://babermahalvilas.purnashrestha.com.np/accommodation',
+              title: 'Baber Mahal Vilas Website Stay Page',
+            },
+            {
+              url: 'https://babermahalvilas.purnashrestha.com.np/dine',
+              title: 'Baber Mahal Vilas Website Dine Page',
+            },
+          ],
+        },
+        caseStudy: {
+          problemStatement:
+            "Baber Mahal Vilas required a website that reflected the hotel's unique blend of modern luxury and traditional architecture. The site needed to capture the essence of the hotel's design and ambiance while providing a seamless user experience for guests.",
+          solutionOverview:
+            "The new website design focused on creating a visually appealing platform that showcased the hotel's luxurious amenities and traditional architecture. The site was optimized for speed and user-friendly navigation, ensuring guests could easily explore the hotel's offerings and make bookings.",
+          projectJourney: { projectJourney },
+          journeyOverview:
+            'This timeline illustrates the step-by-step process from identifying the initial problem to achieving the final goals.',
+          projectOutcome:
+            "The redesigned website successfully captured the essence of Baber Mahal Vilas, attracting more visitors and increasing online bookings. The site's visual appeal and user-friendly design led to a 50% increase in website traffic and a 30% rise in direct bookings within the first month.",
+          toolsUsed: [
+            {
+              src: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg',
+              title: 'Figma',
+            },
+            {
+              src: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
+              title: 'React',
+            },
+            {
+              src: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
+              title: 'TailwindCSS',
+            },
+            {
+              src: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg',
+              title: 'Cloudflare',
+            },
+          ],
+          feedback: {
+            clientReview:
+              "“We wanted our website to reflect the unique blend of modern luxury and traditional architecture that defines Baber Mahal Vilas. Since launching, we've seen a 50% increase in website traffic and a 30% rise in direct bookings. The site's visual appeal and user-friendly design have exceeded our expectations.”",
+              author: 'Baber Mahal Vilas',
+          },
+          galleryImages: [
+            {
+              src: 'https://babermahalvilas.purnashrestha.com.np/img/banner/2.webp',
+              alt: 'Baber Mahal Vilas',
+            },
+            {
+              src: 'https://babermahalvilas.purnashrestha.com.np/img/banner/3.webp',
+              alt: 'Baber Mahal Vilas',
+            },
+            {
+              src: 'https://babermahalvilas.purnashrestha.com.np/img/banner/6.webp',
+              alt: 'Baber Mahal Vilas',
+            },
+            {
+              src: 'https://babermahalvilas.purnashrestha.com.np/img/banner/8.webp',
+              alt: 'Baber Mahal Vilas',
+            },
+          ],
+        },
+      },
+      {
         id: 'hotel-dayatra',
         title: 'Hotel Dayatra',
         logoSrc: 'https://dayatra.purnashrestha.com.np/assets/img/logo.svg',
@@ -372,6 +457,7 @@ export const portfolioData = [
           ],
         },
       },
+     
     ],
   },
 ];
