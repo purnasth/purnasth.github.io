@@ -4,12 +4,14 @@ import hotelDayatraMockup from '../assets/img/portfolio/hotel-dayatra/mockup.png
 import mithilaMockup from '../assets/img/portfolio/mithila/mockup.png';
 import ichchhaMockup from '../assets/img/portfolio/hotel-ichchha/mockup.png';
 import baberMahalMockup from '../assets/img/portfolio/baber-mahal-vilas/babermahal-mockup.webp';
+import himalayanFlavoursMockup from '../assets/img/portfolio/himalayan-flavours/himalayanflavours-mockup.webp';
 
 // ui presentation
 import hotelHimalayaUI from '../assets/img/portfolio/hotel-himalaya/himalaya-ui.webp';
 import mithilaUI from '../assets/img/portfolio/mithila/mithila-ui.avif';
 import hotelIchchhaUI from '../assets/img/portfolio/hotel-ichchha/hotel-ichchha-ui.avif';
 import babermahalUI from '../assets/img/portfolio/baber-mahal-vilas/babermahalUI.webp';
+import himalayanFlavoursUI from '../assets/img/portfolio/himalayan-flavours/himalayan-flavours-ui.webp';
 
 // journey
 import projectJourney from '../assets/img/portfolio/hotel-himalaya/project-journey.svg';
@@ -27,6 +29,95 @@ export const portfolioData = [
     description:
       'From early stage startups to renowned brands, from latest brand building to revamping existing ones, I have worked on a variety of projects. Here are some of my best works. Click on the project to witness the journey.',
     portfolioDetails: [
+      {
+        id: 'himalayan-flavours',
+        title: 'Himalayan Flavours',
+        logoSrc:
+          'https://mayurstay.com/himalayanflavours/backend/images/preference/CPM4u-logo.svg',
+        portfolioUrl: 'hotel-himalaya',
+        // description:
+        //   "Nestled within 6.58 acres of exquisitely landscaped grounds, Hotel Himalaya is conveniently located 8 km away from the Tribhuvan International Airport and only 2 km from the Kathmandu city center. ",
+        description:
+          "Himalayan Flavours is more than just a restaurant; it's a celebration of the rich and diverse culinary heritage of the Himalayan region. Nestled in the heart of Victoria, B.C., our restaurant offers an authentic taste of India, Nepal, and China, bringing together the vibrant and bold flavors that define the cultures.",
+
+        portfolioWebsite: {
+          deployUrl: 'https://himalayan-flavours.com/',
+          mockup: himalayanFlavoursMockup,
+          role: 'Design & Development',
+          year: '2024',
+          credits: 'Longtail e-Media',
+          titleImage: 'https://mayurstay.com/himalayanflavours/assets/bg_cuisine-CXN14gmB.png',
+          backgroundImage:
+            'https://mayurstay.com/himalayanflavours/assets/bg_cuisine-CXN14gmB.png',
+          uiPresentation: himalayanFlavoursUI,
+          iframePages: [
+            {
+              url: 'https://mayurstay.com/himalayanflavours/',
+              title: 'Himalayan Flavours Home Page',
+            },
+            {
+              url: 'https://mayurstay.com/himalayanflavours/about',
+              title: 'Himalayan Flavours About Page',
+            },
+            {
+              url: 'https://mayurstay.com/himalayanflavours/gallery',
+              title: 'Himalayan Flavours Gallery Page',
+            },
+          ],
+        },
+        caseStudy: {
+          problemStatement:
+            'Himalayan Flavours required a website that reflected the restaurant’s unique blend of Indian, Nepalese, and Chinese cuisine. The site needed to capture the essence of the restaurant’s diverse menu while providing an engaging user experience for customers.',
+          solutionOverview:
+            'The website design focused on creating a visually appealing platform that showcased the restaurant’s vibrant and bold flavors. The site was optimized for speed and user-friendly navigation, ensuring customers could easily explore the menu and make reservations.',
+          projectJourney: { projectJourney },
+          journeyOverview:
+            'This timeline illustrates the step-by-step process from identifying the initial problem to achieving the final goals.',
+          projectOutcome:
+            'The website increased website visitors by 80%, boosted user engagement by 30%, and led to a 40% increase in order from the website within the first month.',
+          toolsUsed: [
+            {
+              src: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg',
+              title: 'Figma',
+            },
+            {
+              src: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
+              title: 'React',
+            },
+            {
+              src: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
+              title: 'TailwindCSS',
+            },
+            {
+              src: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg',
+              title: 'Cloudflare',
+            },
+          ],
+          feedback: {
+            clientReview:
+              "The Himalayan Flavours website was a collaborative effort. The new site has increased our online presence and customer engagement. We've seen an 80% increase in website visitors, a 30% boost in engagement, and a 40% rise in online orders within the first month.",
+            author: 'Himalayan Flavours',
+          },
+          galleryImages: [
+            {
+              src: 'https://mayurstay.com/himalayanflavours/assets/bg_cuisine-CXN14gmB.png',
+              alt: 'Himalayan Flavours',
+            },
+            {
+              src: 'https://mayurstay.com/himalayanflavours/assets/bg_cuisine-CXN14gmB.png',
+              alt: 'Himalayan Flavours',
+            },
+            {
+              src: 'https://mayurstay.com/himalayanflavours/assets/bg_cuisine-CXN14gmB.png',
+              alt: 'Himalayan Flavours',
+            },
+            {
+              src: 'https://mayurstay.com/himalayanflavours/assets/bg_cuisine-CXN14gmB.png',
+              alt: 'Himalayan Flavours',
+            },
+          ],
+        },
+      },
       {
         id: 'hotel-himalaya',
         title: 'Hotel Himalaya',
@@ -130,8 +221,10 @@ export const portfolioData = [
           role: 'Design & Development',
           year: '2024',
           credits: 'Longtail e-Media',
-          titleImage: 'https://babermahalvilas.purnashrestha.com.np/img/banner/12.webp',
-          backgroundImage: 'https://babermahalvilas.purnashrestha.com.np/img/banner/2.webp',
+          titleImage:
+            'https://babermahalvilas.purnashrestha.com.np/img/banner/12.webp',
+          backgroundImage:
+            'https://babermahalvilas.purnashrestha.com.np/img/banner/2.webp',
           uiPresentation: babermahalUI,
           iframePages: [
             {
@@ -179,7 +272,7 @@ export const portfolioData = [
           feedback: {
             clientReview:
               "“We wanted our website to reflect the unique blend of modern luxury and traditional architecture that defines Baber Mahal Vilas. Since launching, we've seen a 50% increase in website traffic and a 30% rise in direct bookings. The site's visual appeal and user-friendly design have exceeded our expectations.”",
-              author: 'Baber Mahal Vilas',
+            author: 'Baber Mahal Vilas',
           },
           galleryImages: [
             {
@@ -458,7 +551,6 @@ export const portfolioData = [
           ],
         },
       },
-     
     ],
   },
 ];
