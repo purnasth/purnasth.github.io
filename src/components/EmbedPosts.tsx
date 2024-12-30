@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const embedded = [
+  'https://www.instagram.com/p/DEJWdmcvxyI/?img_index=1',
+  'https://www.instagram.com/p/DC--V15vbMe/?img_index=1',
   'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7261238772942430209',
   //   'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7261238772942430209?compact=1',
   'https://www.instagram.com/p/DBk6B2vv_pP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
