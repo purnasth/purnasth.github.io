@@ -34,7 +34,7 @@ export const portfolioData = [
         title: 'Himalayan Flavours',
         logoSrc:
           'https://mayurstay.com/himalayanflavours/backend/images/preference/CPM4u-logo.svg',
-        portfolioUrl: 'hotel-himalaya',
+        portfolioUrl: 'himalayan-flavours',
         // description:
         //   "Nestled within 6.58 acres of exquisitely landscaped grounds, Hotel Himalaya is conveniently located 8 km away from the Tribhuvan International Airport and only 2 km from the Kathmandu city center. ",
         description:
@@ -46,7 +46,8 @@ export const portfolioData = [
           role: 'Design & Development',
           year: '2024',
           credits: 'Longtail e-Media',
-          titleImage: 'https://mayurstay.com/himalayanflavours/assets/bg_cuisine-CXN14gmB.png',
+          titleImage:
+            'https://mayurstay.com/himalayanflavours/assets/bg_cuisine-CXN14gmB.png',
           backgroundImage:
             'https://mayurstay.com/himalayanflavours/assets/bg_cuisine-CXN14gmB.png',
           uiPresentation: himalayanFlavoursUI,
@@ -605,6 +606,18 @@ export const navLinks = [
     title: 'Contact',
     routing: '/contact',
     picture: contact,
+  },
+  {
+    id: 'Himalayan Flavours',
+    title: 'Himalayan Flavours',
+    routing: '/portfolio/himalayan-flavours',
+    picture: himalayanFlavoursMockup,
+  },
+  {
+    id: 'baber-mahal-vilas',
+    title: 'Baber Mahal Vilas',
+    routing: '/portfolio/baber-mahal-vilas',
+    picture: baberMahalMockup,
   },
   {
     id: 'hotel-himalaya',
