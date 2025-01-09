@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Bourbon St';
-  src: url(./assets/fonts/bourbonst-regular.otf) format('opentype');
+  font-family: 'purna_shrestha_poly_sans';
+  src: url('./assets/fonts/PolySans.woff2') format('woff2');
 }
 
 @font-face {
@@ -13,14 +13,12 @@
 }
 
 @layer components {
-
   ::selection {
     /* background: #fff;
     color: #111; */
     @apply bg-light text-dark;
   }
-  
-  
+
   /* *,
   html,
   body {
@@ -333,5 +331,3 @@
   font-style: inherit;
   line-height: inherit;
 }
-
-
