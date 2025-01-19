@@ -5,6 +5,7 @@ import mithilaMockup from '../assets/img/portfolio/mithila/mockup.png';
 import ichchhaMockup from '../assets/img/portfolio/hotel-ichchha/mockup.png';
 import baberMahalMockup from '../assets/img/portfolio/baber-mahal-vilas/babermahal-mockup.webp';
 import himalayanFlavoursMockup from '../assets/img/portfolio/himalayan-flavours/himalayanflavours-mockup.webp';
+import satprayasNepalMockup from '../assets/img/portfolio/satprayas-nepal/satprayas-nepal-mockup.webp';
 
 // ui presentation
 import hotelHimalayaUI from '../assets/img/portfolio/hotel-himalaya/himalaya-ui.webp';
@@ -12,6 +13,10 @@ import mithilaUI from '../assets/img/portfolio/mithila/mithila-ui.avif';
 import hotelIchchhaUI from '../assets/img/portfolio/hotel-ichchha/hotel-ichchha-ui.avif';
 import babermahalUI from '../assets/img/portfolio/baber-mahal-vilas/babermahalUI.webp';
 import himalayanFlavoursUI from '../assets/img/portfolio/himalayan-flavours/himalayan-flavours-ui.webp';
+import satprayasNepalUI from '../assets/img/portfolio/satprayas-nepal/satprayasnepal-ui.webp';
+
+// lander
+import satprayasLander from '../assets/img/portfolio/satprayas-nepal/satprayasnepal.webp';
 
 // journey
 import projectJourney from '../assets/img/portfolio/hotel-himalaya/project-journey.svg';
@@ -29,6 +34,91 @@ export const portfolioData = [
     description:
       'From early stage startups to renowned brands, from latest brand building to revamping existing ones, I have worked on a variety of projects. Here are some of my best works. Click on the project to witness the journey.',
     portfolioDetails: [
+      {
+        id: 'satprayas-nepal',
+        title: 'Satprayas Nepal',
+        logoSrc: 'https://satprayas.purnashrestha.com.np/assets/logo.svg',
+        portfolioUrl: 'satprayas-nepal',
+        description:
+          'Satprayas Nepal is a service oriented non-profit organization that works for the well being and welfare of physically and mentally challenged children. It is registered in Bhaktapur District and has been providing services to children of Bhaktapur and has been providing services to children of Bhaktapur and nearby cities.',
+
+        portfolioWebsite: {
+          deployUrl: 'https://satprayas.purnashrestha.com.np/',
+          mockup: satprayasNepalMockup,
+          role: 'Design & Development',
+          year: '2025',
+          credits: 'Longtail e-Media',
+          titleImage: satprayasLander,
+          backgroundImage: satprayasLander,
+          uiPresentation: satprayasNepalUI,
+          iframePages: [
+            {
+              url: 'https://satprayas.purnashrestha.com.np/',
+              title: 'Satprayas Nepal Home Page',
+            },
+            {
+              url: 'https://satprayas.purnashrestha.com.np/contact',
+              title: 'Satprayas Nepal Contact Page',
+            },
+            {
+              url: 'https://satprayas.purnashrestha.com.np/gallery',
+              title: 'Satprayas Nepal Gallery Page',
+            },
+          ],
+        },
+        caseStudy: {
+          problemStatement:
+            'Satprayas Nepal needed a website that would effectively communicate its mission and vision to a wider audience. The site needed to highlight the organization’s work with physically and mentally challenged children while encouraging donations and volunteer participation.',
+          solutionOverview:
+            'The website design focused on creating a visually engaging platform that showcased the organization’s work and impact. The site was optimized for speed and user-friendly navigation, ensuring visitors could easily learn about Satprayas Nepal’s initiatives and get involved.',
+          projectJourney: { projectJourney },
+          journeyOverview:
+            'This timeline illustrates the step-by-step process from identifying the initial problem to achieving the final goals.',
+          projectOutcome:
+            'The website successfully raised awareness about Satprayas Nepal’s work, leading to a 50% increase in donations and a 30% rise in volunteer sign-ups within the first month.',
+          toolsUsed: [
+            {
+              src: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg',
+              title: 'Figma',
+            },
+            {
+              src: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
+              title: 'React',
+            },
+            {
+              src: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
+              title: 'TailwindCSS',
+            },
+            {
+              src: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg',
+              title: 'Cloudflare',
+            },
+          ],
+          feedback: {
+            clientReview:
+              '“The new website has been a game-changer for Satprayas Nepal. It has helped us reach a wider audience and increase donations and volunteer sign-ups. We’ve seen a 50% increase in donations and a 30% rise in volunteer participation within the first month. The site’s design and functionality have exceeded our expectations.”',
+            author: 'Satprayas Nepal',
+          },
+          galleryImages: [
+            {
+              src: 'https://satprayas.purnashrestha.com.np/assets/images/gallery/11.webp',
+              alt: 'Satprayas Nepal',
+            },
+            {
+              src: 'https://satprayas.purnashrestha.com.np/assets/images/gallery/6.webp',
+              alt: 'Satprayas Nepal',
+            },
+            {
+              src: 'https://satprayas.purnashrestha.com.np/assets/images/gallery/13.webp',
+              alt: 'Satprayas Nepal',
+            },
+            {
+              src: 'https://satprayas.purnashrestha.com.np/assets/images/gallery/10.webp',
+              alt: 'Satprayas Nepal',
+            },
+          ],
+        },
+      },
       {
         id: 'himalayan-flavours',
         title: 'Himalayan Flavours',
