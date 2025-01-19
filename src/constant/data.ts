@@ -698,6 +698,12 @@ export const navLinks = [
     picture: contact,
   },
   {
+    id: 'Satprayas Nepal',
+    title: 'Satprayas Nepal',
+    routing: '/portfolio/satprayas-nepal',
+    picture: satprayasNepalMockup,
+  },
+  {
     id: 'Himalayan Flavours',
     title: 'Himalayan Flavours',
     routing: '/portfolio/himalayan-flavours',
