@@ -1,6 +1,6 @@
 // import Hero from '../components/Hero';
 import AboutHome from '../components/AboutHome';
-import HeroProfile from '../components/HeroProfile';
+// import HeroProfile from '../components/HeroProfile';
 // import ProfileNav from '../components/ProfileNav';
 // import SideNav from '../components/SideNav';
 import Footer from '../layout/Footer';
@@ -35,14 +35,18 @@ const Home = () => {
       <div className="sticky right-5 top-5 z-50 ml-auto mt-5 w-fit">
         <NavbarButton />
       </div>
-      <HeroProfile />
+      <ScrollReveal
+        heading="Bringing your Vision to Life"
+        styles="px-4  text-light text-5xl md:text-8xl font-luxury font-extralight leading-snug text-center mt-24 md:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] md:leading-snug"
+      />
+      {/* <HeroProfile /> */}
       <ProjectsSlider />
       <div className="container">
         <ScrollReveal
           heading="UI/UX Design. Web Development."
           styles="px-4 md:px-0 text-light text-3xl md:text-6xl font-luxury font-extralight leading-snug text-pretty md:leading-snug"
         />
-        <ProjectsUI />
+        <ProjectsUI limit={8} />
       </div>
       <EmbedPosts />
       <Footer />
