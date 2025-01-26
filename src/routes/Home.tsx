@@ -12,6 +12,7 @@ import SEO from '../utils/SEO';
 import Navbar from '../layout/Navbar';
 import ScrollReveal from '../components/ui/ScrollReveal';
 import EmbedPosts from '../components/EmbedPosts';
+import Testimonials from '../components/Testimonials';
 
 const Home = () => {
   return (
@@ -48,6 +49,7 @@ const Home = () => {
         />
         <ProjectsUI limit={8} />
       </div>
+      <Testimonials />
       <EmbedPosts />
       <Footer />
     </>

@@ -31,7 +31,7 @@
   }
 
   body {
-    @apply bg-dark;
+    @apply bg-black;
   }
 
   main {
