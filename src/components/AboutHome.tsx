@@ -1,7 +1,7 @@
 import React from 'react';
 import Hello from './ui/Hello';
 import purna from '../assets/img/hero_noise.png';
-import { Link } from 'react-router-dom';
+import CustomButton from './ui/CustomButton';
 
 const AboutHome: React.FC = () => {
   return (
@@ -23,12 +23,17 @@ const AboutHome: React.FC = () => {
             beautiful and functional.{' '}
             <strong>Let's create something unforgettable together!</strong>
           </p>
-          <Link
+          {/* <Link
             to="/about"
             className="transition-300 group mt-4 inline-flex max-w-56 items-center justify-center gap-2 rounded-full border border-light/20 bg-light/10 py-2 text-base font-semibold text-light shadow-md hover:animate-bounce hover:bg-light/30 hover:shadow-xl md:mt-12 md:px-8 md:py-4 md:text-sm"
           >
             Know more about me
-          </Link>
+          </Link> */}
+
+          <div className="mt-5 flex">
+            <CustomButton to="/about" value="About Me" />
+          </div>
+
           {/* <p className="max-w-xl text-sm opacity-70 md:text-base">
             From early stage startups to renowned brands, from latest brand
             building to revamping existing ones, I have worked on a variety of

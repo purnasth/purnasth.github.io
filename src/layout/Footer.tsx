@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { TbMessageChatbot } from 'react-icons/tb';
+import { TbBrandWhatsapp } from 'react-icons/tb';
 import purna from '../assets/img/hero.avif';
 
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { MdCall, MdMail } from 'react-icons/md';
 import { RiInstagramFill } from 'react-icons/ri';
 import WebsiteUseTime from '../components/ui/WebsiteUseTime';
+import CustomButton from '../components/ui/CustomButton';
 
 const aboutContents = {
   profileImage: purna,
@@ -33,7 +34,7 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="flex h-full items-center justify-center border-t border-light/20 bg-dark/50 backdrop-blur-sm px-4 py-16 text-light md:h-screen md:px-12">
+      <footer className="flex h-full items-center justify-center border-t border-light/20 bg-dark/50 px-4 py-16 text-light backdrop-blur-sm md:h-screen md:px-12">
         <div className="container">
           <div className="flex items-end gap-4 md:gap-6">
             {/* <span>Contact</span> */}
@@ -49,8 +50,8 @@ const Footer: React.FC = () => {
               className="size-10 -translate-y-1 rounded-full bg-white object-contain md:size-16 md:-translate-y-4"
             />
           </div>
-          <div className="mt-6 md:mt-12">
-            <Link
+          <div className="mt-6 md:mt-14">
+            {/* <Link
               to="https://wa.me/+9779808021753"
               rel="noopener noreferrer"
               className="transition-300 group mt-4 inline-flex items-center justify-center gap-2 rounded-full border border-light/20 bg-light/10 px-8 py-4 text-sm text-light shadow-md hover:animate-bounce hover:bg-light/30 hover:shadow-xl md:text-base"
@@ -59,17 +60,27 @@ const Footer: React.FC = () => {
             >
               Schedule a meeting
               <TbMessageChatbot className="transition-300 text-xl group-hover:text-2xl group-hover:translate-x-2 group-hover:animate-wave" />
-            </Link>
+            </Link> */}
+
+            <div className="flex">
+              <CustomButton
+                to="https://wa.me/+9779808021753"
+                value="Schedule a meeting"
+                icon={TbBrandWhatsapp}
+                external
+              />
+            </div>
+
             <p className="mt-6 text-light/60">
               or directly mail me at
               <Link
                 to="mailto:purnashrestha0310@gmail.com"
-                className="group relative mx-1 text-base font-semibold text-light"
+                className="group relative mx-1 text-base font-normal text-light"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="purnashrestha0310@gmail.com"
               >
-                <span className="absolute -bottom-2 -right-0 h-px w-full origin-left bg-light transition-all duration-300 ease-linear group-hover:scale-x-0"></span>
+                <span className="absolute -bottom-[6px] -right-0 h-[0.5px] w-full origin-left bg-light text-sm font-extralight transition-all duration-300 ease-linear group-hover:scale-x-0"></span>
                 purnashrestha0310@gmail.com
               </Link>
             </p>

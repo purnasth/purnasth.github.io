@@ -1,6 +1,5 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import { portfolioData } from '../constant/data';
 import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
 import CaseStudy from '../components/CaseStudy';
@@ -8,6 +7,7 @@ import GalleryReview from '../components/ui/GalleryReview';
 import ExploreProjects from '../components/ui/ExploreProjects';
 import SEO from '../utils/SEO';
 import bgVideo from '../assets/video/gradientOG.mp4';
+import CustomButton from '../components/ui/CustomButton';
 
 const PortfolioPresentation: React.FC = () => {
   const { website } = useParams();
@@ -86,7 +86,7 @@ const PortfolioPresentation: React.FC = () => {
           </div>
 
           <div className="flex -translate-y-1/2 items-center justify-center md:-translate-y-16">
-            <Link
+            {/* <Link
               to={portfolioItem.portfolioWebsite?.deployUrl || '#'}
               target="_blank"
               rel="noreferrer"
@@ -94,7 +94,13 @@ const PortfolioPresentation: React.FC = () => {
               aria-label="View Project"
             >
               <h5>View Project</h5>
-            </Link>
+            </Link> */}
+
+            <CustomButton
+              to={portfolioItem.portfolioWebsite?.deployUrl || '#'}
+              value="View Project"
+              external
+            />
           </div>
         </div>
 

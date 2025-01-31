@@ -1,7 +1,8 @@
 import { portfolioData } from '../constant/data';
 import { FaQuoteLeft } from 'react-icons/fa';
 import ScrollReveal from './ui/ScrollReveal';
-import { Link } from 'react-router-dom';
+import CustomButton from './ui/CustomButton';
+import { TbBookmarkFilled } from 'react-icons/tb';
 
 const Testimonials = () => {
   const { portfolioDetails } = portfolioData[0];
@@ -72,12 +73,18 @@ const Testimonials = () => {
                           </ul>
                         </div>
                       </div>
-                      <Link
+                      {/* <Link
                         to={`/portfolio/${portfolio.portfolioUrl}`}
                         className="transition-300 w-full min-w-fit rounded-full border border-light/50 bg-light/20 px-14 py-3 text-center text-light hover:bg-dark hover:text-light group-hover:bg-light group-hover:text-dark xl:w-auto"
                       >
                         View Case Study
-                      </Link>
+                      </Link> */}
+
+                      <CustomButton
+                        to={`/portfolio/${portfolio.portfolioUrl}`}
+                        value="View Case Study"
+                        icon={TbBookmarkFilled}
+                      />
                     </div>
                   </div>
                 </div>
@@ -111,7 +118,7 @@ const Testimonials = () => {
                     <blockquote className="text-pretty text-justify font-body text-base font-extralight md:text-lg">
                       {portfolio.caseStudy.feedback.clientReview}
                     </blockquote>
-                    <div className="mt-4 flex flex-col items-center justify-between gap-y-8 xl:mt-8">
+                    <div className="mt-4 flex flex-col justify-between gap-y-8 xl:mt-8">
                       <div className="flex w-full gap-4 xl:items-center">
                         <div className="relative">
                           <img
@@ -144,12 +151,18 @@ const Testimonials = () => {
                         </div>
                       </div>
 
-                      <Link
+                      <CustomButton
+                        to={`/portfolio/${portfolio.portfolioUrl}`}
+                        value="View Case Study"
+                        icon={TbBookmarkFilled}
+                      />
+
+                      {/* <Link
                         to={`/portfolio/${portfolio.portfolioUrl}`}
                         className="transition-300 w-full rounded-full border border-light/50 bg-light/20 px-6 py-3 text-center text-light hover:bg-dark hover:text-light group-hover:bg-light group-hover:text-dark"
                       >
                         View Case Study
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>

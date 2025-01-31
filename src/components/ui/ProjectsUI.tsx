@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { portfolioData } from '../../constant/data';
 import { CgArrowLongRight } from 'react-icons/cg';
+import CustomButton from './CustomButton';
 
 interface ProjectsUIProps {
   limit?: number;
@@ -79,7 +80,7 @@ const ProjectsUI: React.FC<ProjectsUIProps> = ({ limit }) => {
           ))}
         </div>
         <div className="mt-24 flex items-center justify-center">
-          <Link
+          {/* <Link
             to="/portfolio"
             className="transition-300 inline-flex scale-90 items-center justify-center gap-2 rounded-full bg-dark px-4 py-3 text-center text-xs font-medium uppercase text-light shadow outline outline-1 outline-light/20 hover:bg-dark/90 hover:tracking-wide hover:shadow-2xl sm:text-sm md:scale-100 md:px-8 md:py-4 md:text-base md:hover:tracking-widest"
             aria-label="All Projects"
@@ -88,7 +89,11 @@ const ProjectsUI: React.FC<ProjectsUIProps> = ({ limit }) => {
             <sup className="green-gradient text-xs font-bold group-hover:text-dark sm:text-sm md:text-base">
               ({portfolioDetails.length})
             </sup>
-          </Link>
+          </Link> */}
+          <CustomButton
+            to="/portfolio"
+            value={`All Projects (${portfolioDetails.length})`}
+          />
         </div>
       </section>
     </>
