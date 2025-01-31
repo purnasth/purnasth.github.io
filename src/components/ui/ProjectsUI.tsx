@@ -17,20 +17,38 @@ const ProjectsUI: React.FC<ProjectsUIProps> = ({ limit }) => {
   return (
     <>
       <section className="pt-12">
-        <div className="overflow-hidden rounded-3xl backdrop-blur-sm bg-dark/50 border-[1px] border-light/10">
+        <div className="overflow-hidden rounded-3xl border-[1px] border-light/10 bg-dark/50 backdrop-blur-sm hover:border-light/20">
           {displayedProjects.map((project, index) => (
             <Link
               key={project.id}
-              className="transition-300 group grid grid-cols-1 gap-0 border-b-[1px] border-light/20 text-light hover:bg-light/90 hover:text-dark md:grid-cols-3 md:flex-row"
+              className="transition-300 hover:bg-l ight/90 group relative grid grid-cols-1 gap-0 overflow-hidden border-b-[1px] border-light/20 text-light hover:text-dark md:grid-cols-3 md:flex-row"
               to={`/portfolio/${project.portfolioUrl}`}
               aria-label={project.title}
             >
+              <div
+                className={`transition-300 absolute -left-[15%] ${
+                  index % 2 === 0 ? '-top-3/4' : '-bottom-3/4'
+                } -z-20 size-96 rounded-full bg-white/60 blur-[100px] group-hover:scale-[2.5] group-hover:bg-white group-hover:blur-[50px]`}
+              ></div>
+              <div
+                className={`transition-300 absolute right-2 ${
+                  index % 2 === 0 ? '-top-3/4' : '-bottom-3/4'
+                } -z-20 size-96 rounded-full bg-slate-700 blur-[100px] group-hover:scale-[2.5] group-hover:bg-white group-hover:blur-[50px]`}
+              ></div>
+
+              <div
+                className={`transition-300 absolute left-1/3 -translate-x-1/4 ${
+                  index % 2 === 0 ? '-bottom-24' : '-top-24'
+                } -z-10 size-64 rounded-full bg-light/40 blur-[100px] group-hover:scale-[3] group-hover:bg-white group-hover:blur-[50px]`}
+              ></div>
               <div className="col-span-1 overflow-hidden p-4 xl:p-0 2xl:p-8">
-                <img
-                  src={project.portfolioWebsite.mockup}
-                  alt={project.title}
-                  className="transition-300 h-56 w-full origin-center object-cover group-hover:scale-110 sm:h-96 md:h-64 md:origin-left md:group-hover:scale-x-105"
-                />
+                <div className="relative">
+                  <img
+                    src={project.portfolioWebsite.mockup}
+                    alt={project.title}
+                    className="transition-300 h-56 w-full origin-center object-cover group-hover:scale-105 sm:h-96 md:h-64 md:origin-left"
+                  />
+                </div>
               </div>
               <div className="transition-300 flex w-full items-center justify-between gap-10 px-4 py-6 pt-0 md:col-span-2 md:p-12 md:py-12 md:group-hover:translate-x-4">
                 <div className="flex flex-col items-start gap-4">

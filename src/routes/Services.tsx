@@ -4,7 +4,7 @@ import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
 import design from '../assets/img/nav/services.svg';
 import develop from '../assets/img/svg/develop.svg';
 import app from '../assets/img/svg/app.svg';
-import earth from '../assets/img/svg/earth.gif';
+// import earth from '../assets/img/svg/earth.gif';
 import ProjectsUI from '../components/ui/ProjectsUI';
 import SEO from '../utils/SEO';
 import Footer from '../layout/Footer';
@@ -78,11 +78,14 @@ const Services: React.FC = () => {
                 <div className="w-full">
                   <div className="absolute left-0 hidden h-full w-[4%] justify-center lg:flex">
                     <div className="bg-gradient sticky top-20 z-10 hidden size-10 -translate-x-2 items-center justify-center rounded-full lg:flex">
-                      <img
+                      {/* <img
                         src={earth}
                         alt="globe"
                         className="aspect-square size-9 rounded-full object-cover"
-                      />
+                      /> */}
+                      <span className="aspect-square size-9 content-center rounded-full border border-light/20 text-center">
+                        0{index + 1}
+                      </span>
                     </div>
                     <div className="absolute left-0 hidden h-full w-px items-center bg-gradient-to-t from-transparent via-[#989AA6]/[0.5] to-transparent transition duration-100 lg:flex" />
                   </div>
