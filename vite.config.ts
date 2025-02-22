@@ -13,7 +13,7 @@ export default defineConfig({
       manifest: {
         name: "Purna's Website",
         short_name: "Purna",
-        description: "My Portfolio Website",
+        description: "Purna Shrestha is a UI/UX Designer & Web Developer helping brands build globally through design and code.",
         theme_color: "#0a0a0a",
         background_color: "#f8f8f8",
         display: "standalone",
@@ -33,8 +33,9 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globDirectory: "dist", // Change this to the correct directory
+        globDirectory: "dist", // Ensure this is the correct directory
         globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
+        globIgnores: ["**/node_modules/**/*", "sw.js", "workbox-*.js"],
       },
     }),
   ],
