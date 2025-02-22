@@ -1,6 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
+import fs from "fs";
+import path from "path";
 
 export default defineConfig({
   plugins: [
@@ -19,13 +21,11 @@ export default defineConfig({
         display: "standalone",
         icons: [
           {
-            // src: "/icon-192x192.png",
             src: "/favicon.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            // src: "/icon-512x512.png",
             src: "/favicon.png",
             sizes: "512x512",
             type: "image/png",
@@ -36,7 +36,22 @@ export default defineConfig({
         globDirectory: "dist", // Ensure this is the correct directory
         globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
         globIgnores: ["**/node_modules/**/*", "sw.js", "workbox-*.js"],
+        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024, // Increase the limit to 10 MiB
       },
     }),
   ],
+  build: {
+    rollupOptions: {
+      plugins: [
+        {
+          name: "log-dist-files",
+          writeBundle() {
+            const distPath = path.resolve(__dirname, "dist");
+            const files = fs.readdirSync(distPath);
+            console.log("Files in dist directory:", files);
+          },
+        },
+      ],
+    },
+  },
 });
