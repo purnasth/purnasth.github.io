@@ -13,7 +13,7 @@ export default defineConfig({
         enabled: true, // Enable PWA in development
       },
       manifest: {
-        name: "Purna's Website",
+        name: "Purna Shrestha",
         short_name: "Purna",
         description: "Purna Shrestha is a UI/UX Designer & Web Developer helping brands build globally through design and code.",
         theme_color: "#0a0a0a",
