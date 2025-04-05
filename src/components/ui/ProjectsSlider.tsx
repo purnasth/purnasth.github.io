@@ -7,7 +7,7 @@ import himalayaGallery from '../../assets/videos/temp/himalaya-gallery.mp4';
 import himalayaContact from '../../assets/videos/temp/himalaya-contact.mp4';
 import satprayasHome from '../../assets/videos/temp/satprayas-home.mp4';
 import himalayanFlavours from '../../assets/videos/temp/himalayan-flavours.mp4';
-import baberMahalDine from '../../assets/videos/temp/baberMahal-dine.mp4';
+import baberMahalDine from '../../assets/videos/temp/babermahal-dine.mp4';
 
 const projectVideos = [
   {

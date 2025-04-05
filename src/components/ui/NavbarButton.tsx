@@ -3,12 +3,18 @@ import { TbPlus, TbMail } from 'react-icons/tb';
 import { NavLink, useLocation, Link } from 'react-router-dom';
 import { PageProp } from '../../constant/types';
 import { navLinks } from '../../constant/data';
+import useCursorAttraction from '../../hooks/useCursorAttraction';
 
 const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
   const location = useLocation();
   const [activeLink, setActiveLink] = useState<string | null>(null);
+
+  // Apply cursor attraction to links with the class "cursor-attraction"
+  useCursorAttraction('.cursor-attraction', 250, 0.35);
+
+  // here 250 is the attraction radius and 0.5 is the strength of the attraction
 
   // Update active link based on current route
   useEffect(() => {
@@ -50,7 +56,7 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
         <div className="h-full overflow-hidden p-4 text-white">
           <Link
             to="/"
-            className={`group z-50 inline-block scale-125 animate-pulse rounded-full border border-white/50 bg-white/20 p-2 text-white transition-all duration-300 ease-linear hover:border-white hover:bg-white/20`}
+            className={`group z-50 inline-block scale-125 animate-pulse rounded-full border border-white/50 bg-white/20 p-2 text-white transition-all duration-300 ease-linear hover:border-white hover:bg-white/20 cursor-attraction`}
             aria-label="Mail"
             title="Mail"
           >
@@ -70,8 +76,8 @@ const NavbarButton: React.FC<PageProp> = ({ whiteBg }) => {
                     to={link.routing}
                     className={({ isActive }) =>
                       isActive
-                        ? 'nav-link text-white [text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)]'
-                        : 'nav-link'
+                        ? 'nav-link text-white [text-shadow:_0_2px_15px_rgb(255_255_255_/_100%)] cursor-attraction hover:[text-shadow:_0_4px_30px_rgb(255_255_255_/_100%)]'
+                        : 'nav-link cursor-attraction hover:[text-shadow:_0_4px_30px_rgb(255_255_255_/_100%)]'
                     }
                     aria-label={link.title}
                   >
