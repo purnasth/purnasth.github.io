@@ -25,7 +25,7 @@ const About: React.FC = () => {
           </div>
           <section className="space-y-16 pt-0">
             <div>
-              <Hello />
+              <Hello title="Purna Shrestha" />
               <p className="my-5 ml-8 text-sm text-light/70 md:my-12 md:ml-32 md:text-base">
                 <CreativeGap color="white" /> a <strong>UI/UX Designer</strong>{' '}
                 & <strong>Web Developer</strong> helping brands{' '}

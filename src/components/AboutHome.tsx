@@ -14,9 +14,19 @@ const AboutHome: React.FC = () => {
             <strong className="font-luxury text-light">life</strong>
           </h2> */}
 
-          <Hello />
+          <div className="relative">
+            <Hello title="a Software Engineer" />
+            <div className="absolute right-0 top-1/3 space-x-4">
+              <span className="transition-300 inline-flex -rotate-[30] items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 text-xs font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur hover:rotate-0 sm:text-sm md:top-8 md:text-sm">
+                #design
+              </span>
+
+              <span className="transition-300 inline-flex rotate-[30] items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 text-xs font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur hover:rotate-0 sm:text-sm md:top-8 md:text-sm">
+                #development
+              </span>
+            </div>
+          </div>
           <p className="my-2 max-w-xl text-sm leading-relaxed text-light/70">
-            a <strong>UI/UX Designer</strong> & <strong>Web Developer</strong>{' '}
             helping brands <strong>build globally</strong> through design and
             code. I bring <strong>ideas to life</strong> by crafting{' '}
             <strong>seamless digital experiences</strong> that are both
