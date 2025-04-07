@@ -30,7 +30,7 @@ const ExploreProjects: React.FC<ExploreProjectsProps> = ({
     portfolioDetails.length;
 
   return (
-    <main className="border-t bg-light/80 px-0 pb-8 md:px-4 md:pb-16 xl:px-8">
+    <main className="border-t bg-light/90 px-0 pb-8 md:px-4 md:pb-16 xl:px-8">
       <div className="text-center">
         <span className="text-xs uppercase tracking-wider md:text-base">
           Next Project

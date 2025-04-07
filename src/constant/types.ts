@@ -11,3 +11,12 @@ export interface SEOProps {
   image?: string;
   url?: string;
 }
+
+export interface ExperienceData {
+  id: number;
+  title: string;
+  url: string;
+  startDate: string;
+  endDate?: string;
+  category: string;
+}

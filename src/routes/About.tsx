@@ -7,6 +7,7 @@ import SkillsCategory from '../components/ui/SkillsCategory';
 import CreativeGap from '../components/ui/CreativeGap';
 import SEO from '../utils/SEO';
 import Hello from '../components/ui/Hello';
+import ExperienceCategory from '../components/ui/ExperienceCategory';
 
 const About: React.FC = () => {
   return (
@@ -26,13 +27,13 @@ const About: React.FC = () => {
           <section className="space-y-16 pt-0">
             <div>
               <Hello title="Purna Shrestha" />
-              <p className="my-5 ml-8 text-sm text-light/70 md:my-12 md:ml-32 md:text-base">
-                <CreativeGap color="white" /> a <strong>UI/UX Designer</strong>{' '}
-                & <strong>Web Developer</strong> helping brands{' '}
-                <strong>build globally</strong> through design and code. I bring{' '}
-                <strong>ideas to life</strong> by crafting{' '}
+              <p className="my-5 ml-8 space-x-1 text-sm text-light/70 md:my-12 md:ml-32 md:text-base">
+                <CreativeGap color="white" /> a <strong>UI/UX Designer </strong>
+                &<strong>Web Developer</strong> helping brands
+                <strong>build globally</strong> through design and code. I bring
+                <strong>ideas to life</strong> by crafting
                 <strong>seamless digital experiences</strong> that are both
-                beautiful and functional.{' '}
+                beautiful and functional.s
                 <strong>Let's create something unforgettable together!</strong>
               </p>
 
@@ -49,14 +50,14 @@ const About: React.FC = () => {
                 Available for work
               </h4>
 
-              <p className="my-5 ml-8 text-sm text-light/70 md:my-12 md:ml-32 md:text-base">
-                <CreativeGap color="white" /> I turn{' '}
-                <strong>caffeine into code</strong> and{' '}
-                <strong>ideas into design</strong>. With my{' '}
+              <p className="my-5 ml-8 space-x-1 text-sm text-light/70 md:my-12 md:ml-32 md:text-base">
+                <CreativeGap color="white" /> I turn
+                <strong>caffeine into code</strong> and
+                <strong>ideas into design</strong>. With my
                 <strong>skills</strong> and <strong>creativity</strong>, I'll
-                make your website look so good, you might want to{' '}
+                make your website look so good, you might want to
                 <strong>marry it</strong> (no judgments here!). By working with
-                me, you'll benefit from <strong>professional services</strong>{' '}
+                me, you'll benefit from <strong>professional services</strong>
                 tailored to bring your <strong>vision to life</strong>.
               </p>
 
@@ -69,14 +70,14 @@ const About: React.FC = () => {
                 Trusted by
               </h4>
 
-              <p className="my-5 ml-8 text-sm text-light/70 md:my-12 md:ml-32 md:text-base">
-                <CreativeGap color="white" /> From{' '}
-                <strong>ambitious startups</strong> to{' '}
-                <strong>renowned brands</strong>, I have a{' '}
-                <strong>wealth</strong> of stories to share.{' '}
-                <strong>Trusted</strong> by clients across the{' '}
-                <strong>globe</strong>, I'm here to build{' '}
-                <strong>digital experiences</strong> that make an{' '}
+              <p className="my-5 ml-8 space-x-1 text-sm text-light/70 md:my-12 md:ml-32 md:text-base">
+                <CreativeGap color="white" /> From
+                <strong>ambitious startups</strong> to
+                <strong>renowned brands</strong>, I have a
+                <strong>wealth</strong> of stories to share.
+                <strong>Trusted</strong> by clients across the
+                <strong>globe</strong>, I'm here to build
+                <strong>digital experiences</strong> that make an
                 <strong>impact</strong>.
               </p>
 
@@ -163,6 +164,26 @@ const About: React.FC = () => {
                   />
                 </li>
               </ul>
+            </div>
+
+            <div>
+              <h4 className="sticky top-7 z-10 inline-flex items-center justify-center gap-2 rounded-full bg-green-800/30 px-4 py-1 text-xs font-normal text-green-400 outline outline-1 outline-green-400/40 backdrop-blur sm:text-sm md:top-8 md:text-base">
+                <span className="size-2 rounded-full bg-green-500"></span>
+                Professional Experience
+              </h4>
+
+              <p className="my-5 ml-8 space-x-1 text-sm text-light/70 md:my-12 md:ml-32 md:text-base">
+                <CreativeGap color="white" /> My <strong>journey</strong> and
+                every <strong>step</strong> has shaped me into{' '}
+                <strong>who I am today</strong>. Along the way, I've turned
+                <strong>ideas into experiences</strong> and collaborated with
+                <strong>visionary teams</strong> to build
+                <strong>impactful solutions</strong>. This is more than a
+                <strong>career</strong>—it's a
+                <strong>story of evolution</strong>.
+              </p>
+
+              <ExperienceCategory />
             </div>
           </section>
         </div>
