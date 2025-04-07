@@ -9,14 +9,16 @@ const experienceData: ExperienceData[] = [
   {
     id: 1,
     title: 'Leapfrog Technology',
-    url: 'https://www.lftechnology.com/images/lf-logo.svg',
+    url: 'https://www.lftechnology.com/',
+    logo: 'https://www.lftechnology.com/images/lf-logo.svg',
     startDate: '2025-03-03',
     category: 'Associate Software Engineer',
   },
   {
     id: 13,
     title: 'Longtail e-Media',
-    url: 'https://longtailemedia.pages.dev/logo.svg',
+    url: 'https://longtail.info/',
+    logo: 'https://www.lftechnology.com/images/lf-logo.svg',
     startDate: '2023-11-01',
     endDate: '2025-03-02',
     category: 'React Developer',
@@ -24,7 +26,8 @@ const experienceData: ExperienceData[] = [
   {
     id: 1,
     title: 'Leapfrog Technology',
-    url: 'https://www.lftechnology.com/images/lf-logo.svg',
+    url: 'https://www.lftechnology.com/',
+    logo: 'https://www.lftechnology.com/images/lf-logo.svg',
     startDate: '2023-04-01',
     endDate: '2023-12-31',
     category: 'Leapfrog Student Partnership Program',
@@ -58,7 +61,7 @@ const ExperienceCategory: React.FC = () => {
                 className="flex items-center gap-2 rounded-full transition duration-300 ease-in-out"
               >
                 <img
-                  src={categoryData.url}
+                  src={categoryData.logo}
                   alt={categoryData.title}
                   className="h-8 w-auto rounded-full bg-white/80 object-contain px-4 py-2"
                 />

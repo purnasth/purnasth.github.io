@@ -1,5 +1,5 @@
-// src/components/SEO.tsx
-import React from 'react';
+// src/utils/SEO.tsx
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 
 interface SEOProps {
@@ -21,6 +21,28 @@ const SEO: React.FC<SEOProps> = ({
   robots = 'index, follow',
   canonicalUrl,
 }) => {
+  useEffect(() => {
+    let timeoutId: NodeJS.Timeout;
+
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        document.title = 'Come back :(';
+      } else {
+        document.title = 'Welcome Back, Explorer :)';
+        timeoutId = setTimeout(() => {
+          document.title = title;
+        }, 2000);
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      clearTimeout(timeoutId);
+    };
+  }, [title]);
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -38,4 +60,4 @@ const SEO: React.FC<SEOProps> = ({
   );
 };
 
-export default SEO;
+export default React.memo(SEO);
