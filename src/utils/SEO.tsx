@@ -1,4 +1,3 @@
-// src/utils/SEO.tsx
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 
@@ -22,13 +21,19 @@ const SEO: React.FC<SEOProps> = ({
   canonicalUrl,
 }) => {
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout;
+    let timeoutId: NodeJS.Timeout | null = null;
 
     const handleVisibilityChange = () => {
       if (document.hidden) {
         document.title = 'Come back :(';
+        if (timeoutId) {
+          clearTimeout(timeoutId);
+        }
       } else {
         document.title = 'Welcome Back, Explorer :)';
+        if (timeoutId) {
+          clearTimeout(timeoutId);
+        }
         timeoutId = setTimeout(() => {
           document.title = title;
         }, 2000);
@@ -39,7 +44,9 @@ const SEO: React.FC<SEOProps> = ({
 
     return () => {
       document.removeEventListener('visibilitychange', handleVisibilityChange);
-      clearTimeout(timeoutId);
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
     };
   }, [title]);
 
