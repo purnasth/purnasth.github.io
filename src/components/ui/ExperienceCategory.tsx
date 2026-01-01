@@ -18,7 +18,7 @@ const experienceData: ExperienceData[] = [
     id: 13,
     title: 'Longtail e-Media',
     url: 'https://longtail.info/',
-    logo: 'https://www.lftechnology.com/images/lf-logo.svg',
+    logo: 'https://longtailemedia.pages.dev/assets/icon-DKbZ6YCO.svg',
     startDate: '2023-11-01',
     endDate: '2025-03-02',
     category: 'React Developer',

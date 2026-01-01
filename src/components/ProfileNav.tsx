@@ -32,7 +32,7 @@ const aboutContents = {
     {
       id: 2,
       name: 'Longtail e-Media',
-      logo: 'https://longtail.info/assets/img/longtail.svg',
+      logo: 'https://longtailemedia.pages.dev/logo.svg',
       url: 'https://longtail.info',
     },
   ],
