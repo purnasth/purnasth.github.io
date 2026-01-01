@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
+import React, { useEffect } from 'react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 interface ScrollRevealProps {
   heading: string;

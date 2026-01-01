@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { TbDownload } from 'react-icons/tb';
+
+import purnaCV from '../../assets/docs/purna-cv.pdf';
+
 import { formatDate } from '../../utils/functions';
 import { ExperienceData } from '../../constant/types';
-import { Link } from 'react-router-dom';
-import purnaCV from '../../assets/docs/purna-cv.pdf';
-import { TbDownload } from 'react-icons/tb';
 
 const experienceData: ExperienceData[] = [
   {

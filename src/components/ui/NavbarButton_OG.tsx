@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { TbPlus, TbMail } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
+import { TbPlus, TbMail } from 'react-icons/tb';
+
 import { PageProp } from '../../constant/types';
 import heroNoise from '../../assets/img/hero_noise.png';
 

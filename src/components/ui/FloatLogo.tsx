@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-// import hero from '../../assets/img/hero_cutout.png';
+
 import hero_mobile from '../../assets/img/hero.png';
 import heroNoise from '../../assets/img/hero_noise.png';
 
@@ -173,7 +173,7 @@ const FloatLogo: React.FC = () => {
         .sort(() => 0.5 - Math.random())
         .slice(0, 15); // Display 10 logos at a time
       setDisplayedLogos(randomLogos);
-    }, 5000); // Update every 5 seconds
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -182,10 +182,14 @@ const FloatLogo: React.FC = () => {
     const checkCollision = () => {
       const heroRect = heroRef.current?.getBoundingClientRect();
 
-      if (!heroRect) return;
+      if (!heroRect) {
+        return;
+      }
 
       logoRefs.current.forEach((logo) => {
-        if (!logo) return;
+        if (!logo) {
+          return;
+        }
 
         const logoRect = logo.getBoundingClientRect();
 
@@ -208,6 +212,7 @@ const FloatLogo: React.FC = () => {
 
   const getRandomAnimation = () => {
     const animations = ['float-up', 'float-down', 'float-left', 'float-right'];
+
     return animations[Math.floor(Math.random() * animations.length)];
   };
 
@@ -230,12 +235,6 @@ const FloatLogo: React.FC = () => {
           title={logo.title}
         />
       ))}
-      {/* <img
-        src={heroNoise}
-        alt=""
-        ref={heroRef}
-        className="pointer-events-none absolute bottom-0 left-1/2 -z-50 hidden max-h-[95vh] w-full -translate-x-1/2 select-none object-contain opacity-50 mix-blend-luminosity blur-[100px] md:block"
-      /> */}
       <img
         src={heroNoise}
         alt=""

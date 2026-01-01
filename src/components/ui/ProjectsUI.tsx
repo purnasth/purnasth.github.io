@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { portfolioData } from '../../constant/data';
 import { CgArrowLongRight } from 'react-icons/cg';
+
+import { portfolioData } from '../../constant/data';
+
 import CustomButton from './CustomButton';
 
 interface ProjectsUIProps {

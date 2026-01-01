@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { TbArrowGuide } from 'react-icons/tb';
+import React, { useState, useEffect } from 'react';
+
 import { PageProp } from '../../constant/types';
 
 const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
@@ -21,9 +22,7 @@ const BreadCrumb: React.FC<PageProp> = ({ page, currentPage }) => {
 
   return (
     <nav
-      className={`z-40 transition-all duration-500 ${
-        window.scrollY > 0 ? '' : ''
-      } ${visible ? '' : '-translate-y-full'}`}
+      className={`z-40 transition-all duration-500 ${visible ? '' : '-translate-y-full'}`}
     >
       <h3
         className={`flex items-center justify-center gap-2 rounded-full px-4 py-1 text-xs transition-all duration-[1s] md:gap-3 md:text-base ${

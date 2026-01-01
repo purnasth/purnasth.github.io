@@ -1,18 +1,19 @@
 import React from 'react';
-import { TbMessageChatbot } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
-import { CONTACT_NUMBER } from '../../config/env';
+import { TbMessageChatbot } from 'react-icons/tb';
 
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-video.css';
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-thumbnail.css';
+import 'lightgallery/css/lg-fullscreen.css';
 import LightGallery from 'lightgallery/react';
 import lgZoom from 'lightgallery/plugins/zoom';
 import lgVideo from 'lightgallery/plugins/video';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgFullscreen from 'lightgallery/plugins/fullscreen';
-import 'lightgallery/css/lightgallery.css';
-import 'lightgallery/css/lg-zoom.css';
-import 'lightgallery/css/lg-video.css';
-import 'lightgallery/css/lg-thumbnail.css';
-import 'lightgallery/css/lg-fullscreen.css';
+
+import { CONTACT_NUMBER } from '../../config/env';
 
 interface GalleryReviewProps {
   portfolioItem: {
@@ -93,7 +94,7 @@ const GalleryReview: React.FC<GalleryReviewProps> = ({ portfolioItem }) => {
                 </p>
               </div>
 
-              <div className="mt-6 md:mt-12 border border-dark/10 backdrop-blur p-4 shadow-lg">
+              <div className="mt-6 border border-dark/10 p-4 shadow-lg backdrop-blur md:mt-12">
                 <div className="testimonials">
                   <div className="relative flex max-h-64 flex-col gap-4 overflow-y-auto transition-all duration-150 ease-linear">
                     <p className="review mr-3 text-pretty text-justify text-sm text-dark md:text-base">
