@@ -1,6 +1,7 @@
 import React from 'react';
 import { TbMessageChatbot } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
+import { CONTACT_NUMBER } from '../../config/env';
 
 import LightGallery from 'lightgallery/react';
 import lgZoom from 'lightgallery/plugins/zoom';
@@ -109,7 +110,7 @@ const GalleryReview: React.FC<GalleryReviewProps> = ({ portfolioItem }) => {
 
               <div className="mt-5">
                 <Link
-                  to="https://wa.me/+9779808021753"
+                  to={`https://wa.me/${CONTACT_NUMBER}`}
                   rel="noopener noreferrer"
                   className="transition-300 group mt-4 inline-flex items-center justify-center gap-2 border border-dark/20 bg-dark/10 px-6 py-2 text-dark shadow-md hover:animate-bounce hover:bg-dark/30 hover:shadow-xl"
                   target="_blank"

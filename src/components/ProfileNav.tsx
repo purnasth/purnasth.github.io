@@ -4,6 +4,9 @@ import { FaLinkedinIn } from 'react-icons/fa6';
 import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import purnaCV from '../assets/docs/purna-cv.pdf';
+import { EMAIL, GITHUB_URL, LINKEDIN_URL } from '../config/constants';
+
+import { CONTACT_NUMBER } from '../config/env';
 
 const aboutContents = {
   profileImage: hero,
@@ -13,14 +16,14 @@ const aboutContents = {
     'A software engineer with 2+ years in web and software development, and UI/UX design.',
   successfulProjects: '20+',
   socialLinks: [
-    { id: 'Github', icon: FaGithub, url: 'https://github.com/purnasth' },
+    { id: 'Github', icon: FaGithub, url: GITHUB_URL },
     {
       id: 'Linkedin',
       icon: FaLinkedinIn,
-      url: 'https://www.linkedin.com/in/purna-shrestha-0310ps/',
+      url: LINKEDIN_URL,
     },
-    { id: 'Call', icon: MdCall, url: 'tel:+9779808021753' },
-    { id: 'Mail', icon: MdMail, url: 'mailto:purnashrestha0310@gmail.com' },
+    { id: 'Call', icon: MdCall, url: `tel:${CONTACT_NUMBER}` },
+    { id: 'Mail', icon: MdMail, url: `mailto:${EMAIL}` },
   ],
   companies: [
     {
