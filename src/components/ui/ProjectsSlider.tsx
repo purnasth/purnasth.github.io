@@ -1,13 +1,14 @@
 import React from 'react';
+
 import heroHotelHimalaya from '../../assets/videos/temp/hero.mp4';
 import himalayaHome from '../../assets/videos/temp/himalaya-home.mp4';
 import himalayaStay from '../../assets/videos/temp/himalaya-stay.mp4';
 import himalayaDine from '../../assets/videos/temp/himalaya-dine.mp4';
+import satprayasHome from '../../assets/videos/temp/satprayas-home.mp4';
+import baberMahalDine from '../../assets/videos/temp/babermahal-dine.mp4';
 import himalayaGallery from '../../assets/videos/temp/himalaya-gallery.mp4';
 import himalayaContact from '../../assets/videos/temp/himalaya-contact.mp4';
-import satprayasHome from '../../assets/videos/temp/satprayas-home.mp4';
 import himalayanFlavours from '../../assets/videos/temp/himalayan-flavours.mp4';
-import baberMahalDine from '../../assets/videos/temp/babermahal-dine.mp4';
 
 const projectVideos = [
   {

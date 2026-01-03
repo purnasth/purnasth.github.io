@@ -5,27 +5,34 @@ import purna from '../assets/img/hero.avif';
 
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { MdCall, MdMail } from 'react-icons/md';
+import { CONTACT_NUMBER } from '../config/env';
 import { RiInstagramFill } from 'react-icons/ri';
 import WebsiteUseTime from '../components/ui/WebsiteUseTime';
 import CustomButton from '../components/ui/CustomButton';
+import {
+  GITHUB_URL,
+  LINKEDIN_URL,
+  INSTAGRAM_URL,
+  EMAIL,
+} from '../config/constants';
 
 const aboutContents = {
   profileImage: purna,
   name: 'Purna Shrestha',
   socialLinks: [
-    { id: 'Github', icon: FaGithub, url: 'https://github.com/purnasth' },
+    { id: 'Github', icon: FaGithub, url: GITHUB_URL },
     {
       id: 'Linkedin',
       icon: FaLinkedinIn,
-      url: 'https://www.linkedin.com/in/purna-shrestha-0310ps/',
+      url: LINKEDIN_URL,
     },
     {
       id: 'Instagram',
       icon: RiInstagramFill,
-      url: 'https://www.instagram.com/purna.codes/',
+      url: INSTAGRAM_URL,
     },
-    { id: 'Call', icon: MdCall, url: 'tel:+9779808021753' },
-    { id: 'Mail', icon: MdMail, url: 'mailto:purnashrestha0310@gmail.com' },
+    { id: 'Call', icon: MdCall, url: `tel:${CONTACT_NUMBER}` },
+    { id: 'Mail', icon: MdMail, url: `mailto:${EMAIL}` },
   ],
 };
 
@@ -64,7 +71,7 @@ const Footer: React.FC = () => {
 
             <div className="flex">
               <CustomButton
-                to="https://wa.me/+9779808021753"
+                to={`https://wa.me/${CONTACT_NUMBER}`}
                 value="Schedule a meeting"
                 icon={TbBrandWhatsapp}
                 external
@@ -74,14 +81,14 @@ const Footer: React.FC = () => {
             <p className="mt-6 text-light/60">
               or directly mail me at
               <Link
-                to="mailto:purnashrestha0310@gmail.com"
+                to={`mailto:${EMAIL}`}
                 className="group relative mx-1 text-base font-normal text-light"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="purnashrestha0310@gmail.com"
+                aria-label={EMAIL}
               >
                 <span className="absolute -bottom-[6px] -right-0 h-[0.5px] w-full origin-left bg-light text-sm font-extralight transition-all duration-300 ease-linear group-hover:scale-x-0"></span>
-                purnashrestha0310@gmail.com
+                {EMAIL}
               </Link>
             </p>
           </div>

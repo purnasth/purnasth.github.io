@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ReviewSlider } from './ui/ReviewSlider';
+import { EMAIL } from '../config/constants';
 
 const SideNav: React.FC = () => {
   return (
@@ -93,11 +94,11 @@ const SideNav: React.FC = () => {
           <p className="mt-5 text-xs text-white/80">
             Or directly mail at
             <Link
-              to="mailto:purnashrestha0310@gmail.com"
+              to={`mailto:${EMAIL}`}
               className="transition-300 mx-1 text-white underline underline-offset-4 hover:underline-offset-2"
               aria-label="Email"
             >
-              purnashrestha0310@gmail.com
+              {EMAIL}
             </Link>
           </p>
         </div>

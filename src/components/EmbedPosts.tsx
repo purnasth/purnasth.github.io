@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const embedded = [
+  'https://www.instagram.com/p/DIb7dkPBhNR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
   'https://www.instagram.com/p/DFCNBthvPDe/?img_index=1',
   // 'https://www.instagram.com/p/DESbjHCvRyv/',
   'https://www.instagram.com/p/DEOmbPSPaHu/?img_index=1',

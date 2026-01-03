@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import { CgArrowLongRight, CgArrowLongLeft } from 'react-icons/cg';
+
 import CustomButton from './CustomButton';
 
 interface ExploreProjectsProps {
@@ -67,17 +67,6 @@ const ExploreProjects: React.FC<ExploreProjectsProps> = ({
         </li>
 
         <li className="flex-shrink-0">
-          {/* <Link
-            to="/portfolio"
-            className="transition-300 inline-flex scale-90 items-center justify-center gap-2 rounded-full bg-dark px-4 py-3 text-center text-xs font-medium uppercase text-light shadow outline outline-1 outline-dark hover:bg-dark/90 hover:tracking-wide hover:shadow-2xl sm:text-sm md:scale-100 md:px-8 md:py-4 md:text-base md:hover:tracking-widest"
-            aria-label="All Projects"
-          >
-            All Projects
-            <sup className="green-gradient text-xs font-bold group-hover:text-dark sm:text-sm md:text-base">
-              ({portfolioDetails.length})
-            </sup>
-          </Link> */}
-
           <div className="transition-300 flex mix-blend-difference">
             <CustomButton
               to="/portfolio"

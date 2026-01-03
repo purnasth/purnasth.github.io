@@ -3,11 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'purna_shrestha_poly_sans';
-  src: url('./assets/fonts/PolySans.woff2') format('woff2');
-}
-
-@font-face {
   font-family: 'Gold Badge';
   src: url(./assets/fonts/goldbadge.otf) format('opentype');
 }

@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LightGallery from 'lightgallery/react';
 import lgZoom from 'lightgallery/plugins/zoom';
 import lgVideo from 'lightgallery/plugins/video';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgFullscreen from 'lightgallery/plugins/fullscreen';
-import { Link } from 'react-router-dom';
+
 import { portfolioData } from '../../constant/data';
 
 const ProjectsUI_OG: React.FC = () => {

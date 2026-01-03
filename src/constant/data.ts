@@ -1,9 +1,9 @@
 // mockup
-import hotelHimalayaMockup from '../assets/img/portfolio/hotel-himalaya/hotelhimalaya_mockup.avif';
-import hotelDayatraMockup from '../assets/img/portfolio/hotel-dayatra/mockup.png';
-import mithilaMockup from '../assets/img/portfolio/mithila/mockup.png';
-import ichchhaMockup from '../assets/img/portfolio/hotel-ichchha/mockup.png';
-import baberMahalMockup from '../assets/img/portfolio/baber-mahal-vilas/babermahal-mockup.webp';
+import hotelHimalayaMockup from '../assets/img/portfolio/hotel-himalaya/mockup.avif';
+import hotelDayatraMockup from '../assets/img/portfolio/hotel-dayatra/mockup.avif';
+import mithilaMockup from '../assets/img/portfolio/mithila/mockup.avif';
+import ichchhaMockup from '../assets/img/portfolio/hotel-ichchha/mockup.avif';
+import baberMahalMockup from '../assets/img/portfolio/baber-mahal-vilas/mockup.avif';
 import himalayanFlavoursMockup from '../assets/img/portfolio/himalayan-flavours/himalayanflavours-mockup.webp';
 import satprayasNepalMockup from '../assets/img/portfolio/satprayas-nepal/satprayas-nepal-mockup.webp';
 
@@ -21,7 +21,7 @@ import satprayasLander from '../assets/img/portfolio/satprayas-nepal/satprayasne
 // journey
 import projectJourney from '../assets/img/portfolio/hotel-himalaya/project-journey.svg';
 
-import heroNoise from '../assets/img/hero_noise.png';
+import heroNoise from '../assets/img/hero_noise.avif';
 import portfolio from '../assets/img/nav/portfolio.svg';
 import services from '../assets/img/nav/services.svg';
 import contact from '../assets/img/nav/contact.svg';

@@ -1,6 +1,4 @@
 import React from 'react';
-// import { LiaPenAltSolid } from 'react-icons/lia';
-// import { RiPaintBrushLine } from 'react-icons/ri';
 import { GiPaintRoller } from 'react-icons/gi';
 
 interface CreativeGapProps {

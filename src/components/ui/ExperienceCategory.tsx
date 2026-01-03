@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { TbDownload } from 'react-icons/tb';
+
+import purnaCV from '../../assets/docs/purna-cv.pdf';
+
 import { formatDate } from '../../utils/functions';
 import { ExperienceData } from '../../constant/types';
-import { Link } from 'react-router-dom';
-import purnaCV from '../../assets/docs/purna-cv.pdf';
-import { TbDownload } from 'react-icons/tb';
 
 const experienceData: ExperienceData[] = [
   {
@@ -18,7 +20,7 @@ const experienceData: ExperienceData[] = [
     id: 13,
     title: 'Longtail e-Media',
     url: 'https://longtail.info/',
-    logo: 'https://www.lftechnology.com/images/lf-logo.svg',
+    logo: 'https://longtailemedia.pages.dev/assets/icon-DKbZ6YCO.svg',
     startDate: '2023-11-01',
     endDate: '2025-03-02',
     category: 'React Developer',

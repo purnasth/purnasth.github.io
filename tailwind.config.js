@@ -15,7 +15,6 @@ export default {
         //   'serif',
         // ],
         body: [
-          // '"purna_shrestha_poly_sans"',
           '"Bricolage Grotesque"',
           // '"Syne"',
           'Inria Sans',

@@ -1,6 +1,6 @@
 import React from 'react';
 import Hello from './ui/Hello';
-import purna from '../assets/img/hero_noise.png';
+import purna from '../assets/img/hero_noise.avif';
 import CustomButton from './ui/CustomButton';
 
 const AboutHome: React.FC = () => {
@@ -8,7 +8,7 @@ const AboutHome: React.FC = () => {
     <main className="relative mt-12 h-[85vh] max-w-[100vw] overflow-x-hidden md:mt-0 md:h-screen">
       <div className="container h-full">
         <div className="inline-flex h-full max-w-6xl flex-col justify-start text-light md:justify-center">
-            <Hello title="a Software Engineer" />
+          <Hello title="a Software Engineer" />
           <p className="my-2 max-w-xl text-sm leading-relaxed text-light/70">
             helping brands <strong>build globally</strong> through design and
             code. I bring <strong>ideas to life</strong> by crafting{' '}
@@ -24,7 +24,7 @@ const AboutHome: React.FC = () => {
         <aside className="">
           <img
             src={purna}
-            alt=""
+            alt="Purna Shrestha"
             className="absolute inset-0 -z-30 mt-auto size-full max-h-[90vh] object-contain object-right-bottom opacity-20 mix-blend-normal"
           />
         </aside>

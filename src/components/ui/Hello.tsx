@@ -27,6 +27,7 @@ const Hello: React.FC<HelloProps> = ({ title }) => {
       setGreeting((prevGreeting) => {
         const currentIndex = greetings.indexOf(prevGreeting);
         const nextIndex = (currentIndex + 1) % greetings.length;
+
         return greetings[nextIndex];
       });
     }, 800);
