@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { TbPlus, TbMail } from 'react-icons/tb';
 
 import { PageProp } from '../../constant/types';
-import heroNoise from '../../assets/img/hero_noise.png';
+import heroNoise from '../../assets/img/hero_noise.avif';
 
 const NavbarButton_OG: React.FC<PageProp> = ({ whiteBg }) => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 
 import hero_mobile from '../../assets/img/hero.png';
-import heroNoise from '../../assets/img/hero_noise.png';
+import heroNoise from '../../assets/img/hero_noise.avif';
 
 type SkillLogo = {
   id: number;
