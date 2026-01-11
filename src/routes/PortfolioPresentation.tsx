@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { portfolioData } from '../constant/data';
+import { copyrightCredit } from '../constant/messages';
 import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
 import CaseStudy from '../components/CaseStudy';
 import GalleryReview from '../components/ui/GalleryReview';
@@ -66,6 +67,7 @@ const PortfolioPresentation: React.FC = () => {
               {portfolioItem.portfolioWebsite?.credits}
             </li>
           </ul>
+          <p className="mt-2 max-w-xl text-xs">&copy;&nbsp;{copyrightCredit}</p>
 
           <div className="relative mt-12 md:mt-20">
             <div

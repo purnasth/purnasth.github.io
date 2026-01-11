@@ -131,27 +131,27 @@ export const portfolioData = [
           "Himalayan Flavours is more than just a restaurant; it's a celebration of the rich and diverse culinary heritage of the Himalayan region. Nestled in the heart of Victoria, B.C., our restaurant offers an authentic taste of India, Nepal, and China, bringing together the vibrant and bold flavors that define the cultures.",
 
         portfolioWebsite: {
-          deployUrl: 'https://himalayan-flavours.com/',
+          deployUrl: 'https://himalayanflavours.purnashrestha.com.np/',
           mockup: himalayanFlavoursMockup,
           role: 'Design & Development',
           year: '2024',
           credits: 'Longtail e-Media',
           titleImage:
-            'https://mayurstay.com/himalayanflavours/assets/bg_cuisine-CXN14gmB.png',
+            'https://mayurstay.com/himalayanflavours/backend/images/slideshow/PPtnR-bg_cuisine.png',
           backgroundImage:
-            'https://mayurstay.com/himalayanflavours/assets/bg_cuisine-CXN14gmB.png',
+            'https://mayurstay.com/himalayanflavours/backend/images/slideshow/PPtnR-bg_cuisine.png',
           uiPresentation: himalayanFlavoursUI,
           iframePages: [
             {
-              url: 'https://mayurstay.com/himalayanflavours/',
+              url: 'https://himalayanflavours.purnashrestha.com.np/home',
               title: 'Himalayan Flavours Home Page',
             },
             {
-              url: 'https://mayurstay.com/himalayanflavours/about',
+              url: 'https://himalayanflavours.purnashrestha.com.np/about',
               title: 'Himalayan Flavours About Page',
             },
             {
-              url: 'https://mayurstay.com/himalayanflavours/gallery',
+              url: 'https://himalayanflavours.purnashrestha.com.np/gallery',
               title: 'Himalayan Flavours Gallery Page',
             },
           ],
@@ -473,32 +473,33 @@ export const portfolioData = [
       {
         id: 'mithila-yatri-niwas',
         title: 'Mithila Yatri Niwas',
-        logoSrc: 'https://www.mithilayatriniwas.com/assets/logo-BoMl5AAK.svg',
+        logoSrc:
+          'https://mithilayatriniwas.purnashrestha.com.np/assets/logo-vMhoXRF9.svg',
         portfolioUrl: 'mithila-yatri-niwas',
         description:
           'Mithila Yatri Niwas - A luxurious retreat in Janakpur, just a 10-minute walk from the sacred Janaki Temple where you can experience the rich cultural & traditional heritage of the city.',
         portfolioWebsite: {
-          deployUrl: 'https://www.mithilayatriniwas.com',
+          deployUrl: 'https://mithilayatriniwas.purnashrestha.com.np/',
           mockup: mithilaMockup,
           role: 'Design & Development',
           year: '2024',
           credits: 'Longtail e-Media',
           titleImage:
-            'https://mithila-yatri.pages.dev/assets/mithila-BauZmQvB.webp',
+            'https://mithilayatriniwas.purnashrestha.com.np/assets/mithila_night-BP4wXxoQ.webp',
           backgroundImage:
-            'https://mithila-yatri.pages.dev/assets/room1-Dq4x4xNH.webp',
+            'https://mithilayatriniwas.purnashrestha.com.np/assets/room1-Dq4x4xNH.webp',
           uiPresentation: mithilaUI,
           iframePages: [
             {
-              url: 'https://mithila-yatri.pages.dev/',
+              url: 'https://mithilayatriniwas.purnashrestha.com.np/',
               title: 'Mithila Yatri Niwas Website Home Page',
             },
             {
-              url: 'https://mithila-yatri.pages.dev/accommodation',
+              url: 'https://mithilayatriniwas.purnashrestha.com.np/accommodation',
               title: 'Mithila Yatri Niwas Website Stay Page',
             },
             {
-              url: 'https://mithila-yatri.pages.dev/gallery',
+              url: 'https://mithilayatriniwas.purnashrestha.com.np/gallery',
               title: 'Mithila Yatri Niwas Website Gallery Page',
             },
           ],
@@ -538,19 +539,19 @@ export const portfolioData = [
           },
           galleryImages: [
             {
-              src: 'https://mithila-yatri.pages.dev/assets/mithila_night-BP4wXxoQ.webp',
+              src: 'https://mithilayatriniwas.purnashrestha.com.np/assets/mithila_night-BP4wXxoQ.webp',
               alt: 'Mithila Yatri Niwas',
             },
             {
-              src: 'https://mithila-yatri.pages.dev/assets/mithila2-CMWD05R9.webp',
+              src: 'https://mithilayatriniwas.purnashrestha.com.np/assets/mithila2-CMWD05R9.webp',
               alt: 'Mithila Yatri Niwas',
             },
             {
-              src: 'https://mithila-yatri.pages.dev/assets/room3-CGyEWjdq.webp',
+              src: 'https://mithilayatriniwas.purnashrestha.com.np/assets/room3-CGyEWjdq.webp',
               alt: 'Mithila Yatri Niwas',
             },
             {
-              src: 'https://mithila-yatri.pages.dev/assets/hall1-VaKC5fnP.webp',
+              src: 'https://mithilayatriniwas.purnashrestha.com.np/assets/hall1-VaKC5fnP.webp',
               alt: 'Mithila Yatri Niwas',
             },
           ],
@@ -559,32 +560,33 @@ export const portfolioData = [
       {
         id: 'hotel-ichchha',
         title: 'Hotel Ichchha',
-        logoSrc: 'https://hotelichchha.com/assets/logo-DU4e6XTo.svg',
+        logoSrc:
+          'https://hotelichchha.purnashrestha.com.np/assets/logo-DwnyUaN0.svg',
         portfolioUrl: 'hotel-ichchha',
         description:
           "Being a top hospitality provider & Nepal's First 5-Star Hotel in Simara, Bara, Nepal, we guarantee our finest offerings due to its convenient location, it is a great option for business, leisure, and pilgrimage trips.",
         portfolioWebsite: {
-          deployUrl: 'https://hotel-ichchha.pages.dev',
+          deployUrl: 'https://hotelichchha.purnashrestha.com.np/',
           mockup: ichchhaMockup,
           role: 'Design & Development',
           year: '2024',
           credits: 'Longtail e-Media',
           titleImage:
-            'https://hotel-ichchha.pages.dev/assets/dlx3-CMsmsEgx.webp',
+            'https://hotelichchha.purnashrestha.com.np/assets/dlx3-CMsmsEgx.webp',
           backgroundImage:
-            'https://hotel-ichchha.pages.dev/assets/ichchha1-CmqxPbFg.webp',
+            'https://hotelichchha.purnashrestha.com.np/assets/ichchha1-CmqxPbFg.webp',
           uiPresentation: hotelIchchhaUI,
           iframePages: [
             {
-              url: 'https://hotel-ichchha.pages.dev/',
+              url: 'https://hotelichchha.purnashrestha.com.np/',
               title: 'Hotel Ichchha Website Home Page',
             },
             {
-              url: 'https://hotel-ichchha.pages.dev/accommodation/executive-suite',
+              url: 'https://hotelichchha.purnashrestha.com.np/accommodation/executive-suite',
               title: 'Hotel Ichchha Website Stay Page',
             },
             {
-              url: 'https://hotel-ichchha.pages.dev/events',
+              url: 'https://hotelichchha.purnashrestha.com.np/events',
               title: 'Hotel Ichchha Website Gallery Page',
             },
           ],
@@ -624,19 +626,19 @@ export const portfolioData = [
           },
           galleryImages: [
             {
-              src: 'https://hotel-ichchha.pages.dev/assets/g19-DES27q-W.webp',
+              src: 'https://hotelichchha.purnashrestha.com.np/assets/g19-DES27q-W.webp',
               alt: 'Hotel Ichchha',
             },
             {
-              src: 'https://hotel-ichchha.pages.dev/assets/g18-CQ4_uG3Z.webp',
+              src: 'https://hotelichchha.purnashrestha.com.np/assets/g18-CQ4_uG3Z.webp',
               alt: 'Hotel Ichchha',
             },
             {
-              src: 'https://hotel-ichchha.pages.dev/assets/g8-D7SpBndT.webp',
+              src: 'https://hotelichchha.purnashrestha.com.np/assets/g8-D7SpBndT.webp',
               alt: 'Hotel Ichchha',
             },
             {
-              src: 'https://hotel-ichchha.pages.dev/assets/g23-D93mm9YZ.webp',
+              src: 'https://hotelichchha.purnashrestha.com.np/assets/g23-D93mm9YZ.webp',
               alt: 'Hotel Ichchha',
             },
           ],
