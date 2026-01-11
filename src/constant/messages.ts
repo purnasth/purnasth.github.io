@@ -1,0 +1,1 @@
+export const copyrightCredit = `All visual assets showcased herein are the intellectual property of their respective copyright holders and are used strictly for demonstration purposes only. No claim of ownership is made.`;

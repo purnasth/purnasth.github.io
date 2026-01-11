@@ -14,6 +14,7 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgFullscreen from 'lightgallery/plugins/fullscreen';
 
 import { CONTACT_NUMBER } from '../../config/env';
+import { copyrightCredit } from '../../constant/messages';
 
 interface GalleryReviewProps {
   portfolioItem: {
@@ -77,6 +78,11 @@ const GalleryReview: React.FC<GalleryReviewProps> = ({ portfolioItem }) => {
                   </div>
                 ))}
               </LightGallery>
+
+              <p className="mt-4 max-w-lg text-xs">
+                <strong className="font-bold uppercase text-dark">Note:</strong>
+                &nbsp;{copyrightCredit}
+              </p>
             </div>
 
             <div className="col-span-1">
