@@ -1,7 +1,7 @@
 import React from 'react';
 import ProfileNav from '../components/ProfileNav';
 // import purna from '../assets/img/purna/FC_20221024_0004.jpg';
-import purna from '../assets/img/purna.jpeg';
+import purna from '../assets/img/purna-portrait-landing.webp';
 import NavbarBreadCrumb from '../components/NavbarBreadCrumb';
 import SkillsCategory from '../components/ui/SkillsCategory';
 import CreativeGap from '../components/ui/CreativeGap';
